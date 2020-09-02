@@ -1,0 +1,59 @@
+C:\Users\agush\source\repos\PAV1 TP\PAV1 TP\bin\Debug\PAV1 TP.exe.config
+C:\Users\agush\source\repos\PAV1 TP\PAV1 TP\bin\Debug\PAV1 TP.exe
+C:\Users\agush\source\repos\PAV1 TP\PAV1 TP\bin\Debug\PAV1 TP.pdb
+C:\Users\agush\source\repos\PAV1 TP\PAV1 TP\obj\Debug\PAV1 TP.csprojAssemblyReference.cache
+C:\Users\agush\source\repos\PAV1 TP\PAV1 TP\obj\Debug\PAV1_TP.Properties.Resources.resources
+C:\Users\agush\source\repos\PAV1 TP\PAV1 TP\obj\Debug\PAV1 TP.csproj.GenerateResource.cache
+C:\Users\agush\source\repos\PAV1 TP\PAV1 TP\obj\Debug\PAV1 TP.csproj.CoreCompileInputs.cache
+C:\Users\agush\source\repos\PAV1 TP\PAV1 TP\obj\Debug\PAV1 TP.exe
+C:\Users\agush\source\repos\PAV1 TP\PAV1 TP\obj\Debug\PAV1 TP.pdb
+C:\Users\agush\source\repos\PAV1 TP\PAV1 TP\obj\Debug\PAV1_TP.Frm_Escritorio.resources
+C:\Users\agush\Desktop\UTN\2020 - 3 Año\Programacion de aplicaciones visuales\Pratico\TP\Codigo\PAV1 TP\bin\Debug\PAV1 TP.exe.config
+C:\Users\agush\Desktop\UTN\2020 - 3 Año\Programacion de aplicaciones visuales\Pratico\TP\Codigo\PAV1 TP\bin\Debug\PAV1 TP.exe
+C:\Users\agush\Desktop\UTN\2020 - 3 Año\Programacion de aplicaciones visuales\Pratico\TP\Codigo\PAV1 TP\bin\Debug\PAV1 TP.pdb
+C:\Users\agush\Desktop\UTN\2020 - 3 Año\Programacion de aplicaciones visuales\Pratico\TP\Codigo\PAV1 TP\obj\Debug\PAV1 TP.csprojAssemblyReference.cache
+C:\Users\agush\Desktop\UTN\2020 - 3 Año\Programacion de aplicaciones visuales\Pratico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Frm_Escritorio.resources
+C:\Users\agush\Desktop\UTN\2020 - 3 Año\Programacion de aplicaciones visuales\Pratico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Properties.Resources.resources
+C:\Users\agush\Desktop\UTN\2020 - 3 Año\Programacion de aplicaciones visuales\Pratico\TP\Codigo\PAV1 TP\obj\Debug\PAV1 TP.csproj.GenerateResource.cache
+C:\Users\agush\Desktop\UTN\2020 - 3 Año\Programacion de aplicaciones visuales\Pratico\TP\Codigo\PAV1 TP\obj\Debug\PAV1 TP.csproj.CoreCompileInputs.cache
+C:\Users\agush\Desktop\UTN\2020 - 3 Año\Programacion de aplicaciones visuales\Pratico\TP\Codigo\PAV1 TP\obj\Debug\PAV1 TP.exe
+C:\Users\agush\Desktop\UTN\2020 - 3 Año\Programacion de aplicaciones visuales\Pratico\TP\Codigo\PAV1 TP\obj\Debug\PAV1 TP.pdb
+C:\Users\agush\Desktop\UTN\2020\PAV1\Pratico\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Frm_Escritorio.resources
+C:\Users\agush\Desktop\UTN\2020\PAV1\Pratico\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Properties.Resources.resources
+C:\Users\agush\Desktop\UTN\2020\PAV1\Pratico\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1 TP.csproj.GenerateResource.cache
+C:\Users\agush\Desktop\UTN\2020\PAV1\Pratico\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1 TP.csproj.CoreCompileInputs.cache
+C:\Users\agush\Desktop\UTN\2020\PAV1\Pratico\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1 TP.exe
+C:\Users\agush\Desktop\UTN\2020\PAV1\Pratico\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1 TP.pdb
+C:\Users\agush\Desktop\UTN\2020\PAV1\Pratico\PAV1\Codigo\PAV1 TP\bin\Debug\PAV1 TP.exe.config
+C:\Users\agush\Desktop\UTN\2020\PAV1\Pratico\PAV1\Codigo\PAV1 TP\bin\Debug\PAV1 TP.exe
+C:\Users\agush\Desktop\UTN\2020\PAV1\Pratico\PAV1\Codigo\PAV1 TP\bin\Debug\PAV1 TP.pdb
+C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\PAV1\Codigo\PAV1 TP\bin\Debug\PAV1 TP.exe.config
+C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\PAV1\Codigo\PAV1 TP\bin\Debug\PAV1 TP.exe
+C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\PAV1\Codigo\PAV1 TP\bin\Debug\PAV1 TP.pdb
+C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Frm_Escritorio.resources
+C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Properties.Resources.resources
+C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1 TP.csproj.GenerateResource.cache
+C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1 TP.csproj.CoreCompileInputs.cache
+C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1 TP.exe
+C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1 TP.pdb
+C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\PAV1\Codigo\PAV1 TP\obj\Debug\WindowsFormsApp2.ABM_Clientes.resources
+C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\PAV1\Codigo\PAV1 TP\obj\Debug\WindowsFormsApp2.ABM_Plantas.resources
+C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Alta_Clientes.resources
+C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Alta_Plantas.resources
+C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Plantas.Modificacion.resources
+C:\Users\Facu_\Desktop\tpPAV\PAV12\Codigo\PAV1 TP\bin\Debug\PAV1 TP.exe.config
+C:\Users\Facu_\Desktop\tpPAV\PAV12\Codigo\PAV1 TP\bin\Debug\PAV1 TP.exe
+C:\Users\Facu_\Desktop\tpPAV\PAV12\Codigo\PAV1 TP\bin\Debug\PAV1 TP.pdb
+C:\Users\Facu_\Desktop\tpPAV\PAV12\Codigo\PAV1 TP\obj\Debug\PAV1 TP.csprojAssemblyReference.cache
+C:\Users\Facu_\Desktop\tpPAV\PAV12\Codigo\PAV1 TP\obj\Debug\WindowsFormsApp2.ABM_Clientes.resources
+C:\Users\Facu_\Desktop\tpPAV\PAV12\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Alta_Clientes.resources
+C:\Users\Facu_\Desktop\tpPAV\PAV12\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Frm_Login.resources
+C:\Users\Facu_\Desktop\tpPAV\PAV12\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Alta_Plantas.resources
+C:\Users\Facu_\Desktop\tpPAV\PAV12\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Frm_Escritorio.resources
+C:\Users\Facu_\Desktop\tpPAV\PAV12\Codigo\PAV1 TP\obj\Debug\WindowsFormsApp2.ABM_Plantas.resources
+C:\Users\Facu_\Desktop\tpPAV\PAV12\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Plantas.Modificacion_Plantas.resources
+C:\Users\Facu_\Desktop\tpPAV\PAV12\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Properties.Resources.resources
+C:\Users\Facu_\Desktop\tpPAV\PAV12\Codigo\PAV1 TP\obj\Debug\PAV1 TP.csproj.GenerateResource.cache
+C:\Users\Facu_\Desktop\tpPAV\PAV12\Codigo\PAV1 TP\obj\Debug\PAV1 TP.csproj.CoreCompileInputs.cache
+C:\Users\Facu_\Desktop\tpPAV\PAV12\Codigo\PAV1 TP\obj\Debug\PAV1 TP.exe
+C:\Users\Facu_\Desktop\tpPAV\PAV12\Codigo\PAV1 TP\obj\Debug\PAV1 TP.pdb
