@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Modificacion_Plantas));
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -44,25 +42,9 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(495, 283);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(82, 23);
-            this.button3.TabIndex = 35;
-            this.button3.Text = "Cancelar";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(414, 283);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 36;
-            this.button2.Text = "Registrar";
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // textBox5
             // 
@@ -196,6 +178,26 @@
             this.label1.TabIndex = 22;
             this.label1.Text = "Modificar planta";
             // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.button3.Location = new System.Drawing.Point(485, 279);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(82, 23);
+            this.button3.TabIndex = 67;
+            this.button3.Text = "Cancelar";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.button2.Location = new System.Drawing.Point(404, 279);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 66;
+            this.button2.Text = "Modificar";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // Modificacion_Plantas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -219,7 +221,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Modificacion_Plantas";
             this.Text = "Modificacion_Plantas";
@@ -229,9 +231,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
@@ -245,5 +244,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
     }
 }

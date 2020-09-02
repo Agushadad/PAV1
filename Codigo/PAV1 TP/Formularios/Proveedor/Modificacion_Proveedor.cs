@@ -8,21 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp2
+namespace PAV1_TP.Formularios.Proveedor
 {
-    public partial class ABM_Clientes : Form
+    public partial class Modificacion_Proveedor : Form
     {
-        public ABM_Clientes()
+        public Modificacion_Proveedor()
         {
             InitializeComponent();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void ABM_Clientes_Load(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
 
         }
