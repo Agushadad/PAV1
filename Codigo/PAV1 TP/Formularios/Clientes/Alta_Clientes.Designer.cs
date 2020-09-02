@@ -101,9 +101,9 @@
             this.label3.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(3, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(211, 26);
+            this.label3.Size = new System.Drawing.Size(178, 26);
             this.label3.TabIndex = 27;
-            this.label3.Text = "Registro de Clientes";
+            this.label3.Text = "Registro clientes";
             // 
             // label11
             // 
