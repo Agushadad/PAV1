@@ -75,7 +75,7 @@
             // lv_usuario
             // 
             this.lv_usuario.AutoSize = true;
-            this.lv_usuario.Location = new System.Drawing.Point(136, 37);
+            this.lv_usuario.Location = new System.Drawing.Point(136, 44);
             this.lv_usuario.Name = "lv_usuario";
             this.lv_usuario.Size = new System.Drawing.Size(43, 13);
             this.lv_usuario.TabIndex = 0;

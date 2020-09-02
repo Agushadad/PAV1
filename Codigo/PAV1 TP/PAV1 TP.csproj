@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formularios\Catalogos\ABM_Catalogos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Catalogos\ABM_Catalogos.Designer.cs">
+      <DependentUpon>ABM_Catalogos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Catalogos\Alta_Catalogos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Catalogos\Alta_Catalogos.Designer.cs">
+      <DependentUpon>Alta_Catalogos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Catalogos\Modificacion_Catalogos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Catalogos\Modificacion_Catalogos.Designer.cs">
+      <DependentUpon>Modificacion_Catalogos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Clientes\ABM_Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,8 +106,35 @@
     <Compile Include="Formularios\Plantas\Modificacion_Plantas.Designer.cs">
       <DependentUpon>Modificacion_Plantas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Proveedor\ABM_Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Proveedor\ABM_Proveedor.Designer.cs">
+      <DependentUpon>ABM_Proveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Proveedor\Alta_Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Proveedor\Alta_Proveedor.Designer.cs">
+      <DependentUpon>Alta_Proveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Proveedor\Modificacion_Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Proveedor\Modificacion_Proveedor.Designer.cs">
+      <DependentUpon>Modificacion_Proveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\Catalogos\ABM_Catalogos.resx">
+      <DependentUpon>ABM_Catalogos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Catalogos\Alta_Catalogos.resx">
+      <DependentUpon>Alta_Catalogos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Catalogos\Modificacion_Catalogos.resx">
+      <DependentUpon>Modificacion_Catalogos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Clientes\ABM_Clientes.resx">
       <DependentUpon>ABM_Clientes.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,6 +155,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Plantas\Modificacion_Plantas.resx">
       <DependentUpon>Modificacion_Plantas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Proveedor\ABM_Proveedor.resx">
+      <DependentUpon>ABM_Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Proveedor\Alta_Proveedor.resx">
+      <DependentUpon>Alta_Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Proveedor\Modificacion_Proveedor.resx">
+      <DependentUpon>Modificacion_Proveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
