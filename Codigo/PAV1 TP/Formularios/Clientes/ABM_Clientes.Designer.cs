@@ -31,27 +31,27 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ABM_Clientes));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.txt_NombreCliente = new System.Windows.Forms.TextBox();
+            this.chk_TodosClientes = new System.Windows.Forms.CheckBox();
+            this.btn_ConsultarCliente = new System.Windows.Forms.Button();
+            this.Grid_Clientes = new System.Windows.Forms.DataGridView();
             this.Doc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Domicilio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.txt_ApellidoCliente = new System.Windows.Forms.TextBox();
+            this.txt_DocCliente = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btn_EliminarCliente = new System.Windows.Forms.PictureBox();
+            this.btn_SalirClientes = new System.Windows.Forms.PictureBox();
+            this.btn_EditarCliente = new System.Windows.Forms.PictureBox();
+            this.btn_AgregarClientes = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.Grid_Clientes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_EliminarCliente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_SalirClientes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_EditarCliente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_AgregarClientes)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -74,115 +74,47 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Apellido";
             // 
-            // textBox1
+            // txt_NombreCliente
             // 
-            this.textBox1.Location = new System.Drawing.Point(141, 26);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(162, 20);
-            this.textBox1.TabIndex = 1;
+            this.txt_NombreCliente.Location = new System.Drawing.Point(141, 26);
+            this.txt_NombreCliente.Name = "txt_NombreCliente";
+            this.txt_NombreCliente.Size = new System.Drawing.Size(162, 20);
+            this.txt_NombreCliente.TabIndex = 1;
             // 
-            // checkBox1
+            // chk_TodosClientes
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox1.Location = new System.Drawing.Point(141, 108);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(56, 17);
-            this.checkBox1.TabIndex = 2;
-            this.checkBox1.Text = "Todos";
-            this.checkBox1.UseVisualStyleBackColor = false;
+            this.chk_TodosClientes.AutoSize = true;
+            this.chk_TodosClientes.BackColor = System.Drawing.Color.Transparent;
+            this.chk_TodosClientes.Location = new System.Drawing.Point(141, 108);
+            this.chk_TodosClientes.Name = "chk_TodosClientes";
+            this.chk_TodosClientes.Size = new System.Drawing.Size(56, 17);
+            this.chk_TodosClientes.TabIndex = 5;
+            this.chk_TodosClientes.Text = "Todos";
+            this.chk_TodosClientes.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btn_ConsultarCliente
             // 
-            this.button1.Location = new System.Drawing.Point(309, 82);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Consultar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_ConsultarCliente.Location = new System.Drawing.Point(309, 82);
+            this.btn_ConsultarCliente.Name = "btn_ConsultarCliente";
+            this.btn_ConsultarCliente.Size = new System.Drawing.Size(75, 23);
+            this.btn_ConsultarCliente.TabIndex = 4;
+            this.btn_ConsultarCliente.Text = "Consultar";
+            this.btn_ConsultarCliente.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // Grid_Clientes
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Grid_Clientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Grid_Clientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Doc,
             this.Nombre,
             this.Apellido,
             this.Domicilio,
             this.Tipo});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 131);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(642, 212);
-            this.dataGridView1.TabIndex = 5;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(141, 56);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(162, 20);
-            this.textBox2.TabIndex = 1;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(141, 82);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(162, 20);
-            this.textBox3.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(60, 85);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Documento";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(153, 374);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(59, 50);
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(625, 374);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(59, 50);
-            this.pictureBox2.TabIndex = 8;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(79, 374);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(59, 50);
-            this.pictureBox3.TabIndex = 9;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(12, 374);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(59, 50);
-            this.pictureBox4.TabIndex = 10;
-            this.pictureBox4.TabStop = false;
+            this.Grid_Clientes.Location = new System.Drawing.Point(12, 131);
+            this.Grid_Clientes.Name = "Grid_Clientes";
+            this.Grid_Clientes.Size = new System.Drawing.Size(664, 212);
+            this.Grid_Clientes.TabIndex = 6;
+            this.Grid_Clientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Doc
             // 
@@ -206,13 +138,82 @@
             // 
             this.Domicilio.HeaderText = "Domicilio";
             this.Domicilio.Name = "Domicilio";
-            this.Domicilio.Width = 200;
+            this.Domicilio.Width = 150;
             // 
             // Tipo
             // 
-            this.Tipo.HeaderText = "Telefono";
+            this.Tipo.HeaderText = "Teléfono";
             this.Tipo.Name = "Tipo";
             this.Tipo.Width = 130;
+            // 
+            // txt_ApellidoCliente
+            // 
+            this.txt_ApellidoCliente.Location = new System.Drawing.Point(141, 56);
+            this.txt_ApellidoCliente.Name = "txt_ApellidoCliente";
+            this.txt_ApellidoCliente.Size = new System.Drawing.Size(162, 20);
+            this.txt_ApellidoCliente.TabIndex = 2;
+            // 
+            // txt_DocCliente
+            // 
+            this.txt_DocCliente.Location = new System.Drawing.Point(141, 82);
+            this.txt_DocCliente.Name = "txt_DocCliente";
+            this.txt_DocCliente.Size = new System.Drawing.Size(162, 20);
+            this.txt_DocCliente.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Location = new System.Drawing.Point(60, 85);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(62, 13);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Documento";
+            // 
+            // btn_EliminarCliente
+            // 
+            this.btn_EliminarCliente.BackColor = System.Drawing.Color.Transparent;
+            this.btn_EliminarCliente.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_EliminarCliente.BackgroundImage")));
+            this.btn_EliminarCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_EliminarCliente.Location = new System.Drawing.Point(153, 374);
+            this.btn_EliminarCliente.Name = "btn_EliminarCliente";
+            this.btn_EliminarCliente.Size = new System.Drawing.Size(59, 50);
+            this.btn_EliminarCliente.TabIndex = 7;
+            this.btn_EliminarCliente.TabStop = false;
+            // 
+            // btn_SalirClientes
+            // 
+            this.btn_SalirClientes.BackColor = System.Drawing.Color.Transparent;
+            this.btn_SalirClientes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_SalirClientes.BackgroundImage")));
+            this.btn_SalirClientes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_SalirClientes.Location = new System.Drawing.Point(625, 374);
+            this.btn_SalirClientes.Name = "btn_SalirClientes";
+            this.btn_SalirClientes.Size = new System.Drawing.Size(59, 50);
+            this.btn_SalirClientes.TabIndex = 8;
+            this.btn_SalirClientes.TabStop = false;
+            this.btn_SalirClientes.Click += new System.EventHandler(this.btn_SalirClientes_Click);
+            // 
+            // btn_EditarCliente
+            // 
+            this.btn_EditarCliente.BackColor = System.Drawing.Color.Transparent;
+            this.btn_EditarCliente.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_EditarCliente.BackgroundImage")));
+            this.btn_EditarCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_EditarCliente.Location = new System.Drawing.Point(79, 374);
+            this.btn_EditarCliente.Name = "btn_EditarCliente";
+            this.btn_EditarCliente.Size = new System.Drawing.Size(59, 50);
+            this.btn_EditarCliente.TabIndex = 9;
+            this.btn_EditarCliente.TabStop = false;
+            // 
+            // btn_AgregarClientes
+            // 
+            this.btn_AgregarClientes.BackColor = System.Drawing.Color.Transparent;
+            this.btn_AgregarClientes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_AgregarClientes.BackgroundImage")));
+            this.btn_AgregarClientes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_AgregarClientes.Location = new System.Drawing.Point(12, 374);
+            this.btn_AgregarClientes.Name = "btn_AgregarClientes";
+            this.btn_AgregarClientes.Size = new System.Drawing.Size(59, 50);
+            this.btn_AgregarClientes.TabIndex = 10;
+            this.btn_AgregarClientes.TabStop = false;
             // 
             // ABM_Clientes
             // 
@@ -221,16 +222,16 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(688, 426);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btn_AgregarClientes);
+            this.Controls.Add(this.btn_EditarCliente);
+            this.Controls.Add(this.btn_SalirClientes);
+            this.Controls.Add(this.btn_EliminarCliente);
+            this.Controls.Add(this.Grid_Clientes);
+            this.Controls.Add(this.btn_ConsultarCliente);
+            this.Controls.Add(this.chk_TodosClientes);
+            this.Controls.Add(this.txt_DocCliente);
+            this.Controls.Add(this.txt_ApellidoCliente);
+            this.Controls.Add(this.txt_NombreCliente);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -238,11 +239,11 @@
             this.Name = "ABM_Clientes";
             this.Text = "ABM_Clientes";
             this.Load += new System.EventHandler(this.ABM_Clientes_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Grid_Clientes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_EliminarCliente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_SalirClientes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_EditarCliente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_AgregarClientes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -252,17 +253,17 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_NombreCliente;
+        private System.Windows.Forms.CheckBox chk_TodosClientes;
+        private System.Windows.Forms.Button btn_ConsultarCliente;
+        private System.Windows.Forms.DataGridView Grid_Clientes;
+        private System.Windows.Forms.TextBox txt_ApellidoCliente;
+        private System.Windows.Forms.TextBox txt_DocCliente;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox btn_EliminarCliente;
+        private System.Windows.Forms.PictureBox btn_SalirClientes;
+        private System.Windows.Forms.PictureBox btn_EditarCliente;
+        private System.Windows.Forms.PictureBox btn_AgregarClientes;
         private System.Windows.Forms.DataGridViewTextBoxColumn Doc;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Apellido;

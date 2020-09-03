@@ -76,6 +76,18 @@
     <Compile Include="Formularios\Clientes\Alta_Clientes.Designer.cs">
       <DependentUpon>Alta_Clientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Empleados\ABM_Empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Empleados\ABM_Empleados.Designer.cs">
+      <DependentUpon>ABM_Empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Empleados\Alta_Empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Empleados\Alta_Empleado.Designer.cs">
+      <DependentUpon>Alta_Empleado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Frm_Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +152,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Clientes\Alta_Clientes.resx">
       <DependentUpon>Alta_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Empleados\ABM_Empleados.resx">
+      <DependentUpon>ABM_Empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Empleados\Alta_Empleado.resx">
+      <DependentUpon>Alta_Empleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Frm_Login.resx">
       <DependentUpon>Frm_Login.cs</DependentUpon>

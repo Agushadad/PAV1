@@ -26,5 +26,10 @@ namespace WindowsFormsApp2
         {
 
         }
+
+        private void btn_SalirClientes_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -29,84 +29,84 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ABM_Catalogos));
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btn_AgregarCatalogo = new System.Windows.Forms.PictureBox();
+            this.btn_EditarCatalogo = new System.Windows.Forms.PictureBox();
+            this.btn_SalirCatalogo = new System.Windows.Forms.PictureBox();
+            this.btn_EliminarCatalogo = new System.Windows.Forms.PictureBox();
+            this.Grid_Catalogos = new System.Windows.Forms.DataGridView();
             this.Doc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.chk_TodosCatalogos = new System.Windows.Forms.CheckBox();
+            this.txt_IdCatalogoPlanta = new System.Windows.Forms.TextBox();
+            this.txt_IdCatalogo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_AgregarCatalogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_EditarCatalogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_SalirCatalogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_EliminarCatalogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Grid_Catalogos)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox4
+            // btn_AgregarCatalogo
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(8, 311);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(48, 41);
-            this.pictureBox4.TabIndex = 23;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            this.btn_AgregarCatalogo.BackColor = System.Drawing.Color.Transparent;
+            this.btn_AgregarCatalogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_AgregarCatalogo.BackgroundImage")));
+            this.btn_AgregarCatalogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_AgregarCatalogo.Location = new System.Drawing.Point(8, 311);
+            this.btn_AgregarCatalogo.Name = "btn_AgregarCatalogo";
+            this.btn_AgregarCatalogo.Size = new System.Drawing.Size(48, 41);
+            this.btn_AgregarCatalogo.TabIndex = 23;
+            this.btn_AgregarCatalogo.TabStop = false;
+            this.btn_AgregarCatalogo.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
-            // pictureBox3
+            // btn_EditarCatalogo
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(75, 311);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(48, 41);
-            this.pictureBox3.TabIndex = 22;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.btn_EditarCatalogo.BackColor = System.Drawing.Color.Transparent;
+            this.btn_EditarCatalogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_EditarCatalogo.BackgroundImage")));
+            this.btn_EditarCatalogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_EditarCatalogo.Location = new System.Drawing.Point(75, 311);
+            this.btn_EditarCatalogo.Name = "btn_EditarCatalogo";
+            this.btn_EditarCatalogo.Size = new System.Drawing.Size(48, 41);
+            this.btn_EditarCatalogo.TabIndex = 22;
+            this.btn_EditarCatalogo.TabStop = false;
+            this.btn_EditarCatalogo.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
-            // pictureBox2
+            // btn_SalirCatalogo
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(303, 311);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(48, 41);
-            this.pictureBox2.TabIndex = 21;
-            this.pictureBox2.TabStop = false;
+            this.btn_SalirCatalogo.BackColor = System.Drawing.Color.Transparent;
+            this.btn_SalirCatalogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_SalirCatalogo.BackgroundImage")));
+            this.btn_SalirCatalogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_SalirCatalogo.Location = new System.Drawing.Point(303, 311);
+            this.btn_SalirCatalogo.Name = "btn_SalirCatalogo";
+            this.btn_SalirCatalogo.Size = new System.Drawing.Size(48, 41);
+            this.btn_SalirCatalogo.TabIndex = 21;
+            this.btn_SalirCatalogo.TabStop = false;
             // 
-            // pictureBox1
+            // btn_EliminarCatalogo
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(149, 311);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 41);
-            this.pictureBox1.TabIndex = 20;
-            this.pictureBox1.TabStop = false;
+            this.btn_EliminarCatalogo.BackColor = System.Drawing.Color.Transparent;
+            this.btn_EliminarCatalogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_EliminarCatalogo.BackgroundImage")));
+            this.btn_EliminarCatalogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_EliminarCatalogo.Location = new System.Drawing.Point(149, 311);
+            this.btn_EliminarCatalogo.Name = "btn_EliminarCatalogo";
+            this.btn_EliminarCatalogo.Size = new System.Drawing.Size(48, 41);
+            this.btn_EliminarCatalogo.TabIndex = 20;
+            this.btn_EliminarCatalogo.TabStop = false;
             // 
-            // dataGridView1
+            // Grid_Catalogos
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Grid_Catalogos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Grid_Catalogos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Doc,
             this.Nombre,
             this.Apellido});
-            this.dataGridView1.Location = new System.Drawing.Point(11, 88);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(340, 212);
-            this.dataGridView1.TabIndex = 19;
+            this.Grid_Catalogos.Location = new System.Drawing.Point(11, 88);
+            this.Grid_Catalogos.Name = "Grid_Catalogos";
+            this.Grid_Catalogos.Size = new System.Drawing.Size(340, 212);
+            this.Grid_Catalogos.TabIndex = 4;
             // 
             // Doc
             // 
@@ -128,34 +128,34 @@
             this.button1.Location = new System.Drawing.Point(170, 39);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 18;
+            this.button1.TabIndex = 0;
             this.button1.Text = "Consultar";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // chk_TodosCatalogos
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox1.Location = new System.Drawing.Point(93, 65);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(56, 17);
-            this.checkBox1.TabIndex = 17;
-            this.checkBox1.Text = "Todos";
-            this.checkBox1.UseVisualStyleBackColor = false;
+            this.chk_TodosCatalogos.AutoSize = true;
+            this.chk_TodosCatalogos.BackColor = System.Drawing.Color.Transparent;
+            this.chk_TodosCatalogos.Location = new System.Drawing.Point(93, 65);
+            this.chk_TodosCatalogos.Name = "chk_TodosCatalogos";
+            this.chk_TodosCatalogos.Size = new System.Drawing.Size(56, 17);
+            this.chk_TodosCatalogos.TabIndex = 3;
+            this.chk_TodosCatalogos.Text = "Todos";
+            this.chk_TodosCatalogos.UseVisualStyleBackColor = false;
             // 
-            // textBox2
+            // txt_IdCatalogoPlanta
             // 
-            this.textBox2.Location = new System.Drawing.Point(93, 39);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(71, 20);
-            this.textBox2.TabIndex = 15;
+            this.txt_IdCatalogoPlanta.Location = new System.Drawing.Point(93, 39);
+            this.txt_IdCatalogoPlanta.Name = "txt_IdCatalogoPlanta";
+            this.txt_IdCatalogoPlanta.Size = new System.Drawing.Size(71, 20);
+            this.txt_IdCatalogoPlanta.TabIndex = 2;
             // 
-            // textBox1
+            // txt_IdCatalogo
             // 
-            this.textBox1.Location = new System.Drawing.Point(93, 9);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(71, 20);
-            this.textBox1.TabIndex = 16;
+            this.txt_IdCatalogo.Location = new System.Drawing.Point(93, 9);
+            this.txt_IdCatalogo.Name = "txt_IdCatalogo";
+            this.txt_IdCatalogo.Size = new System.Drawing.Size(71, 20);
+            this.txt_IdCatalogo.TabIndex = 1;
             // 
             // label2
             // 
@@ -164,7 +164,7 @@
             this.label2.Location = new System.Drawing.Point(12, 39);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 13);
-            this.label2.TabIndex = 12;
+            this.label2.TabIndex = 0;
             this.label2.Text = "ID Planta";
             // 
             // label1
@@ -174,7 +174,7 @@
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 13);
-            this.label1.TabIndex = 13;
+            this.label1.TabIndex = 0;
             this.label1.Text = "ID Catalogo";
             // 
             // ABM_Catalogos
@@ -182,24 +182,24 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(360, 359);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btn_AgregarCatalogo);
+            this.Controls.Add(this.btn_EditarCatalogo);
+            this.Controls.Add(this.btn_SalirCatalogo);
+            this.Controls.Add(this.btn_EliminarCatalogo);
+            this.Controls.Add(this.Grid_Catalogos);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.chk_TodosCatalogos);
+            this.Controls.Add(this.txt_IdCatalogoPlanta);
+            this.Controls.Add(this.txt_IdCatalogo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "ABM_Catalogos";
             this.Text = "ABM_Catalogos";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_AgregarCatalogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_EditarCatalogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_SalirCatalogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_EliminarCatalogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Grid_Catalogos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -207,15 +207,15 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.PictureBox btn_AgregarCatalogo;
+        private System.Windows.Forms.PictureBox btn_EditarCatalogo;
+        private System.Windows.Forms.PictureBox btn_SalirCatalogo;
+        private System.Windows.Forms.PictureBox btn_EliminarCatalogo;
+        private System.Windows.Forms.DataGridView Grid_Catalogos;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.CheckBox chk_TodosCatalogos;
+        private System.Windows.Forms.TextBox txt_IdCatalogoPlanta;
+        private System.Windows.Forms.TextBox txt_IdCatalogo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Doc;
