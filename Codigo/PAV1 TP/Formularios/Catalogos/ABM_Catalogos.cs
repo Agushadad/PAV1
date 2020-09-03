@@ -16,5 +16,17 @@ namespace PAV1_TP.Formularios.Catalogos
         {
             InitializeComponent();
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Form AltaCatalogo = new Alta_Catalogos();
+            AltaCatalogo.Show();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Form ModifCatalogo = new Modificacion_Catalogos();
+            ModifCatalogo.Show();
+        }
     }
 }

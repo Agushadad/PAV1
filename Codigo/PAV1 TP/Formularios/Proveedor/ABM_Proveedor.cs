@@ -16,5 +16,17 @@ namespace PAV1_TP.Formularios.Proveedor
         {
             InitializeComponent();
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Form AltaProveedor = new Alta_Proveedor();
+            AltaProveedor.Show();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Form ModifProveedor = new Modificacion_Proveedor();
+            ModifProveedor.Show();
+        }
     }
 }

@@ -34,6 +34,10 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Doc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -42,10 +46,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.Doc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -63,6 +63,7 @@
             this.pictureBox4.Size = new System.Drawing.Size(59, 50);
             this.pictureBox4.TabIndex = 23;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox3
             // 
@@ -74,6 +75,7 @@
             this.pictureBox3.Size = new System.Drawing.Size(59, 50);
             this.pictureBox3.TabIndex = 22;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox2
             // 
@@ -109,6 +111,30 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(659, 212);
             this.dataGridView1.TabIndex = 19;
+            // 
+            // Doc
+            // 
+            this.Doc.HeaderText = "ID";
+            this.Doc.Name = "Doc";
+            this.Doc.Width = 50;
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            this.Nombre.Width = 120;
+            // 
+            // Tipo
+            // 
+            this.Tipo.HeaderText = "Telefono";
+            this.Tipo.Name = "Tipo";
+            this.Tipo.Width = 150;
+            // 
+            // Apellido
+            // 
+            this.Apellido.HeaderText = "Razon social";
+            this.Apellido.Name = "Apellido";
+            this.Apellido.Width = 300;
             // 
             // button1
             // 
@@ -180,30 +206,6 @@
             this.label1.Size = new System.Drawing.Size(18, 13);
             this.label1.TabIndex = 13;
             this.label1.Text = "ID";
-            // 
-            // Doc
-            // 
-            this.Doc.HeaderText = "ID";
-            this.Doc.Name = "Doc";
-            this.Doc.Width = 50;
-            // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            this.Nombre.Width = 120;
-            // 
-            // Tipo
-            // 
-            this.Tipo.HeaderText = "Telefono";
-            this.Tipo.Name = "Tipo";
-            this.Tipo.Width = 150;
-            // 
-            // Apellido
-            // 
-            this.Apellido.HeaderText = "Razon social";
-            this.Apellido.Name = "Apellido";
-            this.Apellido.Width = 300;
             // 
             // ABM_Proveedor
             // 
