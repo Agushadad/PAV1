@@ -34,15 +34,15 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Doc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.Doc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -60,6 +60,7 @@
             this.pictureBox4.Size = new System.Drawing.Size(48, 41);
             this.pictureBox4.TabIndex = 23;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox3
             // 
@@ -71,6 +72,7 @@
             this.pictureBox3.Size = new System.Drawing.Size(48, 41);
             this.pictureBox3.TabIndex = 22;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox2
             // 
@@ -105,6 +107,21 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(340, 212);
             this.dataGridView1.TabIndex = 19;
+            // 
+            // Doc
+            // 
+            this.Doc.HeaderText = "ID Catalogo";
+            this.Doc.Name = "Doc";
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "ID Planta";
+            this.Nombre.Name = "Nombre";
+            // 
+            // Apellido
+            // 
+            this.Apellido.HeaderText = "Puntos necesarios";
+            this.Apellido.Name = "Apellido";
             // 
             // button1
             // 
@@ -159,21 +176,6 @@
             this.label1.Size = new System.Drawing.Size(63, 13);
             this.label1.TabIndex = 13;
             this.label1.Text = "ID Catalogo";
-            // 
-            // Doc
-            // 
-            this.Doc.HeaderText = "ID Catalogo";
-            this.Doc.Name = "Doc";
-            // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "ID Planta";
-            this.Nombre.Name = "Nombre";
-            // 
-            // Apellido
-            // 
-            this.Apellido.HeaderText = "Puntos necesarios";
-            this.Apellido.Name = "Apellido";
             // 
             // ABM_Catalogos
             // 
