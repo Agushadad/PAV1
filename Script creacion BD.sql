@@ -20,14 +20,14 @@ CREATE TABLE TipoPlanta (ID INT,
 
 CREATE TABLE TipoProducto (ID INT,
 							Nombre VARCHAR(30),
-							Descripcion VARCHAR(30),
+							Descripcion VARCHAR(50),
 							Estado INT
 							CONSTRAINT Estado NOT NULL,
 							CONSTRAINT id_tipoProducto_pk PRIMARY KEY (ID),
 							CONSTRAINT estado_tipo_producto_fk FOREIGN KEY (Estado) REFERENCES Estado(ID))
 
 CREATE TABLE Plantas(Codigo INT, 
-					NombreCientifico VARCHAR(20), 
+					NombreCientifico VARCHAR(50), 
 					NombreComun VARCHAR(20), 
 					Tipo VARCHAR(20), 
 					Precio DECIMAL
@@ -39,7 +39,7 @@ CREATE TABLE Plantas(Codigo INT,
 					CONSTRAINT estado_planta_fk FOREIGN KEY (Estado) REFERENCES Estado(ID))
 
 CREATE TABLE Producto(Codigo INT, 
-					Nombre VARCHAR(20), 
+					Nombre VARCHAR(50), 
 					Tipo VARCHAR(20), 
 					Stock INT, 
 					Costo DECIMAL
@@ -142,7 +142,7 @@ CREATE TABLE Composicion (Cod_Prod_Compuesto INT,
 
 CREATE TABLE Catalogo (ID INT,
 						Id_Planta INT,
-						NombreCientifico VARCHAR(20),
+						NombreCientifico VARCHAR(50),
 						Puntos_Necesarios INT,
 						Estado INT
 						CONSTRAINT Estado NOT NULL,
@@ -162,7 +162,7 @@ CREATE TABLE Canje (ID INT,
 					NroDoc VARCHAR(30),
 					Id_Catalogo INT,
 					Id_Planta INT,
-					NombreCientifico VARCHAR(20),
+					NombreCientifico VARCHAR(50),
 					Fecha DATE,
 					Puntos_a_Restar INT,
 					CONSTRAINT canje_pk PRIMARY KEY (ID, TipoDoc, NroDoc, Id_Catalogo, Id_Planta, NombreCientifico,Fecha),
@@ -189,7 +189,6 @@ INSERT INTO TipoProducto VALUES (1,'Accesorio','Piezas parar adornar las plantas
 								(2, 'Tierra', 'Distintos tipos de tierras',1),
 								(3, 'Fertilizante','Distintos tipos de fertilizantes',1)
 
-INSERT INTO Composicion VALUES (1,2,1,1)
 
 INSERT INTO Producto VALUES (1,'Maceta',1,200,40,80,NULL,1),
 							(2,'Tierra negra',2,100,20,30,NULL,1),
@@ -197,7 +196,22 @@ INSERT INTO Producto VALUES (1,'Maceta',1,200,40,80,NULL,1),
 							(4, 'Maceta con tierra negra',1,20,60,100,1-2,1),
 							(5, 'Abono universal',3,70,65,100,NULL,1)
 
+INSERT INTO Composicion VALUES (1,2,1,1)
+
 INSERT INTO Empleado VALUES (1,'Agustin','Hadad','3512495352','Vigo',2190,3,1,'123',1),
 							(2,'Facundo','Chiarini','3515467890','Maipu',194,4,3,'321',1),
 							(3,'Gio','Marandino','3515352351','Nuñez',2190,2,2,'456',1)
-							
+
+INSERT INTO Cliente VALUES (1,'42543887','Juan','Paraje', 'La coruña',203, 3,5,'3514698752','juan@gmail.com',1),
+						   (3,'42543883','Milagros','Barnasthpol', 'Agustin Garzon',86, 4,1,'3514624752','milagros@gmail.com',1),
+						   (2,'42543821','Maria','Kuttel', 'Buenos Aires',600, 2,1,'3514694752','Maria@gmail.com',1)
+
+INSERT INTO Proveedor VALUES (1,'TerraFertil','Olmos',194,4,1,'4271421','Venta al x mayor de tierra',1),
+							 (2,'AgroFy','Revolucion de mayo',300,3,2,'4277821','Venta al x mayor de fertilizantes',1),
+							 (3,'Emporio de la maceta','Av Rafael Nuñez',500,5,3,'4271746','Venta al x mayor de macetas',1)
+
+INSERT INTO Catalogo VALUES (1,1,'ADIANTUM CAPILLUS-VENERIS',200,1),
+							(1,2,'Ocimum basilicum',200,1),
+							(1,3,'Bellis perennis',200,1),
+							(2,4,'Asplenium nidus',250,1),
+							(2,5,'Saccharum officinarum',250,1)
