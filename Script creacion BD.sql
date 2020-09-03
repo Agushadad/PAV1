@@ -35,7 +35,7 @@ CREATE TABLE Plantas(Codigo INT,
 					Stock INT,
 					Estado INT
 					CONSTRAINT Estado NOT NULL,
-					CONSTRAINT id_planta_nombre_pk PRIMARY KEY (Codigo, NombreCientifico),
+					CONSTRAINT id_planta_pk PRIMARY KEY (Codigo),
 					CONSTRAINT estado_planta_fk FOREIGN KEY (Estado) REFERENCES Estado(ID))
 
 CREATE TABLE Producto(Codigo INT, 
@@ -118,6 +118,7 @@ CREATE TABLE Factura (Tipo_Factura VARCHAR(15),
 					  CONSTRAINT NroDoc NOT NULL,
 					  Fecha DATE,
 					  Id_Empleado INT,
+					  Monto INT,
 					  CONSTRAINT id_factura_pk PRIMARY KEY (Tipo_Factura, Nro_Factura),
 					  CONSTRAINT doc_factura_fk FOREIGN KEY (TipoDoc, NroDoc) REFERENCES Cliente(TipoDoc, NroDoc))
 
@@ -142,12 +143,11 @@ CREATE TABLE Composicion (Cod_Prod_Compuesto INT,
 
 CREATE TABLE Catalogo (ID INT,
 						Id_Planta INT,
-						NombreCientifico VARCHAR(50),
 						Puntos_Necesarios INT,
 						Estado INT
 						CONSTRAINT Estado NOT NULL,
-						CONSTRAINT id_Catalogo_pk PRIMARY KEY (ID, Id_Planta, NombreCientifico),
-						CONSTRAINT id_planta_catalogo_fk FOREIGN KEY (Id_Planta, NombreCientifico) REFERENCES Plantas(Codigo,NombreCientifico),
+						CONSTRAINT id_Catalogo_pk PRIMARY KEY (ID, Id_Planta),
+						CONSTRAINT id_planta_catalogo_fk FOREIGN KEY (Id_Planta) REFERENCES Plantas(Codigo),
 						CONSTRAINT estado_catalogo_fk FOREIGN KEY (Estado) REFERENCES Estado(ID))
 
 CREATE TABLE DetalleFactura (Tipo_Factura VARCHAR(15),
@@ -162,12 +162,11 @@ CREATE TABLE Canje (ID INT,
 					NroDoc VARCHAR(30),
 					Id_Catalogo INT,
 					Id_Planta INT,
-					NombreCientifico VARCHAR(50),
 					Fecha DATE,
 					Puntos_a_Restar INT,
-					CONSTRAINT canje_pk PRIMARY KEY (ID, TipoDoc, NroDoc, Id_Catalogo, Id_Planta, NombreCientifico,Fecha),
+					CONSTRAINT canje_pk PRIMARY KEY (ID, TipoDoc, NroDoc, Id_Catalogo, Id_Planta,Fecha),
 					CONSTRAINT canje_cliente_fk FOREIGN KEY (TipoDoc, NroDoc) REFERENCES Cliente(TipoDoc, NroDoc),
-					CONSTRAINT canje_productos_fk FOREIGN KEY (Id_Catalogo, Id_Planta, NombreCientifico) REFERENCES Catalogo(ID, Id_Planta, NombreCientifico)) 
+					CONSTRAINT canje_productos_fk FOREIGN KEY (Id_Catalogo, Id_Planta) REFERENCES Catalogo(ID, Id_Planta)) 
 
 INSERT INTO Estado VALUES (1, 'Activo'), (2, 'Inactivo')					    
 
@@ -210,8 +209,8 @@ INSERT INTO Proveedor VALUES (1,'TerraFertil','Olmos',194,4,1,'4271421','Venta a
 							 (2,'AgroFy','Revolucion de mayo',300,3,2,'4277821','Venta al x mayor de fertilizantes',1),
 							 (3,'Emporio de la maceta','Av Rafael Nuñez',500,5,3,'4271746','Venta al x mayor de macetas',1)
 
-INSERT INTO Catalogo VALUES (1,1,'ADIANTUM CAPILLUS-VENERIS',200,1),
-							(1,2,'Ocimum basilicum',200,1),
-							(1,3,'Bellis perennis',200,1),
-							(2,4,'Asplenium nidus',250,1),
-							(2,5,'Saccharum officinarum',250,1)
+INSERT INTO Catalogo VALUES (1,1,200,1),
+							(1,2,200,1),
+							(1,3,200,1),
+							(2,4,250,1),
+							(2,5,250,1)
