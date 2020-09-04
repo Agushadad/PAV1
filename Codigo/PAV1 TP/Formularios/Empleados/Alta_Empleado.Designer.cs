@@ -30,19 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Alta_Empleado));
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_CancelarEmpleado = new System.Windows.Forms.Button();
             this.btn_RegistrarEmpleado = new System.Windows.Forms.Button();
@@ -50,16 +47,9 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.txt_PisoEmpleado = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txt_DtoEmpleado = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.cmb_PuestoEmpleado = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // comboBox2
@@ -70,15 +60,6 @@
             this.comboBox2.Size = new System.Drawing.Size(191, 21);
             this.comboBox2.TabIndex = 56;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(407, 105);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(57, 21);
-            this.comboBox1.TabIndex = 55;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -140,18 +121,6 @@
             this.label10.Text = "Calle";
             this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(354, 246);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(47, 16);
-            this.label13.TabIndex = 48;
-            this.label13.Text = "Email";
-            this.label13.Click += new System.EventHandler(this.label13_Click);
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -205,24 +174,12 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(470, 108);
+            this.label7.Location = new System.Drawing.Point(380, 107);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(56, 16);
+            this.label7.Size = new System.Drawing.Size(21, 16);
             this.label7.TabIndex = 44;
-            this.label7.Text = "N° Doc";
+            this.label7.Text = "Id";
             this.label7.Click += new System.EventHandler(this.label7_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(325, 108);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(76, 16);
-            this.label6.TabIndex = 43;
-            this.label6.Text = "Tipo Doc.";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label1
             // 
@@ -266,7 +223,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(532, 106);
+            this.textBox4.Location = new System.Drawing.Point(418, 107);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(84, 20);
             this.textBox4.TabIndex = 37;
@@ -287,14 +244,6 @@
             this.textBox6.Size = new System.Drawing.Size(191, 20);
             this.textBox6.TabIndex = 35;
             this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(407, 247);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(209, 20);
-            this.textBox9.TabIndex = 34;
-            this.textBox9.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
             // 
             // textBox8
             // 
@@ -320,66 +269,6 @@
             this.comboBox3.Size = new System.Drawing.Size(191, 21);
             this.comboBox3.TabIndex = 57;
             // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(65, 354);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(39, 16);
-            this.label14.TabIndex = 50;
-            this.label14.Text = "Piso";
-            this.label14.Click += new System.EventHandler(this.label11_Click);
-            // 
-            // txt_PisoEmpleado
-            // 
-            this.txt_PisoEmpleado.Location = new System.Drawing.Point(110, 353);
-            this.txt_PisoEmpleado.Name = "txt_PisoEmpleado";
-            this.txt_PisoEmpleado.Size = new System.Drawing.Size(62, 20);
-            this.txt_PisoEmpleado.TabIndex = 36;
-            this.txt_PisoEmpleado.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(201, 354);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(32, 16);
-            this.label15.TabIndex = 50;
-            this.label15.Text = "Dto";
-            this.label15.Click += new System.EventHandler(this.label11_Click);
-            // 
-            // txt_DtoEmpleado
-            // 
-            this.txt_DtoEmpleado.Location = new System.Drawing.Point(239, 354);
-            this.txt_DtoEmpleado.Name = "txt_DtoEmpleado";
-            this.txt_DtoEmpleado.Size = new System.Drawing.Size(62, 20);
-            this.txt_DtoEmpleado.TabIndex = 36;
-            this.txt_DtoEmpleado.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(345, 138);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(56, 16);
-            this.label16.TabIndex = 43;
-            this.label16.Text = "Puesto";
-            this.label16.Click += new System.EventHandler(this.label6_Click);
-            // 
-            // cmb_PuestoEmpleado
-            // 
-            this.cmb_PuestoEmpleado.FormattingEnabled = true;
-            this.cmb_PuestoEmpleado.Location = new System.Drawing.Point(407, 137);
-            this.cmb_PuestoEmpleado.Name = "cmb_PuestoEmpleado";
-            this.cmb_PuestoEmpleado.Size = new System.Drawing.Size(209, 21);
-            this.cmb_PuestoEmpleado.TabIndex = 58;
-            // 
             // Alta_Empleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -387,35 +276,25 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(634, 393);
-            this.Controls.Add(this.cmb_PuestoEmpleado);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label14);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.label13);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_CancelarEmpleado);
             this.Controls.Add(this.btn_RegistrarEmpleado);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.txt_DtoEmpleado);
-            this.Controls.Add(this.txt_PisoEmpleado);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox9);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox1);
             this.Name = "Alta_Empleado";
@@ -428,19 +307,16 @@
         #endregion
 
         private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_CancelarEmpleado;
         private System.Windows.Forms.Button btn_RegistrarEmpleado;
@@ -448,15 +324,8 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox txt_PisoEmpleado;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox txt_DtoEmpleado;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.ComboBox cmb_PuestoEmpleado;
     }
 }
