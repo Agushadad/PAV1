@@ -29,88 +29,88 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ABM_Proveedor));
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btn_AgregarProveedor = new System.Windows.Forms.PictureBox();
+            this.btn_ModifProveedor = new System.Windows.Forms.PictureBox();
+            this.btn_CancelarProveedor = new System.Windows.Forms.PictureBox();
+            this.btn_EliminarProveedor = new System.Windows.Forms.PictureBox();
+            this.Grid_Proveedor = new System.Windows.Forms.DataGridView();
             this.Doc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btn_ConsultarProveedor = new System.Windows.Forms.Button();
+            this.chk_TodosProveedor = new System.Windows.Forms.CheckBox();
+            this.rxt_RSProveedor = new System.Windows.Forms.TextBox();
+            this.txt_NombreProveedor = new System.Windows.Forms.TextBox();
+            this.txt_IdProveedor = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_AgregarProveedor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_ModifProveedor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_CancelarProveedor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_EliminarProveedor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Grid_Proveedor)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox4
+            // btn_AgregarProveedor
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(3, 347);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(59, 50);
-            this.pictureBox4.TabIndex = 23;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            this.btn_AgregarProveedor.BackColor = System.Drawing.Color.Transparent;
+            this.btn_AgregarProveedor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_AgregarProveedor.BackgroundImage")));
+            this.btn_AgregarProveedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_AgregarProveedor.Location = new System.Drawing.Point(3, 347);
+            this.btn_AgregarProveedor.Name = "btn_AgregarProveedor";
+            this.btn_AgregarProveedor.Size = new System.Drawing.Size(59, 50);
+            this.btn_AgregarProveedor.TabIndex = 23;
+            this.btn_AgregarProveedor.TabStop = false;
+            this.btn_AgregarProveedor.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
-            // pictureBox3
+            // btn_ModifProveedor
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(70, 347);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(59, 50);
-            this.pictureBox3.TabIndex = 22;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.btn_ModifProveedor.BackColor = System.Drawing.Color.Transparent;
+            this.btn_ModifProveedor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_ModifProveedor.BackgroundImage")));
+            this.btn_ModifProveedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_ModifProveedor.Location = new System.Drawing.Point(70, 347);
+            this.btn_ModifProveedor.Name = "btn_ModifProveedor";
+            this.btn_ModifProveedor.Size = new System.Drawing.Size(59, 50);
+            this.btn_ModifProveedor.TabIndex = 22;
+            this.btn_ModifProveedor.TabStop = false;
+            this.btn_ModifProveedor.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
-            // pictureBox2
+            // btn_CancelarProveedor
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(610, 348);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(59, 50);
-            this.pictureBox2.TabIndex = 21;
-            this.pictureBox2.TabStop = false;
+            this.btn_CancelarProveedor.BackColor = System.Drawing.Color.Transparent;
+            this.btn_CancelarProveedor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_CancelarProveedor.BackgroundImage")));
+            this.btn_CancelarProveedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_CancelarProveedor.Location = new System.Drawing.Point(610, 348);
+            this.btn_CancelarProveedor.Name = "btn_CancelarProveedor";
+            this.btn_CancelarProveedor.Size = new System.Drawing.Size(59, 50);
+            this.btn_CancelarProveedor.TabIndex = 21;
+            this.btn_CancelarProveedor.TabStop = false;
             // 
-            // pictureBox1
+            // btn_EliminarProveedor
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(144, 347);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(59, 50);
-            this.pictureBox1.TabIndex = 20;
-            this.pictureBox1.TabStop = false;
+            this.btn_EliminarProveedor.BackColor = System.Drawing.Color.Transparent;
+            this.btn_EliminarProveedor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_EliminarProveedor.BackgroundImage")));
+            this.btn_EliminarProveedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_EliminarProveedor.Location = new System.Drawing.Point(144, 347);
+            this.btn_EliminarProveedor.Name = "btn_EliminarProveedor";
+            this.btn_EliminarProveedor.Size = new System.Drawing.Size(59, 50);
+            this.btn_EliminarProveedor.TabIndex = 20;
+            this.btn_EliminarProveedor.TabStop = false;
             // 
-            // dataGridView1
+            // Grid_Proveedor
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Grid_Proveedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Grid_Proveedor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Doc,
             this.Nombre,
             this.Tipo,
             this.Apellido});
-            this.dataGridView1.Location = new System.Drawing.Point(3, 116);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(659, 212);
-            this.dataGridView1.TabIndex = 19;
+            this.Grid_Proveedor.Location = new System.Drawing.Point(3, 116);
+            this.Grid_Proveedor.Name = "Grid_Proveedor";
+            this.Grid_Proveedor.Size = new System.Drawing.Size(659, 212);
+            this.Grid_Proveedor.TabIndex = 6;
             // 
             // Doc
             // 
@@ -136,46 +136,47 @@
             this.Apellido.Name = "Apellido";
             this.Apellido.Width = 300;
             // 
-            // button1
+            // btn_ConsultarProveedor
             // 
-            this.button1.Location = new System.Drawing.Point(300, 67);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "Consultar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_ConsultarProveedor.Location = new System.Drawing.Point(300, 67);
+            this.btn_ConsultarProveedor.Name = "btn_ConsultarProveedor";
+            this.btn_ConsultarProveedor.Size = new System.Drawing.Size(75, 23);
+            this.btn_ConsultarProveedor.TabIndex = 5;
+            this.btn_ConsultarProveedor.Text = "Consultar";
+            this.btn_ConsultarProveedor.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // chk_TodosProveedor
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox1.Location = new System.Drawing.Point(132, 93);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(56, 17);
-            this.checkBox1.TabIndex = 17;
-            this.checkBox1.Text = "Todos";
-            this.checkBox1.UseVisualStyleBackColor = false;
+            this.chk_TodosProveedor.AutoSize = true;
+            this.chk_TodosProveedor.BackColor = System.Drawing.Color.Transparent;
+            this.chk_TodosProveedor.Location = new System.Drawing.Point(132, 93);
+            this.chk_TodosProveedor.Name = "chk_TodosProveedor";
+            this.chk_TodosProveedor.Size = new System.Drawing.Size(56, 17);
+            this.chk_TodosProveedor.TabIndex = 4;
+            this.chk_TodosProveedor.Text = "Todos";
+            this.chk_TodosProveedor.UseVisualStyleBackColor = false;
             // 
-            // textBox3
+            // rxt_RSProveedor
             // 
-            this.textBox3.Location = new System.Drawing.Point(132, 67);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(162, 20);
-            this.textBox3.TabIndex = 14;
+            this.rxt_RSProveedor.Location = new System.Drawing.Point(132, 67);
+            this.rxt_RSProveedor.Name = "rxt_RSProveedor";
+            this.rxt_RSProveedor.Size = new System.Drawing.Size(162, 20);
+            this.rxt_RSProveedor.TabIndex = 3;
             // 
-            // textBox2
+            // txt_NombreProveedor
             // 
-            this.textBox2.Location = new System.Drawing.Point(132, 41);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(162, 20);
-            this.textBox2.TabIndex = 15;
+            this.txt_NombreProveedor.Location = new System.Drawing.Point(132, 41);
+            this.txt_NombreProveedor.Name = "txt_NombreProveedor";
+            this.txt_NombreProveedor.Size = new System.Drawing.Size(162, 20);
+            this.txt_NombreProveedor.TabIndex = 2;
             // 
-            // textBox1
+            // txt_IdProveedor
             // 
-            this.textBox1.Location = new System.Drawing.Point(132, 11);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(56, 20);
-            this.textBox1.TabIndex = 16;
+            this.txt_IdProveedor.Location = new System.Drawing.Point(132, 11);
+            this.txt_IdProveedor.Name = "txt_IdProveedor";
+            this.txt_IdProveedor.Size = new System.Drawing.Size(56, 20);
+            this.txt_IdProveedor.TabIndex = 1;
+            this.txt_IdProveedor.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
             // 
@@ -184,7 +185,7 @@
             this.label3.Location = new System.Drawing.Point(51, 70);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(68, 13);
-            this.label3.TabIndex = 11;
+            this.label3.TabIndex = 0;
             this.label3.Text = "Razon social";
             // 
             // label2
@@ -194,7 +195,7 @@
             this.label2.Location = new System.Drawing.Point(51, 41);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
-            this.label2.TabIndex = 12;
+            this.label2.TabIndex = 0;
             this.label2.Text = "Nombre";
             // 
             // label1
@@ -204,7 +205,7 @@
             this.label1.Location = new System.Drawing.Point(51, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(18, 13);
-            this.label1.TabIndex = 13;
+            this.label1.TabIndex = 0;
             this.label1.Text = "ID";
             // 
             // ABM_Proveedor
@@ -214,16 +215,16 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(676, 404);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btn_AgregarProveedor);
+            this.Controls.Add(this.btn_ModifProveedor);
+            this.Controls.Add(this.btn_CancelarProveedor);
+            this.Controls.Add(this.btn_EliminarProveedor);
+            this.Controls.Add(this.Grid_Proveedor);
+            this.Controls.Add(this.btn_ConsultarProveedor);
+            this.Controls.Add(this.chk_TodosProveedor);
+            this.Controls.Add(this.rxt_RSProveedor);
+            this.Controls.Add(this.txt_NombreProveedor);
+            this.Controls.Add(this.txt_IdProveedor);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -232,11 +233,11 @@
             this.Name = "ABM_Proveedor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "ABM_Proveedor";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_AgregarProveedor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_ModifProveedor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_CancelarProveedor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_EliminarProveedor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Grid_Proveedor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -244,16 +245,16 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.PictureBox btn_AgregarProveedor;
+        private System.Windows.Forms.PictureBox btn_ModifProveedor;
+        private System.Windows.Forms.PictureBox btn_CancelarProveedor;
+        private System.Windows.Forms.PictureBox btn_EliminarProveedor;
+        private System.Windows.Forms.DataGridView Grid_Proveedor;
+        private System.Windows.Forms.Button btn_ConsultarProveedor;
+        private System.Windows.Forms.CheckBox chk_TodosProveedor;
+        private System.Windows.Forms.TextBox rxt_RSProveedor;
+        private System.Windows.Forms.TextBox txt_NombreProveedor;
+        private System.Windows.Forms.TextBox txt_IdProveedor;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

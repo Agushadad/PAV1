@@ -28,5 +28,10 @@ namespace PAV1_TP.Formularios.Proveedor
             Form ModifProveedor = new Modificacion_Proveedor();
             ModifProveedor.Show();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

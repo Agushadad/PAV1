@@ -34,6 +34,12 @@
             this.btn_SalirEmp = new System.Windows.Forms.PictureBox();
             this.btn_EliminarEmp = new System.Windows.Forms.PictureBox();
             this.Grid_Emp = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Puesto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Domicilio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_ConsultarEmp = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.txt_ApeEmp = new System.Windows.Forms.TextBox();
@@ -42,12 +48,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txt_IdEmp = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Puesto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Domicilio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.btn_AgregarEmp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_EditarEmp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_SalirEmp)).BeginInit();
@@ -112,78 +112,7 @@
             this.Grid_Emp.Location = new System.Drawing.Point(12, 116);
             this.Grid_Emp.Name = "Grid_Emp";
             this.Grid_Emp.Size = new System.Drawing.Size(701, 237);
-            this.Grid_Emp.TabIndex = 19;
-            // 
-            // btn_ConsultarEmp
-            // 
-            this.btn_ConsultarEmp.Location = new System.Drawing.Point(250, 63);
-            this.btn_ConsultarEmp.Name = "btn_ConsultarEmp";
-            this.btn_ConsultarEmp.Size = new System.Drawing.Size(75, 23);
-            this.btn_ConsultarEmp.TabIndex = 18;
-            this.btn_ConsultarEmp.Text = "Consultar";
-            this.btn_ConsultarEmp.UseVisualStyleBackColor = true;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox1.Location = new System.Drawing.Point(82, 89);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(56, 17);
-            this.checkBox1.TabIndex = 17;
-            this.checkBox1.Text = "Todos";
-            this.checkBox1.UseVisualStyleBackColor = false;
-            // 
-            // txt_ApeEmp
-            // 
-            this.txt_ApeEmp.Location = new System.Drawing.Point(82, 63);
-            this.txt_ApeEmp.Name = "txt_ApeEmp";
-            this.txt_ApeEmp.Size = new System.Drawing.Size(162, 20);
-            this.txt_ApeEmp.TabIndex = 15;
-            // 
-            // txt_NombreEmp
-            // 
-            this.txt_NombreEmp.Location = new System.Drawing.Point(82, 33);
-            this.txt_NombreEmp.Name = "txt_NombreEmp";
-            this.txt_NombreEmp.Size = new System.Drawing.Size(162, 20);
-            this.txt_NombreEmp.TabIndex = 16;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(12, 63);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "Apellido";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(12, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 13);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Nombre";
-            // 
-            // txt_IdEmp
-            // 
-            this.txt_IdEmp.Location = new System.Drawing.Point(79, 7);
-            this.txt_IdEmp.Name = "txt_IdEmp";
-            this.txt_IdEmp.Size = new System.Drawing.Size(59, 20);
-            this.txt_IdEmp.TabIndex = 25;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(12, 7);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(16, 13);
-            this.label3.TabIndex = 24;
-            this.label3.Text = "Id";
+            this.Grid_Emp.TabIndex = 0;
             // 
             // Id
             // 
@@ -219,6 +148,77 @@
             this.Tipo.HeaderText = "Telefono";
             this.Tipo.Name = "Tipo";
             this.Tipo.Width = 130;
+            // 
+            // btn_ConsultarEmp
+            // 
+            this.btn_ConsultarEmp.Location = new System.Drawing.Point(250, 63);
+            this.btn_ConsultarEmp.Name = "btn_ConsultarEmp";
+            this.btn_ConsultarEmp.Size = new System.Drawing.Size(75, 23);
+            this.btn_ConsultarEmp.TabIndex = 4;
+            this.btn_ConsultarEmp.Text = "Consultar";
+            this.btn_ConsultarEmp.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox1.Location = new System.Drawing.Point(82, 89);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(56, 17);
+            this.checkBox1.TabIndex = 5;
+            this.checkBox1.Text = "Todos";
+            this.checkBox1.UseVisualStyleBackColor = false;
+            // 
+            // txt_ApeEmp
+            // 
+            this.txt_ApeEmp.Location = new System.Drawing.Point(82, 63);
+            this.txt_ApeEmp.Name = "txt_ApeEmp";
+            this.txt_ApeEmp.Size = new System.Drawing.Size(162, 20);
+            this.txt_ApeEmp.TabIndex = 3;
+            // 
+            // txt_NombreEmp
+            // 
+            this.txt_NombreEmp.Location = new System.Drawing.Point(82, 33);
+            this.txt_NombreEmp.Name = "txt_NombreEmp";
+            this.txt_NombreEmp.Size = new System.Drawing.Size(162, 20);
+            this.txt_NombreEmp.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Location = new System.Drawing.Point(12, 63);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Apellido";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(12, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(44, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Nombre";
+            // 
+            // txt_IdEmp
+            // 
+            this.txt_IdEmp.Location = new System.Drawing.Point(79, 7);
+            this.txt_IdEmp.Name = "txt_IdEmp";
+            this.txt_IdEmp.Size = new System.Drawing.Size(59, 20);
+            this.txt_IdEmp.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Location = new System.Drawing.Point(12, 7);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(16, 13);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Id";
             // 
             // ABM_Empleados
             // 

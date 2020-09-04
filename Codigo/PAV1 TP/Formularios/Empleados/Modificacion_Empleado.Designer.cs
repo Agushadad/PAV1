@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Modificacion_Empleado));
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmb_LocalidadEmpleado = new System.Windows.Forms.ComboBox();
+            this.cmb_BarrioEmpleado = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,29 +44,29 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btn_CancelarEmpleado = new System.Windows.Forms.Button();
             this.btn_RegistrarEmpleado = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_NombreEmpleado = new System.Windows.Forms.TextBox();
+            this.txt_IdEmpleado = new System.Windows.Forms.TextBox();
+            this.txt_NCalleEmpleado = new System.Windows.Forms.TextBox();
+            this.txt_CalleEmpleado = new System.Windows.Forms.TextBox();
+            this.txt_TelefonoEmpleado = new System.Windows.Forms.TextBox();
+            this.txt_ApellidoEmpleado = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // comboBox3
+            // cmb_LocalidadEmpleado
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(119, 212);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(191, 21);
-            this.comboBox3.TabIndex = 78;
+            this.cmb_LocalidadEmpleado.FormattingEnabled = true;
+            this.cmb_LocalidadEmpleado.Location = new System.Drawing.Point(119, 212);
+            this.cmb_LocalidadEmpleado.Name = "cmb_LocalidadEmpleado";
+            this.cmb_LocalidadEmpleado.Size = new System.Drawing.Size(191, 21);
+            this.cmb_LocalidadEmpleado.TabIndex = 4;
             // 
-            // comboBox2
+            // cmb_BarrioEmpleado
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(119, 246);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(191, 21);
-            this.comboBox2.TabIndex = 77;
+            this.cmb_BarrioEmpleado.FormattingEnabled = true;
+            this.cmb_BarrioEmpleado.Location = new System.Drawing.Point(119, 246);
+            this.cmb_BarrioEmpleado.Name = "cmb_BarrioEmpleado";
+            this.cmb_BarrioEmpleado.Size = new System.Drawing.Size(191, 21);
+            this.cmb_BarrioEmpleado.TabIndex = 5;
             // 
             // label5
             // 
@@ -76,7 +76,7 @@
             this.label5.Location = new System.Drawing.Point(22, 175);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(141, 20);
-            this.label5.TabIndex = 76;
+            this.label5.TabIndex = 0;
             this.label5.Text = "Datos de Domicilio";
             // 
             // label4
@@ -87,7 +87,7 @@
             this.label4.Location = new System.Drawing.Point(22, 60);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(134, 20);
-            this.label4.TabIndex = 75;
+            this.label4.TabIndex = 0;
             this.label4.Text = "Datos personales";
             // 
             // label3
@@ -98,7 +98,7 @@
             this.label3.Location = new System.Drawing.Point(12, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(194, 24);
-            this.label3.TabIndex = 74;
+            this.label3.TabIndex = 0;
             this.label3.Text = "Modificar empleado";
             // 
             // label11
@@ -109,7 +109,7 @@
             this.label11.Location = new System.Drawing.Point(51, 320);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(64, 16);
-            this.label11.TabIndex = 72;
+            this.label11.TabIndex = 0;
             this.label11.Text = "N° Calle";
             // 
             // label10
@@ -120,7 +120,7 @@
             this.label10.Location = new System.Drawing.Point(69, 282);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(44, 16);
-            this.label10.TabIndex = 71;
+            this.label10.TabIndex = 0;
             this.label10.Text = "Calle";
             // 
             // label9
@@ -131,7 +131,7 @@
             this.label9.Location = new System.Drawing.Point(63, 247);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(50, 16);
-            this.label9.TabIndex = 70;
+            this.label9.TabIndex = 0;
             this.label9.Text = "Barrio";
             // 
             // label12
@@ -142,7 +142,7 @@
             this.label12.Location = new System.Drawing.Point(340, 215);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(70, 16);
-            this.label12.TabIndex = 69;
+            this.label12.TabIndex = 0;
             this.label12.Text = "Telefono";
             // 
             // label8
@@ -153,7 +153,7 @@
             this.label8.Location = new System.Drawing.Point(36, 213);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(77, 16);
-            this.label8.TabIndex = 68;
+            this.label8.TabIndex = 0;
             this.label8.Text = "Localidad";
             // 
             // label2
@@ -164,7 +164,7 @@
             this.label2.Location = new System.Drawing.Point(49, 141);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(66, 16);
-            this.label2.TabIndex = 73;
+            this.label2.TabIndex = 0;
             this.label2.Text = "Apellido";
             // 
             // label7
@@ -175,7 +175,7 @@
             this.label7.Location = new System.Drawing.Point(389, 107);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(21, 16);
-            this.label7.TabIndex = 67;
+            this.label7.TabIndex = 0;
             this.label7.Text = "Id";
             // 
             // label1
@@ -186,7 +186,7 @@
             this.label1.Location = new System.Drawing.Point(50, 105);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 16);
-            this.label1.TabIndex = 66;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Nombre";
             // 
             // btn_CancelarEmpleado
@@ -194,7 +194,7 @@
             this.btn_CancelarEmpleado.Location = new System.Drawing.Point(543, 354);
             this.btn_CancelarEmpleado.Name = "btn_CancelarEmpleado";
             this.btn_CancelarEmpleado.Size = new System.Drawing.Size(82, 23);
-            this.btn_CancelarEmpleado.TabIndex = 65;
+            this.btn_CancelarEmpleado.TabIndex = 10;
             this.btn_CancelarEmpleado.Text = "Cancelar";
             this.btn_CancelarEmpleado.UseVisualStyleBackColor = true;
             // 
@@ -203,51 +203,51 @@
             this.btn_RegistrarEmpleado.Location = new System.Drawing.Point(462, 354);
             this.btn_RegistrarEmpleado.Name = "btn_RegistrarEmpleado";
             this.btn_RegistrarEmpleado.Size = new System.Drawing.Size(75, 23);
-            this.btn_RegistrarEmpleado.TabIndex = 64;
+            this.btn_RegistrarEmpleado.TabIndex = 9;
             this.btn_RegistrarEmpleado.Text = "Registrar";
             this.btn_RegistrarEmpleado.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // txt_NombreEmpleado
             // 
-            this.textBox2.Location = new System.Drawing.Point(119, 104);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(191, 20);
-            this.textBox2.TabIndex = 63;
+            this.txt_NombreEmpleado.Location = new System.Drawing.Point(119, 104);
+            this.txt_NombreEmpleado.Name = "txt_NombreEmpleado";
+            this.txt_NombreEmpleado.Size = new System.Drawing.Size(191, 20);
+            this.txt_NombreEmpleado.TabIndex = 1;
             // 
-            // textBox4
+            // txt_IdEmpleado
             // 
-            this.textBox4.Location = new System.Drawing.Point(427, 107);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(84, 20);
-            this.textBox4.TabIndex = 62;
+            this.txt_IdEmpleado.Location = new System.Drawing.Point(427, 107);
+            this.txt_IdEmpleado.Name = "txt_IdEmpleado";
+            this.txt_IdEmpleado.Size = new System.Drawing.Size(84, 20);
+            this.txt_IdEmpleado.TabIndex = 3;
             // 
-            // textBox7
+            // txt_NCalleEmpleado
             // 
-            this.textBox7.Location = new System.Drawing.Point(119, 319);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(191, 20);
-            this.textBox7.TabIndex = 61;
+            this.txt_NCalleEmpleado.Location = new System.Drawing.Point(119, 319);
+            this.txt_NCalleEmpleado.Name = "txt_NCalleEmpleado";
+            this.txt_NCalleEmpleado.Size = new System.Drawing.Size(191, 20);
+            this.txt_NCalleEmpleado.TabIndex = 7;
             // 
-            // textBox6
+            // txt_CalleEmpleado
             // 
-            this.textBox6.Location = new System.Drawing.Point(119, 281);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(191, 20);
-            this.textBox6.TabIndex = 60;
+            this.txt_CalleEmpleado.Location = new System.Drawing.Point(119, 281);
+            this.txt_CalleEmpleado.Name = "txt_CalleEmpleado";
+            this.txt_CalleEmpleado.Size = new System.Drawing.Size(191, 20);
+            this.txt_CalleEmpleado.TabIndex = 6;
             // 
-            // textBox8
+            // txt_TelefonoEmpleado
             // 
-            this.textBox8.Location = new System.Drawing.Point(416, 214);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(209, 20);
-            this.textBox8.TabIndex = 59;
+            this.txt_TelefonoEmpleado.Location = new System.Drawing.Point(416, 214);
+            this.txt_TelefonoEmpleado.Name = "txt_TelefonoEmpleado";
+            this.txt_TelefonoEmpleado.Size = new System.Drawing.Size(209, 20);
+            this.txt_TelefonoEmpleado.TabIndex = 8;
             // 
-            // textBox1
+            // txt_ApellidoEmpleado
             // 
-            this.textBox1.Location = new System.Drawing.Point(119, 137);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(191, 20);
-            this.textBox1.TabIndex = 58;
+            this.txt_ApellidoEmpleado.Location = new System.Drawing.Point(119, 137);
+            this.txt_ApellidoEmpleado.Name = "txt_ApellidoEmpleado";
+            this.txt_ApellidoEmpleado.Size = new System.Drawing.Size(191, 20);
+            this.txt_ApellidoEmpleado.TabIndex = 2;
             // 
             // Modificacion_Empleado
             // 
@@ -256,8 +256,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(641, 391);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cmb_LocalidadEmpleado);
+            this.Controls.Add(this.cmb_BarrioEmpleado);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -271,12 +271,12 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_CancelarEmpleado);
             this.Controls.Add(this.btn_RegistrarEmpleado);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_NombreEmpleado);
+            this.Controls.Add(this.txt_IdEmpleado);
+            this.Controls.Add(this.txt_NCalleEmpleado);
+            this.Controls.Add(this.txt_CalleEmpleado);
+            this.Controls.Add(this.txt_TelefonoEmpleado);
+            this.Controls.Add(this.txt_ApellidoEmpleado);
             this.MaximizeBox = false;
             this.Name = "Modificacion_Empleado";
             this.Text = "Modificacion_Empleado";
@@ -287,8 +287,8 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmb_LocalidadEmpleado;
+        private System.Windows.Forms.ComboBox cmb_BarrioEmpleado;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -302,11 +302,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_CancelarEmpleado;
         private System.Windows.Forms.Button btn_RegistrarEmpleado;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_NombreEmpleado;
+        private System.Windows.Forms.TextBox txt_IdEmpleado;
+        private System.Windows.Forms.TextBox txt_NCalleEmpleado;
+        private System.Windows.Forms.TextBox txt_CalleEmpleado;
+        private System.Windows.Forms.TextBox txt_TelefonoEmpleado;
+        private System.Windows.Forms.TextBox txt_ApellidoEmpleado;
     }
 }

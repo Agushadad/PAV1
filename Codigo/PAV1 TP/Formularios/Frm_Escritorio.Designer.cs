@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Escritorio));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_Clientes = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.btn_Catalogos = new System.Windows.Forms.PictureBox();
+            this.btn_Plantas = new System.Windows.Forms.PictureBox();
+            this.btn_Empleados = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.btn_Proveedores = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.btn_Productos = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.btn_GenerarFactura = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.btn_Canjes = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listadosReportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,31 +54,31 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.btn_Puntos = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Clientes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Catalogos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Plantas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Empleados)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Proveedores)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Productos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_GenerarFactura)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Canjes)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Puntos)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // btn_Clientes
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(318, 233);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(110, 110);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.btn_Clientes.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Clientes.Image = ((System.Drawing.Image)(resources.GetObject("btn_Clientes.Image")));
+            this.btn_Clientes.Location = new System.Drawing.Point(318, 233);
+            this.btn_Clientes.Name = "btn_Clientes";
+            this.btn_Clientes.Size = new System.Drawing.Size(110, 110);
+            this.btn_Clientes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_Clientes.TabIndex = 1;
+            this.btn_Clientes.TabStop = false;
+            this.btn_Clientes.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label1
             // 
@@ -89,40 +89,40 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Clientes";
             // 
-            // pictureBox2
+            // btn_Catalogos
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(453, 379);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(110, 110);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.btn_Catalogos.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Catalogos.Image = ((System.Drawing.Image)(resources.GetObject("btn_Catalogos.Image")));
+            this.btn_Catalogos.Location = new System.Drawing.Point(453, 379);
+            this.btn_Catalogos.Name = "btn_Catalogos";
+            this.btn_Catalogos.Size = new System.Drawing.Size(110, 110);
+            this.btn_Catalogos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_Catalogos.TabIndex = 5;
+            this.btn_Catalogos.TabStop = false;
+            this.btn_Catalogos.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // pictureBox3
+            // btn_Plantas
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(318, 379);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(110, 110);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.btn_Plantas.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Plantas.Image = ((System.Drawing.Image)(resources.GetObject("btn_Plantas.Image")));
+            this.btn_Plantas.Location = new System.Drawing.Point(318, 379);
+            this.btn_Plantas.Name = "btn_Plantas";
+            this.btn_Plantas.Size = new System.Drawing.Size(110, 110);
+            this.btn_Plantas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_Plantas.TabIndex = 7;
+            this.btn_Plantas.TabStop = false;
+            this.btn_Plantas.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
-            // pictureBox4
+            // btn_Empleados
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(581, 233);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(110, 110);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 9;
-            this.pictureBox4.TabStop = false;
+            this.btn_Empleados.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Empleados.Image = ((System.Drawing.Image)(resources.GetObject("btn_Empleados.Image")));
+            this.btn_Empleados.Location = new System.Drawing.Point(581, 233);
+            this.btn_Empleados.Name = "btn_Empleados";
+            this.btn_Empleados.Size = new System.Drawing.Size(110, 110);
+            this.btn_Empleados.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_Empleados.TabIndex = 9;
+            this.btn_Empleados.TabStop = false;
             // 
             // label5
             // 
@@ -133,17 +133,17 @@
             this.label5.TabIndex = 12;
             this.label5.Text = "Proveedores";
             // 
-            // pictureBox5
+            // btn_Proveedores
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(453, 233);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(110, 110);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 11;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            this.btn_Proveedores.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Proveedores.Image = ((System.Drawing.Image)(resources.GetObject("btn_Proveedores.Image")));
+            this.btn_Proveedores.Location = new System.Drawing.Point(453, 233);
+            this.btn_Proveedores.Name = "btn_Proveedores";
+            this.btn_Proveedores.Size = new System.Drawing.Size(110, 110);
+            this.btn_Proveedores.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_Proveedores.TabIndex = 11;
+            this.btn_Proveedores.TabStop = false;
+            this.btn_Proveedores.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // label2
             // 
@@ -184,16 +184,16 @@
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // pictureBox6
+            // btn_Productos
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(581, 379);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(110, 110);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 16;
-            this.pictureBox6.TabStop = false;
+            this.btn_Productos.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Productos.Image = ((System.Drawing.Image)(resources.GetObject("btn_Productos.Image")));
+            this.btn_Productos.Location = new System.Drawing.Point(581, 379);
+            this.btn_Productos.Name = "btn_Productos";
+            this.btn_Productos.Size = new System.Drawing.Size(110, 110);
+            this.btn_Productos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_Productos.TabIndex = 16;
+            this.btn_Productos.TabStop = false;
             // 
             // label7
             // 
@@ -204,16 +204,16 @@
             this.label7.TabIndex = 25;
             this.label7.Text = "Generar Factura";
             // 
-            // pictureBox7
+            // btn_GenerarFactura
             // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(918, 233);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(110, 110);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 24;
-            this.pictureBox7.TabStop = false;
+            this.btn_GenerarFactura.BackColor = System.Drawing.Color.Transparent;
+            this.btn_GenerarFactura.Image = ((System.Drawing.Image)(resources.GetObject("btn_GenerarFactura.Image")));
+            this.btn_GenerarFactura.Location = new System.Drawing.Point(918, 233);
+            this.btn_GenerarFactura.Name = "btn_GenerarFactura";
+            this.btn_GenerarFactura.Size = new System.Drawing.Size(110, 110);
+            this.btn_GenerarFactura.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_GenerarFactura.TabIndex = 24;
+            this.btn_GenerarFactura.TabStop = false;
             // 
             // label10
             // 
@@ -225,16 +225,16 @@
             this.label10.Text = "Canjes";
             this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pictureBox8
+            // btn_Canjes
             // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(788, 233);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(110, 110);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 20;
-            this.pictureBox8.TabStop = false;
+            this.btn_Canjes.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Canjes.Image = ((System.Drawing.Image)(resources.GetObject("btn_Canjes.Image")));
+            this.btn_Canjes.Location = new System.Drawing.Point(788, 233);
+            this.btn_Canjes.Name = "btn_Canjes";
+            this.btn_Canjes.Size = new System.Drawing.Size(110, 110);
+            this.btn_Canjes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_Canjes.TabIndex = 20;
+            this.btn_Canjes.TabStop = false;
             // 
             // menuStrip1
             // 
@@ -317,17 +317,17 @@
             this.label11.TabIndex = 29;
             this.label11.Text = "Vivero \"La Cone\"";
             // 
-            // pictureBox9
+            // btn_Puntos
             // 
-            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(788, 379);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(110, 110);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 30;
-            this.pictureBox9.TabStop = false;
+            this.btn_Puntos.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Puntos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Puntos.Image = ((System.Drawing.Image)(resources.GetObject("btn_Puntos.Image")));
+            this.btn_Puntos.Location = new System.Drawing.Point(788, 379);
+            this.btn_Puntos.Name = "btn_Puntos";
+            this.btn_Puntos.Size = new System.Drawing.Size(110, 110);
+            this.btn_Puntos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_Puntos.TabIndex = 30;
+            this.btn_Puntos.TabStop = false;
             // 
             // label12
             // 
@@ -347,65 +347,65 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1215, 635);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.pictureBox9);
+            this.Controls.Add(this.btn_Puntos);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.pictureBox7);
+            this.Controls.Add(this.btn_GenerarFactura);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.pictureBox8);
+            this.Controls.Add(this.btn_Canjes);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.btn_Productos);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.btn_Proveedores);
+            this.Controls.Add(this.btn_Empleados);
+            this.Controls.Add(this.btn_Plantas);
+            this.Controls.Add(this.btn_Catalogos);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btn_Clientes);
             this.Controls.Add(this.menuStrip1);
             this.MaximizeBox = false;
             this.Name = "Frm_Escritorio";
             this.Text = "Vivero La Cone";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Frm_Escritorio_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Clientes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Catalogos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Plantas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Empleados)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Proveedores)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Productos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_GenerarFactura)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Canjes)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_Puntos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox btn_Clientes;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox btn_Catalogos;
+        private System.Windows.Forms.PictureBox btn_Plantas;
+        private System.Windows.Forms.PictureBox btn_Empleados;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox btn_Proveedores;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox btn_Productos;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox btn_GenerarFactura;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox btn_Canjes;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listadosReportesToolStripMenuItem;
@@ -415,7 +415,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox btn_Puntos;
         private System.Windows.Forms.Label label12;
     }
 }

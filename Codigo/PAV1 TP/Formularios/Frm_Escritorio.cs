@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using PAV1_TP.Formularios.Catalogos;
 using PAV1_TP.Formularios.Proveedor;
+using PAV1_TP.Formularios.Plantas;
 
 
 
@@ -65,7 +66,7 @@ namespace PAV1_TP
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            
+           
         }
     }
 }
