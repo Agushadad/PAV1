@@ -124,6 +124,24 @@
     <Compile Include="Formularios\Plantas\Modificacion_Plantas.Designer.cs">
       <DependentUpon>Modificacion_Plantas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Producto\ABM_Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Producto\ABM_Productos.Designer.cs">
+      <DependentUpon>ABM_Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Producto\Alta_Producto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Producto\Alta_Producto.Designer.cs">
+      <DependentUpon>Alta_Producto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Producto\Modificacion_Producto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Producto\Modificacion_Producto.Designer.cs">
+      <DependentUpon>Modificacion_Producto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Proveedor\ABM_Proveedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +200,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Plantas\Modificacion_Plantas.resx">
       <DependentUpon>Modificacion_Plantas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Producto\ABM_Productos.resx">
+      <DependentUpon>ABM_Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Producto\Alta_Producto.resx">
+      <DependentUpon>Alta_Producto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Producto\Modificacion_Producto.resx">
+      <DependentUpon>Modificacion_Producto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Proveedor\ABM_Proveedor.resx">
       <DependentUpon>ABM_Proveedor.cs</DependentUpon>
