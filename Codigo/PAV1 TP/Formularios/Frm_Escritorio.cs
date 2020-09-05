@@ -65,6 +65,7 @@ namespace PAV1_TP
                 {
                     nombre_usuario = login.Usuario;
                     password = login.Password;
+                    MessageBox.Show("Bienvenido! " + nombre_usuario);
                 }
             }
             login.Dispose();
