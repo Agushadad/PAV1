@@ -48,6 +48,7 @@
             this.btn_ingresar.TabIndex = 3;
             this.btn_ingresar.Text = "Ingresar";
             this.btn_ingresar.UseVisualStyleBackColor = true;
+            this.btn_ingresar.Click += new System.EventHandler(this.btn_ingresar_Click_1);
             // 
             // txt_usuario
             // 

@@ -107,6 +107,7 @@
             this.btn_AgregarPlanta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btn_AgregarPlanta.TabIndex = 4;
             this.btn_AgregarPlanta.TabStop = false;
+            this.btn_AgregarPlanta.Click += new System.EventHandler(this.btn_AgregarPlanta_Click);
             // 
             // Grid_Planta
             // 
@@ -231,6 +232,7 @@
             this.btn_ModificarPlanta.Size = new System.Drawing.Size(59, 50);
             this.btn_ModificarPlanta.TabIndex = 12;
             this.btn_ModificarPlanta.TabStop = false;
+            this.btn_ModificarPlanta.Click += new System.EventHandler(this.btn_ModificarPlanta_Click);
             // 
             // btn_Cancelar
             // 

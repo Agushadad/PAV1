@@ -34,6 +34,12 @@
             this.btn_CancelarProveedor = new System.Windows.Forms.PictureBox();
             this.btn_EliminarProveedor = new System.Windows.Forms.PictureBox();
             this.Grid_Producto = new System.Windows.Forms.DataGridView();
+            this.Doc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Costo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_ConsultarProducto = new System.Windows.Forms.Button();
             this.chk_TodosProducto = new System.Windows.Forms.CheckBox();
             this.txt_TipoProducto = new System.Windows.Forms.TextBox();
@@ -42,12 +48,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.Doc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Costo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.btn_AgregarProveedor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_ModifProveedor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_CancelarProveedor)).BeginInit();
@@ -65,6 +65,7 @@
             this.btn_AgregarProveedor.Size = new System.Drawing.Size(59, 50);
             this.btn_AgregarProveedor.TabIndex = 36;
             this.btn_AgregarProveedor.TabStop = false;
+            this.btn_AgregarProveedor.Click += new System.EventHandler(this.btn_AgregarProveedor_Click);
             // 
             // btn_ModifProveedor
             // 
@@ -76,6 +77,7 @@
             this.btn_ModifProveedor.Size = new System.Drawing.Size(59, 50);
             this.btn_ModifProveedor.TabIndex = 35;
             this.btn_ModifProveedor.TabStop = false;
+            this.btn_ModifProveedor.Click += new System.EventHandler(this.btn_ModifProveedor_Click);
             // 
             // btn_CancelarProveedor
             // 
@@ -113,6 +115,39 @@
             this.Grid_Producto.Name = "Grid_Producto";
             this.Grid_Producto.Size = new System.Drawing.Size(659, 212);
             this.Grid_Producto.TabIndex = 32;
+            // 
+            // Doc
+            // 
+            this.Doc.HeaderText = "ID";
+            this.Doc.Name = "Doc";
+            this.Doc.Width = 50;
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            this.Nombre.Width = 150;
+            // 
+            // Apellido
+            // 
+            this.Apellido.HeaderText = "Tipo";
+            this.Apellido.Name = "Apellido";
+            this.Apellido.Width = 120;
+            // 
+            // Tipo
+            // 
+            this.Tipo.HeaderText = "Stock";
+            this.Tipo.Name = "Tipo";
+            // 
+            // Precio
+            // 
+            this.Precio.HeaderText = "Precio";
+            this.Precio.Name = "Precio";
+            // 
+            // Costo
+            // 
+            this.Costo.HeaderText = "Costo";
+            this.Costo.Name = "Costo";
             // 
             // btn_ConsultarProducto
             // 
@@ -184,39 +219,6 @@
             this.label1.Size = new System.Drawing.Size(18, 13);
             this.label1.TabIndex = 26;
             this.label1.Text = "ID";
-            // 
-            // Doc
-            // 
-            this.Doc.HeaderText = "ID";
-            this.Doc.Name = "Doc";
-            this.Doc.Width = 50;
-            // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            this.Nombre.Width = 150;
-            // 
-            // Apellido
-            // 
-            this.Apellido.HeaderText = "Tipo";
-            this.Apellido.Name = "Apellido";
-            this.Apellido.Width = 120;
-            // 
-            // Tipo
-            // 
-            this.Tipo.HeaderText = "Stock";
-            this.Tipo.Name = "Tipo";
-            // 
-            // Precio
-            // 
-            this.Precio.HeaderText = "Precio";
-            this.Precio.Name = "Precio";
-            // 
-            // Costo
-            // 
-            this.Costo.HeaderText = "Costo";
-            this.Costo.Name = "Costo";
             // 
             // ABM_Productos
             // 

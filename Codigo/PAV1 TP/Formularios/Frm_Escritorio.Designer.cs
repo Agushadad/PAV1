@@ -123,6 +123,7 @@
             this.btn_Empleados.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btn_Empleados.TabIndex = 9;
             this.btn_Empleados.TabStop = false;
+            this.btn_Empleados.Click += new System.EventHandler(this.btn_Empleados_Click);
             // 
             // label5
             // 
@@ -194,6 +195,7 @@
             this.btn_Productos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btn_Productos.TabIndex = 16;
             this.btn_Productos.TabStop = false;
+            this.btn_Productos.Click += new System.EventHandler(this.btn_Productos_Click);
             // 
             // label7
             // 

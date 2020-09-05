@@ -21,5 +21,17 @@ namespace PAV1_TP.Formularios.Producto
         {
 
         }
+
+        private void btn_AgregarProveedor_Click(object sender, EventArgs e)
+        {
+            Form Alta_Producto = new Alta_Producto();
+            Alta_Producto.Show();
+        }
+
+        private void btn_ModifProveedor_Click(object sender, EventArgs e)
+        {
+            Form Modificacion_Producto = new Modificacion_Producto();
+            Modificacion_Producto.Show();
+        }
     }
 }

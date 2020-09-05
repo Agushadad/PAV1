@@ -10,13 +10,19 @@ using System.Windows.Forms;
 using PAV1_TP.Formularios.Catalogos;
 using PAV1_TP.Formularios.Proveedor;
 using PAV1_TP.Formularios.Plantas;
-
-
+using PAV1_TP.Formularios;
+using PAV1_TP.Negocios;
+using WindowsFormsApp2;
+using PAV1_TP.Formularios.Empleados;
+using PAV1_TP.Formularios.Producto;
 
 namespace PAV1_TP
 {
     public partial class Frm_Escritorio : Form
     {
+        public string nombre_usuario { get; set; }
+        public string password { get; set; }
+        public int id_empleado { get; set; }
         public Frm_Escritorio()
         {
             InitializeComponent();
@@ -29,12 +35,39 @@ namespace PAV1_TP
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            
+            Form Cliente = new ABM_Clientes();
+            Cliente.Show();
         }
 
         private void Frm_Escritorio_Load(object sender, EventArgs e)
         {
-
+            Frm_Login login = new Frm_Login();
+            login.ShowDialog();
+            if (login.Usuario == "" || login.Password == "")
+            {
+                MessageBox.Show("Acceso bloqueado"
+                    , "Importante"
+                    , MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                this.Close();
+            }
+            else
+            {
+                Ng_Empleados Usuario = new Ng_Empleados();
+                id_empleado = Usuario.Recuperar_id(login.Usuario, login.Password);
+                if (id_empleado == 0)
+                {
+                    MessageBox.Show("Acceso bloqueado, usuario y password incorrecto"
+                             , "Importante"
+                             , MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    this.Close();
+                }
+                else
+                {
+                    nombre_usuario = login.Usuario;
+                    password = login.Password;
+                }
+            }
+            login.Dispose();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -66,7 +99,20 @@ namespace PAV1_TP
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-           
+            Form Planta = new ABM_Plantas();
+            Planta.Show();
+        }
+
+        private void btn_Empleados_Click(object sender, EventArgs e)
+        {
+            Form Empleado = new ABM_Empleados();
+            Empleado.Show();
+        }
+
+        private void btn_Productos_Click(object sender, EventArgs e)
+        {
+            Form Producto = new ABM_Productos();
+            Producto.Show();
         }
     }
 }

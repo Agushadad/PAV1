@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PAV1_TP.Formularios;
+using PAV1_TP.Formularios.Plantas;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -46,6 +48,18 @@ namespace WindowsFormsApp2
         private void pictureBox6_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btn_AgregarPlanta_Click(object sender, EventArgs e)
+        {
+            Form Alta_Planta = new Alta_Plantas();
+            Alta_Planta.Show();
+        }
+
+        private void btn_ModificarPlanta_Click(object sender, EventArgs e)
+        {
+            Form Modificacion_Planta = new Modificacion_Plantas();
+            Modificacion_Planta.Show();
         }
     }
 }

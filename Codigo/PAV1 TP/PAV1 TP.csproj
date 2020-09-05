@@ -161,6 +161,7 @@
     <Compile Include="Formularios\Proveedor\Modificacion_Proveedor.Designer.cs">
       <DependentUpon>Modificacion_Proveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Negocios\Ng_Empleados.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\Catalogos\ABM_Catalogos.resx">
@@ -242,5 +243,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -16,7 +16,7 @@ namespace PAV1_TP.Clases
         private void Conectar()
         {
             //Acuerdense de cambiar el link de conexion y poner el de c/uno
-            Conexion.ConnectionString = "Data Source = DESKTOP - 7MV1FIL; Initial Catalog = Vivero; Integrated Security = True"; 
+            Conexion.ConnectionString = "Data Source=DESKTOP-7MV1FIL;Initial Catalog=Vivero;Integrated Security=True"; 
             Conexion.Open();
 
             Cmd.Connection = Conexion;

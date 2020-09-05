@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PAV1_TP.Negocios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace PAV1_TP.Formularios
 {
@@ -23,8 +25,18 @@ namespace PAV1_TP.Formularios
         {
             InitializeComponent();
         }
+        private void Frm_Login_Load(object sender, EventArgs e)
+        {
 
-        private void btn_ingresar_Click(object sender, EventArgs e)
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            Panel p = sender as Panel;
+            ControlPaint.DrawBorder(e.Graphics, p.DisplayRectangle, Color.Black, ButtonBorderStyle.Solid);
+        }
+
+        private void btn_ingresar_Click_1(object sender, EventArgs e)
         {
             if (this.txt_usuario.Text == "")
             {
@@ -38,18 +50,19 @@ namespace PAV1_TP.Formularios
                 txt_contraseña.Focus();
                 return;
             }
+            Ng_Empleados Usuario = new Ng_Empleados();
+            if (Usuario.Validar_usuario(txt_usuario.Text, txt_contraseña.Text) == Ng_Empleados.Respuesta.validacion_correcta)
+            {
+                this.Usuario = txt_usuario.Text;
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Este usuario y password " +
+                                "no está registrado en la base de datos"
+                                , "Importante", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
         }
-            
-
-            private void Frm_Login_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-            Panel p = sender as Panel;
-            ControlPaint.DrawBorder(e.Graphics, p.DisplayRectangle, Color.Black, ButtonBorderStyle.Solid);
-        }
+    
     }
 }

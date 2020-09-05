@@ -65,6 +65,7 @@
             this.btn_AgregarEmp.Size = new System.Drawing.Size(59, 50);
             this.btn_AgregarEmp.TabIndex = 23;
             this.btn_AgregarEmp.TabStop = false;
+            this.btn_AgregarEmp.Click += new System.EventHandler(this.btn_AgregarEmp_Click);
             // 
             // btn_EditarEmp
             // 
@@ -76,6 +77,7 @@
             this.btn_EditarEmp.Size = new System.Drawing.Size(59, 50);
             this.btn_EditarEmp.TabIndex = 22;
             this.btn_EditarEmp.TabStop = false;
+            this.btn_EditarEmp.Click += new System.EventHandler(this.btn_EditarEmp_Click);
             // 
             // btn_SalirEmp
             // 

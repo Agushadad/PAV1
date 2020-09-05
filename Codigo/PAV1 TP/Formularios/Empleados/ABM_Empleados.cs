@@ -21,5 +21,17 @@ namespace PAV1_TP.Formularios.Empleados
         {
 
         }
+
+        private void btn_AgregarEmp_Click(object sender, EventArgs e)
+        {
+            Form Alta_Empleado = new Alta_Empleado();
+            Alta_Empleado.Show();
+        }
+
+        private void btn_EditarEmp_Click(object sender, EventArgs e)
+        {
+            Form Modificacion_Empleado = new Modificacion_Empleado();
+            Modificacion_Empleado.Show();
+        }
     }
 }

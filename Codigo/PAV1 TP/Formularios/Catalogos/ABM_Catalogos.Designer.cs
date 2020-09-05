@@ -181,6 +181,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(360, 359);
             this.Controls.Add(this.btn_AgregarCatalogo);
             this.Controls.Add(this.btn_EditarCatalogo);
@@ -193,6 +195,7 @@
             this.Controls.Add(this.txt_IdCatalogo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "ABM_Catalogos";
             this.Text = "ABM_Catalogos";
             ((System.ComponentModel.ISupportInitialize)(this.btn_AgregarCatalogo)).EndInit();
