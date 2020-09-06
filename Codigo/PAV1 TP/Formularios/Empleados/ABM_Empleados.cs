@@ -54,16 +54,21 @@ namespace PAV1_TP.Formularios.Empleados
 
             }
         }
-                private void btn_ConsultarEmp_Click(object sender, EventArgs e)
-        {
-            
-            Be_BaseDeDatos _BD = new Be_BaseDeDatos();
-           if (chk_Todos.Checked == true)
+        private void btn_ConsultarEmp_Click(object sender, EventArgs e)
             {
-                
-                Cargar_Grilla(Empleados.Todos_Los_Empleados());
-            }
+                Be_BaseDeDatos _BD = new Be_BaseDeDatos();
+                if (chk_Todos.Checked == true)
+                {
+                    Cargar_Grilla(Empleados.Todos_Los_Empleados());
+                }
             
+                if (txt_IdEmpleado != "" && txt_NombreEmpleado == "" && txt_ApellidoEmpleado == "")
+                    {
+                    }
+
+        private void textBox011_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

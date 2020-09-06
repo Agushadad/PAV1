@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ABM_Empleados));
             this.btn_AgregarEmp = new System.Windows.Forms.PictureBox();
             this.btn_EditarEmp = new System.Windows.Forms.PictureBox();
@@ -35,8 +36,6 @@
             this.btn_EliminarEmp = new System.Windows.Forms.PictureBox();
             this.btn_ConsultarEmp = new System.Windows.Forms.Button();
             this.chk_Todos = new System.Windows.Forms.CheckBox();
-            this.txt_ApeEmp = new System.Windows.Forms.TextBox();
-            this.txt_NombreEmp = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,6 +46,10 @@
             this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Domicilio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Altura = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.txt_IdEmpleado = new PAV1_TP.Clases.TextBox01();
+            this.txt_NombreEmpleado = new PAV1_TP.Clases.TextBox01();
+            this.txt_ApellidoEmpleado = new PAV1_TP.Clases.TextBox01();
             ((System.ComponentModel.ISupportInitialize)(this.btn_AgregarEmp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_EditarEmp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_SalirEmp)).BeginInit();
@@ -121,25 +124,11 @@
             this.chk_Todos.Text = "Todos";
             this.chk_Todos.UseVisualStyleBackColor = false;
             // 
-            // txt_ApeEmp
-            // 
-            this.txt_ApeEmp.Location = new System.Drawing.Point(82, 63);
-            this.txt_ApeEmp.Name = "txt_ApeEmp";
-            this.txt_ApeEmp.Size = new System.Drawing.Size(162, 20);
-            this.txt_ApeEmp.TabIndex = 3;
-            // 
-            // txt_NombreEmp
-            // 
-            this.txt_NombreEmp.Location = new System.Drawing.Point(82, 33);
-            this.txt_NombreEmp.Name = "txt_NombreEmp";
-            this.txt_NombreEmp.Size = new System.Drawing.Size(162, 20);
-            this.txt_NombreEmp.TabIndex = 2;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(12, 63);
+            this.label2.Location = new System.Drawing.Point(32, 63);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 0;
@@ -149,7 +138,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(12, 33);
+            this.label1.Location = new System.Drawing.Point(32, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 0;
@@ -159,7 +148,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(12, 7);
+            this.label3.Location = new System.Drawing.Point(60, 7);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(16, 13);
             this.label3.TabIndex = 0;
@@ -215,6 +204,47 @@
             this.Altura.HeaderText = "Altura";
             this.Altura.Name = "Altura";
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // txt_IdEmpleado
+            // 
+            this.txt_IdEmpleado.Location = new System.Drawing.Point(82, 7);
+            this.txt_IdEmpleado.Name = "txt_IdEmpleado";
+            this.txt_IdEmpleado.Pp_mensajeError = null;
+            this.txt_IdEmpleado.Pp_nombre_campo = null;
+            this.txt_IdEmpleado.Pp_nombre_tabla = null;
+            this.txt_IdEmpleado.Pp_validable = false;
+            this.txt_IdEmpleado.Size = new System.Drawing.Size(162, 20);
+            this.txt_IdEmpleado.TabIndex = 24;
+            this.txt_IdEmpleado.TextChanged += new System.EventHandler(this.textBox011_TextChanged);
+            // 
+            // txt_NombreEmpleado
+            // 
+            this.txt_NombreEmpleado.Location = new System.Drawing.Point(82, 33);
+            this.txt_NombreEmpleado.Name = "txt_NombreEmpleado";
+            this.txt_NombreEmpleado.Pp_mensajeError = null;
+            this.txt_NombreEmpleado.Pp_nombre_campo = null;
+            this.txt_NombreEmpleado.Pp_nombre_tabla = null;
+            this.txt_NombreEmpleado.Pp_validable = false;
+            this.txt_NombreEmpleado.Size = new System.Drawing.Size(162, 20);
+            this.txt_NombreEmpleado.TabIndex = 24;
+            this.txt_NombreEmpleado.TextChanged += new System.EventHandler(this.textBox011_TextChanged);
+            // 
+            // txt_ApellidoEmpleado
+            // 
+            this.txt_ApellidoEmpleado.Location = new System.Drawing.Point(82, 62);
+            this.txt_ApellidoEmpleado.Name = "txt_ApellidoEmpleado";
+            this.txt_ApellidoEmpleado.Pp_mensajeError = null;
+            this.txt_ApellidoEmpleado.Pp_nombre_campo = null;
+            this.txt_ApellidoEmpleado.Pp_nombre_tabla = null;
+            this.txt_ApellidoEmpleado.Pp_validable = false;
+            this.txt_ApellidoEmpleado.Size = new System.Drawing.Size(162, 20);
+            this.txt_ApellidoEmpleado.TabIndex = 24;
+            this.txt_ApellidoEmpleado.TextChanged += new System.EventHandler(this.textBox011_TextChanged);
+            // 
             // ABM_Empleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -222,6 +252,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(725, 416);
+            this.Controls.Add(this.txt_NombreEmpleado);
+            this.Controls.Add(this.txt_ApellidoEmpleado);
+            this.Controls.Add(this.txt_IdEmpleado);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btn_AgregarEmp);
             this.Controls.Add(this.btn_EditarEmp);
@@ -230,8 +263,6 @@
             this.Controls.Add(this.Grid_Emp);
             this.Controls.Add(this.btn_ConsultarEmp);
             this.Controls.Add(this.chk_Todos);
-            this.Controls.Add(this.txt_ApeEmp);
-            this.Controls.Add(this.txt_NombreEmp);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "ABM_Empleados";
@@ -255,8 +286,6 @@
         private System.Windows.Forms.PictureBox btn_EliminarEmp;
         private System.Windows.Forms.Button btn_ConsultarEmp;
         private System.Windows.Forms.CheckBox chk_Todos;
-        private System.Windows.Forms.TextBox txt_ApeEmp;
-        private System.Windows.Forms.TextBox txt_NombreEmp;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
@@ -267,5 +296,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Domicilio;
         private System.Windows.Forms.DataGridViewTextBoxColumn Altura;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private Clases.TextBox01 txt_IdEmpleado;
+        private Clases.TextBox01 txt_NombreEmpleado;
+        private Clases.TextBox01 txt_ApellidoEmpleado;
     }
 }
