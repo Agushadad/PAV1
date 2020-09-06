@@ -37,9 +37,33 @@ namespace PAV1_TP.Formularios.Empleados
             Modificacion_Empleado.Show();
         }
 
+        private void btn_ConsultarEmp_Click(object sender, EventArgs e)
+        {
+            if (chk_Todos.Checked== true)
+            {
+                Cargar_Grilla(Empleados.Todos_Los_Empleados());
+                return;
+            }
+            if (chk_Inactivos.Checked == true)
+            {
+                Cargar_Grilla(Empleados.Empleados_Inactivos());
+                return;
+            }
+            if (txt_IdEmpleado.Text == "" && txt_NombreEmpleado.Text == "" && txt_ApellidoEmpleado.Text == "")
+            {
+                MessageBox.Show("No hay restricciones para realizar la búsqueda");
+                return;
+            }
+            if (txt_IdEmpleado.Text != "" || txt_ApellidoEmpleado.Text != "" || txt_NombreEmpleado.Text != "")
+            {
+                Cargar_Grilla(Empleados.Buscar_empleado(txt_IdEmpleado.Text, txt_NombreEmpleado.Text, txt_ApellidoEmpleado.Text));
+            }
+
+        }
         private void Cargar_Grilla(DataTable tabla)
         {
             Grid_Emp.Rows.Clear();
+
             for (int i = 0; i < tabla.Rows.Count; i++)
             {
                 Grid_Emp.Rows.Add();
@@ -49,26 +73,16 @@ namespace PAV1_TP.Formularios.Empleados
                 Grid_Emp.Rows[i].Cells[3].Value = tabla.Rows[i]["Telefono"].ToString();
                 Grid_Emp.Rows[i].Cells[4].Value = tabla.Rows[i]["Calle"].ToString();
                 Grid_Emp.Rows[i].Cells[5].Value = tabla.Rows[i]["Nro_Calle"].ToString();
-
-
-
             }
         }
-        private void btn_ConsultarEmp_Click(object sender, EventArgs e)
-            {
-                Be_BaseDeDatos _BD = new Be_BaseDeDatos();
-                if (chk_Todos.Checked == true)
-                {
-                    Cargar_Grilla(Empleados.Todos_Los_Empleados());
-                }
-            
-                if (txt_IdEmpleado != "" && txt_NombreEmpleado == "" && txt_ApellidoEmpleado == "")
-                    {
-                    }
-
         private void textBox011_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_SalirEmp_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

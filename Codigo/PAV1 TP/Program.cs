@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp2;
 using PAV1_TP.Formularios;
-
+using PAV1_TP.Formularios.Empleados;
 
 namespace PAV1_TP
 {
@@ -20,13 +20,12 @@ namespace PAV1_TP
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Frm_Escritorio());
-            
 
-            
-           
-            
-            
-            
+
+
+
+
+
 
         }
     }

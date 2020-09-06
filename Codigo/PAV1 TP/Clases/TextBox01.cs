@@ -13,7 +13,5 @@ namespace PAV1_TP.Clases
         public string Pp_nombre_tabla { get; set; }
         public string Pp_nombre_campo { get; set; }
         public string Pp_mensajeError { get; set; }
-        
-
     }
 }

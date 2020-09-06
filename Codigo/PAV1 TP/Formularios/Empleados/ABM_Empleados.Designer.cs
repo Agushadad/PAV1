@@ -47,9 +47,10 @@
             this.Domicilio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Altura = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.txt_IdEmpleado = new PAV1_TP.Clases.TextBox01();
+            this.chk_Inactivos = new System.Windows.Forms.CheckBox();
             this.txt_NombreEmpleado = new PAV1_TP.Clases.TextBox01();
             this.txt_ApellidoEmpleado = new PAV1_TP.Clases.TextBox01();
+            this.txt_IdEmpleado = new PAV1_TP.Clases.TextBox01();
             ((System.ComponentModel.ISupportInitialize)(this.btn_AgregarEmp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_EditarEmp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_SalirEmp)).BeginInit();
@@ -91,6 +92,7 @@
             this.btn_SalirEmp.Size = new System.Drawing.Size(59, 50);
             this.btn_SalirEmp.TabIndex = 21;
             this.btn_SalirEmp.TabStop = false;
+            this.btn_SalirEmp.Click += new System.EventHandler(this.btn_SalirEmp_Click);
             // 
             // btn_EliminarEmp
             // 
@@ -209,17 +211,16 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // txt_IdEmpleado
+            // chk_Inactivos
             // 
-            this.txt_IdEmpleado.Location = new System.Drawing.Point(82, 7);
-            this.txt_IdEmpleado.Name = "txt_IdEmpleado";
-            this.txt_IdEmpleado.Pp_mensajeError = null;
-            this.txt_IdEmpleado.Pp_nombre_campo = null;
-            this.txt_IdEmpleado.Pp_nombre_tabla = null;
-            this.txt_IdEmpleado.Pp_validable = false;
-            this.txt_IdEmpleado.Size = new System.Drawing.Size(162, 20);
-            this.txt_IdEmpleado.TabIndex = 24;
-            this.txt_IdEmpleado.TextChanged += new System.EventHandler(this.textBox011_TextChanged);
+            this.chk_Inactivos.AutoSize = true;
+            this.chk_Inactivos.BackColor = System.Drawing.Color.Transparent;
+            this.chk_Inactivos.Location = new System.Drawing.Point(144, 88);
+            this.chk_Inactivos.Name = "chk_Inactivos";
+            this.chk_Inactivos.Size = new System.Drawing.Size(69, 17);
+            this.chk_Inactivos.TabIndex = 25;
+            this.chk_Inactivos.Text = "Inactivos";
+            this.chk_Inactivos.UseVisualStyleBackColor = false;
             // 
             // txt_NombreEmpleado
             // 
@@ -245,6 +246,18 @@
             this.txt_ApellidoEmpleado.TabIndex = 24;
             this.txt_ApellidoEmpleado.TextChanged += new System.EventHandler(this.textBox011_TextChanged);
             // 
+            // txt_IdEmpleado
+            // 
+            this.txt_IdEmpleado.Location = new System.Drawing.Point(82, 7);
+            this.txt_IdEmpleado.Name = "txt_IdEmpleado";
+            this.txt_IdEmpleado.Pp_mensajeError = null;
+            this.txt_IdEmpleado.Pp_nombre_campo = null;
+            this.txt_IdEmpleado.Pp_nombre_tabla = null;
+            this.txt_IdEmpleado.Pp_validable = false;
+            this.txt_IdEmpleado.Size = new System.Drawing.Size(162, 20);
+            this.txt_IdEmpleado.TabIndex = 24;
+            this.txt_IdEmpleado.TextChanged += new System.EventHandler(this.textBox011_TextChanged);
+            // 
             // ABM_Empleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -252,6 +265,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(725, 416);
+            this.Controls.Add(this.chk_Inactivos);
             this.Controls.Add(this.txt_NombreEmpleado);
             this.Controls.Add(this.txt_ApellidoEmpleado);
             this.Controls.Add(this.txt_IdEmpleado);
@@ -300,5 +314,6 @@
         private Clases.TextBox01 txt_IdEmpleado;
         private Clases.TextBox01 txt_NombreEmpleado;
         private Clases.TextBox01 txt_ApellidoEmpleado;
+        private System.Windows.Forms.CheckBox chk_Inactivos;
     }
 }

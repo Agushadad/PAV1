@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Alta_Empleado));
-            this.cmb_BarrioEmpleado = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,23 +42,21 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btn_CancelarEmpleado = new System.Windows.Forms.Button();
             this.btn_RegistrarEmpleado = new System.Windows.Forms.Button();
-            this.txt_NombreEmpleado = new System.Windows.Forms.TextBox();
-            this.txt_IdEmpleado = new System.Windows.Forms.TextBox();
-            this.txt_NCalleEmpleado = new System.Windows.Forms.TextBox();
-            this.txt_CalleEmpleado = new System.Windows.Forms.TextBox();
-            this.txt_TelefonoEmpleado = new System.Windows.Forms.TextBox();
-            this.txt_ApellidoEmpleado = new System.Windows.Forms.TextBox();
-            this.cmb_LocalidadEmpleado = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txt_Contraseña = new PAV1_TP.Clases.TextBox01();
+            this.txt_Contraseña2 = new PAV1_TP.Clases.TextBox01();
+            this.txt_TelefonoEmpleado = new PAV1_TP.Clases.TextBox01();
+            this.txt_CalleEmpleado = new PAV1_TP.Clases.TextBox01();
+            this.txt_NCalleEmpleado = new PAV1_TP.Clases.TextBox01();
+            this.txt_ApellidoEmpleado = new PAV1_TP.Clases.TextBox01();
+            this.txt_NombreEmpleado = new PAV1_TP.Clases.TextBox01();
+            this.txt_IdEmpleado = new PAV1_TP.Clases.TextBox01();
+            this.cmb_EstadoEmp = new PAV1_TP.Clases.ComboBox01();
+            this.cmb_LocalidadEmpleado = new PAV1_TP.Clases.ComboBox01();
+            this.cmb_BarrioEmpleado = new PAV1_TP.Clases.ComboBox01();
             this.SuspendLayout();
-            // 
-            // cmb_BarrioEmpleado
-            // 
-            this.cmb_BarrioEmpleado.FormattingEnabled = true;
-            this.cmb_BarrioEmpleado.Location = new System.Drawing.Point(110, 246);
-            this.cmb_BarrioEmpleado.Name = "cmb_BarrioEmpleado";
-            this.cmb_BarrioEmpleado.Size = new System.Drawing.Size(191, 21);
-            this.cmb_BarrioEmpleado.TabIndex = 5;
-            this.cmb_BarrioEmpleado.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -71,19 +68,17 @@
             this.label5.Size = new System.Drawing.Size(141, 20);
             this.label5.TabIndex = 0;
             this.label5.Text = "Datos de Domicilio";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(13, 60);
+            this.label4.Location = new System.Drawing.Point(20, 42);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(134, 20);
             this.label4.TabIndex = 0;
             this.label4.Text = "Datos personales";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -95,7 +90,6 @@
             this.label3.Size = new System.Drawing.Size(198, 24);
             this.label3.TabIndex = 0;
             this.label3.Text = "Registro Empleados";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label11
             // 
@@ -107,7 +101,6 @@
             this.label11.Size = new System.Drawing.Size(64, 16);
             this.label11.TabIndex = 0;
             this.label11.Text = "N° Calle";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label10
             // 
@@ -119,7 +112,6 @@
             this.label10.Size = new System.Drawing.Size(44, 16);
             this.label10.TabIndex = 0;
             this.label10.Text = "Calle";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label9
             // 
@@ -131,7 +123,6 @@
             this.label9.Size = new System.Drawing.Size(50, 16);
             this.label9.TabIndex = 0;
             this.label9.Text = "Barrio";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label12
             // 
@@ -143,7 +134,6 @@
             this.label12.Size = new System.Drawing.Size(70, 16);
             this.label12.TabIndex = 0;
             this.label12.Text = "Teléfono";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // label8
             // 
@@ -155,119 +145,230 @@
             this.label8.Size = new System.Drawing.Size(77, 16);
             this.label8.TabIndex = 0;
             this.label8.Text = "Localidad";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(40, 141);
+            this.label2.Location = new System.Drawing.Point(21, 137);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(66, 16);
             this.label2.TabIndex = 51;
             this.label2.Text = "Apellido";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(380, 107);
+            this.label7.Location = new System.Drawing.Point(22, 69);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(21, 16);
             this.label7.TabIndex = 0;
             this.label7.Text = "Id";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(41, 105);
+            this.label1.Location = new System.Drawing.Point(22, 101);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btn_CancelarEmpleado
             // 
             this.btn_CancelarEmpleado.Location = new System.Drawing.Point(534, 354);
             this.btn_CancelarEmpleado.Name = "btn_CancelarEmpleado";
             this.btn_CancelarEmpleado.Size = new System.Drawing.Size(82, 23);
-            this.btn_CancelarEmpleado.TabIndex = 10;
+            this.btn_CancelarEmpleado.TabIndex = 12;
             this.btn_CancelarEmpleado.Text = "Cancelar";
             this.btn_CancelarEmpleado.UseVisualStyleBackColor = true;
-            this.btn_CancelarEmpleado.Click += new System.EventHandler(this.button3_Click);
+            this.btn_CancelarEmpleado.Click += new System.EventHandler(this.btn_CancelarEmpleado_Click);
             // 
             // btn_RegistrarEmpleado
             // 
             this.btn_RegistrarEmpleado.Location = new System.Drawing.Point(453, 354);
             this.btn_RegistrarEmpleado.Name = "btn_RegistrarEmpleado";
             this.btn_RegistrarEmpleado.Size = new System.Drawing.Size(75, 23);
-            this.btn_RegistrarEmpleado.TabIndex = 9;
+            this.btn_RegistrarEmpleado.TabIndex = 11;
             this.btn_RegistrarEmpleado.Text = "Registrar";
             this.btn_RegistrarEmpleado.UseVisualStyleBackColor = true;
-            this.btn_RegistrarEmpleado.Click += new System.EventHandler(this.button2_Click);
+            this.btn_RegistrarEmpleado.Click += new System.EventHandler(this.btn_RegistrarEmpleado_Click);
             // 
-            // txt_NombreEmpleado
+            // label6
             // 
-            this.txt_NombreEmpleado.Location = new System.Drawing.Point(110, 104);
-            this.txt_NombreEmpleado.Name = "txt_NombreEmpleado";
-            this.txt_NombreEmpleado.Size = new System.Drawing.Size(191, 20);
-            this.txt_NombreEmpleado.TabIndex = 0;
-            this.txt_NombreEmpleado.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(314, 103);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(87, 32);
+            this.label6.TabIndex = 54;
+            this.label6.Text = "Repetir \r\nContraseña";
             // 
-            // txt_IdEmpleado
+            // label13
             // 
-            this.txt_IdEmpleado.Location = new System.Drawing.Point(418, 107);
-            this.txt_IdEmpleado.Name = "txt_IdEmpleado";
-            this.txt_IdEmpleado.Size = new System.Drawing.Size(84, 20);
-            this.txt_IdEmpleado.TabIndex = 3;
-            this.txt_IdEmpleado.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(314, 69);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(87, 16);
+            this.label13.TabIndex = 56;
+            this.label13.Text = "Contraseña";
             // 
-            // txt_NCalleEmpleado
+            // label14
             // 
-            this.txt_NCalleEmpleado.Location = new System.Drawing.Point(110, 319);
-            this.txt_NCalleEmpleado.Name = "txt_NCalleEmpleado";
-            this.txt_NCalleEmpleado.Size = new System.Drawing.Size(191, 20);
-            this.txt_NCalleEmpleado.TabIndex = 7;
-            this.txt_NCalleEmpleado.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(314, 158);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(57, 16);
+            this.label14.TabIndex = 58;
+            this.label14.Text = "Estado";
+            // 
+            // txt_Contraseña
+            // 
+            this.txt_Contraseña.Location = new System.Drawing.Point(407, 69);
+            this.txt_Contraseña.Name = "txt_Contraseña";
+            this.txt_Contraseña.PasswordChar = '*';
+            this.txt_Contraseña.Pp_mensajeError = "Falta cargar contraseña";
+            this.txt_Contraseña.Pp_nombre_campo = "Contraseña";
+            this.txt_Contraseña.Pp_nombre_tabla = "Empleado";
+            this.txt_Contraseña.Pp_validable = true;
+            this.txt_Contraseña.Size = new System.Drawing.Size(191, 20);
+            this.txt_Contraseña.TabIndex = 3;
+            // 
+            // txt_Contraseña2
+            // 
+            this.txt_Contraseña2.Location = new System.Drawing.Point(407, 115);
+            this.txt_Contraseña2.Name = "txt_Contraseña2";
+            this.txt_Contraseña2.PasswordChar = '*';
+            this.txt_Contraseña2.Pp_mensajeError = "Falta cargar contraseña 2";
+            this.txt_Contraseña2.Pp_nombre_campo = null;
+            this.txt_Contraseña2.Pp_nombre_tabla = "Empleado";
+            this.txt_Contraseña2.Pp_validable = true;
+            this.txt_Contraseña2.Size = new System.Drawing.Size(191, 20);
+            this.txt_Contraseña2.TabIndex = 4;
+            // 
+            // txt_TelefonoEmpleado
+            // 
+            this.txt_TelefonoEmpleado.Location = new System.Drawing.Point(407, 211);
+            this.txt_TelefonoEmpleado.Name = "txt_TelefonoEmpleado";
+            this.txt_TelefonoEmpleado.Pp_mensajeError = null;
+            this.txt_TelefonoEmpleado.Pp_nombre_campo = "Telefono";
+            this.txt_TelefonoEmpleado.Pp_nombre_tabla = "Empleado";
+            this.txt_TelefonoEmpleado.Pp_validable = false;
+            this.txt_TelefonoEmpleado.Size = new System.Drawing.Size(191, 20);
+            this.txt_TelefonoEmpleado.TabIndex = 10;
             // 
             // txt_CalleEmpleado
             // 
             this.txt_CalleEmpleado.Location = new System.Drawing.Point(110, 281);
             this.txt_CalleEmpleado.Name = "txt_CalleEmpleado";
+            this.txt_CalleEmpleado.Pp_mensajeError = "Falta cargar calle";
+            this.txt_CalleEmpleado.Pp_nombre_campo = "Calle";
+            this.txt_CalleEmpleado.Pp_nombre_tabla = "Empleado";
+            this.txt_CalleEmpleado.Pp_validable = true;
             this.txt_CalleEmpleado.Size = new System.Drawing.Size(191, 20);
-            this.txt_CalleEmpleado.TabIndex = 6;
-            this.txt_CalleEmpleado.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            this.txt_CalleEmpleado.TabIndex = 8;
             // 
-            // txt_TelefonoEmpleado
+            // txt_NCalleEmpleado
             // 
-            this.txt_TelefonoEmpleado.Location = new System.Drawing.Point(407, 214);
-            this.txt_TelefonoEmpleado.Name = "txt_TelefonoEmpleado";
-            this.txt_TelefonoEmpleado.Size = new System.Drawing.Size(209, 20);
-            this.txt_TelefonoEmpleado.TabIndex = 8;
-            this.txt_TelefonoEmpleado.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
+            this.txt_NCalleEmpleado.Location = new System.Drawing.Point(110, 316);
+            this.txt_NCalleEmpleado.Name = "txt_NCalleEmpleado";
+            this.txt_NCalleEmpleado.Pp_mensajeError = "Falta cargar Nro de calle";
+            this.txt_NCalleEmpleado.Pp_nombre_campo = "Nro_Calle";
+            this.txt_NCalleEmpleado.Pp_nombre_tabla = "Empleado";
+            this.txt_NCalleEmpleado.Pp_validable = true;
+            this.txt_NCalleEmpleado.Size = new System.Drawing.Size(191, 20);
+            this.txt_NCalleEmpleado.TabIndex = 9;
             // 
             // txt_ApellidoEmpleado
             // 
-            this.txt_ApellidoEmpleado.Location = new System.Drawing.Point(110, 137);
+            this.txt_ApellidoEmpleado.Location = new System.Drawing.Point(91, 137);
             this.txt_ApellidoEmpleado.Name = "txt_ApellidoEmpleado";
+            this.txt_ApellidoEmpleado.Pp_mensajeError = "Falta cargar apellido";
+            this.txt_ApellidoEmpleado.Pp_nombre_campo = "Apellido";
+            this.txt_ApellidoEmpleado.Pp_nombre_tabla = "Empleado";
+            this.txt_ApellidoEmpleado.Pp_validable = true;
             this.txt_ApellidoEmpleado.Size = new System.Drawing.Size(191, 20);
-            this.txt_ApellidoEmpleado.TabIndex = 1;
-            this.txt_ApellidoEmpleado.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txt_ApellidoEmpleado.TabIndex = 2;
+            // 
+            // txt_NombreEmpleado
+            // 
+            this.txt_NombreEmpleado.Location = new System.Drawing.Point(91, 97);
+            this.txt_NombreEmpleado.Name = "txt_NombreEmpleado";
+            this.txt_NombreEmpleado.Pp_mensajeError = "Falta cargar nombre";
+            this.txt_NombreEmpleado.Pp_nombre_campo = "Nombre";
+            this.txt_NombreEmpleado.Pp_nombre_tabla = "Empleado";
+            this.txt_NombreEmpleado.Pp_validable = true;
+            this.txt_NombreEmpleado.Size = new System.Drawing.Size(191, 20);
+            this.txt_NombreEmpleado.TabIndex = 1;
+            // 
+            // txt_IdEmpleado
+            // 
+            this.txt_IdEmpleado.Location = new System.Drawing.Point(91, 65);
+            this.txt_IdEmpleado.Name = "txt_IdEmpleado";
+            this.txt_IdEmpleado.Pp_mensajeError = "Falta cargar id";
+            this.txt_IdEmpleado.Pp_nombre_campo = "";
+            this.txt_IdEmpleado.Pp_nombre_tabla = "Empleado";
+            this.txt_IdEmpleado.Pp_validable = false;
+            this.txt_IdEmpleado.Size = new System.Drawing.Size(90, 20);
+            this.txt_IdEmpleado.TabIndex = 0;
+            // 
+            // cmb_EstadoEmp
+            // 
+            this.cmb_EstadoEmp.FormattingEnabled = true;
+            this.cmb_EstadoEmp.Location = new System.Drawing.Point(407, 157);
+            this.cmb_EstadoEmp.Name = "cmb_EstadoEmp";
+            this.cmb_EstadoEmp.Pp_Display = "Descripcion";
+            this.cmb_EstadoEmp.Pp_mensajeError = "Falta seleccionar localidad";
+            this.cmb_EstadoEmp.Pp_nombre_campo = "Estado";
+            this.cmb_EstadoEmp.Pp_nombre_tabla = "Empleado";
+            this.cmb_EstadoEmp.Pp_seleccionado = false;
+            this.cmb_EstadoEmp.Pp_Tabla = "Estado";
+            this.cmb_EstadoEmp.Pp_validable = true;
+            this.cmb_EstadoEmp.Pp_Value = "ID";
+            this.cmb_EstadoEmp.Size = new System.Drawing.Size(191, 21);
+            this.cmb_EstadoEmp.TabIndex = 5;
             // 
             // cmb_LocalidadEmpleado
             // 
             this.cmb_LocalidadEmpleado.FormattingEnabled = true;
-            this.cmb_LocalidadEmpleado.Location = new System.Drawing.Point(110, 212);
+            this.cmb_LocalidadEmpleado.Location = new System.Drawing.Point(110, 208);
             this.cmb_LocalidadEmpleado.Name = "cmb_LocalidadEmpleado";
+            this.cmb_LocalidadEmpleado.Pp_Display = "Nombre";
+            this.cmb_LocalidadEmpleado.Pp_mensajeError = "Falta seleccionar localidad";
+            this.cmb_LocalidadEmpleado.Pp_nombre_campo = "Localidad";
+            this.cmb_LocalidadEmpleado.Pp_nombre_tabla = "Empleado";
+            this.cmb_LocalidadEmpleado.Pp_seleccionado = false;
+            this.cmb_LocalidadEmpleado.Pp_Tabla = "Localidad";
+            this.cmb_LocalidadEmpleado.Pp_validable = true;
+            this.cmb_LocalidadEmpleado.Pp_Value = "ID";
             this.cmb_LocalidadEmpleado.Size = new System.Drawing.Size(191, 21);
-            this.cmb_LocalidadEmpleado.TabIndex = 4;
+            this.cmb_LocalidadEmpleado.TabIndex = 6;
+            // 
+            // cmb_BarrioEmpleado
+            // 
+            this.cmb_BarrioEmpleado.FormattingEnabled = true;
+            this.cmb_BarrioEmpleado.Location = new System.Drawing.Point(110, 242);
+            this.cmb_BarrioEmpleado.Name = "cmb_BarrioEmpleado";
+            this.cmb_BarrioEmpleado.Pp_Display = "Nombre";
+            this.cmb_BarrioEmpleado.Pp_mensajeError = "Falta seleccionar localidad";
+            this.cmb_BarrioEmpleado.Pp_nombre_campo = "Barrio";
+            this.cmb_BarrioEmpleado.Pp_nombre_tabla = "Empleado";
+            this.cmb_BarrioEmpleado.Pp_seleccionado = false;
+            this.cmb_BarrioEmpleado.Pp_Tabla = "Barrio";
+            this.cmb_BarrioEmpleado.Pp_validable = true;
+            this.cmb_BarrioEmpleado.Pp_Value = "ID";
+            this.cmb_BarrioEmpleado.Size = new System.Drawing.Size(191, 21);
+            this.cmb_BarrioEmpleado.TabIndex = 7;
             // 
             // Alta_Empleado
             // 
@@ -276,6 +377,18 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(634, 393);
+            this.Controls.Add(this.txt_Contraseña);
+            this.Controls.Add(this.txt_Contraseña2);
+            this.Controls.Add(this.txt_TelefonoEmpleado);
+            this.Controls.Add(this.txt_CalleEmpleado);
+            this.Controls.Add(this.txt_NCalleEmpleado);
+            this.Controls.Add(this.txt_ApellidoEmpleado);
+            this.Controls.Add(this.txt_NombreEmpleado);
+            this.Controls.Add(this.txt_IdEmpleado);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.cmb_EstadoEmp);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.cmb_LocalidadEmpleado);
             this.Controls.Add(this.cmb_BarrioEmpleado);
             this.Controls.Add(this.label5);
@@ -291,23 +404,16 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_CancelarEmpleado);
             this.Controls.Add(this.btn_RegistrarEmpleado);
-            this.Controls.Add(this.txt_NombreEmpleado);
-            this.Controls.Add(this.txt_IdEmpleado);
-            this.Controls.Add(this.txt_NCalleEmpleado);
-            this.Controls.Add(this.txt_CalleEmpleado);
-            this.Controls.Add(this.txt_TelefonoEmpleado);
-            this.Controls.Add(this.txt_ApellidoEmpleado);
             this.MaximizeBox = false;
             this.Name = "Alta_Empleado";
-            this.Text = "Registro de Empleados";
+            this.Text = "Registro empleados";
+            this.Load += new System.EventHandler(this.Alta_Empleado_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox cmb_BarrioEmpleado;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -321,12 +427,19 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_CancelarEmpleado;
         private System.Windows.Forms.Button btn_RegistrarEmpleado;
-        private System.Windows.Forms.TextBox txt_NombreEmpleado;
-        private System.Windows.Forms.TextBox txt_IdEmpleado;
-        private System.Windows.Forms.TextBox txt_NCalleEmpleado;
-        private System.Windows.Forms.TextBox txt_CalleEmpleado;
-        private System.Windows.Forms.TextBox txt_TelefonoEmpleado;
-        private System.Windows.Forms.TextBox txt_ApellidoEmpleado;
-        private System.Windows.Forms.ComboBox cmb_LocalidadEmpleado;
+        private Clases.ComboBox01 cmb_BarrioEmpleado;
+        private Clases.ComboBox01 cmb_LocalidadEmpleado;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label13;
+        private Clases.ComboBox01 cmb_EstadoEmp;
+        private System.Windows.Forms.Label label14;
+        private Clases.TextBox01 txt_IdEmpleado;
+        private Clases.TextBox01 txt_NombreEmpleado;
+        private Clases.TextBox01 txt_ApellidoEmpleado;
+        private Clases.TextBox01 txt_NCalleEmpleado;
+        private Clases.TextBox01 txt_CalleEmpleado;
+        private Clases.TextBox01 txt_TelefonoEmpleado;
+        private Clases.TextBox01 txt_Contraseña2;
+        private Clases.TextBox01 txt_Contraseña;
     }
 }

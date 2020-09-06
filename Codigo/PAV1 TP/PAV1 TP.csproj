@@ -47,9 +47,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\Be_BaseDeDatos.cs" />
+    <Compile Include="Clases\ComboBox01.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Clases\TextBox01.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Clases\TratamientosEspeciales.cs" />
     <Compile Include="Formularios\Catalogos\ABM_Catalogos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,6 +168,7 @@
     <Compile Include="Formularios\Proveedor\Modificacion_Proveedor.Designer.cs">
       <DependentUpon>Modificacion_Proveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Negocios\EstructurasNegocios\Es_Empleado.cs" />
     <Compile Include="Negocios\Ng_Empleados.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

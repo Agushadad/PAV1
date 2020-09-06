@@ -1,145 +1,46 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using PAV1_TP.Clases;
+using PAV1_TP.Negocios;
+using PAV1_TP.Negocios.EstructurasNegocios;
+using System;
 using System.Windows.Forms;
 
 namespace PAV1_TP.Formularios.Empleados
 {
     public partial class Alta_Empleado : Form
     {
+        Ng_Empleados empleados = new Ng_Empleados();
         public Alta_Empleado()
         {
             InitializeComponent();
         }
-
-        private void label3_Click(object sender, EventArgs e)
+        private void Alta_Empleado_Load(object sender, EventArgs e)
         {
-
+            cmb_LocalidadEmpleado.Cargar();
+            cmb_BarrioEmpleado.Cargar();
+            cmb_EstadoEmp.Cargar();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void btn_RegistrarEmpleado_Click(object sender, EventArgs e)
         {
-
+            TratamientosEspeciales tratamiento = new TratamientosEspeciales();
+            if (tratamiento.validar(this.Controls)==TratamientosEspeciales.Validacion.correcta)
+            {
+                if (txt_Contraseña.Text == txt_Contraseña2.Text)
+                {
+                    empleados.Insertar(this.Controls);
+                    MessageBox.Show("Empleado registrado correctamente");
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Los Password no coinciden");
+                }
+            }
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void btn_CancelarEmpleado_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox7_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox9_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox8_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
+            this.Close();
         }
     }
 }
