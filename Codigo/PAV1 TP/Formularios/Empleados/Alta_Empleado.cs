@@ -23,13 +23,25 @@ namespace PAV1_TP.Formularios.Empleados
         private void btn_RegistrarEmpleado_Click(object sender, EventArgs e)
         {
             TratamientosEspeciales tratamiento = new TratamientosEspeciales();
+            Es_Empleado _ee = new Es_Empleado();
+
             if (tratamiento.validar(this.Controls)==TratamientosEspeciales.Validacion.correcta)
             {
                 if (txt_Contraseña.Text == txt_Contraseña2.Text)
                 {
-                    empleados.Insertar(this.Controls);
+                    _ee.Nombre = txt_NombreEmpleado.Text;
+                    _ee.Apellido = txt_ApellidoEmpleado.Text;
+                    _ee.Telefono = txt_TelefonoEmpleado.Text;
+                    _ee.Calle = txt_CalleEmpleado.Text;
+                    _ee.Nro_Calle = txt_NCalleEmpleado.Text;
+                    _ee.Localidad = cmb_LocalidadEmpleado.SelectedValue.ToString();
+                    _ee.Barrio = cmb_BarrioEmpleado.SelectedValue.ToString();
+                    _ee.Contraseña = txt_Contraseña.Text;
+                    _ee.Estado = cmb_EstadoEmp.SelectedValue.ToString();
+
+                    txt_IdEmpleado.Text = empleados.Insertar(_ee);
                     MessageBox.Show("Empleado registrado correctamente");
-                    this.Close();
+                    //this.Close();
                 }
                 else
                 {

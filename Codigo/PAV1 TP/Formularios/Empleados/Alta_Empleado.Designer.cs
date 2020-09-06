@@ -313,11 +313,12 @@
             // 
             // txt_IdEmpleado
             // 
+            this.txt_IdEmpleado.Enabled = false;
             this.txt_IdEmpleado.Location = new System.Drawing.Point(91, 65);
             this.txt_IdEmpleado.Name = "txt_IdEmpleado";
-            this.txt_IdEmpleado.Pp_mensajeError = "Falta cargar id";
+            this.txt_IdEmpleado.Pp_mensajeError = "";
             this.txt_IdEmpleado.Pp_nombre_campo = "";
-            this.txt_IdEmpleado.Pp_nombre_tabla = "Empleado";
+            this.txt_IdEmpleado.Pp_nombre_tabla = "";
             this.txt_IdEmpleado.Pp_validable = false;
             this.txt_IdEmpleado.Size = new System.Drawing.Size(90, 20);
             this.txt_IdEmpleado.TabIndex = 0;
@@ -360,7 +361,7 @@
             this.cmb_BarrioEmpleado.Location = new System.Drawing.Point(110, 242);
             this.cmb_BarrioEmpleado.Name = "cmb_BarrioEmpleado";
             this.cmb_BarrioEmpleado.Pp_Display = "Nombre";
-            this.cmb_BarrioEmpleado.Pp_mensajeError = "Falta seleccionar localidad";
+            this.cmb_BarrioEmpleado.Pp_mensajeError = "Falta seleccionar Barrio";
             this.cmb_BarrioEmpleado.Pp_nombre_campo = "Barrio";
             this.cmb_BarrioEmpleado.Pp_nombre_tabla = "Empleado";
             this.cmb_BarrioEmpleado.Pp_seleccionado = false;

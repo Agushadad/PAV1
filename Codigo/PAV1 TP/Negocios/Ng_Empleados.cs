@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using PAV1_TP.Clases;
 using System.Data;
 using System.Windows.Forms;
+using PAV1_TP.Negocios.EstructurasNegocios;
 
 namespace PAV1_TP.Negocios
 {
@@ -68,9 +69,25 @@ namespace PAV1_TP.Negocios
             tabla = _BD.Consulta(sql);
             return tabla;
         }
-        public void Insertar(Control.ControlCollection controles)
+        public string Insertar(Es_Empleado datos)
         {
-            _BD.InsertarAutomatizado("Empleado", controles);
+            string sqlInsert = @"INSERT INTO Empleado(Nombre, Apellido, Telefono, Calle, Nro_Calle
+                                 , Barrio, Localidad, Contraseña, Estado) VALUES (";
+
+            sqlInsert += "'" + datos.Nombre + "'";
+            sqlInsert += ", '" + datos.Apellido + "'";
+            sqlInsert += ", '" + datos.Telefono + "'";
+            sqlInsert += ", '" + datos.Calle + "'";
+            sqlInsert += ", '" + datos.Nro_Calle + "'";
+            sqlInsert += ", '" + datos.Barrio + "'";
+            sqlInsert += ", '" + datos.Localidad + "'";
+            sqlInsert += ", '" + datos.Contraseña + "'";
+            sqlInsert += ", '" + datos.Estado + "')";
+
+            MessageBox.Show(sqlInsert);
+
+            return _BD.Insertar(sqlInsert);
+
         }
     }
 }
