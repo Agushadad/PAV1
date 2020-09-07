@@ -19,8 +19,8 @@ namespace PAV1_TP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Frm_Escritorio());
-            Application.Run(new Alta_Empleado());
+            Application.Run(new Frm_Escritorio());
+            
 
 
 

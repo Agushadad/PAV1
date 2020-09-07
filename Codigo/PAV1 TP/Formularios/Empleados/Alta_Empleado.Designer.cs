@@ -38,7 +38,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_CancelarEmpleado = new System.Windows.Forms.Button();
             this.btn_RegistrarEmpleado = new System.Windows.Forms.Button();
@@ -52,10 +51,11 @@
             this.txt_NCalleEmpleado = new PAV1_TP.Clases.TextBox01();
             this.txt_ApellidoEmpleado = new PAV1_TP.Clases.TextBox01();
             this.txt_NombreEmpleado = new PAV1_TP.Clases.TextBox01();
-            this.txt_IdEmpleado = new PAV1_TP.Clases.TextBox01();
             this.cmb_EstadoEmp = new PAV1_TP.Clases.ComboBox01();
             this.cmb_LocalidadEmpleado = new PAV1_TP.Clases.ComboBox01();
             this.cmb_BarrioEmpleado = new PAV1_TP.Clases.ComboBox01();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txt_IdEmpleado = new PAV1_TP.Clases.TextBox01();
             this.SuspendLayout();
             // 
             // label5
@@ -156,17 +156,6 @@
             this.label2.Size = new System.Drawing.Size(66, 16);
             this.label2.TabIndex = 51;
             this.label2.Text = "Apellido";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(22, 69);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(21, 16);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Id";
             // 
             // label1
             // 
@@ -311,18 +300,6 @@
             this.txt_NombreEmpleado.Size = new System.Drawing.Size(191, 20);
             this.txt_NombreEmpleado.TabIndex = 1;
             // 
-            // txt_IdEmpleado
-            // 
-            this.txt_IdEmpleado.Enabled = false;
-            this.txt_IdEmpleado.Location = new System.Drawing.Point(91, 65);
-            this.txt_IdEmpleado.Name = "txt_IdEmpleado";
-            this.txt_IdEmpleado.Pp_mensajeError = "";
-            this.txt_IdEmpleado.Pp_nombre_campo = "";
-            this.txt_IdEmpleado.Pp_nombre_tabla = "";
-            this.txt_IdEmpleado.Pp_validable = false;
-            this.txt_IdEmpleado.Size = new System.Drawing.Size(90, 20);
-            this.txt_IdEmpleado.TabIndex = 0;
-            // 
             // cmb_EstadoEmp
             // 
             this.cmb_EstadoEmp.FormattingEnabled = true;
@@ -370,6 +347,30 @@
             this.cmb_BarrioEmpleado.Pp_Value = "ID";
             this.cmb_BarrioEmpleado.Size = new System.Drawing.Size(191, 21);
             this.cmb_BarrioEmpleado.TabIndex = 7;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(22, 69);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(21, 16);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Id";
+            // 
+            // txt_IdEmpleado
+            // 
+            this.txt_IdEmpleado.Enabled = false;
+            this.txt_IdEmpleado.Location = new System.Drawing.Point(91, 65);
+            this.txt_IdEmpleado.Name = "txt_IdEmpleado";
+            this.txt_IdEmpleado.Pp_mensajeError = "";
+            this.txt_IdEmpleado.Pp_nombre_campo = "";
+            this.txt_IdEmpleado.Pp_nombre_tabla = "";
+            this.txt_IdEmpleado.Pp_validable = false;
+            this.txt_IdEmpleado.Size = new System.Drawing.Size(90, 20);
+            this.txt_IdEmpleado.TabIndex = 0;
+            this.txt_IdEmpleado.TextChanged += new System.EventHandler(this.txt_IdEmpleado_TextChanged);
             // 
             // Alta_Empleado
             // 
@@ -424,7 +425,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_CancelarEmpleado;
         private System.Windows.Forms.Button btn_RegistrarEmpleado;
@@ -434,7 +434,6 @@
         private System.Windows.Forms.Label label13;
         private Clases.ComboBox01 cmb_EstadoEmp;
         private System.Windows.Forms.Label label14;
-        private Clases.TextBox01 txt_IdEmpleado;
         private Clases.TextBox01 txt_NombreEmpleado;
         private Clases.TextBox01 txt_ApellidoEmpleado;
         private Clases.TextBox01 txt_NCalleEmpleado;
@@ -442,5 +441,7 @@
         private Clases.TextBox01 txt_TelefonoEmpleado;
         private Clases.TextBox01 txt_Contraseña2;
         private Clases.TextBox01 txt_Contraseña;
+        private System.Windows.Forms.Label label7;
+        private Clases.TextBox01 txt_IdEmpleado;
     }
 }

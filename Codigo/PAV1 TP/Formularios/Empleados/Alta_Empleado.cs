@@ -29,6 +29,9 @@ namespace PAV1_TP.Formularios.Empleados
             {
                 if (txt_Contraseña.Text == txt_Contraseña2.Text)
                 {
+
+
+                    _ee.ID = empleados.NuevoId();
                     _ee.Nombre = txt_NombreEmpleado.Text;
                     _ee.Apellido = txt_ApellidoEmpleado.Text;
                     _ee.Telefono = txt_TelefonoEmpleado.Text;
@@ -39,9 +42,9 @@ namespace PAV1_TP.Formularios.Empleados
                     _ee.Contraseña = txt_Contraseña.Text;
                     _ee.Estado = cmb_EstadoEmp.SelectedValue.ToString();
 
-                    txt_IdEmpleado.Text = empleados.Insertar(_ee);
+                    empleados.Insertar(_ee);
                     MessageBox.Show("Empleado registrado correctamente");
-                    //this.Close();
+                    this.Close();
                 }
                 else
                 {
@@ -53,6 +56,11 @@ namespace PAV1_TP.Formularios.Empleados
         private void btn_CancelarEmpleado_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txt_IdEmpleado_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

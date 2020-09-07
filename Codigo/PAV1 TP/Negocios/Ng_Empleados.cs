@@ -69,12 +69,25 @@ namespace PAV1_TP.Negocios
             tabla = _BD.Consulta(sql);
             return tabla;
         }
+
+        public string NuevoId()
+        {
+            DataTable tabla = new DataTable();
+            string sql = "SELECT * FROM Empleado";
+            tabla = _BD.Consulta(sql);
+            int id = tabla.Rows.Count;
+            int NuevaId = id + 1;
+            return NuevaId.ToString();
+        }
+        
+        
         public string Insertar(Es_Empleado datos)
         {
-            string sqlInsert = @"INSERT INTO Empleado(Nombre, Apellido, Telefono, Calle, Nro_Calle
+            
+            string sqlInsert = @"INSERT INTO Empleado(ID,Nombre, Apellido, Telefono, Calle, Nro_Calle
                                  , Barrio, Localidad, Contraseña, Estado) VALUES (";
-
-            sqlInsert += "'" + datos.Nombre + "'";
+            sqlInsert += "'" + datos.ID + "'";
+            sqlInsert += ",'" + datos.Nombre + "'";
             sqlInsert += ", '" + datos.Apellido + "'";
             sqlInsert += ", '" + datos.Telefono + "'";
             sqlInsert += ", '" + datos.Calle + "'";
