@@ -13,7 +13,7 @@ namespace PAV1_TP.Clases
     {
         SqlConnection Conexion = new SqlConnection();
         SqlCommand Cmd = new SqlCommand();
-        String Cadena_conexion = "Data Source=LAPTOP-C87F44FH\\MSSQLSERVER01;Integrated Security=SSPI;Initial Catalog=Vivero";
+        String Cadena_conexion = "Data Source=DESKTOP-7MV1FIL;Initial Catalog=Vivero;Integrated Security=True";
 
         private void Conectar()
         {

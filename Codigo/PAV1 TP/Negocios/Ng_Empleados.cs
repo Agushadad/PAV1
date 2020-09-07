@@ -97,8 +97,6 @@ namespace PAV1_TP.Negocios
             sqlInsert += ", '" + datos.Contraseña + "'";
             sqlInsert += ", '" + datos.Estado + "')";
 
-            MessageBox.Show(sqlInsert);
-
             return _BD.Insertar(sqlInsert);
 
         }
