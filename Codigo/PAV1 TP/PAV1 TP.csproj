@@ -72,17 +72,23 @@
     <Compile Include="Formularios\Catalogos\Modificacion_Catalogos.Designer.cs">
       <DependentUpon>Modificacion_Catalogos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Catalogos\Clientes\ABM_Clientes.cs">
+    <Compile Include="Formularios\Clientes\ABM_Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Catalogos\Clientes\ABM_Clientes.Designer.cs">
+    <Compile Include="Formularios\Clientes\ABM_Clientes.Designer.cs">
       <DependentUpon>ABM_Clientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Catalogos\Clientes\Alta_Clientes.cs">
+    <Compile Include="Formularios\Clientes\Alta_Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Catalogos\Clientes\Alta_Clientes.Designer.cs">
+    <Compile Include="Formularios\Clientes\Alta_Clientes.Designer.cs">
       <DependentUpon>Alta_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Clientes\Modificacion_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Clientes\Modificacion_Cliente.Designer.cs">
+      <DependentUpon>Modificacion_Cliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Empleados\ABM_Empleados.cs">
       <SubType>Form</SubType>
@@ -108,6 +114,7 @@
     <Compile Include="Formularios\Frm_Login.Designer.cs">
       <DependentUpon>Frm_Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Modificacion.cs" />
     <Compile Include="Formularios\Plantas\Alta_Plantas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,11 +188,14 @@
     <EmbeddedResource Include="Formularios\Catalogos\Modificacion_Catalogos.resx">
       <DependentUpon>Modificacion_Catalogos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Catalogos\Clientes\ABM_Clientes.resx">
+    <EmbeddedResource Include="Formularios\Clientes\ABM_Clientes.resx">
       <DependentUpon>ABM_Clientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Catalogos\Clientes\Alta_Clientes.resx">
+    <EmbeddedResource Include="Formularios\Clientes\Alta_Clientes.resx">
       <DependentUpon>Alta_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Clientes\Modificacion_Cliente.resx">
+      <DependentUpon>Modificacion_Cliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Empleados\ABM_Empleados.resx">
       <DependentUpon>ABM_Empleados.cs</DependentUpon>

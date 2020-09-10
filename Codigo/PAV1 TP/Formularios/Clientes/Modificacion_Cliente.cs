@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Alta_Modificacion_Cliente
+namespace PAV1_TP.Formularios.Clientes
 {
-    public partial class Modificacion : Form
+    public partial class Modificacion_Cliente : Form
     {
-        public Modificacion()
+        public Modificacion_Cliente()
         {
             InitializeComponent();
-        }
-
-        private void ModificaCliente_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
