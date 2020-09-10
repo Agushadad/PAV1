@@ -64,7 +64,7 @@ namespace PAV1_TP.Negocios
         }
         public DataTable Buscar_empleado(string ID_emp, string nom_emp, string ap_emp)
         {
-            string sql = "SELECT * FROM Empleado WHERE ID LIKE '%" + ID_emp + "%    ' AND Nombre LIKE '%" + nom_emp + "%' AND Apellido LIKE '%" + ap_emp + "%'";
+            string sql = "SELECT * FROM Empleado WHERE ID LIKE '%" + ID_emp + "%' AND Nombre LIKE '%" + nom_emp + "%' AND Apellido LIKE '%" + ap_emp + "%'";
             DataTable tabla = new DataTable();
             tabla = _BD.Consulta(sql);
             return tabla;
