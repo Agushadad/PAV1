@@ -62,5 +62,10 @@ namespace PAV1_TP.Formularios.Empleados
         {
 
         }
+
+        private void cmb_LocalidadEmpleado_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

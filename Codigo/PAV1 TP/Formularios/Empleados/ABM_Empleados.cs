@@ -33,8 +33,9 @@ namespace PAV1_TP.Formularios.Empleados
 
         private void btn_EditarEmp_Click(object sender, EventArgs e)
         {
-            Form Modificacion_Empleado = new Modificacion_Empleado();
+            Form Modificacion_Empleado = new Modificacion_Empleado() { ID = "2" };
             Modificacion_Empleado.Show();
+            
         }
 
         private void btn_ConsultarEmp_Click(object sender, EventArgs e)
