@@ -33,8 +33,11 @@ namespace PAV1_TP.Formularios.Empleados
 
         private void btn_EditarEmp_Click(object sender, EventArgs e)
         {
-            Form Modificacion_Empleado = new Modificacion_Empleado();
-            Modificacion_Empleado.Show();
+            Modificacion_Empleado Modif = new Modificacion_Empleado();
+            Modif.ID = Grid_Emp.CurrentRow.Cells[0].Value.ToString();
+            Modif.ShowDialog();
+            Modif.Dispose();
+            
         }
 
         private void btn_ConsultarEmp_Click(object sender, EventArgs e)
@@ -83,6 +86,13 @@ namespace PAV1_TP.Formularios.Empleados
         private void btn_SalirEmp_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btn_EliminarEmp_Click(object sender, EventArgs e)
+        {
+            string ID = Grid_Emp.CurrentRow.Cells[0].Value.ToString();
+            Empleados.Eliminar(ID);
+            Cargar_Grilla(Empleados.Todos_Los_Empleados());
         }
     }
 }

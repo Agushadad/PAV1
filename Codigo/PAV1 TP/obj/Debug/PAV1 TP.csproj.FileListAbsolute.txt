@@ -64,8 +64,6 @@ C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1 TP.csprojAssembl
 C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Catalogos.ABM_Catalogos.resources
 C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Catalogos.Alta_Catalogos.resources
 C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Catalogos.Modificacion_Catalogos.resources
-C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\WindowsFormsApp2.ABM_Clientes.resources
-C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Alta_Clientes.resources
 C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Frm_Login.resources
 C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Alta_Plantas.resources
 C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Frm_Escritorio.resources
@@ -113,3 +111,6 @@ C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.P
 C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Producto.Modificacion_Producto.resources
 C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1 TP.csprojAssemblyReference.cache
 C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.ABM_Clientes.resources
+C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Clientes.ABM_Clientes.resources
+C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Clientes.Alta_Clientes.resources
+C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Clientes.Modificacion_Cliente.resources

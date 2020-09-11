@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Modificacion_Empleado));
-            this.cmb_LocalidadEmpleado = new System.Windows.Forms.ComboBox();
-            this.cmb_BarrioEmpleado = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,23 +48,13 @@
             this.txt_CalleEmpleado = new System.Windows.Forms.TextBox();
             this.txt_TelefonoEmpleado = new System.Windows.Forms.TextBox();
             this.txt_ApellidoEmpleado = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txt_Contraseña = new PAV1_TP.Clases.TextBox01();
+            this.txt_Contraseña2 = new PAV1_TP.Clases.TextBox01();
+            this.cmb_BarrioEmpleado = new PAV1_TP.Clases.ComboBox01();
+            this.cmb_LocalidadEmpleado = new PAV1_TP.Clases.ComboBox01();
             this.SuspendLayout();
-            // 
-            // cmb_LocalidadEmpleado
-            // 
-            this.cmb_LocalidadEmpleado.FormattingEnabled = true;
-            this.cmb_LocalidadEmpleado.Location = new System.Drawing.Point(119, 212);
-            this.cmb_LocalidadEmpleado.Name = "cmb_LocalidadEmpleado";
-            this.cmb_LocalidadEmpleado.Size = new System.Drawing.Size(191, 21);
-            this.cmb_LocalidadEmpleado.TabIndex = 4;
-            // 
-            // cmb_BarrioEmpleado
-            // 
-            this.cmb_BarrioEmpleado.FormattingEnabled = true;
-            this.cmb_BarrioEmpleado.Location = new System.Drawing.Point(119, 246);
-            this.cmb_BarrioEmpleado.Name = "cmb_BarrioEmpleado";
-            this.cmb_BarrioEmpleado.Size = new System.Drawing.Size(191, 21);
-            this.cmb_BarrioEmpleado.TabIndex = 5;
             // 
             // label5
             // 
@@ -84,7 +72,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(22, 60);
+            this.label4.Location = new System.Drawing.Point(12, 42);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(134, 20);
             this.label4.TabIndex = 0;
@@ -172,7 +160,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(389, 107);
+            this.label7.Location = new System.Drawing.Point(92, 79);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(21, 16);
             this.label7.TabIndex = 0;
@@ -204,8 +192,9 @@
             this.btn_RegistrarEmpleado.Name = "btn_RegistrarEmpleado";
             this.btn_RegistrarEmpleado.Size = new System.Drawing.Size(75, 23);
             this.btn_RegistrarEmpleado.TabIndex = 9;
-            this.btn_RegistrarEmpleado.Text = "Registrar";
+            this.btn_RegistrarEmpleado.Text = "Aceptar";
             this.btn_RegistrarEmpleado.UseVisualStyleBackColor = true;
+            this.btn_RegistrarEmpleado.Click += new System.EventHandler(this.btn_RegistrarEmpleado_Click);
             // 
             // txt_NombreEmpleado
             // 
@@ -216,7 +205,8 @@
             // 
             // txt_IdEmpleado
             // 
-            this.txt_IdEmpleado.Location = new System.Drawing.Point(427, 107);
+            this.txt_IdEmpleado.Enabled = false;
+            this.txt_IdEmpleado.Location = new System.Drawing.Point(119, 78);
             this.txt_IdEmpleado.Name = "txt_IdEmpleado";
             this.txt_IdEmpleado.Size = new System.Drawing.Size(84, 20);
             this.txt_IdEmpleado.TabIndex = 3;
@@ -249,6 +239,84 @@
             this.txt_ApellidoEmpleado.Size = new System.Drawing.Size(191, 20);
             this.txt_ApellidoEmpleado.TabIndex = 2;
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(341, 75);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(87, 16);
+            this.label13.TabIndex = 60;
+            this.label13.Text = "Contraseña";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(341, 109);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(87, 32);
+            this.label6.TabIndex = 59;
+            this.label6.Text = "Repetir \r\nContraseña";
+            // 
+            // txt_Contraseña
+            // 
+            this.txt_Contraseña.Location = new System.Drawing.Point(434, 75);
+            this.txt_Contraseña.Name = "txt_Contraseña";
+            this.txt_Contraseña.PasswordChar = '*';
+            this.txt_Contraseña.Pp_mensajeError = "Falta cargar contraseña";
+            this.txt_Contraseña.Pp_nombre_campo = "Contraseña";
+            this.txt_Contraseña.Pp_nombre_tabla = "Empleado";
+            this.txt_Contraseña.Pp_validable = true;
+            this.txt_Contraseña.Size = new System.Drawing.Size(191, 20);
+            this.txt_Contraseña.TabIndex = 57;
+            // 
+            // txt_Contraseña2
+            // 
+            this.txt_Contraseña2.Location = new System.Drawing.Point(434, 121);
+            this.txt_Contraseña2.Name = "txt_Contraseña2";
+            this.txt_Contraseña2.PasswordChar = '*';
+            this.txt_Contraseña2.Pp_mensajeError = "Falta cargar contraseña 2";
+            this.txt_Contraseña2.Pp_nombre_campo = null;
+            this.txt_Contraseña2.Pp_nombre_tabla = "Empleado";
+            this.txt_Contraseña2.Pp_validable = true;
+            this.txt_Contraseña2.Size = new System.Drawing.Size(191, 20);
+            this.txt_Contraseña2.TabIndex = 58;
+            // 
+            // cmb_BarrioEmpleado
+            // 
+            this.cmb_BarrioEmpleado.FormattingEnabled = true;
+            this.cmb_BarrioEmpleado.Location = new System.Drawing.Point(119, 247);
+            this.cmb_BarrioEmpleado.Name = "cmb_BarrioEmpleado";
+            this.cmb_BarrioEmpleado.Pp_Display = "Nombre";
+            this.cmb_BarrioEmpleado.Pp_mensajeError = "Falta seleccionar barrio";
+            this.cmb_BarrioEmpleado.Pp_nombre_campo = "Barrio";
+            this.cmb_BarrioEmpleado.Pp_nombre_tabla = "Empleado";
+            this.cmb_BarrioEmpleado.Pp_seleccionado = false;
+            this.cmb_BarrioEmpleado.Pp_Tabla = "Barrio";
+            this.cmb_BarrioEmpleado.Pp_validable = false;
+            this.cmb_BarrioEmpleado.Pp_Value = "ID";
+            this.cmb_BarrioEmpleado.Size = new System.Drawing.Size(191, 21);
+            this.cmb_BarrioEmpleado.TabIndex = 12;
+            // 
+            // cmb_LocalidadEmpleado
+            // 
+            this.cmb_LocalidadEmpleado.FormattingEnabled = true;
+            this.cmb_LocalidadEmpleado.Location = new System.Drawing.Point(119, 209);
+            this.cmb_LocalidadEmpleado.Name = "cmb_LocalidadEmpleado";
+            this.cmb_LocalidadEmpleado.Pp_Display = "Nombre";
+            this.cmb_LocalidadEmpleado.Pp_mensajeError = "Falta seleccionar localidad";
+            this.cmb_LocalidadEmpleado.Pp_nombre_campo = "Localidad";
+            this.cmb_LocalidadEmpleado.Pp_nombre_tabla = "Empleado";
+            this.cmb_LocalidadEmpleado.Pp_seleccionado = false;
+            this.cmb_LocalidadEmpleado.Pp_Tabla = "Localidad";
+            this.cmb_LocalidadEmpleado.Pp_validable = false;
+            this.cmb_LocalidadEmpleado.Pp_Value = "ID";
+            this.cmb_LocalidadEmpleado.Size = new System.Drawing.Size(191, 21);
+            this.cmb_LocalidadEmpleado.TabIndex = 11;
+            // 
             // Modificacion_Empleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -256,8 +324,12 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(641, 391);
-            this.Controls.Add(this.cmb_LocalidadEmpleado);
+            this.Controls.Add(this.txt_Contraseña);
+            this.Controls.Add(this.txt_Contraseña2);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.cmb_BarrioEmpleado);
+            this.Controls.Add(this.cmb_LocalidadEmpleado);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -280,15 +352,13 @@
             this.MaximizeBox = false;
             this.Name = "Modificacion_Empleado";
             this.Text = "Modificacion_Empleado";
+            this.Load += new System.EventHandler(this.Modificacion_Empleado_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox cmb_LocalidadEmpleado;
-        private System.Windows.Forms.ComboBox cmb_BarrioEmpleado;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -308,5 +378,11 @@
         private System.Windows.Forms.TextBox txt_CalleEmpleado;
         private System.Windows.Forms.TextBox txt_TelefonoEmpleado;
         private System.Windows.Forms.TextBox txt_ApellidoEmpleado;
+        private Clases.ComboBox01 cmb_LocalidadEmpleado;
+        private Clases.ComboBox01 cmb_BarrioEmpleado;
+        private Clases.TextBox01 txt_Contraseña;
+        private Clases.TextBox01 txt_Contraseña2;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label6;
     }
 }

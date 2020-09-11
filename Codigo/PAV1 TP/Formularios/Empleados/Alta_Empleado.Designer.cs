@@ -331,6 +331,7 @@
             this.cmb_LocalidadEmpleado.Pp_Value = "ID";
             this.cmb_LocalidadEmpleado.Size = new System.Drawing.Size(191, 21);
             this.cmb_LocalidadEmpleado.TabIndex = 6;
+            this.cmb_LocalidadEmpleado.SelectedIndexChanged += new System.EventHandler(this.cmb_LocalidadEmpleado_SelectedIndexChanged);
             // 
             // cmb_BarrioEmpleado
             // 

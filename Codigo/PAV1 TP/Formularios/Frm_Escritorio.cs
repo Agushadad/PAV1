@@ -35,8 +35,7 @@ namespace PAV1_TP
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Form Cliente = new ABM_Clientes();
-            Cliente.Show();
+            
         }
 
         private void Frm_Escritorio_Load(object sender, EventArgs e)

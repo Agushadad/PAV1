@@ -104,6 +104,7 @@
             this.btn_EliminarEmp.Size = new System.Drawing.Size(59, 50);
             this.btn_EliminarEmp.TabIndex = 20;
             this.btn_EliminarEmp.TabStop = false;
+            this.btn_EliminarEmp.Click += new System.EventHandler(this.btn_EliminarEmp_Click);
             // 
             // btn_ConsultarEmp
             // 
