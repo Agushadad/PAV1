@@ -16,7 +16,7 @@ namespace PAV1_TP.Formularios.Empleados
     public partial class Modificacion_Empleado : Form
     {
         Ng_Empleados Empleado = new Ng_Empleados();
-        
+
 
         public string ID { get; set; }
 
@@ -46,10 +46,37 @@ namespace PAV1_TP.Formularios.Empleados
 
         private void btn_RegistrarEmpleado_Click(object sender, EventArgs e)
         {
+            TratamientosEspeciales tratamiento = new TratamientosEspeciales();
+            Es_Empleado _ee = new Es_Empleado();
+
+            if (tratamiento.validar(this.Controls) == TratamientosEspeciales.Validacion.correcta)
+            {
+                if (txt_Contraseña.Text == txt_Contraseña2.Text)
+                {
+
+
+                    _ee.ID = txt_IdEmpleado.Text;
+                    _ee.Nombre = txt_NombreEmpleado.Text;
+                    _ee.Apellido = txt_ApellidoEmpleado.Text;
+                    _ee.Telefono = txt_TelefonoEmpleado.Text;
+                    _ee.Calle = txt_CalleEmpleado.Text;
+                    _ee.Nro_Calle = txt_NCalleEmpleado.Text;
+                    _ee.Localidad = cmb_LocalidadEmpleado.SelectedValue.ToString();
+                    _ee.Barrio = cmb_BarrioEmpleado.SelectedValue.ToString();
+                    _ee.Contraseña = txt_Contraseña.Text;
+                    _ee.Estado = "Activo";
+
+                    Empleado.Modificar(_ee);
+                    MessageBox.Show("Empleado modificado correctamente");
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Las contraseñas no coinciden");
+                }
+            }
         }
-
-
-        
     }
 }
+
 

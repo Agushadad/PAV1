@@ -192,7 +192,7 @@
             this.btn_RegistrarEmpleado.Name = "btn_RegistrarEmpleado";
             this.btn_RegistrarEmpleado.Size = new System.Drawing.Size(75, 23);
             this.btn_RegistrarEmpleado.TabIndex = 9;
-            this.btn_RegistrarEmpleado.Text = "Registrar";
+            this.btn_RegistrarEmpleado.Text = "Aceptar";
             this.btn_RegistrarEmpleado.UseVisualStyleBackColor = true;
             this.btn_RegistrarEmpleado.Click += new System.EventHandler(this.btn_RegistrarEmpleado_Click);
             // 

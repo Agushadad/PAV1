@@ -24,13 +24,13 @@ namespace PAV1_TP.Clases
             Cmd.Connection = Conexion;
             Cmd.CommandType = System.Data.CommandType.Text;
         }
-        
+
         private void Desconectar()
         {
             Conexion.Close();
         }
 
-        public DataTable Consulta (string sql)
+        public DataTable Consulta(string sql)
         {
             Conectar();
             Cmd.CommandText = sql;
@@ -50,5 +50,45 @@ namespace PAV1_TP.Clases
             Desconectar();
             return tabla.Rows[0][0].ToString();
         }
+
+        public string FormatearDato(string dato, string formato)
+        {
+            switch (formato)
+            {
+                case "String":
+                    return "'" + dato + "'";
+                case "Date":
+                case "DateTime":
+                    return "convert(date,'" + dato + "', 103)";
+                // dd/mm/yyyyy
+                default:
+                    return dato;
+            }
+        }
+
+        public string Modificar(string sql)
+        {
+            Conectar();
+            Cmd.CommandText = sql;
+            Cmd.ExecuteNonQuery();
+            DataTable tabla = new DataTable();
+            Cmd.CommandText = "SELECT @@Identity";
+            tabla.Load(Cmd.ExecuteReader());
+            Desconectar();
+            if (sql.ToUpper().IndexOf("INSERT") >= 0)
+                return tabla.Rows[0][0].ToString();
+            else
+                return "";
+            
+        }
+
+
     }
 }
+    
+
+
+       
+        
+  
+
