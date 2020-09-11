@@ -23,7 +23,7 @@ using System.Data;
         {
             Be_BaseDeDatos _BD = new Be_BaseDeDatos();
             DataTable tabla = new DataTable();
-            tabla = _BD.Consulta("SELECT * FROM Plantas");
+            tabla = _BD.Consulta("SELECT * FROM " + Pp_Tabla);
             int filas = tabla.Rows.Count;
 
             for (int i = 0; i < filas; i ++)

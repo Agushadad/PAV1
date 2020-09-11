@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PAV1_TP.Clases;
 
 namespace PAV1_TP.Formularios.Catalogos
 {
@@ -27,8 +28,18 @@ namespace PAV1_TP.Formularios.Catalogos
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            Form ModifCatalogo = new Modificacion_Catalogos();
-            ModifCatalogo.Show();
+            Modificacion_Catalogos Modif = new Modificacion_Catalogos();
+
+            if (Grid_Catalogos.CurrentCell.Value == null)
+            {
+                MessageBox.Show("No se selecciono ningun empleado para modificar");
+            }
+            else
+            {
+                Modif.ID = Grid_Catalogos.CurrentRow.Cells[0].Value.ToString();
+                Modif.ShowDialog();
+                Modif.Dispose();
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

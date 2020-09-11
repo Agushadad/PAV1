@@ -40,25 +40,59 @@ namespace PAV1_TP.Negocios
             tabla = _BD.Consulta(sql);
             return tabla;
         }
+        public int Recuperar_id(string planta)
+        {
+            string sql = "";
+            sql = "SELECT * FROM Catalogo WHERE NombreComun = '" + planta + "'";
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+
+            if (tabla.Rows.Count == 0)
+            {
+                return 0;
+            }
+            else
+            {
+                return int.Parse(tabla.Rows[0]["Codigo"].ToString());
+            }
+        }
         public string NuevoId()
         {
             DataTable tabla = new DataTable();
-            string sql = "SELECT * FROM Empleado";
+            string sql = "SELECT DISTINCT ID FROM Catalogo";
             tabla = _BD.Consulta(sql);
             int id = tabla.Rows.Count;
             int NuevaId = id + 1;
             return NuevaId.ToString();
+        }
+        public DataTable Recuperar_Usuario(string ID)
+        {
+            return _BD.Consulta("SELECT * FROM Catalogo WHERE ID = " + ID);
         }
         public string Insertar(Es_Catalogo datos)
         {
 
             string sqlInsert = @"INSERT INTO Catalogo(ID,Id_Planta, Puntos_Necesarios, Estado) VALUES (";
             sqlInsert += "'" + datos.ID + "'";
-            sqlInsert += ",'" + datos.Id_Planta + "'";
+            sqlInsert += ",'" + datos.Id_Planta  + "'";
             sqlInsert += ", '" + datos.Puntos_Necesarios + "'";
-            sqlInsert += ", '" + datos.Estado + "'";
+            sqlInsert += ", '" + datos.Estado + "')";
 
             return _BD.Insertar(sqlInsert);
+
+        }
+        public void Modificar(Es_Catalogo datos)
+        {
+            string sqlUpdate = "UPDATE Catalogo SET ";
+            sqlUpdate += "ID = " + _BD.FormatearDato(datos.ID, "String");
+            sqlUpdate += ", Id_Planta = " + _BD.FormatearDato(datos.Id_Planta, "String");
+            sqlUpdate += ", Puntos_Necesarios = " + _BD.FormatearDato(datos.Puntos_Necesarios, "String");
+            sqlUpdate += ", Estado = " + _BD.FormatearDato(datos.Estado, "String");
+            sqlUpdate += " WHERE ID = " + datos.ID;
+
+
+
+            _BD.Modificar(sqlUpdate);
 
         }
     }
