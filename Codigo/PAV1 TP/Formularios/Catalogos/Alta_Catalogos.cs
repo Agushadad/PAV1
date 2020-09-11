@@ -21,5 +21,10 @@ namespace PAV1_TP.Formularios.Catalogos
         {
             chk_Id_Plantas_Catalogos.Cargar();
         }
+
+        private void chk_Id_Plantas_Catalogos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

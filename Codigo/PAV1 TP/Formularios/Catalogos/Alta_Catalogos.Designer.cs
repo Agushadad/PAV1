@@ -122,7 +122,7 @@
             this.chk_Id_Plantas_Catalogos.Location = new System.Drawing.Point(110, 109);
             this.chk_Id_Plantas_Catalogos.Name = "chk_Id_Plantas_Catalogos";
             this.chk_Id_Plantas_Catalogos.Pp_Display = "NombreComun";
-            this.chk_Id_Plantas_Catalogos.Pp_mensajeError = null;
+            this.chk_Id_Plantas_Catalogos.Pp_mensajeError = "Falta seleccionar alguna planta";
             this.chk_Id_Plantas_Catalogos.Pp_nombre_campo = "Id_Planta";
             this.chk_Id_Plantas_Catalogos.Pp_nombre_tabla = "Catalogo";
             this.chk_Id_Plantas_Catalogos.Pp_seleccionado = false;
@@ -131,6 +131,7 @@
             this.chk_Id_Plantas_Catalogos.Pp_Value = "Codigo";
             this.chk_Id_Plantas_Catalogos.Size = new System.Drawing.Size(107, 79);
             this.chk_Id_Plantas_Catalogos.TabIndex = 6;
+            this.chk_Id_Plantas_Catalogos.SelectedIndexChanged += new System.EventHandler(this.chk_Id_Plantas_Catalogos_SelectedIndexChanged);
             // 
             // Alta_Catalogos
             // 

@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data;
 
-namespace PAV1_TP.Clases
+ namespace PAV1_TP.Clases
 {
     class CheckBoxList01 : CheckedListBox
     {
@@ -21,9 +22,20 @@ namespace PAV1_TP.Clases
         public void Cargar()
         {
             Be_BaseDeDatos _BD = new Be_BaseDeDatos();
-            string sql = "SELECT * FROM " + Pp_Tabla;
-            Items.Add(Pp_Display);
-            this.DataSource = _BD.Consulta(sql);
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta("SELECT * FROM Plantas");
+            int filas = tabla.Rows.Count;
+
+            for (int i = 0; i < filas; i ++)
+            {
+                string Plantas = tabla.Rows[i]["NombreComun"].ToString();
+                this.Items.Add(Plantas);
+            }
+            
+       
+            
+            
+
         }
     }
 }
