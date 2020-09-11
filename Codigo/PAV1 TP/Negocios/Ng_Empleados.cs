@@ -54,7 +54,7 @@ namespace PAV1_TP.Negocios
 
         public DataTable Todos_Los_Empleados()
         {
-            string sql = "SELECT * FROM Empleado";
+            string sql = "SELECT * FROM Empleado WHERE Estado = 1";
             DataTable tabla = new DataTable();
             tabla = _BD.Consulta(sql);
             return tabla;
@@ -123,5 +123,13 @@ namespace PAV1_TP.Negocios
             _BD.Modificar(sqlUpdate);
 
         }
+
+        public void Eliminar(string ID)
+        {
+            string sqlEliminar = "UPDATE Empleado SET Estado = 2 WHERE ID = " + ID;
+            _BD.Modificar(sqlEliminar);
+
+        }
+            
     }
 }

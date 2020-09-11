@@ -87,5 +87,12 @@ namespace PAV1_TP.Formularios.Empleados
         {
             this.Close();
         }
+
+        private void btn_EliminarEmp_Click(object sender, EventArgs e)
+        {
+            string ID = Grid_Emp.CurrentRow.Cells[0].Value.ToString();
+            Empleados.Eliminar(ID);
+            Cargar_Grilla(Empleados.Todos_Los_Empleados());
+        }
     }
 }
