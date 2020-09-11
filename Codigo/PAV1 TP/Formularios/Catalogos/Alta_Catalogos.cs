@@ -16,5 +16,10 @@ namespace PAV1_TP.Formularios.Catalogos
         {
             InitializeComponent();
         }
+
+        private void Alta_Catalogos_Load(object sender, EventArgs e)
+        {
+            chk_Id_Plantas_Catalogos.Cargar();
+        }
     }
 }

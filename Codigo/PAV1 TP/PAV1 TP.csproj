@@ -47,6 +47,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\Be_BaseDeDatos.cs" />
+    <Compile Include="Clases\CheckBoxList01.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Clases\ComboBox01.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -175,8 +178,10 @@
     <Compile Include="Formularios\Proveedor\Modificacion_Proveedor.Designer.cs">
       <DependentUpon>Modificacion_Proveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Negocios\EstructurasNegocios\Es_Catalogo.cs" />
     <Compile Include="Negocios\EstructurasNegocios\Es_Empleado.cs" />
     <Compile Include="Negocios\EstructurasNegocios\Es_Proveedor.cs" />
+    <Compile Include="Negocios\Ng_Catalogo.cs" />
     <Compile Include="Negocios\Ng_Empleados.cs" />
     <Compile Include="Negocios\Ng_Proveedor.cs" />
     <Compile Include="Program.cs" />

@@ -80,12 +80,22 @@ C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1 TP.pdb
 C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Empleados.ABM_Empleados.resources
 C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Empleados.Alta_Empleado.resources
 C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Empleados.Modificacion_Empleado.resources
+C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Producto.ABM_Productos.resources
+C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Producto.Alta_Producto.resources
+C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Producto.Modificacion_Producto.resources
+C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Clientes.ABM_Clientes.resources
+C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Clientes.Alta_Clientes.resources
+C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Clientes.Modificacion_Cliente.resources
 C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\bin\Debug\PAV1 TP.exe.config
 C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\bin\Debug\PAV1 TP.exe
 C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\bin\Debug\PAV1 TP.pdb
+C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1 TP.csprojAssemblyReference.cache
 C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Catalogos.ABM_Catalogos.resources
 C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Catalogos.Alta_Catalogos.resources
 C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Catalogos.Modificacion_Catalogos.resources
+C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Clientes.ABM_Clientes.resources
+C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Clientes.Alta_Clientes.resources
+C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Clientes.Modificacion_Cliente.resources
 C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Empleados.ABM_Empleados.resources
 C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Empleados.Alta_Empleado.resources
 C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Empleados.Modificacion_Empleado.resources
@@ -105,13 +115,3 @@ C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1 T
 C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1 TP.csproj.CoreCompileInputs.cache
 C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1 TP.exe
 C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1 TP.pdb
-C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Producto.ABM_Productos.resources
-C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Producto.Alta_Producto.resources
-C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Producto.Modificacion_Producto.resources
-C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1 TP.csprojAssemblyReference.cache
-C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Clientes.ABM_Clientes.resources
-C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Clientes.Alta_Clientes.resources
-C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Clientes.Modificacion_Cliente.resources
-C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Clientes.ABM_Clientes.resources
-C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Clientes.Alta_Clientes.resources
-C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Clientes.Modificacion_Cliente.resources

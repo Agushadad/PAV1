@@ -35,9 +35,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txt_IdCatalogo = new System.Windows.Forms.TextBox();
             this.txt_PuntosNecesarios = new System.Windows.Forms.TextBox();
-            this.chk_PlantasCatalogos = new System.Windows.Forms.CheckedListBox();
             this.btn_Cancelar = new System.Windows.Forms.Button();
             this.btn_RegistrarCatalogo = new System.Windows.Forms.Button();
+            this.chk_Id_Plantas_Catalogos = new PAV1_TP.Clases.CheckBoxList01();
             this.SuspendLayout();
             // 
             // label3
@@ -98,23 +98,6 @@
             this.txt_PuntosNecesarios.Size = new System.Drawing.Size(78, 20);
             this.txt_PuntosNecesarios.TabIndex = 3;
             // 
-            // chk_PlantasCatalogos
-            // 
-            this.chk_PlantasCatalogos.FormattingEnabled = true;
-            this.chk_PlantasCatalogos.Items.AddRange(new object[] {
-            "Planta1",
-            "Planta2",
-            "Planta3",
-            "Planta4",
-            "Planta5",
-            "Planta6",
-            "Planta7",
-            "Planta8"});
-            this.chk_PlantasCatalogos.Location = new System.Drawing.Point(110, 118);
-            this.chk_PlantasCatalogos.Name = "chk_PlantasCatalogos";
-            this.chk_PlantasCatalogos.Size = new System.Drawing.Size(122, 64);
-            this.chk_PlantasCatalogos.TabIndex = 2;
-            // 
             // btn_Cancelar
             // 
             this.btn_Cancelar.Location = new System.Drawing.Point(119, 258);
@@ -133,6 +116,22 @@
             this.btn_RegistrarCatalogo.Text = "Registrar";
             this.btn_RegistrarCatalogo.UseVisualStyleBackColor = true;
             // 
+            // chk_Id_Plantas_Catalogos
+            // 
+            this.chk_Id_Plantas_Catalogos.FormattingEnabled = true;
+            this.chk_Id_Plantas_Catalogos.Location = new System.Drawing.Point(110, 109);
+            this.chk_Id_Plantas_Catalogos.Name = "chk_Id_Plantas_Catalogos";
+            this.chk_Id_Plantas_Catalogos.Pp_Display = "NombreComun";
+            this.chk_Id_Plantas_Catalogos.Pp_mensajeError = null;
+            this.chk_Id_Plantas_Catalogos.Pp_nombre_campo = "Id_Planta";
+            this.chk_Id_Plantas_Catalogos.Pp_nombre_tabla = "Catalogo";
+            this.chk_Id_Plantas_Catalogos.Pp_seleccionado = false;
+            this.chk_Id_Plantas_Catalogos.Pp_Tabla = "Plantas";
+            this.chk_Id_Plantas_Catalogos.Pp_validable = false;
+            this.chk_Id_Plantas_Catalogos.Pp_Value = "Codigo";
+            this.chk_Id_Plantas_Catalogos.Size = new System.Drawing.Size(107, 79);
+            this.chk_Id_Plantas_Catalogos.TabIndex = 6;
+            // 
             // Alta_Catalogos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -140,9 +139,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(256, 293);
+            this.Controls.Add(this.chk_Id_Plantas_Catalogos);
             this.Controls.Add(this.btn_Cancelar);
             this.Controls.Add(this.btn_RegistrarCatalogo);
-            this.Controls.Add(this.chk_PlantasCatalogos);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label6);
@@ -153,6 +152,7 @@
             this.Name = "Alta_Catalogos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Alta_Catalogos";
+            this.Load += new System.EventHandler(this.Alta_Catalogos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -166,8 +166,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_IdCatalogo;
         private System.Windows.Forms.TextBox txt_PuntosNecesarios;
-        private System.Windows.Forms.CheckedListBox chk_PlantasCatalogos;
         private System.Windows.Forms.Button btn_Cancelar;
         private System.Windows.Forms.Button btn_RegistrarCatalogo;
+        private Clases.CheckBoxList01 chk_Id_Plantas_Catalogos;
     }
 }

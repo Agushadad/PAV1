@@ -38,11 +38,12 @@
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
-            this.chk_TodosCatalogos = new System.Windows.Forms.CheckBox();
+            this.chk_CatalogosActivos = new System.Windows.Forms.CheckBox();
             this.txt_IdCatalogoPlanta = new System.Windows.Forms.TextBox();
             this.txt_IdCatalogo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.chk_CatalogosInactivos = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.btn_AgregarCatalogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_EditarCatalogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_SalirCatalogo)).BeginInit();
@@ -84,6 +85,7 @@
             this.btn_SalirCatalogo.Size = new System.Drawing.Size(48, 41);
             this.btn_SalirCatalogo.TabIndex = 21;
             this.btn_SalirCatalogo.TabStop = false;
+            this.btn_SalirCatalogo.Click += new System.EventHandler(this.btn_SalirCatalogo_Click);
             // 
             // btn_EliminarCatalogo
             // 
@@ -106,7 +108,8 @@
             this.Grid_Catalogos.Location = new System.Drawing.Point(11, 88);
             this.Grid_Catalogos.Name = "Grid_Catalogos";
             this.Grid_Catalogos.Size = new System.Drawing.Size(340, 212);
-            this.Grid_Catalogos.TabIndex = 4;
+            this.Grid_Catalogos.StandardTab = true;
+            this.Grid_Catalogos.TabIndex = 0;
             // 
             // Doc
             // 
@@ -125,36 +128,37 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(170, 39);
+            this.button1.Location = new System.Drawing.Point(187, 37);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
+            this.button1.TabIndex = 5;
             this.button1.Text = "Consultar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // chk_TodosCatalogos
+            // chk_CatalogosActivos
             // 
-            this.chk_TodosCatalogos.AutoSize = true;
-            this.chk_TodosCatalogos.BackColor = System.Drawing.Color.Transparent;
-            this.chk_TodosCatalogos.Location = new System.Drawing.Point(93, 65);
-            this.chk_TodosCatalogos.Name = "chk_TodosCatalogos";
-            this.chk_TodosCatalogos.Size = new System.Drawing.Size(56, 17);
-            this.chk_TodosCatalogos.TabIndex = 3;
-            this.chk_TodosCatalogos.Text = "Todos";
-            this.chk_TodosCatalogos.UseVisualStyleBackColor = false;
+            this.chk_CatalogosActivos.AutoSize = true;
+            this.chk_CatalogosActivos.BackColor = System.Drawing.Color.Transparent;
+            this.chk_CatalogosActivos.Location = new System.Drawing.Point(93, 65);
+            this.chk_CatalogosActivos.Name = "chk_CatalogosActivos";
+            this.chk_CatalogosActivos.Size = new System.Drawing.Size(61, 17);
+            this.chk_CatalogosActivos.TabIndex = 3;
+            this.chk_CatalogosActivos.Text = "Activos";
+            this.chk_CatalogosActivos.UseVisualStyleBackColor = false;
             // 
             // txt_IdCatalogoPlanta
             // 
             this.txt_IdCatalogoPlanta.Location = new System.Drawing.Point(93, 39);
             this.txt_IdCatalogoPlanta.Name = "txt_IdCatalogoPlanta";
-            this.txt_IdCatalogoPlanta.Size = new System.Drawing.Size(71, 20);
+            this.txt_IdCatalogoPlanta.Size = new System.Drawing.Size(88, 20);
             this.txt_IdCatalogoPlanta.TabIndex = 2;
             // 
             // txt_IdCatalogo
             // 
             this.txt_IdCatalogo.Location = new System.Drawing.Point(93, 9);
             this.txt_IdCatalogo.Name = "txt_IdCatalogo";
-            this.txt_IdCatalogo.Size = new System.Drawing.Size(71, 20);
+            this.txt_IdCatalogo.Size = new System.Drawing.Size(88, 20);
             this.txt_IdCatalogo.TabIndex = 1;
             // 
             // label2
@@ -177,6 +181,17 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "ID Catalogo";
             // 
+            // chk_CatalogosInactivos
+            // 
+            this.chk_CatalogosInactivos.AutoSize = true;
+            this.chk_CatalogosInactivos.BackColor = System.Drawing.Color.Transparent;
+            this.chk_CatalogosInactivos.Location = new System.Drawing.Point(155, 65);
+            this.chk_CatalogosInactivos.Name = "chk_CatalogosInactivos";
+            this.chk_CatalogosInactivos.Size = new System.Drawing.Size(69, 17);
+            this.chk_CatalogosInactivos.TabIndex = 4;
+            this.chk_CatalogosInactivos.Text = "Inactivos";
+            this.chk_CatalogosInactivos.UseVisualStyleBackColor = false;
+            // 
             // ABM_Catalogos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -184,13 +199,14 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(360, 359);
+            this.Controls.Add(this.chk_CatalogosInactivos);
             this.Controls.Add(this.btn_AgregarCatalogo);
             this.Controls.Add(this.btn_EditarCatalogo);
             this.Controls.Add(this.btn_SalirCatalogo);
             this.Controls.Add(this.btn_EliminarCatalogo);
             this.Controls.Add(this.Grid_Catalogos);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.chk_TodosCatalogos);
+            this.Controls.Add(this.chk_CatalogosActivos);
             this.Controls.Add(this.txt_IdCatalogoPlanta);
             this.Controls.Add(this.txt_IdCatalogo);
             this.Controls.Add(this.label2);
@@ -216,7 +232,7 @@
         private System.Windows.Forms.PictureBox btn_EliminarCatalogo;
         private System.Windows.Forms.DataGridView Grid_Catalogos;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.CheckBox chk_TodosCatalogos;
+        private System.Windows.Forms.CheckBox chk_CatalogosActivos;
         private System.Windows.Forms.TextBox txt_IdCatalogoPlanta;
         private System.Windows.Forms.TextBox txt_IdCatalogo;
         private System.Windows.Forms.Label label2;
@@ -224,5 +240,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Doc;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Apellido;
+        private System.Windows.Forms.CheckBox chk_CatalogosInactivos;
     }
 }
