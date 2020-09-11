@@ -33,8 +33,10 @@ namespace PAV1_TP.Formularios.Empleados
 
         private void btn_EditarEmp_Click(object sender, EventArgs e)
         {
-            Form Modificacion_Empleado = new Modificacion_Empleado() { ID = "2" };
-            Modificacion_Empleado.Show();
+            Modificacion_Empleado Modif = new Modificacion_Empleado();
+            Modif.ID = Grid_Emp.CurrentRow.Cells[0].Value.ToString();
+            Modif.ShowDialog();
+            Modif.Dispose();
             
         }
 

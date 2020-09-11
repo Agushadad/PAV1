@@ -49,10 +49,7 @@ namespace PAV1_TP.Negocios
         }
         public DataTable Recuperar_Usuario (string ID)
         {
-            string sql = "SELECT * FROM Empleado WHERE ID = "+ ID;
-            DataTable tabla = new DataTable();
-            tabla = _BD.Consulta(sql);
-            return tabla;
+            return _BD.Consulta("SELECT * FROM Empleado WHERE ID = "+ ID);
         }
 
         public DataTable Todos_Los_Empleados()
