@@ -33,19 +33,22 @@
             this.btn_ModifProveedor = new System.Windows.Forms.PictureBox();
             this.btn_CancelarProveedor = new System.Windows.Forms.PictureBox();
             this.btn_EliminarProveedor = new System.Windows.Forms.PictureBox();
-            this.Grid_Proveedor = new System.Windows.Forms.DataGridView();
-            this.Doc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_ConsultarProveedor = new System.Windows.Forms.Button();
-            this.chk_TodosProveedor = new System.Windows.Forms.CheckBox();
-            this.rxt_RSProveedor = new System.Windows.Forms.TextBox();
+            this.chk_ActivosProveedores = new System.Windows.Forms.CheckBox();
+            this.txt_RSProveedor = new System.Windows.Forms.TextBox();
             this.txt_NombreProveedor = new System.Windows.Forms.TextBox();
             this.txt_IdProveedor = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.chk_InactivosProveedor = new System.Windows.Forms.CheckBox();
+            this.Grid_Proveedor = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Domicilio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.btn_AgregarProveedor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_ModifProveedor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_CancelarProveedor)).BeginInit();
@@ -87,6 +90,7 @@
             this.btn_CancelarProveedor.Size = new System.Drawing.Size(59, 50);
             this.btn_CancelarProveedor.TabIndex = 21;
             this.btn_CancelarProveedor.TabStop = false;
+            this.btn_CancelarProveedor.Click += new System.EventHandler(this.btn_CancelarProveedor_Click);
             // 
             // btn_EliminarProveedor
             // 
@@ -98,70 +102,35 @@
             this.btn_EliminarProveedor.Size = new System.Drawing.Size(59, 50);
             this.btn_EliminarProveedor.TabIndex = 20;
             this.btn_EliminarProveedor.TabStop = false;
-            // 
-            // Grid_Proveedor
-            // 
-            this.Grid_Proveedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Grid_Proveedor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Doc,
-            this.Nombre,
-            this.Tipo,
-            this.Apellido});
-            this.Grid_Proveedor.Location = new System.Drawing.Point(3, 116);
-            this.Grid_Proveedor.Name = "Grid_Proveedor";
-            this.Grid_Proveedor.Size = new System.Drawing.Size(659, 212);
-            this.Grid_Proveedor.TabIndex = 6;
-            // 
-            // Doc
-            // 
-            this.Doc.HeaderText = "ID";
-            this.Doc.Name = "Doc";
-            this.Doc.Width = 50;
-            // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            this.Nombre.Width = 120;
-            // 
-            // Tipo
-            // 
-            this.Tipo.HeaderText = "Telefono";
-            this.Tipo.Name = "Tipo";
-            this.Tipo.Width = 150;
-            // 
-            // Apellido
-            // 
-            this.Apellido.HeaderText = "Razon social";
-            this.Apellido.Name = "Apellido";
-            this.Apellido.Width = 300;
+            this.btn_EliminarProveedor.Click += new System.EventHandler(this.btn_EliminarProveedor_Click);
             // 
             // btn_ConsultarProveedor
             // 
             this.btn_ConsultarProveedor.Location = new System.Drawing.Point(300, 67);
             this.btn_ConsultarProveedor.Name = "btn_ConsultarProveedor";
             this.btn_ConsultarProveedor.Size = new System.Drawing.Size(75, 23);
-            this.btn_ConsultarProveedor.TabIndex = 5;
+            this.btn_ConsultarProveedor.TabIndex = 6;
             this.btn_ConsultarProveedor.Text = "Consultar";
             this.btn_ConsultarProveedor.UseVisualStyleBackColor = true;
+            this.btn_ConsultarProveedor.Click += new System.EventHandler(this.btn_ConsultarProveedor_Click);
             // 
-            // chk_TodosProveedor
+            // chk_ActivosProveedores
             // 
-            this.chk_TodosProveedor.AutoSize = true;
-            this.chk_TodosProveedor.BackColor = System.Drawing.Color.Transparent;
-            this.chk_TodosProveedor.Location = new System.Drawing.Point(132, 93);
-            this.chk_TodosProveedor.Name = "chk_TodosProveedor";
-            this.chk_TodosProveedor.Size = new System.Drawing.Size(56, 17);
-            this.chk_TodosProveedor.TabIndex = 4;
-            this.chk_TodosProveedor.Text = "Todos";
-            this.chk_TodosProveedor.UseVisualStyleBackColor = false;
+            this.chk_ActivosProveedores.AutoSize = true;
+            this.chk_ActivosProveedores.BackColor = System.Drawing.Color.Transparent;
+            this.chk_ActivosProveedores.Location = new System.Drawing.Point(132, 93);
+            this.chk_ActivosProveedores.Name = "chk_ActivosProveedores";
+            this.chk_ActivosProveedores.Size = new System.Drawing.Size(61, 17);
+            this.chk_ActivosProveedores.TabIndex = 4;
+            this.chk_ActivosProveedores.Text = "Activos";
+            this.chk_ActivosProveedores.UseVisualStyleBackColor = false;
             // 
-            // rxt_RSProveedor
+            // txt_RSProveedor
             // 
-            this.rxt_RSProveedor.Location = new System.Drawing.Point(132, 67);
-            this.rxt_RSProveedor.Name = "rxt_RSProveedor";
-            this.rxt_RSProveedor.Size = new System.Drawing.Size(162, 20);
-            this.rxt_RSProveedor.TabIndex = 3;
+            this.txt_RSProveedor.Location = new System.Drawing.Point(132, 67);
+            this.txt_RSProveedor.Name = "txt_RSProveedor";
+            this.txt_RSProveedor.Size = new System.Drawing.Size(162, 20);
+            this.txt_RSProveedor.TabIndex = 3;
             // 
             // txt_NombreProveedor
             // 
@@ -208,6 +177,77 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "ID";
             // 
+            // chk_InactivosProveedor
+            // 
+            this.chk_InactivosProveedor.AutoSize = true;
+            this.chk_InactivosProveedor.BackColor = System.Drawing.Color.Transparent;
+            this.chk_InactivosProveedor.Location = new System.Drawing.Point(194, 93);
+            this.chk_InactivosProveedor.Name = "chk_InactivosProveedor";
+            this.chk_InactivosProveedor.Size = new System.Drawing.Size(69, 17);
+            this.chk_InactivosProveedor.TabIndex = 5;
+            this.chk_InactivosProveedor.Text = "Inactivos";
+            this.chk_InactivosProveedor.UseVisualStyleBackColor = false;
+            // 
+            // Grid_Proveedor
+            // 
+            this.Grid_Proveedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Grid_Proveedor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Id,
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn2,
+            this.Domicilio,
+            this.dataGridViewTextBoxColumn4});
+            this.Grid_Proveedor.Location = new System.Drawing.Point(3, 116);
+            this.Grid_Proveedor.MultiSelect = false;
+            this.Grid_Proveedor.Name = "Grid_Proveedor";
+            this.Grid_Proveedor.ReadOnly = true;
+            this.Grid_Proveedor.Size = new System.Drawing.Size(666, 223);
+            this.Grid_Proveedor.StandardTab = true;
+            this.Grid_Proveedor.TabIndex = 0;
+            this.Grid_Proveedor.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Grid_Proveedor_CellContentClick);
+            // 
+            // Id
+            // 
+            this.Id.HeaderText = "ID";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Width = 50;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Nombre";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Telefono";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Width = 120;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Razon Social";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 250;
+            // 
+            // Domicilio
+            // 
+            this.Domicilio.HeaderText = "Calle";
+            this.Domicilio.Name = "Domicilio";
+            this.Domicilio.ReadOnly = true;
+            this.Domicilio.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.HeaderText = "Altura";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
             // ABM_Proveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -215,14 +255,15 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(676, 404);
+            this.Controls.Add(this.Grid_Proveedor);
+            this.Controls.Add(this.chk_InactivosProveedor);
             this.Controls.Add(this.btn_AgregarProveedor);
             this.Controls.Add(this.btn_ModifProveedor);
             this.Controls.Add(this.btn_CancelarProveedor);
             this.Controls.Add(this.btn_EliminarProveedor);
-            this.Controls.Add(this.Grid_Proveedor);
             this.Controls.Add(this.btn_ConsultarProveedor);
-            this.Controls.Add(this.chk_TodosProveedor);
-            this.Controls.Add(this.rxt_RSProveedor);
+            this.Controls.Add(this.chk_ActivosProveedores);
+            this.Controls.Add(this.txt_RSProveedor);
             this.Controls.Add(this.txt_NombreProveedor);
             this.Controls.Add(this.txt_IdProveedor);
             this.Controls.Add(this.label3);
@@ -249,18 +290,21 @@
         private System.Windows.Forms.PictureBox btn_ModifProveedor;
         private System.Windows.Forms.PictureBox btn_CancelarProveedor;
         private System.Windows.Forms.PictureBox btn_EliminarProveedor;
-        private System.Windows.Forms.DataGridView Grid_Proveedor;
         private System.Windows.Forms.Button btn_ConsultarProveedor;
-        private System.Windows.Forms.CheckBox chk_TodosProveedor;
-        private System.Windows.Forms.TextBox rxt_RSProveedor;
+        private System.Windows.Forms.CheckBox chk_ActivosProveedores;
+        private System.Windows.Forms.TextBox txt_RSProveedor;
         private System.Windows.Forms.TextBox txt_NombreProveedor;
         private System.Windows.Forms.TextBox txt_IdProveedor;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Doc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Apellido;
+        private System.Windows.Forms.CheckBox chk_InactivosProveedor;
+        private System.Windows.Forms.DataGridView Grid_Proveedor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Domicilio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
     }
 }

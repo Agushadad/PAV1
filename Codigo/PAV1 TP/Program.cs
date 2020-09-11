@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using WindowsFormsApp2;
 using PAV1_TP.Formularios;
 using PAV1_TP.Formularios.Empleados;
+using PAV1_TP.Formularios.Proveedor;
 
 namespace PAV1_TP
 {
@@ -19,7 +20,8 @@ namespace PAV1_TP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_Escritorio());
+            //Application.Run(new Frm_Escritorio());
+            Application.Run(new ABM_Proveedor());
             
 
 

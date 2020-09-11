@@ -34,17 +34,29 @@ namespace PAV1_TP.Formularios.Empleados
         private void btn_EditarEmp_Click(object sender, EventArgs e)
         {
             Modificacion_Empleado Modif = new Modificacion_Empleado();
-            Modif.ID = Grid_Emp.CurrentRow.Cells[0].Value.ToString();
-            Modif.ShowDialog();
-            Modif.Dispose();
+            if (Grid_Emp.CurrentCell.Value == null)
+            {
+                MessageBox.Show("No se selecciono ningun empleado para modificar");
+            }
+            else
+            {
+                Modif.ID = Grid_Emp.CurrentRow.Cells[0].Value.ToString();
+                Modif.ShowDialog();
+                Modif.Dispose();
+            }
             
         }
 
         private void btn_ConsultarEmp_Click(object sender, EventArgs e)
         {
-            if (chk_Todos.Checked== true)
+            if (chk_Activos.Checked == true && chk_Inactivos.Checked == true)
             {
                 Cargar_Grilla(Empleados.Todos_Los_Empleados());
+                return;
+            }
+            if (chk_Activos.Checked== true)
+            {
+                Cargar_Grilla(Empleados.Empleados_Activos());
                 return;
             }
             if (chk_Inactivos.Checked == true)
@@ -89,10 +101,31 @@ namespace PAV1_TP.Formularios.Empleados
         }
 
         private void btn_EliminarEmp_Click(object sender, EventArgs e)
+        {if (Grid_Emp.CurrentCell.Value == null)
+            {
+                MessageBox.Show("No se selecciono ningun empleado para eliminar");
+            }
+            else
+            {
+                string ID = Grid_Emp.CurrentRow.Cells[0].Value.ToString();
+                DialogResult dialogResult = MessageBox.Show("¿Esta seguro que desea eliminar el usuario seleccionado?", "IMPORTANTE", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    Empleados.Eliminar(ID);
+                    Cargar_Grilla(Empleados.Todos_Los_Empleados());
+                }
+            }
+            
+        }
+
+        private void Grid_Emp_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            string ID = Grid_Emp.CurrentRow.Cells[0].Value.ToString();
-            Empleados.Eliminar(ID);
-            Cargar_Grilla(Empleados.Todos_Los_Empleados());
+
+        }
+
+        private void chk_Inactivos_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

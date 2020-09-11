@@ -52,7 +52,7 @@ namespace PAV1_TP.Negocios
             return _BD.Consulta("SELECT * FROM Empleado WHERE ID = "+ ID);
         }
 
-        public DataTable Todos_Los_Empleados()
+        public DataTable Empleados_Activos()
         {
             string sql = "SELECT * FROM Empleado WHERE Estado = 1";
             DataTable tabla = new DataTable();
@@ -62,6 +62,13 @@ namespace PAV1_TP.Negocios
         public DataTable Empleados_Inactivos()
         {
             string sql = "SELECT * FROM Empleado WHERE Estado = 2";
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+            return tabla;
+        }
+        public DataTable Todos_Los_Empleados()
+        {
+            string sql = "SELECT * FROM Empleado WHERE Estado = 1 or Estado = 2";
             DataTable tabla = new DataTable();
             tabla = _BD.Consulta(sql);
             return tabla;

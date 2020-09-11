@@ -176,7 +176,9 @@
       <DependentUpon>Modificacion_Proveedor.cs</DependentUpon>
     </Compile>
     <Compile Include="Negocios\EstructurasNegocios\Es_Empleado.cs" />
+    <Compile Include="Negocios\EstructurasNegocios\Es_Proveedor.cs" />
     <Compile Include="Negocios\Ng_Empleados.cs" />
+    <Compile Include="Negocios\Ng_Proveedor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\Catalogos\ABM_Catalogos.resx">

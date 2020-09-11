@@ -41,7 +41,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_CancelarEmpleado = new System.Windows.Forms.Button();
-            this.btn_RegistrarEmpleado = new System.Windows.Forms.Button();
+            this.btn_ModificarEmpleado = new System.Windows.Forms.Button();
             this.txt_NombreEmpleado = new System.Windows.Forms.TextBox();
             this.txt_IdEmpleado = new System.Windows.Forms.TextBox();
             this.txt_NCalleEmpleado = new System.Windows.Forms.TextBox();
@@ -185,16 +185,17 @@
             this.btn_CancelarEmpleado.TabIndex = 10;
             this.btn_CancelarEmpleado.Text = "Cancelar";
             this.btn_CancelarEmpleado.UseVisualStyleBackColor = true;
+            this.btn_CancelarEmpleado.Click += new System.EventHandler(this.btn_CancelarEmpleado_Click);
             // 
-            // btn_RegistrarEmpleado
+            // btn_ModificarEmpleado
             // 
-            this.btn_RegistrarEmpleado.Location = new System.Drawing.Point(462, 354);
-            this.btn_RegistrarEmpleado.Name = "btn_RegistrarEmpleado";
-            this.btn_RegistrarEmpleado.Size = new System.Drawing.Size(75, 23);
-            this.btn_RegistrarEmpleado.TabIndex = 9;
-            this.btn_RegistrarEmpleado.Text = "Aceptar";
-            this.btn_RegistrarEmpleado.UseVisualStyleBackColor = true;
-            this.btn_RegistrarEmpleado.Click += new System.EventHandler(this.btn_RegistrarEmpleado_Click);
+            this.btn_ModificarEmpleado.Location = new System.Drawing.Point(462, 354);
+            this.btn_ModificarEmpleado.Name = "btn_ModificarEmpleado";
+            this.btn_ModificarEmpleado.Size = new System.Drawing.Size(75, 23);
+            this.btn_ModificarEmpleado.TabIndex = 9;
+            this.btn_ModificarEmpleado.Text = "Modificar";
+            this.btn_ModificarEmpleado.UseVisualStyleBackColor = true;
+            this.btn_ModificarEmpleado.Click += new System.EventHandler(this.btn_RegistrarEmpleado_Click);
             // 
             // txt_NombreEmpleado
             // 
@@ -208,7 +209,7 @@
             this.txt_IdEmpleado.Enabled = false;
             this.txt_IdEmpleado.Location = new System.Drawing.Point(119, 78);
             this.txt_IdEmpleado.Name = "txt_IdEmpleado";
-            this.txt_IdEmpleado.Size = new System.Drawing.Size(84, 20);
+            this.txt_IdEmpleado.Size = new System.Drawing.Size(63, 20);
             this.txt_IdEmpleado.TabIndex = 3;
             // 
             // txt_NCalleEmpleado
@@ -342,7 +343,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_CancelarEmpleado);
-            this.Controls.Add(this.btn_RegistrarEmpleado);
+            this.Controls.Add(this.btn_ModificarEmpleado);
             this.Controls.Add(this.txt_NombreEmpleado);
             this.Controls.Add(this.txt_IdEmpleado);
             this.Controls.Add(this.txt_NCalleEmpleado);
@@ -371,7 +372,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_CancelarEmpleado;
-        private System.Windows.Forms.Button btn_RegistrarEmpleado;
+        private System.Windows.Forms.Button btn_ModificarEmpleado;
         private System.Windows.Forms.TextBox txt_NombreEmpleado;
         private System.Windows.Forms.TextBox txt_IdEmpleado;
         private System.Windows.Forms.TextBox txt_NCalleEmpleado;

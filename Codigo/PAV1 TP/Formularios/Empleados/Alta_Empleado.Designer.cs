@@ -369,7 +369,7 @@
             this.txt_IdEmpleado.Pp_nombre_campo = "";
             this.txt_IdEmpleado.Pp_nombre_tabla = "";
             this.txt_IdEmpleado.Pp_validable = false;
-            this.txt_IdEmpleado.Size = new System.Drawing.Size(90, 20);
+            this.txt_IdEmpleado.Size = new System.Drawing.Size(63, 20);
             this.txt_IdEmpleado.TabIndex = 0;
             this.txt_IdEmpleado.TextChanged += new System.EventHandler(this.txt_IdEmpleado_TextChanged);
             // 

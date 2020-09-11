@@ -76,6 +76,11 @@ namespace PAV1_TP.Formularios.Empleados
                 }
             }
         }
+
+        private void btn_CancelarEmpleado_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
 
