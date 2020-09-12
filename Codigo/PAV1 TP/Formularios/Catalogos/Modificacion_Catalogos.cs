@@ -45,7 +45,7 @@ namespace PAV1_TP.Formularios.Catalogos
             {
 
                 _ec.ID = txt_IdCatalogo.Text;
-                _ec.Id_Planta = chk_Id_Plantas_Catalogos.CheckedItems.ToString();
+                _ec.Id_Planta = int.Parse(chk_Id_Plantas_Catalogos.CheckedItems.ToString());
                 _ec.Puntos_Necesarios = txt_PuntosNecesarios.Text;
                 _ec.Estado = cmb_EstadoCatalogo.SelectedValue.ToString();
 

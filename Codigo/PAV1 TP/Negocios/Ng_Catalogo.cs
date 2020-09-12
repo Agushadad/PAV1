@@ -42,8 +42,8 @@ namespace PAV1_TP.Negocios
         }
         public int Recuperar_id(string planta)
         {
-            string sql = "";
-            sql = "SELECT * FROM Catalogo WHERE NombreComun = '" + planta + "'";
+            
+            string sql = "SELECT * FROM Plantas WHERE NombreComun = '" + planta + "'";
             DataTable tabla = new DataTable();
             tabla = _BD.Consulta(sql);
 
@@ -85,7 +85,7 @@ namespace PAV1_TP.Negocios
         {
             string sqlUpdate = "UPDATE Catalogo SET ";
             sqlUpdate += "ID = " + _BD.FormatearDato(datos.ID, "String");
-            sqlUpdate += ", Id_Planta = " + _BD.FormatearDato(datos.Id_Planta, "String");
+            sqlUpdate += ", Id_Planta = " + _BD.FormatearDato(datos.Id_Planta.ToString(), "String");
             sqlUpdate += ", Puntos_Necesarios = " + _BD.FormatearDato(datos.Puntos_Necesarios, "String");
             sqlUpdate += ", Estado = " + _BD.FormatearDato(datos.Estado, "String");
             sqlUpdate += " WHERE ID = " + datos.ID;

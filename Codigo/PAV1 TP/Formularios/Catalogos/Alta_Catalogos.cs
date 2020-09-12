@@ -42,11 +42,12 @@ namespace PAV1_TP.Formularios.Catalogos
             {
                 var items = chk_Id_Plantas_Catalogos.CheckedItems.Count;
                 var indice_items = chk_Id_Plantas_Catalogos.SelectedIndices;
-                
+                DataTable tabla = new DataTable();
                 _ec.ID = catalogo.NuevoId();
                 for (int i = 0; i < items; i++)
                 {
-                    _ec.Id_Planta = chk_Id_Plantas_Catalogos.CheckedItems[i].ToString();
+                    string planta = chk_Id_Plantas_Catalogos.CheckedItems[i].ToString();
+                    _ec.Id_Planta = int.Parse(catalogo.Recuperar_id(planta).ToString());
                     _ec.Puntos_Necesarios = txt_PuntosNecesarios.Text;
                     _ec.Estado = cmb_EstadoCatalogo.SelectedValue.ToString();
 
