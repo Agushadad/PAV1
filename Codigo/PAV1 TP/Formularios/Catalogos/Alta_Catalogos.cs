@@ -41,7 +41,6 @@ namespace PAV1_TP.Formularios.Catalogos
             if (tratamiento.validar(this.Controls) == TratamientosEspeciales.Validacion.correcta)
             {
                 var items = chk_Id_Plantas_Catalogos.CheckedItems.Count;
-                var indice_items = chk_Id_Plantas_Catalogos.SelectedIndices;
                 DataTable tabla = new DataTable();
                 _ec.ID = catalogo.NuevoId();
                 for (int i = 0; i < items; i++)

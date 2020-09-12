@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ABM_Productos));
-            this.btn_AgregarProveedor = new System.Windows.Forms.PictureBox();
-            this.btn_ModifProveedor = new System.Windows.Forms.PictureBox();
-            this.btn_CancelarProveedor = new System.Windows.Forms.PictureBox();
-            this.btn_EliminarProveedor = new System.Windows.Forms.PictureBox();
+            this.btn_AgregarProducto = new System.Windows.Forms.PictureBox();
+            this.btn_ModifProducto = new System.Windows.Forms.PictureBox();
+            this.btn_CancelarProducto = new System.Windows.Forms.PictureBox();
+            this.btn_EliminarProducto = new System.Windows.Forms.PictureBox();
             this.Grid_Producto = new System.Windows.Forms.DataGridView();
             this.Doc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,65 +41,67 @@
             this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Costo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_ConsultarProducto = new System.Windows.Forms.Button();
-            this.chk_TodosProducto = new System.Windows.Forms.CheckBox();
+            this.chk_ActivosProducto = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txt_IdPlanta = new PAV1_TP.Clases.TextBox01();
-            this.txt_NombrePlanta = new PAV1_TP.Clases.TextBox01();
-            this.txt_TipoPlanta = new PAV1_TP.Clases.TextBox01();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_AgregarProveedor)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_ModifProveedor)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_CancelarProveedor)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_EliminarProveedor)).BeginInit();
+            this.txt_IdProducto = new PAV1_TP.Clases.TextBox01();
+            this.txt_NombreProducto = new PAV1_TP.Clases.TextBox01();
+            this.txt_TipoProducto = new PAV1_TP.Clases.TextBox01();
+            this.chk_InacctivosProducto = new System.Windows.Forms.CheckBox();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_AgregarProducto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_ModifProducto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_CancelarProducto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_EliminarProducto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Grid_Producto)).BeginInit();
             this.SuspendLayout();
             // 
-            // btn_AgregarProveedor
+            // btn_AgregarProducto
             // 
-            this.btn_AgregarProveedor.BackColor = System.Drawing.Color.Transparent;
-            this.btn_AgregarProveedor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_AgregarProveedor.BackgroundImage")));
-            this.btn_AgregarProveedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_AgregarProveedor.Location = new System.Drawing.Point(8, 342);
-            this.btn_AgregarProveedor.Name = "btn_AgregarProveedor";
-            this.btn_AgregarProveedor.Size = new System.Drawing.Size(59, 50);
-            this.btn_AgregarProveedor.TabIndex = 36;
-            this.btn_AgregarProveedor.TabStop = false;
-            this.btn_AgregarProveedor.Click += new System.EventHandler(this.btn_AgregarProveedor_Click);
+            this.btn_AgregarProducto.BackColor = System.Drawing.Color.Transparent;
+            this.btn_AgregarProducto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_AgregarProducto.BackgroundImage")));
+            this.btn_AgregarProducto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_AgregarProducto.Location = new System.Drawing.Point(8, 342);
+            this.btn_AgregarProducto.Name = "btn_AgregarProducto";
+            this.btn_AgregarProducto.Size = new System.Drawing.Size(59, 50);
+            this.btn_AgregarProducto.TabIndex = 36;
+            this.btn_AgregarProducto.TabStop = false;
+            this.btn_AgregarProducto.Click += new System.EventHandler(this.btn_AgregarProveedor_Click);
             // 
-            // btn_ModifProveedor
+            // btn_ModifProducto
             // 
-            this.btn_ModifProveedor.BackColor = System.Drawing.Color.Transparent;
-            this.btn_ModifProveedor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_ModifProveedor.BackgroundImage")));
-            this.btn_ModifProveedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_ModifProveedor.Location = new System.Drawing.Point(75, 342);
-            this.btn_ModifProveedor.Name = "btn_ModifProveedor";
-            this.btn_ModifProveedor.Size = new System.Drawing.Size(59, 50);
-            this.btn_ModifProveedor.TabIndex = 35;
-            this.btn_ModifProveedor.TabStop = false;
-            this.btn_ModifProveedor.Click += new System.EventHandler(this.btn_ModifProveedor_Click);
+            this.btn_ModifProducto.BackColor = System.Drawing.Color.Transparent;
+            this.btn_ModifProducto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_ModifProducto.BackgroundImage")));
+            this.btn_ModifProducto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_ModifProducto.Location = new System.Drawing.Point(75, 342);
+            this.btn_ModifProducto.Name = "btn_ModifProducto";
+            this.btn_ModifProducto.Size = new System.Drawing.Size(59, 50);
+            this.btn_ModifProducto.TabIndex = 35;
+            this.btn_ModifProducto.TabStop = false;
+            this.btn_ModifProducto.Click += new System.EventHandler(this.btn_ModifProveedor_Click);
             // 
-            // btn_CancelarProveedor
+            // btn_CancelarProducto
             // 
-            this.btn_CancelarProveedor.BackColor = System.Drawing.Color.Transparent;
-            this.btn_CancelarProveedor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_CancelarProveedor.BackgroundImage")));
-            this.btn_CancelarProveedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_CancelarProveedor.Location = new System.Drawing.Point(615, 343);
-            this.btn_CancelarProveedor.Name = "btn_CancelarProveedor";
-            this.btn_CancelarProveedor.Size = new System.Drawing.Size(59, 50);
-            this.btn_CancelarProveedor.TabIndex = 34;
-            this.btn_CancelarProveedor.TabStop = false;
+            this.btn_CancelarProducto.BackColor = System.Drawing.Color.Transparent;
+            this.btn_CancelarProducto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_CancelarProducto.BackgroundImage")));
+            this.btn_CancelarProducto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_CancelarProducto.Location = new System.Drawing.Point(615, 343);
+            this.btn_CancelarProducto.Name = "btn_CancelarProducto";
+            this.btn_CancelarProducto.Size = new System.Drawing.Size(59, 50);
+            this.btn_CancelarProducto.TabIndex = 34;
+            this.btn_CancelarProducto.TabStop = false;
+            this.btn_CancelarProducto.Click += new System.EventHandler(this.btn_CancelarProducto_Click);
             // 
-            // btn_EliminarProveedor
+            // btn_EliminarProducto
             // 
-            this.btn_EliminarProveedor.BackColor = System.Drawing.Color.Transparent;
-            this.btn_EliminarProveedor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_EliminarProveedor.BackgroundImage")));
-            this.btn_EliminarProveedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_EliminarProveedor.Location = new System.Drawing.Point(149, 342);
-            this.btn_EliminarProveedor.Name = "btn_EliminarProveedor";
-            this.btn_EliminarProveedor.Size = new System.Drawing.Size(59, 50);
-            this.btn_EliminarProveedor.TabIndex = 33;
-            this.btn_EliminarProveedor.TabStop = false;
+            this.btn_EliminarProducto.BackColor = System.Drawing.Color.Transparent;
+            this.btn_EliminarProducto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_EliminarProducto.BackgroundImage")));
+            this.btn_EliminarProducto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_EliminarProducto.Location = new System.Drawing.Point(149, 342);
+            this.btn_EliminarProducto.Name = "btn_EliminarProducto";
+            this.btn_EliminarProducto.Size = new System.Drawing.Size(59, 50);
+            this.btn_EliminarProducto.TabIndex = 33;
+            this.btn_EliminarProducto.TabStop = false;
             // 
             // Grid_Producto
             // 
@@ -151,23 +153,24 @@
             // 
             // btn_ConsultarProducto
             // 
-            this.btn_ConsultarProducto.Location = new System.Drawing.Point(305, 62);
+            this.btn_ConsultarProducto.Location = new System.Drawing.Point(252, 62);
             this.btn_ConsultarProducto.Name = "btn_ConsultarProducto";
             this.btn_ConsultarProducto.Size = new System.Drawing.Size(75, 23);
             this.btn_ConsultarProducto.TabIndex = 31;
             this.btn_ConsultarProducto.Text = "Consultar";
             this.btn_ConsultarProducto.UseVisualStyleBackColor = true;
+            this.btn_ConsultarProducto.Click += new System.EventHandler(this.btn_ConsultarProducto_Click);
             // 
-            // chk_TodosProducto
+            // chk_ActivosProducto
             // 
-            this.chk_TodosProducto.AutoSize = true;
-            this.chk_TodosProducto.BackColor = System.Drawing.Color.Transparent;
-            this.chk_TodosProducto.Location = new System.Drawing.Point(137, 88);
-            this.chk_TodosProducto.Name = "chk_TodosProducto";
-            this.chk_TodosProducto.Size = new System.Drawing.Size(56, 17);
-            this.chk_TodosProducto.TabIndex = 30;
-            this.chk_TodosProducto.Text = "Todos";
-            this.chk_TodosProducto.UseVisualStyleBackColor = false;
+            this.chk_ActivosProducto.AutoSize = true;
+            this.chk_ActivosProducto.BackColor = System.Drawing.Color.Transparent;
+            this.chk_ActivosProducto.Location = new System.Drawing.Point(137, 88);
+            this.chk_ActivosProducto.Name = "chk_ActivosProducto";
+            this.chk_ActivosProducto.Size = new System.Drawing.Size(61, 17);
+            this.chk_ActivosProducto.TabIndex = 30;
+            this.chk_ActivosProducto.Text = "Activos";
+            this.chk_ActivosProducto.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -199,38 +202,49 @@
             this.label1.TabIndex = 26;
             this.label1.Text = "ID";
             // 
-            // txt_IdPlanta
+            // txt_IdProducto
             // 
-            this.txt_IdPlanta.Location = new System.Drawing.Point(137, 9);
-            this.txt_IdPlanta.Name = "txt_IdPlanta";
-            this.txt_IdPlanta.Pp_mensajeError = null;
-            this.txt_IdPlanta.Pp_nombre_campo = null;
-            this.txt_IdPlanta.Pp_nombre_tabla = null;
-            this.txt_IdPlanta.Pp_validable = false;
-            this.txt_IdPlanta.Size = new System.Drawing.Size(71, 20);
-            this.txt_IdPlanta.TabIndex = 37;
+            this.txt_IdProducto.Location = new System.Drawing.Point(137, 9);
+            this.txt_IdProducto.Name = "txt_IdProducto";
+            this.txt_IdProducto.Pp_mensajeError = null;
+            this.txt_IdProducto.Pp_nombre_campo = null;
+            this.txt_IdProducto.Pp_nombre_tabla = null;
+            this.txt_IdProducto.Pp_validable = false;
+            this.txt_IdProducto.Size = new System.Drawing.Size(71, 20);
+            this.txt_IdProducto.TabIndex = 37;
             // 
-            // txt_NombrePlanta
+            // txt_NombreProducto
             // 
-            this.txt_NombrePlanta.Location = new System.Drawing.Point(137, 36);
-            this.txt_NombrePlanta.Name = "txt_NombrePlanta";
-            this.txt_NombrePlanta.Pp_mensajeError = null;
-            this.txt_NombrePlanta.Pp_nombre_campo = null;
-            this.txt_NombrePlanta.Pp_nombre_tabla = null;
-            this.txt_NombrePlanta.Pp_validable = false;
-            this.txt_NombrePlanta.Size = new System.Drawing.Size(100, 20);
-            this.txt_NombrePlanta.TabIndex = 38;
+            this.txt_NombreProducto.Location = new System.Drawing.Point(137, 36);
+            this.txt_NombreProducto.Name = "txt_NombreProducto";
+            this.txt_NombreProducto.Pp_mensajeError = null;
+            this.txt_NombreProducto.Pp_nombre_campo = null;
+            this.txt_NombreProducto.Pp_nombre_tabla = null;
+            this.txt_NombreProducto.Pp_validable = false;
+            this.txt_NombreProducto.Size = new System.Drawing.Size(100, 20);
+            this.txt_NombreProducto.TabIndex = 38;
             // 
-            // txt_TipoPlanta
+            // txt_TipoProducto
             // 
-            this.txt_TipoPlanta.Location = new System.Drawing.Point(137, 62);
-            this.txt_TipoPlanta.Name = "txt_TipoPlanta";
-            this.txt_TipoPlanta.Pp_mensajeError = null;
-            this.txt_TipoPlanta.Pp_nombre_campo = null;
-            this.txt_TipoPlanta.Pp_nombre_tabla = null;
-            this.txt_TipoPlanta.Pp_validable = false;
-            this.txt_TipoPlanta.Size = new System.Drawing.Size(100, 20);
-            this.txt_TipoPlanta.TabIndex = 39;
+            this.txt_TipoProducto.Location = new System.Drawing.Point(137, 62);
+            this.txt_TipoProducto.Name = "txt_TipoProducto";
+            this.txt_TipoProducto.Pp_mensajeError = null;
+            this.txt_TipoProducto.Pp_nombre_campo = null;
+            this.txt_TipoProducto.Pp_nombre_tabla = null;
+            this.txt_TipoProducto.Pp_validable = false;
+            this.txt_TipoProducto.Size = new System.Drawing.Size(100, 20);
+            this.txt_TipoProducto.TabIndex = 39;
+            // 
+            // chk_InacctivosProducto
+            // 
+            this.chk_InacctivosProducto.AutoSize = true;
+            this.chk_InacctivosProducto.BackColor = System.Drawing.Color.Transparent;
+            this.chk_InacctivosProducto.Location = new System.Drawing.Point(199, 88);
+            this.chk_InacctivosProducto.Name = "chk_InacctivosProducto";
+            this.chk_InacctivosProducto.Size = new System.Drawing.Size(69, 17);
+            this.chk_InacctivosProducto.TabIndex = 40;
+            this.chk_InacctivosProducto.Text = "Inactivos";
+            this.chk_InacctivosProducto.UseVisualStyleBackColor = false;
             // 
             // ABM_Productos
             // 
@@ -239,16 +253,17 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(689, 404);
-            this.Controls.Add(this.txt_TipoPlanta);
-            this.Controls.Add(this.txt_NombrePlanta);
-            this.Controls.Add(this.txt_IdPlanta);
-            this.Controls.Add(this.btn_AgregarProveedor);
-            this.Controls.Add(this.btn_ModifProveedor);
-            this.Controls.Add(this.btn_CancelarProveedor);
-            this.Controls.Add(this.btn_EliminarProveedor);
+            this.Controls.Add(this.chk_InacctivosProducto);
+            this.Controls.Add(this.txt_TipoProducto);
+            this.Controls.Add(this.txt_NombreProducto);
+            this.Controls.Add(this.txt_IdProducto);
+            this.Controls.Add(this.btn_AgregarProducto);
+            this.Controls.Add(this.btn_ModifProducto);
+            this.Controls.Add(this.btn_CancelarProducto);
+            this.Controls.Add(this.btn_EliminarProducto);
             this.Controls.Add(this.Grid_Producto);
             this.Controls.Add(this.btn_ConsultarProducto);
-            this.Controls.Add(this.chk_TodosProducto);
+            this.Controls.Add(this.chk_ActivosProducto);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -257,10 +272,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "ABM_Productos";
             this.Load += new System.EventHandler(this.ABM_Productos_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.btn_AgregarProveedor)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_ModifProveedor)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_CancelarProveedor)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_EliminarProveedor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_AgregarProducto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_ModifProducto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_CancelarProducto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_EliminarProducto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Grid_Producto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -269,13 +284,13 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox btn_AgregarProveedor;
-        private System.Windows.Forms.PictureBox btn_ModifProveedor;
-        private System.Windows.Forms.PictureBox btn_CancelarProveedor;
-        private System.Windows.Forms.PictureBox btn_EliminarProveedor;
+        private System.Windows.Forms.PictureBox btn_AgregarProducto;
+        private System.Windows.Forms.PictureBox btn_ModifProducto;
+        private System.Windows.Forms.PictureBox btn_CancelarProducto;
+        private System.Windows.Forms.PictureBox btn_EliminarProducto;
         private System.Windows.Forms.DataGridView Grid_Producto;
         private System.Windows.Forms.Button btn_ConsultarProducto;
-        private System.Windows.Forms.CheckBox chk_TodosProducto;
+        private System.Windows.Forms.CheckBox chk_ActivosProducto;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -285,8 +300,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
         private System.Windows.Forms.DataGridViewTextBoxColumn Costo;
-        private Clases.TextBox01 txt_IdPlanta;
-        private Clases.TextBox01 txt_NombrePlanta;
-        private Clases.TextBox01 txt_TipoPlanta;
+        private Clases.TextBox01 txt_IdProducto;
+        private Clases.TextBox01 txt_NombreProducto;
+        private Clases.TextBox01 txt_TipoProducto;
+        private System.Windows.Forms.CheckBox chk_InacctivosProducto;
     }
 }

@@ -31,11 +31,19 @@ using System.Data;
                 string Plantas = tabla.Rows[i]["NombreComun"].ToString();
                 this.Items.Add(Plantas);
             }
-            
-       
-            
-            
+        }
+        public void Cargar2()
+        {
+            Be_BaseDeDatos _BD = new Be_BaseDeDatos();
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta("SELECT * FROM " + Pp_Tabla);
+            int filas = tabla.Rows.Count;
 
+            for (int i = 0; i < filas; i++)
+            {
+                string Plantas = tabla.Rows[i]["Nombre"].ToString();
+                this.Items.Add(Plantas);
+            }
         }
     }
 }
