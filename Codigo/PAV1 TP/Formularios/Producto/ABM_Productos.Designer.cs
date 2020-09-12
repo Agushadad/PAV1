@@ -42,12 +42,12 @@
             this.Costo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_ConsultarProducto = new System.Windows.Forms.Button();
             this.chk_TodosProducto = new System.Windows.Forms.CheckBox();
-            this.txt_TipoProducto = new System.Windows.Forms.TextBox();
-            this.txt_NombreProducto = new System.Windows.Forms.TextBox();
-            this.txt_IdProducto = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.txt_IdPlanta = new PAV1_TP.Clases.TextBox01();
+            this.txt_NombrePlanta = new PAV1_TP.Clases.TextBox01();
+            this.txt_TipoPlanta = new PAV1_TP.Clases.TextBox01();
             ((System.ComponentModel.ISupportInitialize)(this.btn_AgregarProveedor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_ModifProveedor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_CancelarProveedor)).BeginInit();
@@ -169,27 +169,6 @@
             this.chk_TodosProducto.Text = "Todos";
             this.chk_TodosProducto.UseVisualStyleBackColor = false;
             // 
-            // txt_TipoProducto
-            // 
-            this.txt_TipoProducto.Location = new System.Drawing.Point(137, 62);
-            this.txt_TipoProducto.Name = "txt_TipoProducto";
-            this.txt_TipoProducto.Size = new System.Drawing.Size(162, 20);
-            this.txt_TipoProducto.TabIndex = 29;
-            // 
-            // txt_NombreProducto
-            // 
-            this.txt_NombreProducto.Location = new System.Drawing.Point(137, 36);
-            this.txt_NombreProducto.Name = "txt_NombreProducto";
-            this.txt_NombreProducto.Size = new System.Drawing.Size(162, 20);
-            this.txt_NombreProducto.TabIndex = 28;
-            // 
-            // txt_IdProducto
-            // 
-            this.txt_IdProducto.Location = new System.Drawing.Point(137, 6);
-            this.txt_IdProducto.Name = "txt_IdProducto";
-            this.txt_IdProducto.Size = new System.Drawing.Size(56, 20);
-            this.txt_IdProducto.TabIndex = 27;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -220,6 +199,39 @@
             this.label1.TabIndex = 26;
             this.label1.Text = "ID";
             // 
+            // txt_IdPlanta
+            // 
+            this.txt_IdPlanta.Location = new System.Drawing.Point(137, 9);
+            this.txt_IdPlanta.Name = "txt_IdPlanta";
+            this.txt_IdPlanta.Pp_mensajeError = null;
+            this.txt_IdPlanta.Pp_nombre_campo = null;
+            this.txt_IdPlanta.Pp_nombre_tabla = null;
+            this.txt_IdPlanta.Pp_validable = false;
+            this.txt_IdPlanta.Size = new System.Drawing.Size(71, 20);
+            this.txt_IdPlanta.TabIndex = 37;
+            // 
+            // txt_NombrePlanta
+            // 
+            this.txt_NombrePlanta.Location = new System.Drawing.Point(137, 36);
+            this.txt_NombrePlanta.Name = "txt_NombrePlanta";
+            this.txt_NombrePlanta.Pp_mensajeError = null;
+            this.txt_NombrePlanta.Pp_nombre_campo = null;
+            this.txt_NombrePlanta.Pp_nombre_tabla = null;
+            this.txt_NombrePlanta.Pp_validable = false;
+            this.txt_NombrePlanta.Size = new System.Drawing.Size(100, 20);
+            this.txt_NombrePlanta.TabIndex = 38;
+            // 
+            // txt_TipoPlanta
+            // 
+            this.txt_TipoPlanta.Location = new System.Drawing.Point(137, 62);
+            this.txt_TipoPlanta.Name = "txt_TipoPlanta";
+            this.txt_TipoPlanta.Pp_mensajeError = null;
+            this.txt_TipoPlanta.Pp_nombre_campo = null;
+            this.txt_TipoPlanta.Pp_nombre_tabla = null;
+            this.txt_TipoPlanta.Pp_validable = false;
+            this.txt_TipoPlanta.Size = new System.Drawing.Size(100, 20);
+            this.txt_TipoPlanta.TabIndex = 39;
+            // 
             // ABM_Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -227,6 +239,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(689, 404);
+            this.Controls.Add(this.txt_TipoPlanta);
+            this.Controls.Add(this.txt_NombrePlanta);
+            this.Controls.Add(this.txt_IdPlanta);
             this.Controls.Add(this.btn_AgregarProveedor);
             this.Controls.Add(this.btn_ModifProveedor);
             this.Controls.Add(this.btn_CancelarProveedor);
@@ -234,9 +249,6 @@
             this.Controls.Add(this.Grid_Producto);
             this.Controls.Add(this.btn_ConsultarProducto);
             this.Controls.Add(this.chk_TodosProducto);
-            this.Controls.Add(this.txt_TipoProducto);
-            this.Controls.Add(this.txt_NombreProducto);
-            this.Controls.Add(this.txt_IdProducto);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -264,9 +276,6 @@
         private System.Windows.Forms.DataGridView Grid_Producto;
         private System.Windows.Forms.Button btn_ConsultarProducto;
         private System.Windows.Forms.CheckBox chk_TodosProducto;
-        private System.Windows.Forms.TextBox txt_TipoProducto;
-        private System.Windows.Forms.TextBox txt_NombreProducto;
-        private System.Windows.Forms.TextBox txt_IdProducto;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -276,5 +285,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
         private System.Windows.Forms.DataGridViewTextBoxColumn Costo;
+        private Clases.TextBox01 txt_IdPlanta;
+        private Clases.TextBox01 txt_NombrePlanta;
+        private Clases.TextBox01 txt_TipoPlanta;
     }
 }

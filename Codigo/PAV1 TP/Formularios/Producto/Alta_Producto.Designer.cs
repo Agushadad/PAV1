@@ -31,11 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Alta_Producto));
             this.btn_Cancelar = new System.Windows.Forms.Button();
             this.btn_RegistrarPlanta = new System.Windows.Forms.Button();
-            this.txt_NombreProducto = new System.Windows.Forms.TextBox();
-            this.txt_IdProducto = new System.Windows.Forms.TextBox();
-            this.txt_PrecioProducto = new System.Windows.Forms.TextBox();
-            this.txt_StockProducto = new System.Windows.Forms.TextBox();
-            this.cmb_TipoProducto = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -44,13 +39,18 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.chk_CompuestoProducto = new System.Windows.Forms.CheckedListBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.txt_CostoProducto = new System.Windows.Forms.Label();
+            this.txt_IdProducto = new PAV1_TP.Clases.TextBox01();
+            this.txt_NombreProducto = new PAV1_TP.Clases.TextBox01();
+            this.cmb_TipoProducto = new PAV1_TP.Clases.ComboBox01();
+            this.txt_PrecioProducto = new PAV1_TP.Clases.TextBox01();
+            this.txt_CostoProd = new PAV1_TP.Clases.TextBox01();
+            this.txt_StockProducto = new PAV1_TP.Clases.TextBox01();
             this.SuspendLayout();
             // 
             // btn_Cancelar
             // 
-            this.btn_Cancelar.Location = new System.Drawing.Point(495, 283);
+            this.btn_Cancelar.Location = new System.Drawing.Point(472, 283);
             this.btn_Cancelar.Name = "btn_Cancelar";
             this.btn_Cancelar.Size = new System.Drawing.Size(82, 23);
             this.btn_Cancelar.TabIndex = 22;
@@ -59,60 +59,19 @@
             // 
             // btn_RegistrarPlanta
             // 
-            this.btn_RegistrarPlanta.Location = new System.Drawing.Point(414, 283);
+            this.btn_RegistrarPlanta.Location = new System.Drawing.Point(391, 283);
             this.btn_RegistrarPlanta.Name = "btn_RegistrarPlanta";
             this.btn_RegistrarPlanta.Size = new System.Drawing.Size(75, 23);
             this.btn_RegistrarPlanta.TabIndex = 21;
             this.btn_RegistrarPlanta.Text = "Registrar";
             this.btn_RegistrarPlanta.UseVisualStyleBackColor = true;
             // 
-            // txt_NombreProducto
-            // 
-            this.txt_NombreProducto.Location = new System.Drawing.Point(111, 115);
-            this.txt_NombreProducto.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_NombreProducto.Name = "txt_NombreProducto";
-            this.txt_NombreProducto.Size = new System.Drawing.Size(116, 20);
-            this.txt_NombreProducto.TabIndex = 17;
-            // 
-            // txt_IdProducto
-            // 
-            this.txt_IdProducto.Location = new System.Drawing.Point(79, 71);
-            this.txt_IdProducto.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_IdProducto.Name = "txt_IdProducto";
-            this.txt_IdProducto.Size = new System.Drawing.Size(116, 20);
-            this.txt_IdProducto.TabIndex = 8;
-            // 
-            // txt_PrecioProducto
-            // 
-            this.txt_PrecioProducto.Location = new System.Drawing.Point(358, 117);
-            this.txt_PrecioProducto.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_PrecioProducto.Name = "txt_PrecioProducto";
-            this.txt_PrecioProducto.Size = new System.Drawing.Size(125, 20);
-            this.txt_PrecioProducto.TabIndex = 18;
-            // 
-            // txt_StockProducto
-            // 
-            this.txt_StockProducto.Location = new System.Drawing.Point(358, 191);
-            this.txt_StockProducto.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_StockProducto.Name = "txt_StockProducto";
-            this.txt_StockProducto.Size = new System.Drawing.Size(125, 20);
-            this.txt_StockProducto.TabIndex = 20;
-            // 
-            // cmb_TipoProducto
-            // 
-            this.cmb_TipoProducto.FormattingEnabled = true;
-            this.cmb_TipoProducto.Location = new System.Drawing.Point(344, 72);
-            this.cmb_TipoProducto.Margin = new System.Windows.Forms.Padding(2);
-            this.cmb_TipoProducto.Name = "cmb_TipoProducto";
-            this.cmb_TipoProducto.Size = new System.Drawing.Size(139, 21);
-            this.cmb_TipoProducto.TabIndex = 16;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(44, 117);
+            this.label3.Location = new System.Drawing.Point(26, 117);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 16);
@@ -124,7 +83,7 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold);
-            this.label10.Location = new System.Drawing.Point(301, 192);
+            this.label10.Location = new System.Drawing.Point(307, 192);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(47, 16);
@@ -148,7 +107,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(301, 72);
+            this.label4.Location = new System.Drawing.Point(314, 73);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(40, 16);
@@ -160,19 +119,19 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold);
-            this.label8.Location = new System.Drawing.Point(44, 157);
+            this.label8.Location = new System.Drawing.Point(2, 157);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(95, 16);
+            this.label8.Size = new System.Drawing.Size(86, 16);
             this.label8.TabIndex = 13;
-            this.label8.Text = "Compouesto";
+            this.label8.Text = "Compuesto";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(44, 72);
+            this.label2.Location = new System.Drawing.Point(67, 73);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(21, 16);
@@ -200,30 +159,93 @@
             "Producto3",
             "Producto4",
             "Producto"});
-            this.chk_CompuestoProducto.Location = new System.Drawing.Point(144, 157);
+            this.chk_CompuestoProducto.Location = new System.Drawing.Point(93, 157);
             this.chk_CompuestoProducto.Name = "chk_CompuestoProducto";
             this.chk_CompuestoProducto.Size = new System.Drawing.Size(120, 109);
             this.chk_CompuestoProducto.TabIndex = 23;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(358, 157);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 20);
-            this.textBox1.TabIndex = 25;
             // 
             // txt_CostoProducto
             // 
             this.txt_CostoProducto.AutoSize = true;
             this.txt_CostoProducto.BackColor = System.Drawing.Color.Transparent;
             this.txt_CostoProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold);
-            this.txt_CostoProducto.Location = new System.Drawing.Point(301, 157);
+            this.txt_CostoProducto.Location = new System.Drawing.Point(306, 157);
             this.txt_CostoProducto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.txt_CostoProducto.Name = "txt_CostoProducto";
             this.txt_CostoProducto.Size = new System.Drawing.Size(48, 16);
             this.txt_CostoProducto.TabIndex = 24;
             this.txt_CostoProducto.Text = "Costo";
+            // 
+            // txt_IdProducto
+            // 
+            this.txt_IdProducto.Location = new System.Drawing.Point(93, 73);
+            this.txt_IdProducto.Name = "txt_IdProducto";
+            this.txt_IdProducto.Pp_mensajeError = null;
+            this.txt_IdProducto.Pp_nombre_campo = null;
+            this.txt_IdProducto.Pp_nombre_tabla = null;
+            this.txt_IdProducto.Pp_validable = false;
+            this.txt_IdProducto.Size = new System.Drawing.Size(44, 20);
+            this.txt_IdProducto.TabIndex = 26;
+            // 
+            // txt_NombreProducto
+            // 
+            this.txt_NombreProducto.Location = new System.Drawing.Point(95, 116);
+            this.txt_NombreProducto.Name = "txt_NombreProducto";
+            this.txt_NombreProducto.Pp_mensajeError = null;
+            this.txt_NombreProducto.Pp_nombre_campo = null;
+            this.txt_NombreProducto.Pp_nombre_tabla = null;
+            this.txt_NombreProducto.Pp_validable = false;
+            this.txt_NombreProducto.Size = new System.Drawing.Size(118, 20);
+            this.txt_NombreProducto.TabIndex = 27;
+            // 
+            // cmb_TipoProducto
+            // 
+            this.cmb_TipoProducto.FormattingEnabled = true;
+            this.cmb_TipoProducto.Location = new System.Drawing.Point(360, 71);
+            this.cmb_TipoProducto.Name = "cmb_TipoProducto";
+            this.cmb_TipoProducto.Pp_Display = null;
+            this.cmb_TipoProducto.Pp_mensajeError = null;
+            this.cmb_TipoProducto.Pp_nombre_campo = null;
+            this.cmb_TipoProducto.Pp_nombre_tabla = null;
+            this.cmb_TipoProducto.Pp_seleccionado = false;
+            this.cmb_TipoProducto.Pp_Tabla = null;
+            this.cmb_TipoProducto.Pp_validable = false;
+            this.cmb_TipoProducto.Pp_Value = null;
+            this.cmb_TipoProducto.Size = new System.Drawing.Size(121, 21);
+            this.cmb_TipoProducto.TabIndex = 28;
+            // 
+            // txt_PrecioProducto
+            // 
+            this.txt_PrecioProducto.Location = new System.Drawing.Point(360, 112);
+            this.txt_PrecioProducto.Name = "txt_PrecioProducto";
+            this.txt_PrecioProducto.Pp_mensajeError = null;
+            this.txt_PrecioProducto.Pp_nombre_campo = null;
+            this.txt_PrecioProducto.Pp_nombre_tabla = null;
+            this.txt_PrecioProducto.Pp_validable = false;
+            this.txt_PrecioProducto.Size = new System.Drawing.Size(121, 20);
+            this.txt_PrecioProducto.TabIndex = 29;
+            // 
+            // txt_CostoProd
+            // 
+            this.txt_CostoProd.Location = new System.Drawing.Point(360, 157);
+            this.txt_CostoProd.Name = "txt_CostoProd";
+            this.txt_CostoProd.Pp_mensajeError = null;
+            this.txt_CostoProd.Pp_nombre_campo = null;
+            this.txt_CostoProd.Pp_nombre_tabla = null;
+            this.txt_CostoProd.Pp_validable = false;
+            this.txt_CostoProd.Size = new System.Drawing.Size(121, 20);
+            this.txt_CostoProd.TabIndex = 30;
+            // 
+            // txt_StockProducto
+            // 
+            this.txt_StockProducto.Location = new System.Drawing.Point(360, 192);
+            this.txt_StockProducto.Name = "txt_StockProducto";
+            this.txt_StockProducto.Pp_mensajeError = null;
+            this.txt_StockProducto.Pp_nombre_campo = null;
+            this.txt_StockProducto.Pp_nombre_tabla = null;
+            this.txt_StockProducto.Pp_validable = false;
+            this.txt_StockProducto.Size = new System.Drawing.Size(121, 20);
+            this.txt_StockProducto.TabIndex = 31;
             // 
             // Alta_Producto
             // 
@@ -232,16 +254,16 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(584, 317);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_StockProducto);
+            this.Controls.Add(this.txt_CostoProd);
+            this.Controls.Add(this.txt_PrecioProducto);
+            this.Controls.Add(this.cmb_TipoProducto);
+            this.Controls.Add(this.txt_NombreProducto);
+            this.Controls.Add(this.txt_IdProducto);
             this.Controls.Add(this.txt_CostoProducto);
             this.Controls.Add(this.chk_CompuestoProducto);
             this.Controls.Add(this.btn_Cancelar);
             this.Controls.Add(this.btn_RegistrarPlanta);
-            this.Controls.Add(this.txt_NombreProducto);
-            this.Controls.Add(this.txt_IdProducto);
-            this.Controls.Add(this.txt_PrecioProducto);
-            this.Controls.Add(this.txt_StockProducto);
-            this.Controls.Add(this.cmb_TipoProducto);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -262,11 +284,6 @@
 
         private System.Windows.Forms.Button btn_Cancelar;
         private System.Windows.Forms.Button btn_RegistrarPlanta;
-        private System.Windows.Forms.TextBox txt_NombreProducto;
-        private System.Windows.Forms.TextBox txt_IdProducto;
-        private System.Windows.Forms.TextBox txt_PrecioProducto;
-        private System.Windows.Forms.TextBox txt_StockProducto;
-        private System.Windows.Forms.ComboBox cmb_TipoProducto;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
@@ -275,7 +292,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckedListBox chk_CompuestoProducto;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label txt_CostoProducto;
+        private Clases.TextBox01 txt_IdProducto;
+        private Clases.TextBox01 txt_NombreProducto;
+        private Clases.ComboBox01 cmb_TipoProducto;
+        private Clases.TextBox01 txt_PrecioProducto;
+        private Clases.TextBox01 txt_CostoProd;
+        private Clases.TextBox01 txt_StockProducto;
     }
 }

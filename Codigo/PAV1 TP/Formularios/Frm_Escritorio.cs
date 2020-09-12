@@ -15,6 +15,7 @@ using PAV1_TP.Negocios;
 using WindowsFormsApp2;
 using PAV1_TP.Formularios.Empleados;
 using PAV1_TP.Formularios.Producto;
+using PAV1_TP.Formularios.Clientes;
 
 namespace PAV1_TP
 {
@@ -35,7 +36,8 @@ namespace PAV1_TP
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            
+            Form Clientes = new ABM_Clientes();
+            Clientes.Show();
         }
 
         private void Frm_Escritorio_Load(object sender, EventArgs e)

@@ -31,12 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Alta_Plantas));
             this.btn_Cancelar = new System.Windows.Forms.Button();
             this.btn_RegistrarPlanta = new System.Windows.Forms.Button();
-            this.txt_NComPlanta = new System.Windows.Forms.TextBox();
-            this.txt_NCPlanta = new System.Windows.Forms.TextBox();
-            this.txt_CodigoPlanta = new System.Windows.Forms.TextBox();
-            this.txt_PrecioPlanta = new System.Windows.Forms.TextBox();
-            this.txt_StockPlanta = new System.Windows.Forms.TextBox();
-            this.cmb_TipoPlanta = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -44,6 +38,12 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.txt_CodPlanta = new PAV1_TP.Clases.TextBox01();
+            this.txt_NCientPlanta = new PAV1_TP.Clases.TextBox01();
+            this.txt_NomComPlanta = new PAV1_TP.Clases.TextBox01();
+            this.cmb_TipoPlanta = new PAV1_TP.Clases.ComboBox01();
+            this.txt_PrecioPlanta = new PAV1_TP.Clases.TextBox01();
+            this.txt_StockPlanta = new PAV1_TP.Clases.TextBox01();
             this.SuspendLayout();
             // 
             // btn_Cancelar
@@ -65,55 +65,6 @@
             this.btn_RegistrarPlanta.Text = "Registrar";
             this.btn_RegistrarPlanta.UseVisualStyleBackColor = true;
             this.btn_RegistrarPlanta.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // txt_NComPlanta
-            // 
-            this.txt_NComPlanta.Location = new System.Drawing.Point(195, 233);
-            this.txt_NComPlanta.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_NComPlanta.Name = "txt_NComPlanta";
-            this.txt_NComPlanta.Size = new System.Drawing.Size(116, 20);
-            this.txt_NComPlanta.TabIndex = 4;
-            // 
-            // txt_NCPlanta
-            // 
-            this.txt_NCPlanta.Location = new System.Drawing.Point(198, 156);
-            this.txt_NCPlanta.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_NCPlanta.Name = "txt_NCPlanta";
-            this.txt_NCPlanta.Size = new System.Drawing.Size(116, 20);
-            this.txt_NCPlanta.TabIndex = 2;
-            // 
-            // txt_CodigoPlanta
-            // 
-            this.txt_CodigoPlanta.Location = new System.Drawing.Point(195, 82);
-            this.txt_CodigoPlanta.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_CodigoPlanta.Name = "txt_CodigoPlanta";
-            this.txt_CodigoPlanta.Size = new System.Drawing.Size(116, 20);
-            this.txt_CodigoPlanta.TabIndex = 0;
-            // 
-            // txt_PrecioPlanta
-            // 
-            this.txt_PrecioPlanta.Location = new System.Drawing.Point(390, 159);
-            this.txt_PrecioPlanta.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_PrecioPlanta.Name = "txt_PrecioPlanta";
-            this.txt_PrecioPlanta.Size = new System.Drawing.Size(125, 20);
-            this.txt_PrecioPlanta.TabIndex = 3;
-            // 
-            // txt_StockPlanta
-            // 
-            this.txt_StockPlanta.Location = new System.Drawing.Point(390, 234);
-            this.txt_StockPlanta.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_StockPlanta.Name = "txt_StockPlanta";
-            this.txt_StockPlanta.Size = new System.Drawing.Size(125, 20);
-            this.txt_StockPlanta.TabIndex = 5;
-            // 
-            // cmb_TipoPlanta
-            // 
-            this.cmb_TipoPlanta.FormattingEnabled = true;
-            this.cmb_TipoPlanta.Location = new System.Drawing.Point(390, 78);
-            this.cmb_TipoPlanta.Margin = new System.Windows.Forms.Padding(2);
-            this.cmb_TipoPlanta.Name = "cmb_TipoPlanta";
-            this.cmb_TipoPlanta.Size = new System.Drawing.Size(125, 21);
-            this.cmb_TipoPlanta.TabIndex = 1;
             // 
             // label3
             // 
@@ -198,6 +149,77 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Registrar planta";
             // 
+            // txt_CodPlanta
+            // 
+            this.txt_CodPlanta.Location = new System.Drawing.Point(195, 78);
+            this.txt_CodPlanta.Name = "txt_CodPlanta";
+            this.txt_CodPlanta.Pp_mensajeError = null;
+            this.txt_CodPlanta.Pp_nombre_campo = null;
+            this.txt_CodPlanta.Pp_nombre_tabla = null;
+            this.txt_CodPlanta.Pp_validable = false;
+            this.txt_CodPlanta.Size = new System.Drawing.Size(119, 20);
+            this.txt_CodPlanta.TabIndex = 8;
+            // 
+            // txt_NCientPlanta
+            // 
+            this.txt_NCientPlanta.Location = new System.Drawing.Point(195, 155);
+            this.txt_NCientPlanta.Name = "txt_NCientPlanta";
+            this.txt_NCientPlanta.Pp_mensajeError = null;
+            this.txt_NCientPlanta.Pp_nombre_campo = null;
+            this.txt_NCientPlanta.Pp_nombre_tabla = null;
+            this.txt_NCientPlanta.Pp_validable = false;
+            this.txt_NCientPlanta.Size = new System.Drawing.Size(116, 20);
+            this.txt_NCientPlanta.TabIndex = 9;
+            // 
+            // txt_NomComPlanta
+            // 
+            this.txt_NomComPlanta.Location = new System.Drawing.Point(195, 234);
+            this.txt_NomComPlanta.Name = "txt_NomComPlanta";
+            this.txt_NomComPlanta.Pp_mensajeError = null;
+            this.txt_NomComPlanta.Pp_nombre_campo = null;
+            this.txt_NomComPlanta.Pp_nombre_tabla = null;
+            this.txt_NomComPlanta.Pp_validable = false;
+            this.txt_NomComPlanta.Size = new System.Drawing.Size(116, 20);
+            this.txt_NomComPlanta.TabIndex = 10;
+            // 
+            // cmb_TipoPlanta
+            // 
+            this.cmb_TipoPlanta.FormattingEnabled = true;
+            this.cmb_TipoPlanta.Location = new System.Drawing.Point(390, 78);
+            this.cmb_TipoPlanta.Name = "cmb_TipoPlanta";
+            this.cmb_TipoPlanta.Pp_Display = null;
+            this.cmb_TipoPlanta.Pp_mensajeError = null;
+            this.cmb_TipoPlanta.Pp_nombre_campo = null;
+            this.cmb_TipoPlanta.Pp_nombre_tabla = null;
+            this.cmb_TipoPlanta.Pp_seleccionado = false;
+            this.cmb_TipoPlanta.Pp_Tabla = null;
+            this.cmb_TipoPlanta.Pp_validable = false;
+            this.cmb_TipoPlanta.Pp_Value = null;
+            this.cmb_TipoPlanta.Size = new System.Drawing.Size(121, 21);
+            this.cmb_TipoPlanta.TabIndex = 11;
+            // 
+            // txt_PrecioPlanta
+            // 
+            this.txt_PrecioPlanta.Location = new System.Drawing.Point(394, 156);
+            this.txt_PrecioPlanta.Name = "txt_PrecioPlanta";
+            this.txt_PrecioPlanta.Pp_mensajeError = null;
+            this.txt_PrecioPlanta.Pp_nombre_campo = null;
+            this.txt_PrecioPlanta.Pp_nombre_tabla = null;
+            this.txt_PrecioPlanta.Pp_validable = false;
+            this.txt_PrecioPlanta.Size = new System.Drawing.Size(117, 20);
+            this.txt_PrecioPlanta.TabIndex = 12;
+            // 
+            // txt_StockPlanta
+            // 
+            this.txt_StockPlanta.Location = new System.Drawing.Point(394, 229);
+            this.txt_StockPlanta.Name = "txt_StockPlanta";
+            this.txt_StockPlanta.Pp_mensajeError = null;
+            this.txt_StockPlanta.Pp_nombre_campo = null;
+            this.txt_StockPlanta.Pp_nombre_tabla = null;
+            this.txt_StockPlanta.Pp_validable = false;
+            this.txt_StockPlanta.Size = new System.Drawing.Size(117, 20);
+            this.txt_StockPlanta.TabIndex = 13;
+            // 
             // Alta_Plantas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -205,14 +227,14 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(586, 310);
+            this.Controls.Add(this.txt_StockPlanta);
+            this.Controls.Add(this.txt_PrecioPlanta);
+            this.Controls.Add(this.cmb_TipoPlanta);
+            this.Controls.Add(this.txt_NomComPlanta);
+            this.Controls.Add(this.txt_NCientPlanta);
+            this.Controls.Add(this.txt_CodPlanta);
             this.Controls.Add(this.btn_Cancelar);
             this.Controls.Add(this.btn_RegistrarPlanta);
-            this.Controls.Add(this.txt_NComPlanta);
-            this.Controls.Add(this.txt_NCPlanta);
-            this.Controls.Add(this.txt_CodigoPlanta);
-            this.Controls.Add(this.txt_PrecioPlanta);
-            this.Controls.Add(this.txt_StockPlanta);
-            this.Controls.Add(this.cmb_TipoPlanta);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -232,12 +254,6 @@
 
         private System.Windows.Forms.Button btn_Cancelar;
         private System.Windows.Forms.Button btn_RegistrarPlanta;
-        private System.Windows.Forms.TextBox txt_NComPlanta;
-        private System.Windows.Forms.TextBox txt_NCPlanta;
-        private System.Windows.Forms.TextBox txt_CodigoPlanta;
-        private System.Windows.Forms.TextBox txt_PrecioPlanta;
-        private System.Windows.Forms.TextBox txt_StockPlanta;
-        private System.Windows.Forms.ComboBox cmb_TipoPlanta;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
@@ -245,5 +261,11 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private Clases.TextBox01 txt_CodPlanta;
+        private Clases.TextBox01 txt_NCientPlanta;
+        private Clases.TextBox01 txt_NomComPlanta;
+        private Clases.ComboBox01 cmb_TipoPlanta;
+        private Clases.TextBox01 txt_PrecioPlanta;
+        private Clases.TextBox01 txt_StockPlanta;
     }
 }
