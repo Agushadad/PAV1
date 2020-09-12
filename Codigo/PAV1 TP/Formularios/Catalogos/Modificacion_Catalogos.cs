@@ -32,7 +32,7 @@ namespace PAV1_TP.Formularios.Catalogos
             txt_PuntosNecesarios.Text = tabla.Rows[0]["Puntos_Necesarios"].ToString();
             cmb_EstadoCatalogo.Cargar();
             chk_Id_Plantas_Catalogos.Cargar();
-            chk_Id_Plantas_Catalogos.SetItemChecked(int.Parse(IDPlanta) -1 , true);
+            //chk_Id_Plantas_Catalogos.SetItemChecked(int.Parse(IDPlanta) -1 , true);
 
 
         }
