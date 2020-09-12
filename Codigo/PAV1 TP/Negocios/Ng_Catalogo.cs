@@ -101,6 +101,19 @@ namespace PAV1_TP.Negocios
             _BD.Modificar(sqlUpdate);
 
         }
+        public void ModificarParical(Es_Catalogo datos)
+        {
+            string sqlUpdate = "UPDATE Catalogo SET ";
+            sqlUpdate += "Puntos_Necesarios = " + _BD.FormatearDato(datos.Puntos_Necesarios, "String");
+            sqlUpdate += ", Estado = " + _BD.FormatearDato(datos.Estado, "String");
+            sqlUpdate += " WHERE ID = " + datos.ID;
+            sqlUpdate += " AND Id_Planta = " + datos.Idactual;
+
+
+
+            _BD.Modificar(sqlUpdate);
+
+        }
         public void Eliminar(string ID)
         {
             string sqlEliminar = "UPDATE Catalogo SET Estado = 2 WHERE ID = " + ID;

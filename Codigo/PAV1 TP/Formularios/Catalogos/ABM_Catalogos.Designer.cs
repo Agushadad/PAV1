@@ -92,7 +92,7 @@
             this.btn_EliminarCatalogo.BackColor = System.Drawing.Color.Transparent;
             this.btn_EliminarCatalogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_EliminarCatalogo.BackgroundImage")));
             this.btn_EliminarCatalogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_EliminarCatalogo.Location = new System.Drawing.Point(149, 311);
+            this.btn_EliminarCatalogo.Location = new System.Drawing.Point(133, 311);
             this.btn_EliminarCatalogo.Name = "btn_EliminarCatalogo";
             this.btn_EliminarCatalogo.Size = new System.Drawing.Size(48, 41);
             this.btn_EliminarCatalogo.TabIndex = 20;
@@ -101,13 +101,19 @@
             // 
             // Grid_Catalogos
             // 
+            this.Grid_Catalogos.AllowUserToDeleteRows = false;
+            this.Grid_Catalogos.AllowUserToOrderColumns = true;
+            this.Grid_Catalogos.AllowUserToResizeColumns = false;
+            this.Grid_Catalogos.AllowUserToResizeRows = false;
             this.Grid_Catalogos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Grid_Catalogos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Doc,
             this.Nombre,
             this.Apellido});
             this.Grid_Catalogos.Location = new System.Drawing.Point(11, 88);
+            this.Grid_Catalogos.MultiSelect = false;
             this.Grid_Catalogos.Name = "Grid_Catalogos";
+            this.Grid_Catalogos.ReadOnly = true;
             this.Grid_Catalogos.Size = new System.Drawing.Size(340, 212);
             this.Grid_Catalogos.StandardTab = true;
             this.Grid_Catalogos.TabIndex = 0;

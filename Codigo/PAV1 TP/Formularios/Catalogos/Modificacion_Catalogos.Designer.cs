@@ -37,9 +37,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txt_IdCatalogo = new System.Windows.Forms.TextBox();
             this.txt_PuntosNecesarios = new System.Windows.Forms.TextBox();
-            this.chk_Id_Plantas_Catalogos = new PAV1_TP.Clases.CheckBoxList01();
-            this.cmb_EstadoCatalogo = new PAV1_TP.Clases.ComboBox01();
             this.label4 = new System.Windows.Forms.Label();
+            this.cmb_EstadoCatalogo = new PAV1_TP.Clases.ComboBox01();
+            this.chk_Id_Plantas_Catalogos = new PAV1_TP.Clases.CheckBoxList01();
             this.SuspendLayout();
             // 
             // btn_Cancelar
@@ -47,7 +47,7 @@
             this.btn_Cancelar.Location = new System.Drawing.Point(119, 267);
             this.btn_Cancelar.Name = "btn_Cancelar";
             this.btn_Cancelar.Size = new System.Drawing.Size(82, 23);
-            this.btn_Cancelar.TabIndex = 5;
+            this.btn_Cancelar.TabIndex = 4;
             this.btn_Cancelar.Text = "Cancelar";
             this.btn_Cancelar.UseVisualStyleBackColor = true;
             // 
@@ -56,7 +56,7 @@
             this.btn_Modificar.Location = new System.Drawing.Point(38, 267);
             this.btn_Modificar.Name = "btn_Modificar";
             this.btn_Modificar.Size = new System.Drawing.Size(75, 23);
-            this.btn_Modificar.TabIndex = 4;
+            this.btn_Modificar.TabIndex = 3;
             this.btn_Modificar.Text = "Modificar";
             this.btn_Modificar.UseVisualStyleBackColor = true;
             this.btn_Modificar.Click += new System.EventHandler(this.btn_Modificar_Click);
@@ -118,23 +118,18 @@
             this.txt_PuntosNecesarios.Location = new System.Drawing.Point(154, 204);
             this.txt_PuntosNecesarios.Name = "txt_PuntosNecesarios";
             this.txt_PuntosNecesarios.Size = new System.Drawing.Size(78, 20);
-            this.txt_PuntosNecesarios.TabIndex = 3;
+            this.txt_PuntosNecesarios.TabIndex = 1;
             // 
-            // chk_Id_Plantas_Catalogos
+            // label4
             // 
-            this.chk_Id_Plantas_Catalogos.FormattingEnabled = true;
-            this.chk_Id_Plantas_Catalogos.Location = new System.Drawing.Point(110, 108);
-            this.chk_Id_Plantas_Catalogos.Name = "chk_Id_Plantas_Catalogos";
-            this.chk_Id_Plantas_Catalogos.Pp_Display = "ID";
-            this.chk_Id_Plantas_Catalogos.Pp_mensajeError = "Falta seleccionar alguna planta";
-            this.chk_Id_Plantas_Catalogos.Pp_nombre_campo = "Id_Planta";
-            this.chk_Id_Plantas_Catalogos.Pp_nombre_tabla = "Catalogo";
-            this.chk_Id_Plantas_Catalogos.Pp_seleccionado = false;
-            this.chk_Id_Plantas_Catalogos.Pp_Tabla = "Plantas";
-            this.chk_Id_Plantas_Catalogos.Pp_validable = false;
-            this.chk_Id_Plantas_Catalogos.Pp_Value = "Codigo";
-            this.chk_Id_Plantas_Catalogos.Size = new System.Drawing.Size(122, 79);
-            this.chk_Id_Plantas_Catalogos.TabIndex = 7;
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(12, 239);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(57, 16);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Estado";
             // 
             // cmb_EstadoCatalogo
             // 
@@ -150,18 +145,24 @@
             this.cmb_EstadoCatalogo.Pp_validable = false;
             this.cmb_EstadoCatalogo.Pp_Value = "ID";
             this.cmb_EstadoCatalogo.Size = new System.Drawing.Size(152, 21);
-            this.cmb_EstadoCatalogo.TabIndex = 10;
+            this.cmb_EstadoCatalogo.TabIndex = 2;
             // 
-            // label4
+            // chk_Id_Plantas_Catalogos
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(12, 239);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 16);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Estado";
+            this.chk_Id_Plantas_Catalogos.FormattingEnabled = true;
+            this.chk_Id_Plantas_Catalogos.Location = new System.Drawing.Point(110, 108);
+            this.chk_Id_Plantas_Catalogos.Name = "chk_Id_Plantas_Catalogos";
+            this.chk_Id_Plantas_Catalogos.Pp_Display = "ID";
+            this.chk_Id_Plantas_Catalogos.Pp_mensajeError = "Falta seleccionar alguna planta";
+            this.chk_Id_Plantas_Catalogos.Pp_nombre_campo = "Id_Planta";
+            this.chk_Id_Plantas_Catalogos.Pp_nombre_tabla = "Catalogo";
+            this.chk_Id_Plantas_Catalogos.Pp_seleccionado = false;
+            this.chk_Id_Plantas_Catalogos.Pp_Tabla = "Plantas";
+            this.chk_Id_Plantas_Catalogos.Pp_validable = false;
+            this.chk_Id_Plantas_Catalogos.Pp_Value = "Codigo";
+            this.chk_Id_Plantas_Catalogos.Size = new System.Drawing.Size(122, 79);
+            this.chk_Id_Plantas_Catalogos.TabIndex = 0;
+            this.chk_Id_Plantas_Catalogos.SelectedIndexChanged += new System.EventHandler(this.chk_Id_Plantas_Catalogos_SelectedIndexChanged);
             // 
             // Modificacion_Catalogos
             // 

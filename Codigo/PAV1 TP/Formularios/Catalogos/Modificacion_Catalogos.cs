@@ -65,20 +65,34 @@ namespace PAV1_TP.Formularios.Catalogos
                     string planta = chk_Id_Plantas_Catalogos.SelectedItem.ToString();
                     DataTable tabla = new DataTable();
                     tabla = catalogo.Recuperar_Planta(planta);
-
                     _ec.Id_Planta = int.Parse(tabla.Rows[0][0].ToString());
-
+                    var IdConsulta = tabla.Rows[0][0].ToString();
                     _ec.Puntos_Necesarios = txt_PuntosNecesarios.Text;
                     _ec.Estado = cmb_EstadoCatalogo.SelectedValue.ToString();
                     _ec.Idactual = int.Parse(IDPlanta);
 
-                    catalogo.Modificar(_ec);
-                    
-                    MessageBox.Show("Catalogo modificado correctamente");
-                    this.Close();
+                    if (catalogo.Recuperar_Catalogo(ID, IdConsulta).Rows.Count == 0 )
+                    {
+                        catalogo.Modificar(_ec);
+
+                        MessageBox.Show("Catalogo modificado correctamente");
+                        this.Close();
+                    }
+                    else
+                    {
+                        catalogo.ModificarParical(_ec);
+                        MessageBox.Show("El catalogo ya incluye esta planta");
+                        this.Close();
+
+                    }
 
                 }
             }
+        }
+
+        private void chk_Id_Plantas_Catalogos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
