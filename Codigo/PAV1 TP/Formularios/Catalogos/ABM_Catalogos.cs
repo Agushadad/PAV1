@@ -37,7 +37,7 @@ namespace PAV1_TP.Formularios.Catalogos
             else
             {
                 Modif.ID = Grid_Catalogos.CurrentRow.Cells[0].Value.ToString();
-                Modif.IDPlanta2 = Grid_Catalogos.CurrentRow.Cells[1].Value.ToString();
+                Modif.IDPlanta = Grid_Catalogos.CurrentRow.Cells[1].Value.ToString();
                 Modif.ShowDialog();
                 Modif.Dispose();
             }
@@ -86,6 +86,11 @@ namespace PAV1_TP.Formularios.Catalogos
         private void btn_SalirCatalogo_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void ABM_Catalogos_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

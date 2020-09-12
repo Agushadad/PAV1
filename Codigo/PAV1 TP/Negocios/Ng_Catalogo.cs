@@ -65,9 +65,14 @@ namespace PAV1_TP.Negocios
             int NuevaId = id + 1;
             return NuevaId.ToString();
         }
-        public DataTable Recuperar_Usuario(string ID)
+        public DataTable Recuperar_Catalogo(string ID, string IdPlanta)
         {
-            return _BD.Consulta("SELECT * FROM Catalogo WHERE ID = " + ID);
+            return _BD.Consulta("SELECT * FROM Catalogo WHERE ID = " + int.Parse(ID) + " AND Id_Planta = " + int.Parse(IdPlanta));
+        }
+
+        public DataTable Recuperar_Planta(string NombrePlanta)
+        {
+            return _BD.Consulta("SELECT * FROM Plantas WHERE NombreComun = '" + NombrePlanta+ "'");
         }
         public string Insertar(Es_Catalogo datos)
         {
@@ -89,7 +94,7 @@ namespace PAV1_TP.Negocios
             sqlUpdate += ", Puntos_Necesarios = " + _BD.FormatearDato(datos.Puntos_Necesarios, "String");
             sqlUpdate += ", Estado = " + _BD.FormatearDato(datos.Estado, "String");
             sqlUpdate += " WHERE ID = " + datos.ID;
-            sqlUpdate += " AND Id_Planta = " + datos.IDPlanta2;
+            sqlUpdate += " AND Id_Planta = " + datos.Idactual;
 
 
 

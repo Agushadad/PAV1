@@ -8,7 +8,7 @@ namespace PAV1_TP.Negocios.EstructurasNegocios
 {
     class Es_Catalogo
     {
-        public string IDPlanta2 { get; set; }
+        public int Idactual { get; set; }
         public string ID { get; set; }
         public int Id_Planta { get; set; }
         public string Puntos_Necesarios { get; set; }

@@ -214,6 +214,7 @@
             this.MaximizeBox = false;
             this.Name = "ABM_Catalogos";
             this.Text = "ABM_Catalogos";
+            this.Load += new System.EventHandler(this.ABM_Catalogos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btn_AgregarCatalogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_EditarCatalogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_SalirCatalogo)).EndInit();
