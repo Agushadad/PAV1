@@ -18,6 +18,7 @@ namespace PAV1_TP.Formularios.Catalogos
     {
         Ng_Catalogo catalogo = new Ng_Catalogo();
         public string ID { get; set; }
+        public string IDPlanta2 { get; set; }
         public Modificacion_Catalogos()
         {
             InitializeComponent();
@@ -45,7 +46,8 @@ namespace PAV1_TP.Formularios.Catalogos
             {
 
                 _ec.ID = txt_IdCatalogo.Text;
-                _ec.Id_Planta = int.Parse(chk_Id_Plantas_Catalogos.CheckedItems.ToString());
+                string planta = chk_Id_Plantas_Catalogos.SelectedItem.ToString();
+                _ec.Id_Planta = int.Parse(catalogo.Recuperar_id(planta).ToString());
                 _ec.Puntos_Necesarios = txt_PuntosNecesarios.Text;
                 _ec.Estado = cmb_EstadoCatalogo.SelectedValue.ToString();
 

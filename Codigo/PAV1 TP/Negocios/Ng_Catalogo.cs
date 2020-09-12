@@ -89,6 +89,7 @@ namespace PAV1_TP.Negocios
             sqlUpdate += ", Puntos_Necesarios = " + _BD.FormatearDato(datos.Puntos_Necesarios, "String");
             sqlUpdate += ", Estado = " + _BD.FormatearDato(datos.Estado, "String");
             sqlUpdate += " WHERE ID = " + datos.ID;
+            sqlUpdate += " AND Id_Planta = " + datos.IDPlanta2;
 
 
 
