@@ -32,7 +32,7 @@ namespace PAV1_TP.Formularios.Catalogos
 
             if (Grid_Catalogos.CurrentCell.Value == null)
             {
-                MessageBox.Show("No se selecciono ningun empleado para modificar");
+                MessageBox.Show("No se selecciono ningun catalogo para modificar");
             }
             else
             {
@@ -91,6 +91,24 @@ namespace PAV1_TP.Formularios.Catalogos
         private void ABM_Catalogos_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_EliminarCatalogo_Click(object sender, EventArgs e)
+        {
+            if (Grid_Catalogos.CurrentCell.Value == null)
+            {
+                MessageBox.Show("No se selecciono ningun Catalogo para eliminar");
+            }
+            else
+            {
+                string ID = Grid_Catalogos.CurrentRow.Cells[0].Value.ToString();
+                DialogResult dialogResult = MessageBox.Show("¿Esta seguro que desea eliminar el usuario seleccionado?", "IMPORTANTE", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    catalogo.Eliminar(ID);
+                    Cargar_Grilla(catalogo.Catalogos_Activos());
+                }
+            }
         }
     }
 }

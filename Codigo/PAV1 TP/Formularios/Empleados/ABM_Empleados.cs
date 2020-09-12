@@ -101,7 +101,8 @@ namespace PAV1_TP.Formularios.Empleados
         }
 
         private void btn_EliminarEmp_Click(object sender, EventArgs e)
-        {if (Grid_Emp.CurrentCell.Value == null)
+        {
+            if (Grid_Emp.CurrentCell.Value == null)
             {
                 MessageBox.Show("No se selecciono ningun empleado para eliminar");
             }

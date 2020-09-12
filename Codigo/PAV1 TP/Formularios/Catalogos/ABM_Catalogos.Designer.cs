@@ -97,6 +97,7 @@
             this.btn_EliminarCatalogo.Size = new System.Drawing.Size(48, 41);
             this.btn_EliminarCatalogo.TabIndex = 20;
             this.btn_EliminarCatalogo.TabStop = false;
+            this.btn_EliminarCatalogo.Click += new System.EventHandler(this.btn_EliminarCatalogo_Click);
             // 
             // Grid_Catalogos
             // 

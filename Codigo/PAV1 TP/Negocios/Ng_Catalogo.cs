@@ -101,5 +101,11 @@ namespace PAV1_TP.Negocios
             _BD.Modificar(sqlUpdate);
 
         }
+        public void Eliminar(string ID)
+        {
+            string sqlEliminar = "UPDATE Catalogo SET Estado = 2 WHERE ID = " + ID;
+            _BD.Modificar(sqlEliminar);
+
+        }
     }
 }
