@@ -61,8 +61,8 @@ namespace PAV1_TP.Negocios
             sqlUpdate += ", Nombre Cientifico = " + _BD.FormatearDato(datos.NombreCientifico, "String");
             sqlUpdate += ", Nombre Comun = " + _BD.FormatearDato(datos.NombreComun, "String");
             sqlUpdate += ", Tipo = " + _BD.FormatearDato(datos.Tipo, "String");
-            sqlUpdate += ", Precio = " + _BD.FormatearDato(datos.Precio, "String");
-            sqlUpdate += ", Stock = " + _BD.FormatearDato(datos.Stock, "String");
+            sqlUpdate += ", Precio = " + _BD.FormatearDato(datos.Precio.ToString(), "String");
+            sqlUpdate += ", Stock = " + _BD.FormatearDato(datos.Stock.ToString(), "String");
 
 
 
