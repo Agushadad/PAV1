@@ -13,9 +13,11 @@ using PAV1_TP.Negocios.EstructurasNegocios;
 
 namespace PAV1_TP.Formularios.Plantas
 {
+    
     public partial class Modificacion_Plantas : Form
     {
         Ng_Planta planta = new Ng_Planta();
+        public string Codigo { get; set; }
         public Modificacion_Plantas()
         {
             InitializeComponent();
@@ -24,7 +26,8 @@ namespace PAV1_TP.Formularios.Plantas
         private void Modificacion_Plantas_Load(object sender, EventArgs e)
         {
             DataTable tabla = new DataTable();
-            tabla = Plantas.Recuperar_Planta(Codigo);
+            tabla = planta.Recuperar_Planta(Codigo);
+            cmb_TipoPlanta.Cargar();
             txt_NomCienPlanta = ;
             txt_NomComPlanta = ;
             txt_PrecioPlanta = ;

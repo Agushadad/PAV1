@@ -60,8 +60,17 @@ namespace WindowsFormsApp2
 
         private void btn_ModificarPlanta_Click(object sender, EventArgs e)
         {
-            Form Modificacion_Planta = new Modificacion_Plantas();
-            Modificacion_Planta.Show();
+            Modificacion_Plantas Modif = new Modificacion_Plantas();
+            if (Grid_Planta.CurrentCell.Value == null)
+            {
+                MessageBox.Show("No se selecciono ninguna planta para modificar");
+            }
+            else
+            {
+                Modif.Codigo = Grid_Planta.CurrentRow.Cells[0].Value.ToString();
+                Modif.ShowDialog();
+                Modif.Dispose();
+            }
         }
     }
 }
