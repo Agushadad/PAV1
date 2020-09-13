@@ -42,12 +42,13 @@
             this.chk_TodosPlanta = new System.Windows.Forms.CheckBox();
             this.btn_ConsultarPlanta = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btn_ActualizarStockPlanta = new System.Windows.Forms.Button();
+            this.txt_NComun = new PAV1_TP.Clases.TextBox01();
+            this.txt_CodPlanta = new PAV1_TP.Clases.TextBox01();
             this.btn_ModificarPlanta = new System.Windows.Forms.PictureBox();
             this.btn_Cancelar = new System.Windows.Forms.PictureBox();
             this.btn_EliminarPlanta = new System.Windows.Forms.PictureBox();
-            this.txt_CodPlanta = new PAV1_TP.Clases.TextBox01();
-            this.txt_NComun = new PAV1_TP.Clases.TextBox01();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.btn_AgregarPlanta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Grid_Planta)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -60,10 +61,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(37, 44);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(49, 54);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 13);
+            this.label2.Size = new System.Drawing.Size(104, 17);
             this.label2.TabIndex = 0;
             this.label2.Text = "Nombre común";
             // 
@@ -71,10 +71,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(78, 20);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(104, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 13);
+            this.label1.Size = new System.Drawing.Size(52, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Código";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -82,10 +81,10 @@
             // btn_AgregarPlanta
             // 
             this.btn_AgregarPlanta.Image = ((System.Drawing.Image)(resources.GetObject("btn_AgregarPlanta.Image")));
-            this.btn_AgregarPlanta.Location = new System.Drawing.Point(0, 323);
-            this.btn_AgregarPlanta.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_AgregarPlanta.Location = new System.Drawing.Point(0, 398);
+            this.btn_AgregarPlanta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_AgregarPlanta.Name = "btn_AgregarPlanta";
-            this.btn_AgregarPlanta.Size = new System.Drawing.Size(59, 50);
+            this.btn_AgregarPlanta.Size = new System.Drawing.Size(79, 62);
             this.btn_AgregarPlanta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btn_AgregarPlanta.TabIndex = 4;
             this.btn_AgregarPlanta.TabStop = false;
@@ -101,12 +100,12 @@
             this.Column4,
             this.Column5,
             this.Column6});
-            this.Grid_Planta.Location = new System.Drawing.Point(4, 109);
-            this.Grid_Planta.Margin = new System.Windows.Forms.Padding(2);
+            this.Grid_Planta.Location = new System.Drawing.Point(5, 134);
+            this.Grid_Planta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Grid_Planta.Name = "Grid_Planta";
             this.Grid_Planta.RowHeadersWidth = 51;
             this.Grid_Planta.RowTemplate.Height = 24;
-            this.Grid_Planta.Size = new System.Drawing.Size(593, 174);
+            this.Grid_Planta.Size = new System.Drawing.Size(791, 214);
             this.Grid_Planta.TabIndex = 6;
             this.Grid_Planta.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -156,18 +155,20 @@
             // 
             this.chk_TodosPlanta.AutoSize = true;
             this.chk_TodosPlanta.BackColor = System.Drawing.Color.Transparent;
-            this.chk_TodosPlanta.Location = new System.Drawing.Point(120, 66);
+            this.chk_TodosPlanta.Location = new System.Drawing.Point(160, 96);
+            this.chk_TodosPlanta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chk_TodosPlanta.Name = "chk_TodosPlanta";
-            this.chk_TodosPlanta.Size = new System.Drawing.Size(56, 17);
+            this.chk_TodosPlanta.Size = new System.Drawing.Size(70, 21);
             this.chk_TodosPlanta.TabIndex = 4;
             this.chk_TodosPlanta.Text = "Todos";
             this.chk_TodosPlanta.UseVisualStyleBackColor = false;
             // 
             // btn_ConsultarPlanta
             // 
-            this.btn_ConsultarPlanta.Location = new System.Drawing.Point(226, 44);
+            this.btn_ConsultarPlanta.Location = new System.Drawing.Point(301, 54);
+            this.btn_ConsultarPlanta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_ConsultarPlanta.Name = "btn_ConsultarPlanta";
-            this.btn_ConsultarPlanta.Size = new System.Drawing.Size(75, 23);
+            this.btn_ConsultarPlanta.Size = new System.Drawing.Size(100, 28);
             this.btn_ConsultarPlanta.TabIndex = 3;
             this.btn_ConsultarPlanta.Text = "Consultar";
             this.btn_ConsultarPlanta.UseVisualStyleBackColor = true;
@@ -175,9 +176,10 @@
             // groupBox1
             // 
             this.groupBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox1.BackgroundImage")));
+            this.groupBox1.Controls.Add(this.checkBox2);
+            this.groupBox1.Controls.Add(this.checkBox1);
             this.groupBox1.Controls.Add(this.txt_NComun);
             this.groupBox1.Controls.Add(this.txt_CodPlanta);
-            this.groupBox1.Controls.Add(this.btn_ActualizarStockPlanta);
             this.groupBox1.Controls.Add(this.btn_ModificarPlanta);
             this.groupBox1.Controls.Add(this.btn_Cancelar);
             this.groupBox1.Controls.Add(this.btn_EliminarPlanta);
@@ -187,31 +189,47 @@
             this.groupBox1.Controls.Add(this.btn_AgregarPlanta);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(2, 2);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Location = new System.Drawing.Point(3, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(615, 387);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(820, 476);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
-            // btn_ActualizarStockPlanta
+            // txt_NComun
             // 
-            this.btn_ActualizarStockPlanta.Location = new System.Drawing.Point(503, 81);
-            this.btn_ActualizarStockPlanta.Name = "btn_ActualizarStockPlanta";
-            this.btn_ActualizarStockPlanta.Size = new System.Drawing.Size(94, 23);
-            this.btn_ActualizarStockPlanta.TabIndex = 5;
-            this.btn_ActualizarStockPlanta.Text = "Actualizar stock";
-            this.btn_ActualizarStockPlanta.UseVisualStyleBackColor = true;
+            this.txt_NComun.Location = new System.Drawing.Point(160, 54);
+            this.txt_NComun.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_NComun.Name = "txt_NComun";
+            this.txt_NComun.Pp_mensajeError = null;
+            this.txt_NComun.Pp_nombre_campo = null;
+            this.txt_NComun.Pp_nombre_tabla = null;
+            this.txt_NComun.Pp_validable = false;
+            this.txt_NComun.Size = new System.Drawing.Size(132, 22);
+            this.txt_NComun.TabIndex = 14;
+            // 
+            // txt_CodPlanta
+            // 
+            this.txt_CodPlanta.Location = new System.Drawing.Point(160, 22);
+            this.txt_CodPlanta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_CodPlanta.Name = "txt_CodPlanta";
+            this.txt_CodPlanta.Pp_mensajeError = null;
+            this.txt_CodPlanta.Pp_nombre_campo = null;
+            this.txt_CodPlanta.Pp_nombre_tabla = null;
+            this.txt_CodPlanta.Pp_validable = false;
+            this.txt_CodPlanta.Size = new System.Drawing.Size(132, 22);
+            this.txt_CodPlanta.TabIndex = 13;
             // 
             // btn_ModificarPlanta
             // 
             this.btn_ModificarPlanta.BackColor = System.Drawing.Color.Transparent;
             this.btn_ModificarPlanta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_ModificarPlanta.BackgroundImage")));
             this.btn_ModificarPlanta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_ModificarPlanta.Location = new System.Drawing.Point(64, 323);
+            this.btn_ModificarPlanta.Location = new System.Drawing.Point(85, 398);
+            this.btn_ModificarPlanta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_ModificarPlanta.Name = "btn_ModificarPlanta";
-            this.btn_ModificarPlanta.Size = new System.Drawing.Size(59, 50);
+            this.btn_ModificarPlanta.Size = new System.Drawing.Size(79, 62);
             this.btn_ModificarPlanta.TabIndex = 12;
             this.btn_ModificarPlanta.TabStop = false;
             this.btn_ModificarPlanta.Click += new System.EventHandler(this.btn_ModificarPlanta_Click);
@@ -221,9 +239,10 @@
             this.btn_Cancelar.BackColor = System.Drawing.Color.Transparent;
             this.btn_Cancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Cancelar.BackgroundImage")));
             this.btn_Cancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Cancelar.Location = new System.Drawing.Point(538, 323);
+            this.btn_Cancelar.Location = new System.Drawing.Point(717, 398);
+            this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Cancelar.Name = "btn_Cancelar";
-            this.btn_Cancelar.Size = new System.Drawing.Size(59, 50);
+            this.btn_Cancelar.Size = new System.Drawing.Size(79, 62);
             this.btn_Cancelar.TabIndex = 11;
             this.btn_Cancelar.TabStop = false;
             this.btn_Cancelar.Click += new System.EventHandler(this.pictureBox6_Click);
@@ -233,42 +252,45 @@
             this.btn_EliminarPlanta.BackColor = System.Drawing.Color.Transparent;
             this.btn_EliminarPlanta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_EliminarPlanta.BackgroundImage")));
             this.btn_EliminarPlanta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_EliminarPlanta.Location = new System.Drawing.Point(129, 323);
+            this.btn_EliminarPlanta.Location = new System.Drawing.Point(172, 398);
+            this.btn_EliminarPlanta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_EliminarPlanta.Name = "btn_EliminarPlanta";
-            this.btn_EliminarPlanta.Size = new System.Drawing.Size(59, 50);
+            this.btn_EliminarPlanta.Size = new System.Drawing.Size(79, 62);
             this.btn_EliminarPlanta.TabIndex = 10;
             this.btn_EliminarPlanta.TabStop = false;
             // 
-            // txt_CodPlanta
+            // checkBox1
             // 
-            this.txt_CodPlanta.Location = new System.Drawing.Point(120, 18);
-            this.txt_CodPlanta.Name = "txt_CodPlanta";
-            this.txt_CodPlanta.Pp_mensajeError = null;
-            this.txt_CodPlanta.Pp_nombre_campo = null;
-            this.txt_CodPlanta.Pp_nombre_tabla = null;
-            this.txt_CodPlanta.Pp_validable = false;
-            this.txt_CodPlanta.Size = new System.Drawing.Size(100, 20);
-            this.txt_CodPlanta.TabIndex = 13;
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox1.Location = new System.Drawing.Point(243, 96);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(75, 21);
+            this.checkBox1.TabIndex = 15;
+            this.checkBox1.Text = "Activas";
+            this.checkBox1.UseVisualStyleBackColor = false;
             // 
-            // txt_NComun
+            // checkBox2
             // 
-            this.txt_NComun.Location = new System.Drawing.Point(120, 44);
-            this.txt_NComun.Name = "txt_NComun";
-            this.txt_NComun.Pp_mensajeError = null;
-            this.txt_NComun.Pp_nombre_campo = null;
-            this.txt_NComun.Pp_nombre_tabla = null;
-            this.txt_NComun.Pp_validable = false;
-            this.txt_NComun.Size = new System.Drawing.Size(100, 20);
-            this.txt_NComun.TabIndex = 14;
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox2.Location = new System.Drawing.Point(319, 96);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(85, 21);
+            this.checkBox2.TabIndex = 16;
+            this.checkBox2.Text = "Inactivas";
+            this.checkBox2.UseVisualStyleBackColor = false;
             // 
             // ABM_Plantas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(601, 378);
+            this.ClientSize = new System.Drawing.Size(801, 465);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "ABM_Plantas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
@@ -302,9 +324,10 @@
         private System.Windows.Forms.PictureBox btn_ModificarPlanta;
         private System.Windows.Forms.PictureBox btn_Cancelar;
         private System.Windows.Forms.PictureBox btn_EliminarPlanta;
-        private System.Windows.Forms.Button btn_ActualizarStockPlanta;
         private PAV1_TP.Clases.TextBox01 txt_NComun;
         private PAV1_TP.Clases.TextBox01 txt_CodPlanta;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 

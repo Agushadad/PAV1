@@ -14,7 +14,8 @@ namespace WindowsFormsApp2
 
 {
     public partial class ABM_Plantas : Form
-    {
+    { 
+        
         public ABM_Plantas()
         {
             InitializeComponent();

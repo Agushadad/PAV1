@@ -16,5 +16,10 @@ namespace PAV1_TP.Formularios.Plantas
         {
             InitializeComponent();
         }
+
+        private void Modificacion_Plantas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

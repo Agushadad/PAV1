@@ -34,11 +34,9 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_Cancelar = new System.Windows.Forms.Button();
             this.btn_ModificarPlanta = new System.Windows.Forms.Button();
-            this.txt_CodPlanta = new PAV1_TP.Clases.TextBox01();
             this.txt_NomCienPlanta = new PAV1_TP.Clases.TextBox01();
             this.txt_NomComPlanta = new PAV1_TP.Clases.TextBox01();
             this.cmb_TipoPlanta = new PAV1_TP.Clases.ComboBox01();
@@ -51,10 +49,10 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(48, 157);
+            this.label3.Location = new System.Drawing.Point(26, 79);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(131, 16);
+            this.label3.Size = new System.Drawing.Size(160, 20);
             this.label3.TabIndex = 0;
             this.label3.Text = "Nombre Científico";
             // 
@@ -63,10 +61,10 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold);
-            this.label10.Location = new System.Drawing.Point(321, 234);
+            this.label10.Location = new System.Drawing.Point(215, 240);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(47, 16);
+            this.label10.Size = new System.Drawing.Size(56, 20);
             this.label10.TabIndex = 0;
             this.label10.Text = "Stock";
             // 
@@ -78,7 +76,7 @@
             this.label9.Location = new System.Drawing.Point(317, 157);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(53, 16);
+            this.label9.Size = new System.Drawing.Size(63, 20);
             this.label9.TabIndex = 0;
             this.label9.Text = "Precio";
             // 
@@ -90,7 +88,7 @@
             this.label4.Location = new System.Drawing.Point(329, 79);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(40, 16);
+            this.label4.Size = new System.Drawing.Size(45, 20);
             this.label4.TabIndex = 0;
             this.label4.Text = "Tipo";
             // 
@@ -99,24 +97,12 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold);
-            this.label8.Location = new System.Drawing.Point(48, 234);
+            this.label8.Location = new System.Drawing.Point(26, 157);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(114, 16);
+            this.label8.Size = new System.Drawing.Size(138, 20);
             this.label8.TabIndex = 0;
             this.label8.Text = "Nombre Común";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(104, 79);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 16);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Código";
             // 
             // label1
             // 
@@ -149,43 +135,32 @@
             this.btn_ModificarPlanta.Text = "Modificar";
             this.btn_ModificarPlanta.UseVisualStyleBackColor = true;
             // 
-            // txt_CodPlanta
-            // 
-            this.txt_CodPlanta.Location = new System.Drawing.Point(180, 81);
-            this.txt_CodPlanta.Name = "txt_CodPlanta";
-            this.txt_CodPlanta.Pp_mensajeError = null;
-            this.txt_CodPlanta.Pp_nombre_campo = null;
-            this.txt_CodPlanta.Pp_nombre_tabla = null;
-            this.txt_CodPlanta.Pp_validable = false;
-            this.txt_CodPlanta.Size = new System.Drawing.Size(116, 22);
-            this.txt_CodPlanta.TabIndex = 9;
-            // 
             // txt_NomCienPlanta
             // 
-            this.txt_NomCienPlanta.Location = new System.Drawing.Point(185, 160);
+            this.txt_NomCienPlanta.Location = new System.Drawing.Point(191, 76);
             this.txt_NomCienPlanta.Name = "txt_NomCienPlanta";
             this.txt_NomCienPlanta.Pp_mensajeError = null;
             this.txt_NomCienPlanta.Pp_nombre_campo = null;
             this.txt_NomCienPlanta.Pp_nombre_tabla = null;
             this.txt_NomCienPlanta.Pp_validable = false;
-            this.txt_NomCienPlanta.Size = new System.Drawing.Size(111, 22);
+            this.txt_NomCienPlanta.Size = new System.Drawing.Size(111, 26);
             this.txt_NomCienPlanta.TabIndex = 10;
             // 
             // txt_NomComPlanta
             // 
-            this.txt_NomComPlanta.Location = new System.Drawing.Point(185, 236);
+            this.txt_NomComPlanta.Location = new System.Drawing.Point(191, 151);
             this.txt_NomComPlanta.Name = "txt_NomComPlanta";
             this.txt_NomComPlanta.Pp_mensajeError = null;
             this.txt_NomComPlanta.Pp_nombre_campo = null;
             this.txt_NomComPlanta.Pp_nombre_tabla = null;
             this.txt_NomComPlanta.Pp_validable = false;
-            this.txt_NomComPlanta.Size = new System.Drawing.Size(111, 22);
+            this.txt_NomComPlanta.Size = new System.Drawing.Size(111, 26);
             this.txt_NomComPlanta.TabIndex = 11;
             // 
             // cmb_TipoPlanta
             // 
             this.cmb_TipoPlanta.FormattingEnabled = true;
-            this.cmb_TipoPlanta.Location = new System.Drawing.Point(372, 79);
+            this.cmb_TipoPlanta.Location = new System.Drawing.Point(385, 79);
             this.cmb_TipoPlanta.Name = "cmb_TipoPlanta";
             this.cmb_TipoPlanta.Pp_Display = null;
             this.cmb_TipoPlanta.Pp_mensajeError = null;
@@ -195,34 +170,34 @@
             this.cmb_TipoPlanta.Pp_Tabla = null;
             this.cmb_TipoPlanta.Pp_validable = false;
             this.cmb_TipoPlanta.Pp_Value = null;
-            this.cmb_TipoPlanta.Size = new System.Drawing.Size(121, 24);
+            this.cmb_TipoPlanta.Size = new System.Drawing.Size(121, 28);
             this.cmb_TipoPlanta.TabIndex = 12;
             // 
             // txt_PrecioPlanta
             // 
-            this.txt_PrecioPlanta.Location = new System.Drawing.Point(372, 157);
+            this.txt_PrecioPlanta.Location = new System.Drawing.Point(385, 151);
             this.txt_PrecioPlanta.Name = "txt_PrecioPlanta";
             this.txt_PrecioPlanta.Pp_mensajeError = null;
             this.txt_PrecioPlanta.Pp_nombre_campo = null;
             this.txt_PrecioPlanta.Pp_nombre_tabla = null;
             this.txt_PrecioPlanta.Pp_validable = false;
-            this.txt_PrecioPlanta.Size = new System.Drawing.Size(121, 22);
+            this.txt_PrecioPlanta.Size = new System.Drawing.Size(121, 26);
             this.txt_PrecioPlanta.TabIndex = 13;
             // 
             // txt_StockPlanta
             // 
-            this.txt_StockPlanta.Location = new System.Drawing.Point(372, 234);
+            this.txt_StockPlanta.Location = new System.Drawing.Point(276, 234);
             this.txt_StockPlanta.Name = "txt_StockPlanta";
             this.txt_StockPlanta.Pp_mensajeError = null;
             this.txt_StockPlanta.Pp_nombre_campo = null;
             this.txt_StockPlanta.Pp_nombre_tabla = null;
             this.txt_StockPlanta.Pp_validable = false;
-            this.txt_StockPlanta.Size = new System.Drawing.Size(121, 22);
+            this.txt_StockPlanta.Size = new System.Drawing.Size(121, 26);
             this.txt_StockPlanta.TabIndex = 14;
             // 
             // Modificacion_Plantas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -232,7 +207,6 @@
             this.Controls.Add(this.cmb_TipoPlanta);
             this.Controls.Add(this.txt_NomComPlanta);
             this.Controls.Add(this.txt_NomCienPlanta);
-            this.Controls.Add(this.txt_CodPlanta);
             this.Controls.Add(this.btn_Cancelar);
             this.Controls.Add(this.btn_ModificarPlanta);
             this.Controls.Add(this.label3);
@@ -240,13 +214,13 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Modificacion_Plantas";
             this.Text = "Modificacion_Plantas";
+            this.Load += new System.EventHandler(this.Modificacion_Plantas_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -258,11 +232,9 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_Cancelar;
         private System.Windows.Forms.Button btn_ModificarPlanta;
-        private Clases.TextBox01 txt_CodPlanta;
         private Clases.TextBox01 txt_NomCienPlanta;
         private Clases.TextBox01 txt_NomComPlanta;
         private Clases.ComboBox01 cmb_TipoPlanta;
