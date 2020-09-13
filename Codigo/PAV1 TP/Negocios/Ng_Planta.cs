@@ -34,6 +34,10 @@ namespace PAV1_TP.Negocios
             tabla = _BD.Consulta(sql);
             return tabla;
         }
+        public DataTable Recuperar_Planta(string Codigo)
+        {
+            return _BD.Consulta("SELECT * FROM Planta WHERE Codigo = " + Codigo);
+        }
         public DataTable Buscar_Planta(int Codigo, string NombreComun)
         {
             string sql = "SELECT * FROM Planta WHERE Codigo LIKE '%" + Codigo + "%' AND Nombre Comun LIKE '%" + NombreComun + "%'";

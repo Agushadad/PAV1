@@ -9,13 +9,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PAV1_TP.Negocios;
 
 namespace WindowsFormsApp2
 
 {
     public partial class ABM_Plantas : Form
-    { 
-        
+    {
+        Ng_Planta Planta = new Ng_Planta();
         public ABM_Plantas()
         {
             InitializeComponent();

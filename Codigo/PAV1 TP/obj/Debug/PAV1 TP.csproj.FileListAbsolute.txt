@@ -115,3 +115,32 @@ C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1 T
 C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1 TP.exe
 C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1 TP.pdb
 C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1 TP.csprojAssemblyReference.cache
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\bin\Debug\PAV1 TP.exe.config
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\bin\Debug\PAV1 TP.exe
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\bin\Debug\PAV1 TP.pdb
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1 TP.csprojAssemblyReference.cache
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Catalogos.ABM_Catalogos.resources
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Catalogos.Alta_Catalogos.resources
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Catalogos.Modificacion_Catalogos.resources
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Clientes.ABM_Clientes.resources
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Clientes.Alta_Clientes.resources
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Clientes.Modificacion_Cliente.resources
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Empleados.ABM_Empleados.resources
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Empleados.Alta_Empleado.resources
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Empleados.Modificacion_Empleado.resources
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Frm_Login.resources
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Alta_Plantas.resources
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Frm_Escritorio.resources
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\WindowsFormsApp2.ABM_Plantas.resources
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Plantas.Modificacion_Plantas.resources
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Producto.ABM_Productos.resources
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Producto.Alta_Producto.resources
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Producto.Modificacion_Producto.resources
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Proveedor.ABM_Proveedor.resources
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Proveedor.Alta_Proveedor.resources
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Proveedor.Modificacion_Proveedor.resources
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Properties.Resources.resources
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1 TP.csproj.GenerateResource.cache
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1 TP.csproj.CoreCompileInputs.cache
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1 TP.exe
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1 TP.pdb
