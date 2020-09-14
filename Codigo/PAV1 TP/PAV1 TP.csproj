@@ -199,7 +199,7 @@
     <Compile Include="Negocios\EstructurasNegocios\Es_Planta.cs" />
     <Compile Include="Negocios\EstructurasNegocios\Es_Catalogo.cs" />
     <Compile Include="Negocios\EstructurasNegocios\Es_Empleado.cs" />
-    <Compile Include="Negocios\EstructurasNegocios\Es_ProcutoCompuesto.cs" />
+    <Compile Include="Negocios\EstructurasNegocios\Es_ProductoCompuesto.cs" />
     <Compile Include="Negocios\EstructurasNegocios\Es_Producto.cs" />
     <Compile Include="Negocios\EstructurasNegocios\Es_Proveedor.cs" />
     <Compile Include="Negocios\EstructurasNegocios\Es_TipoPlanta.cs" />

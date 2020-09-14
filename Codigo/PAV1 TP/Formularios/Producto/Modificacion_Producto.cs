@@ -12,7 +12,7 @@ using PAV1_TP.Negocios;
 using PAV1_TP.Negocios.EstructurasNegocios;
 namespace PAV1_TP.Formularios.Producto
 {
-    
+
     public partial class Modificacion_Producto : Form
     {
         public string ID { get; set; }
@@ -24,17 +24,15 @@ namespace PAV1_TP.Formularios.Producto
 
         private void Modificacion_Producto_Load(object sender, EventArgs e)
         {
-            //Recupero la tabla producto
+            //Recuperar la tabla producto
             DataTable tablaProducto = new DataTable();
             tablaProducto = producto.RecuperarProducto(ID);
 
-            //Recupero la tabla TipoProducto
+            //Recuperar la tabla TipoProducto
             DataTable tablaTipoProducto = new DataTable();
             tablaTipoProducto = producto.RecuperarTipoProducto(cmb_TipoProducto.Text = tablaProducto.Rows[0]["Tipo"].ToString());
 
-
-
-            //Lleno atributos de producto
+            //Llenar atributos de producto
             txt_IdProducto.Text = ID;
             txt_NombreProducto.Text = tablaProducto.Rows[0]["Nombre"].ToString();
             cmb_TipoProducto.Text = tablaTipoProducto.Rows[0]["Nombre"].ToString();
@@ -46,6 +44,17 @@ namespace PAV1_TP.Formularios.Producto
 
             if (tablaProducto.Rows[0]["Composicion"].ToString() != null)
             {
+                //Recuperar tabla de Composición
+                DataTable tablaComposicion = new DataTable();
+                tablaComposicion = producto.RecuperarComposicion(tablaProducto.Rows[0]["Composicion"].ToString());
+
+                //Llenar atributos de composición
+                txt_CantProdComp1.Text = (tablaComposicion.Rows[0]["Cod_Prod_Compuesto"].ToString());
+                txt_CantProdComp2.Text = (tablaComposicion.Rows[0]["Cod_Prod_Componente"].ToString());
+
+                //Llenar checkedlist
+                chk_CompuestoProducto.SetItemChecked(int.Parse(txt_CantProdComp1.Text) - 1, true);
+                chk_CompuestoProducto.SetItemChecked(int.Parse(txt_CantProdComp2.Text) - 1, true);
 
 
             }
@@ -54,19 +63,84 @@ namespace PAV1_TP.Formularios.Producto
         private void btn_RegistrarProducto_Click(object sender, EventArgs e)
         {
             TratamientosEspeciales tratamiento = new TratamientosEspeciales();
-            Es_Producto _Ep = new Es_Producto();
+            Es_Producto _ep = new Es_Producto();
+            Es_ProductoCompuesto _epc = new Es_ProductoCompuesto();
+
+
 
             if (tratamiento.validar(this.Controls) == TratamientosEspeciales.Validacion.correcta)
             {
-                _Ep.Codigo = ID;
-                _Ep.Nombre = txt_NombreProducto.Text;
-                _Ep.Tipo = cmb_TipoProducto.Text;
-                _Ep.Stock = txt_StockProducto.Text;
-                _Ep.Costo = txt_CostoProd.Text;
-                _Ep.Precio = txt_PrecioProducto.Text;
 
+                if (chk_CompuestoProducto.CheckedItems.Count > 2)
+                {
+                    MessageBox.Show("Seleccione solamente 2 productos para la composicion");
+                    return;
+                }
+                if (chk_CompuestoProducto.CheckedItems.Count < 2 && cmb_TipoProducto.SelectedValue.ToString() == "4")
+                {
+                    MessageBox.Show("Seleccione  2 productos para la composicion");
+                    return;
+                }
+                if (chk_CompuestoProducto.CheckedItems.Count > 0 && cmb_TipoProducto.SelectedValue.ToString() != "4")
+                {
+                    MessageBox.Show("Seleccione tipo compuesto para registrar un producto compuesto");
+                    return;
+                }
+
+                if (cmb_TipoProducto.SelectedValue.ToString() == "4")
+                {
+                    //recuperar tablas
+                    DataTable tablaProducto = new DataTable();
+                    tablaProducto = producto.RecuperarProducto(ID);
+                    DataTable tablaComposicion = new DataTable();
+                    tablaComposicion = producto.RecuperarComposicion(tablaProducto.Rows[0]["Composicion"].ToString());
+
+                    var items = chk_CompuestoProducto.CheckedItems.Count;
+                    DataTable tabla = new DataTable();
+                    _epc.ID = txt_IdProducto.Text;
+                    _ep.Codigo = tablaComposicion.Rows[0]["ID"].ToString();
+
+                    for (int i = 0; i <= items; i++)
+                    {
+                        _ep.Composicion = producto.NuevoIdComposicion();
+                        _ep.Nombre = txt_NombreProducto.Text;
+                        _ep.Tipo = cmb_TipoProducto.SelectedValue.ToString();
+                        _ep.Stock = txt_StockProducto.Text;
+                        _ep.Costo = txt_CostoProd.Text;
+                        _ep.Precio = txt_PrecioProducto.Text;
+                        _ep.Estado = "1";
+                        string prod_compuesto = chk_CompuestoProducto.CheckedItems[i].ToString();
+                        _epc.Cod_Prod_Compuesto = producto.Recuperar_id(prod_compuesto).ToString();
+                        string prod_componente = chk_CompuestoProducto.CheckedItems[i + 1].ToString();
+                        _epc.Cod_Prod_Componente = producto.Recuperar_id(prod_componente).ToString();
+                        _epc.Cant_Compuesto = txt_CantProdComp1.Text;
+                        _epc.Cant_Componente = txt_CantProdComp2.Text;
+
+                        producto.ModificarProducto(_ep);
+                        producto.ModificarComposicion(_epc);
+                        break;
+
+
+                    }
+                    MessageBox.Show("Producto modificado correctamente");
+                    this.Close();
+                }
+                else
+                {
+                    _ep.Codigo = txt_IdProducto.Text;
+                    _ep.Nombre = txt_NombreProducto.Text;
+                    _ep.Tipo = cmb_TipoProducto.SelectedValue.ToString();
+                    _ep.Stock = txt_StockProducto.Text;
+                    _ep.Costo = txt_CostoProd.Text;
+                    _ep.Composicion = null;
+                    _ep.Precio = txt_PrecioProducto.Text;
+                    _ep.Estado = "1";
+
+                    producto.ModificarProducto(_ep);
+                    MessageBox.Show("Producto modificado correctamente");
+                    this.Close();
+                }
             }
         }
     }
-    
 }

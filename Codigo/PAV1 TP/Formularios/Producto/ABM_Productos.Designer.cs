@@ -102,6 +102,7 @@
             this.btn_EliminarProducto.Size = new System.Drawing.Size(59, 50);
             this.btn_EliminarProducto.TabIndex = 33;
             this.btn_EliminarProducto.TabStop = false;
+            this.btn_EliminarProducto.Click += new System.EventHandler(this.btn_EliminarProducto_Click);
             // 
             // Grid_Producto
             // 

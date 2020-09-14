@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PAV1_TP.Negocios.EstructurasNegocios
 {
-    class Es_ProcutoCompuesto
+    class Es_ProductoCompuesto
     {
         public string ID { get; set; }
         public string Cod_Prod_Compuesto { get; set; }

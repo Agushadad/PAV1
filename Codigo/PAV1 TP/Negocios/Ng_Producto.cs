@@ -92,7 +92,7 @@ namespace PAV1_TP.Negocios
             return _BD.Insertar(sqlInsert);
 
         }
-        public string InsertarCompuesto(Es_ProcutoCompuesto datos)
+        public string InsertarCompuesto(Es_ProductoCompuesto datos)
         {
 
             string sqlInsert = @"INSERT INTO Composicion(ID,Cod_Prod_Compuesto, Cod_Prod_Componente, Cant_Compuesto, Cant_Componente) VALUES (";
@@ -120,5 +120,44 @@ namespace PAV1_TP.Negocios
 
         }
 
-    }
+        public DataTable RecuperarComposicion (string ID)
+        {
+            DataTable tabla = new DataTable();
+            return tabla = _BD.Consulta("SELECT * FROM Composicion WHERE ID = " + ID);
+        }
+
+        public void ModificarProducto(Es_Producto dato)
+        {
+            string sqlUpdate = "UPDATE Producto SET ";
+            sqlUpdate += "Codigo = " + _BD.FormatearDato(dato.Codigo, "String");
+            sqlUpdate += ", Nombre = " + _BD.FormatearDato(dato.Nombre.ToString(), "String");
+            sqlUpdate += ", Tipo = " + _BD.FormatearDato(dato.Tipo, "String");
+            sqlUpdate += ", Stock = " + _BD.FormatearDato(dato.Stock, "String");
+            sqlUpdate += ", Costo = " + _BD.FormatearDato(dato.Costo, "String");
+            sqlUpdate += ", Composicion = " + _BD.FormatearDato(dato.Stock, "String");
+            sqlUpdate += ", Precio = " + _BD.FormatearDato(dato.Stock, "String");
+            sqlUpdate += ", Estado = " + _BD.FormatearDato(dato.Estado, "String");
+            sqlUpdate += " WHERE ID = " + dato.Codigo;
+           
+            _BD.Modificar(sqlUpdate);
+        }
+
+        public void ModificarComposicion(Es_ProductoCompuesto dato)
+        {
+            string sqlUpdate = "UPDATE Composicion SET ";
+            sqlUpdate += "ID = " + _BD.FormatearDato(dato.ID, "String");
+            sqlUpdate += "Cod_Prod_Compuesto = " + _BD.FormatearDato(dato.Cod_Prod_Compuesto, "String");
+            sqlUpdate += "Cod_Prod_Componente = " + _BD.FormatearDato(dato.Cod_Prod_Componente, "String");
+            sqlUpdate += "Cant_Compuesto = " + _BD.FormatearDato(dato.Cant_Compuesto, "String");
+            sqlUpdate += "Cant_Componente = " + _BD.FormatearDato(dato.Cant_Componente, "String");
+            sqlUpdate += " WHERE ID = " + dato.ID;
+            _BD.Modificar(sqlUpdate);
+        }
+
+        public void Eliminar(string ID)
+        {
+            _BD.Modificar("UPDATE Producto SET Estado = 2 WHERE  ID = " + ID);
+        }
+
+    } 
 }

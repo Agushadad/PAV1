@@ -54,7 +54,7 @@ namespace PAV1_TP.Formularios.Producto
             }
             else
             {
-                Modif.ID = Grid_Producto.CurrentCell.Value.ToString();
+                Modif.ID = Grid_Producto.CurrentRow.Cells[0].Value.ToString();
                 Modif.ShowDialog();
                 Modif.Dispose();
             }
@@ -91,6 +91,23 @@ namespace PAV1_TP.Formularios.Producto
         private void btn_CancelarProducto_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btn_EliminarProducto_Click(object sender, EventArgs e)
+        {
+            if (Grid_Producto.CurrentCell.Value == null)
+            {
+                MessageBox.Show("No se selecciono ningun producto para eliminar");
+            }
+            else
+            {
+                string ID = Grid_Producto.CurrentRow.Cells[0].ToString();
+                DialogResult dialogResult = MessageBox.Show("¿Esta seguro que desea eliminar el usuario seleccionado?", "IMPORTANTE", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    producto.Eliminar(ID);
+                }
+            }
         }
     }
 }

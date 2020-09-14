@@ -32,7 +32,7 @@ namespace PAV1_TP.Formularios.Producto
         {
             TratamientosEspeciales tratamiento = new TratamientosEspeciales();
             Es_Producto _ep = new Es_Producto();
-            Es_ProcutoCompuesto _epc = new Es_ProcutoCompuesto();
+            Es_ProductoCompuesto _epc = new Es_ProductoCompuesto();
         
             if (tratamiento.validar(this.Controls) == TratamientosEspeciales.Validacion.correcta)
             {
