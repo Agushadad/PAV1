@@ -47,8 +47,17 @@ namespace PAV1_TP.Formularios.Producto
 
         private void btn_ModifProveedor_Click(object sender, EventArgs e)
         {
-            Form Modificacion_Producto = new Modificacion_Producto();
-            Modificacion_Producto.Show();
+            Modificacion_Producto Modif = new Modificacion_Producto();
+            if (Grid_Producto.CurrentCell == null)
+            {
+                MessageBox.Show("No se selecciono ningun catalogo para modificar");
+            }
+            else
+            {
+                Modif.ID = Grid_Producto.CurrentCell.Value.ToString();
+                Modif.ShowDialog();
+                Modif.Dispose();
+            }
         }
 
         private void btn_ConsultarProducto_Click(object sender, EventArgs e)
