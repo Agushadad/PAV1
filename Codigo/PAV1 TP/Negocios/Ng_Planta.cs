@@ -34,13 +34,22 @@ namespace PAV1_TP.Negocios
             tabla = _BD.Consulta(sql);
             return tabla;
         }
+        public string NuevoId()
+        {
+            DataTable tabla = new DataTable();
+            string sql = "SELECT * FROM Plantas";
+            tabla = _BD.Consulta(sql);
+            int id = tabla.Rows.Count;
+            int NuevaId = id + 1;
+            return NuevaId.ToString();
+        }
         public DataTable Recuperar_Planta(string Codigo)
         {
-            return _BD.Consulta("SELECT * FROM Planta WHERE Codigo = " + Codigo);
+            return _BD.Consulta("SELECT * FROM Plantas WHERE Codigo = " + Codigo);
         }
-        public DataTable Buscar_Planta(int Codigo, string NombreComun)
+        public DataTable Buscar_Planta(string Codigo, string NombreComun)
         {
-            string sql = "SELECT * FROM Planta WHERE Codigo LIKE '%" + Codigo + "%' AND Nombre Comun LIKE '%" + NombreComun + "%'";
+            string sql = "SELECT * FROM Plantas WHERE Codigo LIKE '%" + Codigo + "%' AND NombreComun LIKE '%" + NombreComun + "%'";
             DataTable tabla = new DataTable();
             tabla = _BD.Consulta(sql);
             return tabla;
@@ -48,33 +57,34 @@ namespace PAV1_TP.Negocios
         public string Insertar(Es_Planta datos)
         {
 
-            string sqlInsert = @"INSERT INTO Plantas(Codigo, NombreCientifico, NombreComun, Tipo, Precio, Stock) VALUES (";
+            string sqlInsert = @"INSERT INTO Plantas(Codigo, NombreCientifico, NombreComun, Tipo, Precio, Stock,Estado) VALUES (";
             sqlInsert += "'" + datos.Codigo + "'";
             sqlInsert += ",'" + datos.NombreCientifico + "'";
             sqlInsert += ", '" + datos.NombreComun + "'";
             sqlInsert += ", '" + datos.Tipo + "'";
             sqlInsert += ", '" + datos.Precio + "'";
-            sqlInsert += ", '" + datos.Stock + "')";
+            sqlInsert += ", '" + datos.Stock + "'";
+            sqlInsert += ", '" + datos.Estado + "')";
 
             return _BD.Insertar(sqlInsert);
 
         }
         public void Modificar(Es_Planta datos)
         {
-            string sqlUpdate = "UPDATE Catalogo SET ";
-            sqlUpdate += ", Nombre Cientifico = " + _BD.FormatearDato(datos.NombreCientifico, "String");
-            sqlUpdate += ", Nombre Comun = " + _BD.FormatearDato(datos.NombreComun, "String");
+            string sqlUpdate = "UPDATE Plantas SET ";
+            sqlUpdate += "NombreCientifico = " + _BD.FormatearDato(datos.NombreCientifico, "String");
+            sqlUpdate += ", NombreComun = " + _BD.FormatearDato(datos.NombreComun, "String");
             sqlUpdate += ", Tipo = " + _BD.FormatearDato(datos.Tipo, "String");
-            sqlUpdate += ", Precio = " + _BD.FormatearDato(datos.Precio.ToString(), "String");
-            sqlUpdate += ", Stock = " + _BD.FormatearDato(datos.Stock.ToString(), "String");
-
-
+            sqlUpdate += ", Precio = " + _BD.FormatearDato(datos.Precio, "String");
+            sqlUpdate += ", Stock = " + _BD.FormatearDato(datos.Stock, "String");
+            sqlUpdate += ", Estado = " + _BD.FormatearDato(datos.Estado, "String");
+            sqlUpdate += " WHERE Codigo = " + datos.Codigo;
 
             _BD.Modificar(sqlUpdate);
         }
-        public void Eliminar(int Codigo, string NombreComun)
+        public void Eliminar(string Codigo)
         {
-            string sqlEliminar = "UPDATE Planta SET Estado = 2 WHERE Codigo = " + Codigo + "AND NombreComun = " + NombreComun;
+            string sqlEliminar = "UPDATE Plantas SET Estado = 2 WHERE Codigo = " + Codigo;
             _BD.Modificar(sqlEliminar);
 
         }

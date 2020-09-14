@@ -118,12 +118,6 @@
       <DependentUpon>Frm_Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Modificacion.cs" />
-    <Compile Include="Formularios\Plantas\Alta_Plantas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Plantas\Alta_Plantas.Designer.cs">
-      <DependentUpon>Alta_Plantas.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\Frm_Escritorio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +129,12 @@
     </Compile>
     <Compile Include="Formularios\Plantas\ABM_Plantas.Designer.cs">
       <DependentUpon>ABM_Plantas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Plantas\Alta_Plantas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Plantas\Alta_Plantas.Designer.cs">
+      <DependentUpon>Alta_Plantas.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Plantas\Modificacion_Plantas.cs">
       <SubType>Form</SubType>
@@ -221,14 +221,14 @@
     <EmbeddedResource Include="Formularios\Frm_Login.resx">
       <DependentUpon>Frm_Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Plantas\Alta_Plantas.resx">
-      <DependentUpon>Alta_Plantas.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Frm_Escritorio.resx">
       <DependentUpon>Frm_Escritorio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Plantas\ABM_Plantas.resx">
       <DependentUpon>ABM_Plantas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Plantas\Alta_Plantas.resx">
+      <DependentUpon>Alta_Plantas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Plantas\Modificacion_Plantas.resx">
       <DependentUpon>Modificacion_Plantas.cs</DependentUpon>
@@ -273,6 +273,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Formularios\Plantas\TipoPlanta\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

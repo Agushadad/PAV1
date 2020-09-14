@@ -159,6 +159,9 @@
             // 
             // Grid_Emp
             // 
+            this.Grid_Emp.AllowUserToDeleteRows = false;
+            this.Grid_Emp.AllowUserToResizeColumns = false;
+            this.Grid_Emp.AllowUserToResizeRows = false;
             this.Grid_Emp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Grid_Emp.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
