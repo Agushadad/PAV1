@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PAV1_TP.Formularios.Plantas;
+using PAV1_TP.Formularios.Plantas.TipoPlanta;
 using PAV1_TP.Negocios;
 
 namespace PAV1_TP.Formularios.Plantas
@@ -78,7 +80,7 @@ namespace PAV1_TP.Formularios.Plantas
             Modificacion_Plantas Modif = new Modificacion_Plantas();
             if (Grid_Planta.CurrentCell.Value == null)
             {
-                MessageBox.Show("No se selecciono ningun empleado para modificar");
+                MessageBox.Show("No se selecciono ninguna planta para modificar");
             }
             else
             {
@@ -97,13 +99,19 @@ namespace PAV1_TP.Formularios.Plantas
             else
             {
                 string Codigo = Grid_Planta.CurrentRow.Cells[0].Value.ToString();
-                DialogResult dialogResult = MessageBox.Show("¿Esta seguro que desea eliminar el usuario seleccionado?", "IMPORTANTE", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                DialogResult dialogResult = MessageBox.Show("¿Esta seguro que desea eliminar la planta seleccionada?", "IMPORTANTE", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
                 if (dialogResult == DialogResult.Yes)
                 {
                     planta.Eliminar(Codigo);
                     Cargar_Grilla(planta.Plantas_Activas());
                 }
             }
+        }
+
+        private void btn_TipoPlanta_Click(object sender, EventArgs e)
+        {
+            Form ABM_TipoPlanta = new ABM_TipoPlanta();
+            ABM_TipoPlanta.Show();
         }
     }
 }

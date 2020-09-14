@@ -142,6 +142,24 @@
     <Compile Include="Formularios\Plantas\Modificacion_Plantas.Designer.cs">
       <DependentUpon>Modificacion_Plantas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Plantas\TipoPlanta\ABM_TipoPlanta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Plantas\TipoPlanta\ABM_TipoPlanta.Designer.cs">
+      <DependentUpon>ABM_TipoPlanta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Plantas\TipoPlanta\Alta_TipoPlanta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Plantas\TipoPlanta\Alta_TipoPlanta.Designer.cs">
+      <DependentUpon>Alta_TipoPlanta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Plantas\TipoPlanta\Modificacion_TipoPlanta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Plantas\TipoPlanta\Modificacion_TipoPlanta.Designer.cs">
+      <DependentUpon>Modificacion_TipoPlanta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Producto\ABM_Productos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,11 +202,13 @@
     <Compile Include="Negocios\EstructurasNegocios\Es_ProcutoCompuesto.cs" />
     <Compile Include="Negocios\EstructurasNegocios\Es_Producto.cs" />
     <Compile Include="Negocios\EstructurasNegocios\Es_Proveedor.cs" />
+    <Compile Include="Negocios\EstructurasNegocios\Es_TipoPlanta.cs" />
     <Compile Include="Negocios\Ng_Planta.cs" />
     <Compile Include="Negocios\Ng_Catalogo.cs" />
     <Compile Include="Negocios\Ng_Empleados.cs" />
     <Compile Include="Negocios\Ng_Producto.cs" />
     <Compile Include="Negocios\Ng_Proveedor.cs" />
+    <Compile Include="Negocios\Ng_TipoPlanta.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\Catalogos\ABM_Catalogos.resx">
@@ -233,6 +253,15 @@
     <EmbeddedResource Include="Formularios\Plantas\Modificacion_Plantas.resx">
       <DependentUpon>Modificacion_Plantas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Plantas\TipoPlanta\ABM_TipoPlanta.resx">
+      <DependentUpon>ABM_TipoPlanta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Plantas\TipoPlanta\Alta_TipoPlanta.resx">
+      <DependentUpon>Alta_TipoPlanta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Plantas\TipoPlanta\Modificacion_TipoPlanta.resx">
+      <DependentUpon>Modificacion_TipoPlanta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Producto\ABM_Productos.resx">
       <DependentUpon>ABM_Productos.cs</DependentUpon>
     </EmbeddedResource>
@@ -273,8 +302,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Formularios\Plantas\TipoPlanta\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

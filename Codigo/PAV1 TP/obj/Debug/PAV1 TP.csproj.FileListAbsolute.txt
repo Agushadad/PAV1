@@ -144,3 +144,6 @@ C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1 T
 C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Plantas.ABM_Plantas.resources
 C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Plantas.Alta_Plantas.resources
 C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1 TP.csprojAssemblyReference.cache
+C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Plantas.TipoPlanta.ABM_TipoPlanta.resources
+C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Plantas.TipoPlanta.Alta_TipoPlanta.resources
+C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Plantas.TipoPlanta.Modificacion_TipoPlanta.resources

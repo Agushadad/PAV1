@@ -247,6 +247,7 @@
             this.btn_TipoPlanta.TabIndex = 26;
             this.btn_TipoPlanta.Text = "Tipos de plantas";
             this.btn_TipoPlanta.UseVisualStyleBackColor = true;
+            this.btn_TipoPlanta.Click += new System.EventHandler(this.btn_TipoPlanta_Click);
             // 
             // ABM_Plantas
             // 

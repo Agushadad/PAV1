@@ -1,0 +1,1 @@
+INSERT INTO TipoProducto Values (4, 'Compuesto', 'Producto formado por mas de un producto', 1)

@@ -9,6 +9,7 @@ using PAV1_TP.Formularios.Proveedor;
 using PAV1_TP.Formularios.Catalogos;
 using PAV1_TP.Formularios.Producto;
 using PAV1_TP.Formularios.Plantas;
+using PAV1_TP.Formularios.Plantas.TipoPlanta;
 
 namespace PAV1_TP
 {
@@ -23,7 +24,7 @@ namespace PAV1_TP
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Frm_Escritorio());
-            Application.Run(new ABM_Plantas());
+            Application.Run(new ABM_TipoPlanta());
 
 
 
