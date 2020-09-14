@@ -56,14 +56,16 @@ namespace PAV1_TP.Formularios.Producto
                 {
                     var items = chk_TipoProductos.CheckedItems.Count;
                     DataTable tabla = new DataTable();
+                    _epc.ID = producto.NuevoIdComposicion();
                     _ep.Codigo = producto.NuevoId();
+
                     for (int i = 0; i <= items ; i++)
                     {
+                        _ep.Composicion = producto.NuevoIdComposicion();
                         _ep.Nombre = txt_NombreProducto.Text;
                         _ep.Tipo = cmb_TipoProducto.SelectedValue.ToString();
                         _ep.Stock = txt_StockProducto.Text;
                         _ep.Costo = txt_CostoProd.Text;
-                        _ep.Composicion = -1;
                         _ep.Precio = txt_PrecioProducto.Text;
                         _ep.Estado = cmb_EstadoProd.SelectedValue.ToString();
                         string prod_compuesto = chk_TipoProductos.CheckedItems[i].ToString();
@@ -90,7 +92,7 @@ namespace PAV1_TP.Formularios.Producto
                     _ep.Tipo = cmb_TipoProducto.SelectedValue.ToString();
                     _ep.Stock = txt_StockProducto.Text;
                     _ep.Costo = txt_CostoProd.Text;
-                    _ep.Composicion = 0;
+                    _ep.Composicion = producto.NuevoIdComposicion();
                     _ep.Precio = txt_PrecioProducto.Text;
                     _ep.Estado = cmb_EstadoProd.SelectedValue.ToString();
 

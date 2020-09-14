@@ -66,6 +66,7 @@ namespace PAV1_TP.Formularios.Producto
                 _Ep.Precio = txt_PrecioProducto.Text;
 
             }
+        }
     }
     
 }

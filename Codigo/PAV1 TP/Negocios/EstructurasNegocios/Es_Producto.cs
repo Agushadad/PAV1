@@ -14,7 +14,7 @@ namespace PAV1_TP.Negocios.EstructurasNegocios
         public string Stock { get; set; }
         public string Costo { get; set; }
         public string Precio { get; set; }
-        public int Composicion { get; set; }
+        public string Composicion { get; set; }
         public string Estado { get; set; }
         
 

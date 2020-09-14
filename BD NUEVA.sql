@@ -1,3 +1,5 @@
+DROP DATABASE Vivero
+
 CREATE DATABASE Vivero
 
 USE Vivero
@@ -133,11 +135,12 @@ CREATE TABLE Puntos (TipoDoc INT,
 					CONSTRAINT doc_puntos_fk FOREIGN KEY (TipoDoc, NroDoc) REFERENCES Cliente(TipoDoc, NroDoc),
 					CONSTRAINT puntos_factura_fk FOREIGN KEY (Tipo_Factura, Nro_Factura) REFERENCES Factura(Tipo_Factura, Nro_Factura))
 
-CREATE TABLE Composicion (Cod_Prod_Compuesto INT,
+CREATE TABLE Composicion (ID INT,
+						  Cod_Prod_Compuesto INT,
 						  Cod_Prod_Componente INT,
 						  Cant_Compuesto INT,
 						  Cant_Componente INT,
-						  CONSTRAINT cod_prod_comp_compuesto_pk PRIMARY KEY (Cod_Prod_Compuesto, Cod_Prod_Componente),
+						  CONSTRAINT composicion_id_pk PRIMARY KEY (ID),
 						  CONSTRAINT cod_prod_comp_fk FOREIGN KEY (Cod_Prod_Compuesto) REFERENCES Producto (Codigo),
 						  CONSTRAINT cod_prod_Componente_fk FOREIGN KEY (Cod_Prod_Componente) REFERENCES Producto (Codigo))
 
@@ -168,6 +171,8 @@ CREATE TABLE Canje (ID INT,
 					CONSTRAINT canje_cliente_fk FOREIGN KEY (TipoDoc, NroDoc) REFERENCES Cliente(TipoDoc, NroDoc),
 					CONSTRAINT canje_productos_fk FOREIGN KEY (Id_Catalogo, Id_Planta) REFERENCES Catalogo(ID, Id_Planta)) 
 
+ALTER TABLE Producto ADD CONSTRAINT id_composicion_producto_fk FOREIGN KEY (Composicion) REFERENCES Composicion(ID)
+
 INSERT INTO Estado VALUES (1, 'Activo'), (2, 'Inactivo')					    
 
 INSERT INTO Barrio VALUES (1, 'General Paz'),(2,'Nueva Cordoba'), (3, 'Crisol'), (4, 'Centro'), (5,'Cerro')
@@ -192,10 +197,9 @@ INSERT INTO TipoProducto VALUES (1,'Accesorio','Piezas parar adornar las plantas
 INSERT INTO Producto VALUES (1,'Maceta',1,200,40,80,NULL,1),
 							(2,'Tierra negra',2,100,20,30,NULL,1),
 							(3,'Tierra profesional',2,100,40,60,NULL,1),
-							(4, 'Maceta con tierra negra',1,20,60,100,1-2,1),
 							(5, 'Abono universal',3,70,65,100,NULL,1)
 
-INSERT INTO Composicion VALUES (1,2,1,1)
+INSERT INTO Composicion VALUES (1,1,2,1,1)
 
 INSERT INTO Empleado VALUES (1,'Agustin','Hadad','3512495352','Vigo',2190,3,1,'123',1),
 							(2,'Facundo','Chiarini','3515467890','Maipu',194,4,3,'321',1),
@@ -214,3 +218,6 @@ INSERT INTO Catalogo VALUES (1,1,200,1),
 							(1,3,200,1),
 							(2,4,250,1),
 							(2,5,250,1)
+
+INSERT INTO TipoProducto VALUES (4,'Compuesto','Producto formado por 2 productos',1)
+

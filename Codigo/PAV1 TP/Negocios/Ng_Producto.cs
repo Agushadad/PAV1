@@ -66,6 +66,15 @@ namespace PAV1_TP.Negocios
             int NuevaId = id + 1;
             return NuevaId.ToString();
         }
+        public string NuevoIdComposicion()
+        {
+            DataTable tabla = new DataTable();
+            string sql = "SELECT * FROM Composicion";
+            tabla = _BD.Consulta(sql);
+            int id = tabla.Rows.Count;
+            int NuevaIdComposicion = id + 1;
+            return NuevaIdComposicion.ToString();
+        }
         public string Insertar(Es_Producto datos)
         {
 
@@ -86,8 +95,9 @@ namespace PAV1_TP.Negocios
         public string InsertarCompuesto(Es_ProcutoCompuesto datos)
         {
 
-            string sqlInsert = @"INSERT INTO Composicion(Cod_Prod_Compuesto, Cod_Prod_Componente, Cant_Compuesto, Cant_Componente) VALUES (";
-            sqlInsert += "'" + datos.Cod_Prod_Compuesto + "'";
+            string sqlInsert = @"INSERT INTO Composicion(ID,Cod_Prod_Compuesto, Cod_Prod_Componente, Cant_Compuesto, Cant_Componente) VALUES (";
+            sqlInsert += "'" + datos.ID + "'";
+            sqlInsert += ",'" + datos.Cod_Prod_Compuesto + "'";
             sqlInsert += ",'" + datos.Cod_Prod_Componente + "'";
             sqlInsert += ", '" + datos.Cant_Compuesto + "'";
             sqlInsert += ", '" + datos.Cant_Componente + "')";
