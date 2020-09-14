@@ -95,5 +95,20 @@ namespace PAV1_TP.Negocios
             return _BD.Insertar(sqlInsert);
 
         }
+
+        public DataTable RecuperarProducto(string ID)
+        {
+            DataTable tabla = new DataTable();
+            return tabla = _BD.Consulta("SELECT * FROM Producto WHERE Codigo = " + ID);
+
+        }
+
+        public DataTable RecuperarTipoProducto(string ID)
+        {
+            DataTable tabla = new DataTable();
+            return tabla = _BD.Consulta("SELECT * FROM TipoProducto WHERE ID = " + ID);
+
+        }
+
     }
 }

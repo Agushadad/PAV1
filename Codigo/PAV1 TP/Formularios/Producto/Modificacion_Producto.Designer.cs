@@ -46,6 +46,10 @@
             this.txt_CostoProd = new PAV1_TP.Clases.TextBox01();
             this.txt_StockProducto = new PAV1_TP.Clases.TextBox01();
             this.txt_PrecioProducto = new PAV1_TP.Clases.TextBox01();
+            this.txt_CantProdComp2 = new PAV1_TP.Clases.TextBox01();
+            this.txt_CantProdComp1 = new PAV1_TP.Clases.TextBox01();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txt_CostoProducto
@@ -70,9 +74,9 @@
             "Producto3",
             "Producto4",
             "Producto"});
-            this.chk_CompuestoProducto.Location = new System.Drawing.Point(111, 157);
+            this.chk_CompuestoProducto.Location = new System.Drawing.Point(110, 154);
             this.chk_CompuestoProducto.Name = "chk_CompuestoProducto";
-            this.chk_CompuestoProducto.Size = new System.Drawing.Size(120, 109);
+            this.chk_CompuestoProducto.Size = new System.Drawing.Size(120, 79);
             this.chk_CompuestoProducto.TabIndex = 40;
             // 
             // btn_CancelarProducto
@@ -92,6 +96,7 @@
             this.btn_RegistrarProducto.TabIndex = 38;
             this.btn_RegistrarProducto.Text = "Modificar";
             this.btn_RegistrarProducto.UseVisualStyleBackColor = true;
+            this.btn_RegistrarProducto.Click += new System.EventHandler(this.btn_RegistrarProducto_Click);
             // 
             // label3
             // 
@@ -149,9 +154,9 @@
             this.label8.Location = new System.Drawing.Point(11, 157);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(95, 16);
+            this.label8.Size = new System.Drawing.Size(86, 16);
             this.label8.TabIndex = 31;
-            this.label8.Text = "Compouesto";
+            this.label8.Text = "Compuesto";
             // 
             // label2
             // 
@@ -247,6 +252,52 @@
             this.txt_PrecioProducto.Size = new System.Drawing.Size(100, 20);
             this.txt_PrecioProducto.TabIndex = 46;
             // 
+            // txt_CantProdComp2
+            // 
+            this.txt_CantProdComp2.Location = new System.Drawing.Point(111, 279);
+            this.txt_CantProdComp2.Name = "txt_CantProdComp2";
+            this.txt_CantProdComp2.Pp_mensajeError = null;
+            this.txt_CantProdComp2.Pp_nombre_campo = null;
+            this.txt_CantProdComp2.Pp_nombre_tabla = null;
+            this.txt_CantProdComp2.Pp_validable = false;
+            this.txt_CantProdComp2.Size = new System.Drawing.Size(121, 20);
+            this.txt_CantProdComp2.TabIndex = 50;
+            // 
+            // txt_CantProdComp1
+            // 
+            this.txt_CantProdComp1.Location = new System.Drawing.Point(111, 244);
+            this.txt_CantProdComp1.Name = "txt_CantProdComp1";
+            this.txt_CantProdComp1.Pp_mensajeError = null;
+            this.txt_CantProdComp1.Pp_nombre_campo = null;
+            this.txt_CantProdComp1.Pp_nombre_tabla = null;
+            this.txt_CantProdComp1.Pp_validable = false;
+            this.txt_CantProdComp1.Size = new System.Drawing.Size(121, 20);
+            this.txt_CantProdComp1.TabIndex = 49;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(24, 248);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(82, 16);
+            this.label5.TabIndex = 48;
+            this.label5.Text = "Cantidad 1";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold);
+            this.label6.Location = new System.Drawing.Point(24, 284);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(82, 16);
+            this.label6.TabIndex = 47;
+            this.label6.Text = "Cantidad 2";
+            // 
             // Modificacion_Producto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -254,6 +305,10 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(584, 315);
+            this.Controls.Add(this.txt_CantProdComp2);
+            this.Controls.Add(this.txt_CantProdComp1);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.txt_StockProducto);
             this.Controls.Add(this.txt_PrecioProducto);
             this.Controls.Add(this.txt_CostoProd);
@@ -275,6 +330,7 @@
             this.Name = "Modificacion_Producto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Modificacion_Producto";
+            this.Load += new System.EventHandler(this.Modificacion_Producto_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -298,5 +354,9 @@
         private Clases.TextBox01 txt_CostoProd;
         private Clases.TextBox01 txt_StockProducto;
         private Clases.TextBox01 txt_PrecioProducto;
+        private Clases.TextBox01 txt_CantProdComp2;
+        private Clases.TextBox01 txt_CantProdComp1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }
