@@ -62,56 +62,57 @@
             // 
             this.txt_ApellidoCliente.Location = new System.Drawing.Point(99, 111);
             this.txt_ApellidoCliente.Name = "txt_ApellidoCliente";
-            this.txt_ApellidoCliente.Pp_mensajeError = null;
+            this.txt_ApellidoCliente.Pp_mensajeError = "Falta cargar el apellido";
             this.txt_ApellidoCliente.Pp_nombre_campo = null;
             this.txt_ApellidoCliente.Pp_nombre_tabla = null;
-            this.txt_ApellidoCliente.Pp_validable = false;
+            this.txt_ApellidoCliente.Pp_validable = true;
             this.txt_ApellidoCliente.Size = new System.Drawing.Size(168, 20);
-            this.txt_ApellidoCliente.TabIndex = 121;
+            this.txt_ApellidoCliente.TabIndex = 1;
             // 
             // txt_MailCliente
             // 
             this.txt_MailCliente.Location = new System.Drawing.Point(99, 147);
             this.txt_MailCliente.Name = "txt_MailCliente";
-            this.txt_MailCliente.Pp_mensajeError = null;
+            this.txt_MailCliente.Pp_mensajeError = "Falta cargar el email";
             this.txt_MailCliente.Pp_nombre_campo = null;
             this.txt_MailCliente.Pp_nombre_tabla = null;
-            this.txt_MailCliente.Pp_validable = false;
+            this.txt_MailCliente.Pp_validable = true;
             this.txt_MailCliente.Size = new System.Drawing.Size(168, 20);
-            this.txt_MailCliente.TabIndex = 120;
+            this.txt_MailCliente.TabIndex = 2;
             // 
             // txt_NDocCliente
             // 
             this.txt_NDocCliente.Location = new System.Drawing.Point(411, 76);
             this.txt_NDocCliente.Name = "txt_NDocCliente";
-            this.txt_NDocCliente.Pp_mensajeError = null;
+            this.txt_NDocCliente.Pp_mensajeError = "Falta cargar el nro de doc";
             this.txt_NDocCliente.Pp_nombre_campo = null;
             this.txt_NDocCliente.Pp_nombre_tabla = null;
-            this.txt_NDocCliente.Pp_validable = false;
+            this.txt_NDocCliente.Pp_validable = true;
             this.txt_NDocCliente.Size = new System.Drawing.Size(168, 20);
-            this.txt_NDocCliente.TabIndex = 119;
+            this.txt_NDocCliente.TabIndex = 3;
             // 
             // txt_CalleCliente
             // 
             this.txt_CalleCliente.Location = new System.Drawing.Point(121, 281);
             this.txt_CalleCliente.Name = "txt_CalleCliente";
-            this.txt_CalleCliente.Pp_mensajeError = null;
+            this.txt_CalleCliente.Pp_mensajeError = "Falta cargar la calle";
             this.txt_CalleCliente.Pp_nombre_campo = null;
             this.txt_CalleCliente.Pp_nombre_tabla = null;
-            this.txt_CalleCliente.Pp_validable = false;
+            this.txt_CalleCliente.Pp_validable = true;
             this.txt_CalleCliente.Size = new System.Drawing.Size(166, 20);
-            this.txt_CalleCliente.TabIndex = 118;
+            this.txt_CalleCliente.TabIndex = 8;
             // 
             // txt_NCalleCliente
             // 
             this.txt_NCalleCliente.Location = new System.Drawing.Point(121, 320);
             this.txt_NCalleCliente.Name = "txt_NCalleCliente";
-            this.txt_NCalleCliente.Pp_mensajeError = null;
+            this.txt_NCalleCliente.Pp_mensajeError = "Falta cargar el nro de calle";
             this.txt_NCalleCliente.Pp_nombre_campo = null;
             this.txt_NCalleCliente.Pp_nombre_tabla = null;
             this.txt_NCalleCliente.Pp_validable = false;
+            this.txt_NCalleCliente.ReadOnly = true;
             this.txt_NCalleCliente.Size = new System.Drawing.Size(166, 20);
-            this.txt_NCalleCliente.TabIndex = 117;
+            this.txt_NCalleCliente.TabIndex = 9;
             // 
             // txt_TelefonoCliente
             // 
@@ -122,18 +123,18 @@
             this.txt_TelefonoCliente.Pp_nombre_tabla = null;
             this.txt_TelefonoCliente.Pp_validable = false;
             this.txt_TelefonoCliente.Size = new System.Drawing.Size(168, 20);
-            this.txt_TelefonoCliente.TabIndex = 116;
+            this.txt_TelefonoCliente.TabIndex = 10;
             // 
             // txt_NombreCliente
             // 
             this.txt_NombreCliente.Location = new System.Drawing.Point(99, 75);
             this.txt_NombreCliente.Name = "txt_NombreCliente";
-            this.txt_NombreCliente.Pp_mensajeError = null;
+            this.txt_NombreCliente.Pp_mensajeError = "Falta cargar el nombre";
             this.txt_NombreCliente.Pp_nombre_campo = null;
             this.txt_NombreCliente.Pp_nombre_tabla = null;
-            this.txt_NombreCliente.Pp_validable = false;
+            this.txt_NombreCliente.Pp_validable = true;
             this.txt_NombreCliente.Size = new System.Drawing.Size(168, 20);
-            this.txt_NombreCliente.TabIndex = 115;
+            this.txt_NombreCliente.TabIndex = 0;
             // 
             // label7
             // 
@@ -294,7 +295,7 @@
             this.btn_CancelarCliente.Location = new System.Drawing.Point(543, 354);
             this.btn_CancelarCliente.Name = "btn_CancelarCliente";
             this.btn_CancelarCliente.Size = new System.Drawing.Size(82, 23);
-            this.btn_CancelarCliente.TabIndex = 109;
+            this.btn_CancelarCliente.TabIndex = 12;
             this.btn_CancelarCliente.Text = "Cancelar";
             this.btn_CancelarCliente.UseVisualStyleBackColor = true;
             this.btn_CancelarCliente.Click += new System.EventHandler(this.btn_CancelarCliente_Click);
@@ -304,7 +305,7 @@
             this.btn_ModificarCliente.Location = new System.Drawing.Point(462, 354);
             this.btn_ModificarCliente.Name = "btn_ModificarCliente";
             this.btn_ModificarCliente.Size = new System.Drawing.Size(75, 23);
-            this.btn_ModificarCliente.TabIndex = 108;
+            this.btn_ModificarCliente.TabIndex = 11;
             this.btn_ModificarCliente.Text = "Modificar";
             this.btn_ModificarCliente.UseVisualStyleBackColor = true;
             this.btn_ModificarCliente.Click += new System.EventHandler(this.btn_ModificarCliente_Click);
@@ -323,7 +324,7 @@
             this.cmb_LocalidadCliente.Pp_validable = false;
             this.cmb_LocalidadCliente.Pp_Value = "ID";
             this.cmb_LocalidadCliente.Size = new System.Drawing.Size(166, 21);
-            this.cmb_LocalidadCliente.TabIndex = 122;
+            this.cmb_LocalidadCliente.TabIndex = 6;
             // 
             // cmb_BarrioCliente
             // 
@@ -339,7 +340,7 @@
             this.cmb_BarrioCliente.Pp_validable = false;
             this.cmb_BarrioCliente.Pp_Value = "ID";
             this.cmb_BarrioCliente.Size = new System.Drawing.Size(166, 21);
-            this.cmb_BarrioCliente.TabIndex = 123;
+            this.cmb_BarrioCliente.TabIndex = 7;
             this.cmb_BarrioCliente.SelectedIndexChanged += new System.EventHandler(this.comboBox012_SelectedIndexChanged);
             // 
             // cmb_TipoDoc
@@ -357,7 +358,7 @@
             this.cmb_TipoDoc.Pp_validable = false;
             this.cmb_TipoDoc.Pp_Value = "ID";
             this.cmb_TipoDoc.Size = new System.Drawing.Size(166, 21);
-            this.cmb_TipoDoc.TabIndex = 124;
+            this.cmb_TipoDoc.TabIndex = 4;
             // 
             // cmb_Estado
             // 
@@ -373,7 +374,7 @@
             this.cmb_Estado.Pp_validable = false;
             this.cmb_Estado.Pp_Value = "ID";
             this.cmb_Estado.Size = new System.Drawing.Size(166, 21);
-            this.cmb_Estado.TabIndex = 125;
+            this.cmb_Estado.TabIndex = 5;
             // 
             // Modificacion_Cliente
             // 
@@ -409,8 +410,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_CancelarCliente);
             this.Controls.Add(this.btn_ModificarCliente);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Modificacion_Cliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modificacion_Cliente";
             this.Load += new System.EventHandler(this.Modificacion_Cliente_Load);
             this.ResumeLayout(false);

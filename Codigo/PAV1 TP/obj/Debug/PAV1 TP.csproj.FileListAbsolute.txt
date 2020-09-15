@@ -182,3 +182,6 @@ C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1 TP
 C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\bin\Debug\PAV1 TP.exe.config
 C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\bin\Debug\PAV1 TP.exe
 C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\bin\Debug\PAV1 TP.pdb
+C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Producto.TipoProducto.ABM_TipoProducto.resources
+C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Producto.TipoProducto.Alta_TipoProducto.resources
+C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Producto.TipoProducto.Modificacion_TipoProducto.resources

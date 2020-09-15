@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Alta_TipoPlanta));
             this.txt_IdTipoPlanta = new PAV1_TP.Clases.TextBox01();
             this.txt_NombreTipoPlanta = new PAV1_TP.Clases.TextBox01();
             this.txt_DescripTipoPlanta = new PAV1_TP.Clases.TextBox01();
@@ -57,10 +58,10 @@
             // 
             this.txt_NombreTipoPlanta.Location = new System.Drawing.Point(105, 84);
             this.txt_NombreTipoPlanta.Name = "txt_NombreTipoPlanta";
-            this.txt_NombreTipoPlanta.Pp_mensajeError = null;
+            this.txt_NombreTipoPlanta.Pp_mensajeError = "No se ingreso el nombre";
             this.txt_NombreTipoPlanta.Pp_nombre_campo = null;
             this.txt_NombreTipoPlanta.Pp_nombre_tabla = null;
-            this.txt_NombreTipoPlanta.Pp_validable = false;
+            this.txt_NombreTipoPlanta.Pp_validable = true;
             this.txt_NombreTipoPlanta.Size = new System.Drawing.Size(100, 20);
             this.txt_NombreTipoPlanta.TabIndex = 1;
             // 
@@ -68,10 +69,10 @@
             // 
             this.txt_DescripTipoPlanta.Location = new System.Drawing.Point(105, 116);
             this.txt_DescripTipoPlanta.Name = "txt_DescripTipoPlanta";
-            this.txt_DescripTipoPlanta.Pp_mensajeError = null;
+            this.txt_DescripTipoPlanta.Pp_mensajeError = "No se ingreso descripcion";
             this.txt_DescripTipoPlanta.Pp_nombre_campo = null;
             this.txt_DescripTipoPlanta.Pp_nombre_tabla = null;
-            this.txt_DescripTipoPlanta.Pp_validable = false;
+            this.txt_DescripTipoPlanta.Pp_validable = true;
             this.txt_DescripTipoPlanta.Size = new System.Drawing.Size(100, 20);
             this.txt_DescripTipoPlanta.TabIndex = 2;
             // 
@@ -81,12 +82,12 @@
             this.cmb_EstadoTipoPlanta.Location = new System.Drawing.Point(105, 153);
             this.cmb_EstadoTipoPlanta.Name = "cmb_EstadoTipoPlanta";
             this.cmb_EstadoTipoPlanta.Pp_Display = "Descripcion";
-            this.cmb_EstadoTipoPlanta.Pp_mensajeError = null;
+            this.cmb_EstadoTipoPlanta.Pp_mensajeError = "No se selecciono un estado";
             this.cmb_EstadoTipoPlanta.Pp_nombre_campo = null;
             this.cmb_EstadoTipoPlanta.Pp_nombre_tabla = null;
             this.cmb_EstadoTipoPlanta.Pp_seleccionado = false;
             this.cmb_EstadoTipoPlanta.Pp_Tabla = "Estado";
-            this.cmb_EstadoTipoPlanta.Pp_validable = false;
+            this.cmb_EstadoTipoPlanta.Pp_validable = true;
             this.cmb_EstadoTipoPlanta.Pp_Value = "ID";
             this.cmb_EstadoTipoPlanta.Size = new System.Drawing.Size(100, 21);
             this.cmb_EstadoTipoPlanta.TabIndex = 3;
@@ -174,6 +175,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(235, 236);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -186,7 +189,10 @@
             this.Controls.Add(this.txt_DescripTipoPlanta);
             this.Controls.Add(this.txt_NombreTipoPlanta);
             this.Controls.Add(this.txt_IdTipoPlanta);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Alta_TipoPlanta";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Alta_TipoPlanta";
             this.Load += new System.EventHandler(this.Alta_TipoPlanta_Load);
             this.ResumeLayout(false);

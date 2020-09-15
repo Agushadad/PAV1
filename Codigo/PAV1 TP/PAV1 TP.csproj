@@ -178,6 +178,24 @@
     <Compile Include="Formularios\Producto\Modificacion_Producto.Designer.cs">
       <DependentUpon>Modificacion_Producto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Producto\TipoProducto\ABM_TipoProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Producto\TipoProducto\ABM_TipoProducto.Designer.cs">
+      <DependentUpon>ABM_TipoProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Producto\TipoProducto\Alta_TipoProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Producto\TipoProducto\Alta_TipoProducto.Designer.cs">
+      <DependentUpon>Alta_TipoProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Producto\TipoProducto\Modificacion_TipoProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Producto\TipoProducto\Modificacion_TipoProducto.Designer.cs">
+      <DependentUpon>Modificacion_TipoProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Proveedor\ABM_Proveedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,6 +222,7 @@
     <Compile Include="Negocios\EstructurasNegocios\Es_Producto.cs" />
     <Compile Include="Negocios\EstructurasNegocios\Es_Proveedor.cs" />
     <Compile Include="Negocios\EstructurasNegocios\Es_TipoPlanta.cs" />
+    <Compile Include="Negocios\EstructurasNegocios\Es_TipoProducto.cs" />
     <Compile Include="Negocios\Ng_Cliente.cs" />
     <Compile Include="Negocios\Ng_Planta.cs" />
     <Compile Include="Negocios\Ng_Catalogo.cs" />
@@ -211,6 +230,7 @@
     <Compile Include="Negocios\Ng_Producto.cs" />
     <Compile Include="Negocios\Ng_Proveedor.cs" />
     <Compile Include="Negocios\Ng_TipoPlanta.cs" />
+    <Compile Include="Negocios\Ng_TipoProducto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\Catalogos\ABM_Catalogos.resx">
@@ -272,6 +292,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Producto\Modificacion_Producto.resx">
       <DependentUpon>Modificacion_Producto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Producto\TipoProducto\ABM_TipoProducto.resx">
+      <DependentUpon>ABM_TipoProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Producto\TipoProducto\Alta_TipoProducto.resx">
+      <DependentUpon>Alta_TipoProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Producto\TipoProducto\Modificacion_TipoProducto.resx">
+      <DependentUpon>Modificacion_TipoProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Proveedor\ABM_Proveedor.resx">
       <DependentUpon>ABM_Proveedor.cs</DependentUpon>

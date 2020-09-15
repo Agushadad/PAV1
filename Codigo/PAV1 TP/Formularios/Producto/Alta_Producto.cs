@@ -92,7 +92,7 @@ namespace PAV1_TP.Formularios.Producto
                     _ep.Tipo = cmb_TipoProducto.SelectedValue.ToString();
                     _ep.Stock = txt_StockProducto.Text;
                     _ep.Costo = txt_CostoProd.Text;
-                    _ep.Composicion = producto.NuevoIdComposicion();
+                    _ep.Composicion = null;
                     _ep.Precio = txt_PrecioProducto.Text;
                     _ep.Estado = cmb_EstadoProd.SelectedValue.ToString();
 
@@ -101,6 +101,16 @@ namespace PAV1_TP.Formularios.Producto
                     this.Close();
                 }
             }
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

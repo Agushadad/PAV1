@@ -37,16 +37,16 @@
             this.btn_EliminarPlanta = new System.Windows.Forms.PictureBox();
             this.btn_ConsultarPlanta = new System.Windows.Forms.Button();
             this.Grid_Planta = new System.Windows.Forms.DataGridView();
-            this.btn_AgregarPlanta = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txt_NComun = new System.Windows.Forms.TextBox();
             this.Código = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Columna2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_AgregarPlanta = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txt_NComun = new System.Windows.Forms.TextBox();
             this.btn_TipoPlanta = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.btn_ModificarPlanta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Cancelar)).BeginInit();
@@ -150,11 +150,60 @@
             this.Grid_Planta.Location = new System.Drawing.Point(10, 87);
             this.Grid_Planta.Margin = new System.Windows.Forms.Padding(2);
             this.Grid_Planta.Name = "Grid_Planta";
+            this.Grid_Planta.ReadOnly = true;
             this.Grid_Planta.RowHeadersWidth = 51;
             this.Grid_Planta.RowTemplate.Height = 24;
             this.Grid_Planta.Size = new System.Drawing.Size(593, 206);
             this.Grid_Planta.StandardTab = true;
             this.Grid_Planta.TabIndex = 0;
+            // 
+            // Código
+            // 
+            this.Código.HeaderText = "Código";
+            this.Código.MinimumWidth = 6;
+            this.Código.Name = "Código";
+            this.Código.ReadOnly = true;
+            this.Código.Width = 50;
+            // 
+            // Columna2
+            // 
+            this.Columna2.HeaderText = "Nombre Científico";
+            this.Columna2.MinimumWidth = 6;
+            this.Columna2.Name = "Columna2";
+            this.Columna2.ReadOnly = true;
+            this.Columna2.Width = 160;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Nombre Común";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 125;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Tipo";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 125;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Precio";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Width = 125;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Stock";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Width = 125;
             // 
             // btn_AgregarPlanta
             // 
@@ -197,48 +246,6 @@
             this.txt_NComun.Size = new System.Drawing.Size(100, 20);
             this.txt_NComun.TabIndex = 2;
             // 
-            // Código
-            // 
-            this.Código.HeaderText = "Código";
-            this.Código.MinimumWidth = 6;
-            this.Código.Name = "Código";
-            this.Código.Width = 50;
-            // 
-            // Columna2
-            // 
-            this.Columna2.HeaderText = "Nombre Científico";
-            this.Columna2.MinimumWidth = 6;
-            this.Columna2.Name = "Columna2";
-            this.Columna2.Width = 160;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Nombre Común";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 125;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Tipo";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 125;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Precio";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 125;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Stock";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 125;
-            // 
             // btn_TipoPlanta
             // 
             this.btn_TipoPlanta.Location = new System.Drawing.Point(494, 59);
@@ -269,6 +276,7 @@
             this.Controls.Add(this.btn_AgregarPlanta);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "ABM_Plantas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

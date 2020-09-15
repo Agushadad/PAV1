@@ -52,10 +52,10 @@
             // 
             this.txt_StockPlanta.Location = new System.Drawing.Point(391, 148);
             this.txt_StockPlanta.Name = "txt_StockPlanta";
-            this.txt_StockPlanta.Pp_mensajeError = null;
+            this.txt_StockPlanta.Pp_mensajeError = "Falta cargar el stock";
             this.txt_StockPlanta.Pp_nombre_campo = null;
             this.txt_StockPlanta.Pp_nombre_tabla = null;
-            this.txt_StockPlanta.Pp_validable = false;
+            this.txt_StockPlanta.Pp_validable = true;
             this.txt_StockPlanta.Size = new System.Drawing.Size(121, 20);
             this.txt_StockPlanta.TabIndex = 27;
             // 
@@ -63,10 +63,10 @@
             // 
             this.txt_PrecioPlanta.Location = new System.Drawing.Point(392, 108);
             this.txt_PrecioPlanta.Name = "txt_PrecioPlanta";
-            this.txt_PrecioPlanta.Pp_mensajeError = null;
+            this.txt_PrecioPlanta.Pp_mensajeError = "Falta cargar el precio";
             this.txt_PrecioPlanta.Pp_nombre_campo = null;
             this.txt_PrecioPlanta.Pp_nombre_tabla = null;
-            this.txt_PrecioPlanta.Pp_validable = false;
+            this.txt_PrecioPlanta.Pp_validable = true;
             this.txt_PrecioPlanta.Size = new System.Drawing.Size(121, 20);
             this.txt_PrecioPlanta.TabIndex = 26;
             // 
@@ -74,10 +74,10 @@
             // 
             this.txt_NomComPlanta.Location = new System.Drawing.Point(160, 150);
             this.txt_NomComPlanta.Name = "txt_NomComPlanta";
-            this.txt_NomComPlanta.Pp_mensajeError = null;
+            this.txt_NomComPlanta.Pp_mensajeError = "Falta cargar nombre comun";
             this.txt_NomComPlanta.Pp_nombre_campo = null;
             this.txt_NomComPlanta.Pp_nombre_tabla = null;
-            this.txt_NomComPlanta.Pp_validable = false;
+            this.txt_NomComPlanta.Pp_validable = true;
             this.txt_NomComPlanta.Size = new System.Drawing.Size(126, 20);
             this.txt_NomComPlanta.TabIndex = 24;
             // 
@@ -85,10 +85,10 @@
             // 
             this.txt_NomCienPlanta.Location = new System.Drawing.Point(160, 110);
             this.txt_NomCienPlanta.Name = "txt_NomCienPlanta";
-            this.txt_NomCienPlanta.Pp_mensajeError = null;
+            this.txt_NomCienPlanta.Pp_mensajeError = "Falta cargar el nombre cientifico";
             this.txt_NomCienPlanta.Pp_nombre_campo = null;
             this.txt_NomCienPlanta.Pp_nombre_tabla = null;
-            this.txt_NomCienPlanta.Pp_validable = false;
+            this.txt_NomCienPlanta.Pp_validable = true;
             this.txt_NomCienPlanta.Size = new System.Drawing.Size(126, 20);
             this.txt_NomCienPlanta.TabIndex = 23;
             // 
@@ -101,6 +101,7 @@
             this.btn_Cancelar.TabIndex = 22;
             this.btn_Cancelar.Text = "Cancelar";
             this.btn_Cancelar.UseVisualStyleBackColor = true;
+            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
             // 
             // btn_ModificarPlanta
             // 
@@ -276,6 +277,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Modificacion_Plantas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

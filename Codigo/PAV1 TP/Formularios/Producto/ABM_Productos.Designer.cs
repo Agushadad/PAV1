@@ -49,6 +49,7 @@
             this.txt_NombreProducto = new PAV1_TP.Clases.TextBox01();
             this.txt_TipoProducto = new PAV1_TP.Clases.TextBox01();
             this.chk_InacctivosProducto = new System.Windows.Forms.CheckBox();
+            this.btn_TipoPlanta = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.btn_AgregarProducto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_ModifProducto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_CancelarProducto)).BeginInit();
@@ -85,7 +86,7 @@
             this.btn_CancelarProducto.BackColor = System.Drawing.Color.Transparent;
             this.btn_CancelarProducto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_CancelarProducto.BackgroundImage")));
             this.btn_CancelarProducto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_CancelarProducto.Location = new System.Drawing.Point(615, 343);
+            this.btn_CancelarProducto.Location = new System.Drawing.Point(607, 342);
             this.btn_CancelarProducto.Name = "btn_CancelarProducto";
             this.btn_CancelarProducto.Size = new System.Drawing.Size(59, 50);
             this.btn_CancelarProducto.TabIndex = 34;
@@ -116,41 +117,48 @@
             this.Costo});
             this.Grid_Producto.Location = new System.Drawing.Point(8, 111);
             this.Grid_Producto.Name = "Grid_Producto";
-            this.Grid_Producto.Size = new System.Drawing.Size(659, 212);
+            this.Grid_Producto.ReadOnly = true;
+            this.Grid_Producto.Size = new System.Drawing.Size(658, 212);
             this.Grid_Producto.TabIndex = 32;
             // 
             // Doc
             // 
             this.Doc.HeaderText = "ID";
             this.Doc.Name = "Doc";
+            this.Doc.ReadOnly = true;
             this.Doc.Width = 50;
             // 
             // Nombre
             // 
             this.Nombre.HeaderText = "Nombre";
             this.Nombre.Name = "Nombre";
+            this.Nombre.ReadOnly = true;
             this.Nombre.Width = 150;
             // 
             // Apellido
             // 
             this.Apellido.HeaderText = "Tipo";
             this.Apellido.Name = "Apellido";
+            this.Apellido.ReadOnly = true;
             this.Apellido.Width = 120;
             // 
             // Tipo
             // 
             this.Tipo.HeaderText = "Stock";
             this.Tipo.Name = "Tipo";
+            this.Tipo.ReadOnly = true;
             // 
             // Precio
             // 
             this.Precio.HeaderText = "Precio";
             this.Precio.Name = "Precio";
+            this.Precio.ReadOnly = true;
             // 
             // Costo
             // 
             this.Costo.HeaderText = "Costo";
             this.Costo.Name = "Costo";
+            this.Costo.ReadOnly = true;
             // 
             // btn_ConsultarProducto
             // 
@@ -247,13 +255,24 @@
             this.chk_InacctivosProducto.Text = "Inactivos";
             this.chk_InacctivosProducto.UseVisualStyleBackColor = false;
             // 
+            // btn_TipoPlanta
+            // 
+            this.btn_TipoPlanta.Location = new System.Drawing.Point(559, 82);
+            this.btn_TipoPlanta.Name = "btn_TipoPlanta";
+            this.btn_TipoPlanta.Size = new System.Drawing.Size(107, 23);
+            this.btn_TipoPlanta.TabIndex = 41;
+            this.btn_TipoPlanta.Text = "Tipos de productos";
+            this.btn_TipoPlanta.UseVisualStyleBackColor = true;
+            this.btn_TipoPlanta.Click += new System.EventHandler(this.btn_TipoPlanta_Click);
+            // 
             // ABM_Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(689, 404);
+            this.ClientSize = new System.Drawing.Size(671, 393);
+            this.Controls.Add(this.btn_TipoPlanta);
             this.Controls.Add(this.chk_InacctivosProducto);
             this.Controls.Add(this.txt_TipoProducto);
             this.Controls.Add(this.txt_NombreProducto);
@@ -268,6 +287,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "ABM_Productos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
@@ -305,5 +325,6 @@
         private Clases.TextBox01 txt_NombreProducto;
         private Clases.TextBox01 txt_TipoProducto;
         private System.Windows.Forms.CheckBox chk_InacctivosProducto;
+        private System.Windows.Forms.Button btn_TipoPlanta;
     }
 }

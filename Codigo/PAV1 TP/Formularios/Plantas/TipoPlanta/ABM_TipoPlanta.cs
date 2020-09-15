@@ -48,14 +48,14 @@ namespace PAV1_TP.Formularios.Plantas.TipoPlanta
                 Cargar_Grilla(tipoPlanta.Tipo_Plantas_Inactivas());
                 return;
             }
-            if (txt_IdTipoPlanta.Text == "" && txt_NombreTipoPlanta.Text == "")
+            if (txt_IdTipoProducto.Text == "" && txt_NombreTipoProducto.Text == "")
             {
                 MessageBox.Show("No hay restricciones para realizar la búsqueda");
                 return;
             }
-            if (txt_IdTipoPlanta.Text != "" || txt_NombreTipoPlanta.Text != "")
+            if (txt_IdTipoProducto.Text != "" || txt_NombreTipoProducto.Text != "")
             {
-                Cargar_Grilla(tipoPlanta.Buscar_Planta(txt_IdTipoPlanta.Text, txt_NombreTipoPlanta.Text));
+                Cargar_Grilla(tipoPlanta.Buscar_Planta(txt_IdTipoProducto.Text, txt_NombreTipoProducto.Text));
             }
         }
 

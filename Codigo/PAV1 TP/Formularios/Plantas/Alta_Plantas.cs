@@ -48,5 +48,10 @@ namespace PAV1_TP.Formularios.Plantas
                     this.Close();
                 }
             }
+
+        private void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

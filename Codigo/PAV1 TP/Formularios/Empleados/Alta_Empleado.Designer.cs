@@ -56,6 +56,8 @@
             this.cmb_BarrioEmpleado = new PAV1_TP.Clases.ComboBox01();
             this.label7 = new System.Windows.Forms.Label();
             this.txt_IdEmpleado = new PAV1_TP.Clases.TextBox01();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label5
@@ -373,6 +375,17 @@
             this.txt_IdEmpleado.TabIndex = 0;
             this.txt_IdEmpleado.TextChanged += new System.EventHandler(this.txt_IdEmpleado_TextChanged);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(604, 115);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(28, 20);
+            this.pictureBox1.TabIndex = 84;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // Alta_Empleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -380,6 +393,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(634, 393);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txt_Contraseña);
             this.Controls.Add(this.txt_Contraseña2);
             this.Controls.Add(this.txt_TelefonoEmpleado);
@@ -407,10 +421,13 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_CancelarEmpleado);
             this.Controls.Add(this.btn_RegistrarEmpleado);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Alta_Empleado";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Registro empleados";
             this.Load += new System.EventHandler(this.Alta_Empleado_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -444,5 +461,6 @@
         private Clases.TextBox01 txt_Contraseña;
         private System.Windows.Forms.Label label7;
         private Clases.TextBox01 txt_IdEmpleado;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

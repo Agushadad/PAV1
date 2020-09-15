@@ -220,7 +220,7 @@
             this.cmb_EstadoProveedor.Pp_validable = true;
             this.cmb_EstadoProveedor.Pp_Value = "ID";
             this.cmb_EstadoProveedor.Size = new System.Drawing.Size(191, 21);
-            this.cmb_EstadoProveedor.TabIndex = 42;
+            this.cmb_EstadoProveedor.TabIndex = 3;
             // 
             // cmb_BarrioProveedor
             // 
@@ -236,7 +236,7 @@
             this.cmb_BarrioProveedor.Pp_validable = true;
             this.cmb_BarrioProveedor.Pp_Value = "ID";
             this.cmb_BarrioProveedor.Size = new System.Drawing.Size(191, 21);
-            this.cmb_BarrioProveedor.TabIndex = 41;
+            this.cmb_BarrioProveedor.TabIndex = 5;
             // 
             // cmb_LocalidadProveedor
             // 
@@ -252,7 +252,7 @@
             this.cmb_LocalidadProveedor.Pp_validable = true;
             this.cmb_LocalidadProveedor.Pp_Value = "ID";
             this.cmb_LocalidadProveedor.Size = new System.Drawing.Size(191, 21);
-            this.cmb_LocalidadProveedor.TabIndex = 40;
+            this.cmb_LocalidadProveedor.TabIndex = 4;
             // 
             // txt_CalleProveedor
             // 
@@ -263,7 +263,7 @@
             this.txt_CalleProveedor.Pp_nombre_tabla = null;
             this.txt_CalleProveedor.Pp_validable = true;
             this.txt_CalleProveedor.Size = new System.Drawing.Size(191, 20);
-            this.txt_CalleProveedor.TabIndex = 39;
+            this.txt_CalleProveedor.TabIndex = 6;
             // 
             // txt_NCalleProveedor
             // 
@@ -274,7 +274,7 @@
             this.txt_NCalleProveedor.Pp_nombre_tabla = null;
             this.txt_NCalleProveedor.Pp_validable = true;
             this.txt_NCalleProveedor.Size = new System.Drawing.Size(191, 20);
-            this.txt_NCalleProveedor.TabIndex = 38;
+            this.txt_NCalleProveedor.TabIndex = 7;
             // 
             // txt_TelefonoProveedor
             // 
@@ -285,7 +285,7 @@
             this.txt_TelefonoProveedor.Pp_nombre_tabla = null;
             this.txt_TelefonoProveedor.Pp_validable = false;
             this.txt_TelefonoProveedor.Size = new System.Drawing.Size(191, 20);
-            this.txt_TelefonoProveedor.TabIndex = 37;
+            this.txt_TelefonoProveedor.TabIndex = 8;
             // 
             // txt_RSProveedor
             // 
@@ -296,7 +296,7 @@
             this.txt_RSProveedor.Pp_nombre_tabla = null;
             this.txt_RSProveedor.Pp_validable = true;
             this.txt_RSProveedor.Size = new System.Drawing.Size(191, 20);
-            this.txt_RSProveedor.TabIndex = 36;
+            this.txt_RSProveedor.TabIndex = 2;
             // 
             // txt_NombreProveedor
             // 
@@ -307,7 +307,7 @@
             this.txt_NombreProveedor.Pp_nombre_tabla = null;
             this.txt_NombreProveedor.Pp_validable = true;
             this.txt_NombreProveedor.Size = new System.Drawing.Size(191, 20);
-            this.txt_NombreProveedor.TabIndex = 35;
+            this.txt_NombreProveedor.TabIndex = 1;
             // 
             // txt_IdProveedor
             // 
@@ -319,7 +319,7 @@
             this.txt_IdProveedor.Pp_nombre_tabla = null;
             this.txt_IdProveedor.Pp_validable = false;
             this.txt_IdProveedor.Size = new System.Drawing.Size(56, 20);
-            this.txt_IdProveedor.TabIndex = 34;
+            this.txt_IdProveedor.TabIndex = 0;
             // 
             // Modificacion_Proveedor
             // 
@@ -351,6 +351,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btn_Cancelar);
             this.Controls.Add(this.btn_ModificarProveedor);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Modificacion_Proveedor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

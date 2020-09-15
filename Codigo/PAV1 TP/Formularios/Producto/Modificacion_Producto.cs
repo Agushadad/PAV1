@@ -26,6 +26,7 @@ namespace PAV1_TP.Formularios.Producto
         {
             cmb_TipoProducto.Cargar();
             chk_CompuestoProducto.Cargar2();
+            cmb_EstadoProd.Cargar();
             //Recuperar la tabla producto
             DataTable tablaProducto = new DataTable();
             tablaProducto = producto.RecuperarProducto(ID);
@@ -44,7 +45,7 @@ namespace PAV1_TP.Formularios.Producto
 
             int items = int.Parse(chk_CompuestoProducto.SelectedItems.Count.ToString());
 
-            if (tablaProducto.Rows[0]["Composicion"].ToString() != null)
+            if (tablaProducto.Rows[0]["Composicion"].ToString() != "0")
             {
                 //Recuperar tabla de Composición
                 DataTable tablaComposicion = new DataTable();
@@ -105,7 +106,7 @@ namespace PAV1_TP.Formularios.Producto
                         _ep.Stock = txt_StockProducto.Text;
                         _ep.Costo = txt_CostoProd.Text;
                         _ep.Precio = txt_PrecioProducto.Text;
-                        _ep.Estado = "1";
+                        _ep.Estado = cmb_EstadoProd.SelectedValue.ToString();
                         string prod_compuesto = chk_CompuestoProducto.CheckedItems[i].ToString();
                         _epc.Cod_Prod_Compuesto = producto.Recuperar_id(prod_compuesto).ToString();
                         string prod_componente = chk_CompuestoProducto.CheckedItems[i + 1].ToString();
@@ -131,7 +132,7 @@ namespace PAV1_TP.Formularios.Producto
                     _ep.Costo = txt_CostoProd.Text;
                     _ep.Composicion = null;
                     _ep.Precio = txt_PrecioProducto.Text;
-                    _ep.Estado = "1";
+                    _ep.Estado = cmb_EstadoProd.SelectedValue.ToString();
 
                     producto.ModificarProducto(_ep);
                     MessageBox.Show("Producto modificado correctamente");

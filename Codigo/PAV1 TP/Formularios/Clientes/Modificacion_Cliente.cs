@@ -51,27 +51,29 @@ namespace PAV1_TP.Formularios.Clientes
         {
             TratamientosEspeciales tratamiento = new TratamientosEspeciales();
             Es_Cliente _ee = new Es_Cliente();
-            
 
-            
-            _ee.TipoDoc = cmb_TipoDoc.SelectedValue.ToString();
-            _ee.NroDoc = txt_NDocCliente.Text;
-            _ee.Nombre = txt_NombreCliente.Text;
-            _ee.Apellido = txt_ApellidoCliente.Text;
-            _ee.Telefono = txt_TelefonoCliente.Text;
-            _ee.Calle = txt_CalleCliente.Text;
-            _ee.NroCalle = txt_NCalleCliente.Text;
-            _ee.Localidad = cmb_LocalidadCliente.SelectedValue.ToString();
-            _ee.Barrio = cmb_BarrioCliente.SelectedValue.ToString();
+            if (tratamiento.validar(this.Controls) == TratamientosEspeciales.Validacion.correcta)
+            {
+                _ee.TipoDoc = cmb_TipoDoc.SelectedValue.ToString();
+                _ee.NroDoc = txt_NDocCliente.Text;
+                _ee.Nombre = txt_NombreCliente.Text;
+                _ee.Apellido = txt_ApellidoCliente.Text;
+                _ee.Telefono = txt_TelefonoCliente.Text;
+                _ee.Calle = txt_CalleCliente.Text;
+                _ee.NroCalle = txt_NCalleCliente.Text;
+                _ee.Localidad = cmb_LocalidadCliente.SelectedValue.ToString();
+                _ee.Barrio = cmb_BarrioCliente.SelectedValue.ToString();
 
-            _ee.Email = txt_MailCliente.Text;
-            _ee.Estado = cmb_Estado.SelectedValue.ToString();
+                _ee.Email = txt_MailCliente.Text;
+                _ee.Estado = cmb_Estado.SelectedValue.ToString();
 
-            Cliente.Modificar(_ee, NroDoc);
+                Cliente.Modificar(_ee, NroDoc);
 
-            
-            MessageBox.Show("Cliente modificado correctamente");
-            this.Close();
+
+                MessageBox.Show("Cliente modificado correctamente");
+                this.Close();
+
+            }
 
         }
 

@@ -34,12 +34,12 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_IdCatalogo = new System.Windows.Forms.TextBox();
-            this.txt_PuntosNecesarios = new System.Windows.Forms.TextBox();
             this.btn_Cancelar = new System.Windows.Forms.Button();
             this.btn_RegistrarCatalogo = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.cmb_EstadoCatalogo = new PAV1_TP.Clases.ComboBox01();
             this.chk_Id_Plantas_Catalogos = new PAV1_TP.Clases.CheckBoxList01();
+            this.txt_PuntosNecesarios = new PAV1_TP.Clases.TextBox01();
             this.SuspendLayout();
             // 
             // label3
@@ -94,13 +94,6 @@
             this.txt_IdCatalogo.Size = new System.Drawing.Size(64, 20);
             this.txt_IdCatalogo.TabIndex = 1;
             // 
-            // txt_PuntosNecesarios
-            // 
-            this.txt_PuntosNecesarios.Location = new System.Drawing.Point(154, 199);
-            this.txt_PuntosNecesarios.Name = "txt_PuntosNecesarios";
-            this.txt_PuntosNecesarios.Size = new System.Drawing.Size(78, 20);
-            this.txt_PuntosNecesarios.TabIndex = 3;
-            // 
             // btn_Cancelar
             // 
             this.btn_Cancelar.Location = new System.Drawing.Point(119, 258);
@@ -109,6 +102,7 @@
             this.btn_Cancelar.TabIndex = 5;
             this.btn_Cancelar.Text = "Cancelar";
             this.btn_Cancelar.UseVisualStyleBackColor = true;
+            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
             // 
             // btn_RegistrarCatalogo
             // 
@@ -164,6 +158,17 @@
             this.chk_Id_Plantas_Catalogos.TabIndex = 6;
             this.chk_Id_Plantas_Catalogos.SelectedIndexChanged += new System.EventHandler(this.chk_Id_Plantas_Catalogos_SelectedIndexChanged);
             // 
+            // txt_PuntosNecesarios
+            // 
+            this.txt_PuntosNecesarios.Location = new System.Drawing.Point(144, 200);
+            this.txt_PuntosNecesarios.Name = "txt_PuntosNecesarios";
+            this.txt_PuntosNecesarios.Pp_mensajeError = "Falta cargar los ptos necesarios";
+            this.txt_PuntosNecesarios.Pp_nombre_campo = null;
+            this.txt_PuntosNecesarios.Pp_nombre_tabla = null;
+            this.txt_PuntosNecesarios.Pp_validable = true;
+            this.txt_PuntosNecesarios.Size = new System.Drawing.Size(100, 20);
+            this.txt_PuntosNecesarios.TabIndex = 9;
+            // 
             // Alta_Catalogos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -171,6 +176,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(256, 293);
+            this.Controls.Add(this.txt_PuntosNecesarios);
             this.Controls.Add(this.cmb_EstadoCatalogo);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.chk_Id_Plantas_Catalogos);
@@ -181,7 +187,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_IdCatalogo);
-            this.Controls.Add(this.txt_PuntosNecesarios);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Alta_Catalogos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
@@ -199,11 +205,11 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_IdCatalogo;
-        private System.Windows.Forms.TextBox txt_PuntosNecesarios;
         private System.Windows.Forms.Button btn_Cancelar;
         private System.Windows.Forms.Button btn_RegistrarCatalogo;
         private Clases.CheckBoxList01 chk_Id_Plantas_Catalogos;
         private System.Windows.Forms.Label label4;
         private Clases.ComboBox01 cmb_EstadoCatalogo;
+        private Clases.TextBox01 txt_PuntosNecesarios;
     }
 }

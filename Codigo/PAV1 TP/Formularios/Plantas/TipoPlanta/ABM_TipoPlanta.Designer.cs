@@ -29,34 +29,34 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ABM_TipoPlanta));
-            this.txt_NombreTipoPlanta = new System.Windows.Forms.TextBox();
+            this.txt_NombreTipoProducto = new System.Windows.Forms.TextBox();
             this.chk_TipoPlantasInactivas = new System.Windows.Forms.CheckBox();
             this.chk_TipoPlantasActivas = new System.Windows.Forms.CheckBox();
-            this.btn_ConsultarTipoPlanta = new System.Windows.Forms.Button();
+            this.btn_ConsultarTipoProducto = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.Grid_TipoPlanta = new System.Windows.Forms.DataGridView();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btn_ModificarTipoPlanta = new System.Windows.Forms.PictureBox();
+            this.btn_ModificarTipoProducto = new System.Windows.Forms.PictureBox();
             this.btn_Cancelar = new System.Windows.Forms.PictureBox();
-            this.btn_EliminarTipoPlanta = new System.Windows.Forms.PictureBox();
-            this.btn_AgregarTipoPlanta = new System.Windows.Forms.PictureBox();
-            this.txt_IdTipoPlanta = new PAV1_TP.Clases.TextBox01();
+            this.btn_EliminarTipoProducto = new System.Windows.Forms.PictureBox();
+            this.btn_AgregarTipoProducto = new System.Windows.Forms.PictureBox();
+            this.txt_IdTipoProducto = new PAV1_TP.Clases.TextBox01();
             ((System.ComponentModel.ISupportInitialize)(this.Grid_TipoPlanta)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_ModificarTipoPlanta)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_ModificarTipoProducto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Cancelar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_EliminarTipoPlanta)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_AgregarTipoPlanta)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_EliminarTipoProducto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_AgregarTipoProducto)).BeginInit();
             this.SuspendLayout();
             // 
-            // txt_NombreTipoPlanta
+            // txt_NombreTipoProducto
             // 
-            this.txt_NombreTipoPlanta.Location = new System.Drawing.Point(93, 39);
-            this.txt_NombreTipoPlanta.Name = "txt_NombreTipoPlanta";
-            this.txt_NombreTipoPlanta.Size = new System.Drawing.Size(100, 20);
-            this.txt_NombreTipoPlanta.TabIndex = 2;
+            this.txt_NombreTipoProducto.Location = new System.Drawing.Point(93, 39);
+            this.txt_NombreTipoProducto.Name = "txt_NombreTipoProducto";
+            this.txt_NombreTipoProducto.Size = new System.Drawing.Size(100, 20);
+            this.txt_NombreTipoProducto.TabIndex = 2;
             // 
             // chk_TipoPlantasInactivas
             // 
@@ -80,15 +80,15 @@
             this.chk_TipoPlantasActivas.Text = "Activas";
             this.chk_TipoPlantasActivas.UseVisualStyleBackColor = false;
             // 
-            // btn_ConsultarTipoPlanta
+            // btn_ConsultarTipoProducto
             // 
-            this.btn_ConsultarTipoPlanta.Location = new System.Drawing.Point(199, 39);
-            this.btn_ConsultarTipoPlanta.Name = "btn_ConsultarTipoPlanta";
-            this.btn_ConsultarTipoPlanta.Size = new System.Drawing.Size(75, 23);
-            this.btn_ConsultarTipoPlanta.TabIndex = 5;
-            this.btn_ConsultarTipoPlanta.Text = "Consultar";
-            this.btn_ConsultarTipoPlanta.UseVisualStyleBackColor = true;
-            this.btn_ConsultarTipoPlanta.Click += new System.EventHandler(this.btn_ConsultarTipoPlanta_Click);
+            this.btn_ConsultarTipoProducto.Location = new System.Drawing.Point(199, 39);
+            this.btn_ConsultarTipoProducto.Name = "btn_ConsultarTipoProducto";
+            this.btn_ConsultarTipoProducto.Size = new System.Drawing.Size(75, 23);
+            this.btn_ConsultarTipoProducto.TabIndex = 5;
+            this.btn_ConsultarTipoProducto.Text = "Consultar";
+            this.btn_ConsultarTipoProducto.UseVisualStyleBackColor = true;
+            this.btn_ConsultarTipoProducto.Click += new System.EventHandler(this.btn_ConsultarTipoPlanta_Click);
             // 
             // label1
             // 
@@ -124,6 +124,7 @@
             this.Apellido});
             this.Grid_TipoPlanta.Location = new System.Drawing.Point(12, 88);
             this.Grid_TipoPlanta.Name = "Grid_TipoPlanta";
+            this.Grid_TipoPlanta.ReadOnly = true;
             this.Grid_TipoPlanta.Size = new System.Drawing.Size(533, 237);
             this.Grid_TipoPlanta.StandardTab = true;
             this.Grid_TipoPlanta.TabIndex = 0;
@@ -152,17 +153,17 @@
             this.Apellido.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Apellido.Width = 300;
             // 
-            // btn_ModificarTipoPlanta
+            // btn_ModificarTipoProducto
             // 
-            this.btn_ModificarTipoPlanta.BackColor = System.Drawing.Color.Transparent;
-            this.btn_ModificarTipoPlanta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_ModificarTipoPlanta.BackgroundImage")));
-            this.btn_ModificarTipoPlanta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_ModificarTipoPlanta.Location = new System.Drawing.Point(75, 348);
-            this.btn_ModificarTipoPlanta.Name = "btn_ModificarTipoPlanta";
-            this.btn_ModificarTipoPlanta.Size = new System.Drawing.Size(59, 50);
-            this.btn_ModificarTipoPlanta.TabIndex = 30;
-            this.btn_ModificarTipoPlanta.TabStop = false;
-            this.btn_ModificarTipoPlanta.Click += new System.EventHandler(this.btn_ModificarTipoPlanta_Click);
+            this.btn_ModificarTipoProducto.BackColor = System.Drawing.Color.Transparent;
+            this.btn_ModificarTipoProducto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_ModificarTipoProducto.BackgroundImage")));
+            this.btn_ModificarTipoProducto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_ModificarTipoProducto.Location = new System.Drawing.Point(75, 348);
+            this.btn_ModificarTipoProducto.Name = "btn_ModificarTipoProducto";
+            this.btn_ModificarTipoProducto.Size = new System.Drawing.Size(59, 50);
+            this.btn_ModificarTipoProducto.TabIndex = 30;
+            this.btn_ModificarTipoProducto.TabStop = false;
+            this.btn_ModificarTipoProducto.Click += new System.EventHandler(this.btn_ModificarTipoPlanta_Click);
             // 
             // btn_Cancelar
             // 
@@ -176,65 +177,70 @@
             this.btn_Cancelar.TabStop = false;
             this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
             // 
-            // btn_EliminarTipoPlanta
+            // btn_EliminarTipoProducto
             // 
-            this.btn_EliminarTipoPlanta.BackColor = System.Drawing.Color.Transparent;
-            this.btn_EliminarTipoPlanta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_EliminarTipoPlanta.BackgroundImage")));
-            this.btn_EliminarTipoPlanta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_EliminarTipoPlanta.Location = new System.Drawing.Point(140, 348);
-            this.btn_EliminarTipoPlanta.Name = "btn_EliminarTipoPlanta";
-            this.btn_EliminarTipoPlanta.Size = new System.Drawing.Size(59, 50);
-            this.btn_EliminarTipoPlanta.TabIndex = 28;
-            this.btn_EliminarTipoPlanta.TabStop = false;
-            this.btn_EliminarTipoPlanta.Click += new System.EventHandler(this.btn_EliminarTipoPlanta_Click);
+            this.btn_EliminarTipoProducto.BackColor = System.Drawing.Color.Transparent;
+            this.btn_EliminarTipoProducto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_EliminarTipoProducto.BackgroundImage")));
+            this.btn_EliminarTipoProducto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_EliminarTipoProducto.Location = new System.Drawing.Point(140, 348);
+            this.btn_EliminarTipoProducto.Name = "btn_EliminarTipoProducto";
+            this.btn_EliminarTipoProducto.Size = new System.Drawing.Size(59, 50);
+            this.btn_EliminarTipoProducto.TabIndex = 28;
+            this.btn_EliminarTipoProducto.TabStop = false;
+            this.btn_EliminarTipoProducto.Click += new System.EventHandler(this.btn_EliminarTipoPlanta_Click);
             // 
-            // btn_AgregarTipoPlanta
+            // btn_AgregarTipoProducto
             // 
-            this.btn_AgregarTipoPlanta.Image = ((System.Drawing.Image)(resources.GetObject("btn_AgregarTipoPlanta.Image")));
-            this.btn_AgregarTipoPlanta.Location = new System.Drawing.Point(11, 348);
-            this.btn_AgregarTipoPlanta.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_AgregarTipoPlanta.Name = "btn_AgregarTipoPlanta";
-            this.btn_AgregarTipoPlanta.Size = new System.Drawing.Size(59, 50);
-            this.btn_AgregarTipoPlanta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_AgregarTipoPlanta.TabIndex = 27;
-            this.btn_AgregarTipoPlanta.TabStop = false;
-            this.btn_AgregarTipoPlanta.Click += new System.EventHandler(this.btn_AgregarTipoPlanta_Click);
+            this.btn_AgregarTipoProducto.Image = ((System.Drawing.Image)(resources.GetObject("btn_AgregarTipoProducto.Image")));
+            this.btn_AgregarTipoProducto.Location = new System.Drawing.Point(11, 348);
+            this.btn_AgregarTipoProducto.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_AgregarTipoProducto.Name = "btn_AgregarTipoProducto";
+            this.btn_AgregarTipoProducto.Size = new System.Drawing.Size(59, 50);
+            this.btn_AgregarTipoProducto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_AgregarTipoProducto.TabIndex = 27;
+            this.btn_AgregarTipoProducto.TabStop = false;
+            this.btn_AgregarTipoProducto.Click += new System.EventHandler(this.btn_AgregarTipoPlanta_Click);
             // 
-            // txt_IdTipoPlanta
+            // txt_IdTipoProducto
             // 
-            this.txt_IdTipoPlanta.Location = new System.Drawing.Point(93, 12);
-            this.txt_IdTipoPlanta.Name = "txt_IdTipoPlanta";
-            this.txt_IdTipoPlanta.Pp_mensajeError = null;
-            this.txt_IdTipoPlanta.Pp_nombre_campo = null;
-            this.txt_IdTipoPlanta.Pp_nombre_tabla = null;
-            this.txt_IdTipoPlanta.Pp_validable = false;
-            this.txt_IdTipoPlanta.Size = new System.Drawing.Size(100, 20);
-            this.txt_IdTipoPlanta.TabIndex = 1;
+            this.txt_IdTipoProducto.Location = new System.Drawing.Point(93, 12);
+            this.txt_IdTipoProducto.Name = "txt_IdTipoProducto";
+            this.txt_IdTipoProducto.Pp_mensajeError = null;
+            this.txt_IdTipoProducto.Pp_nombre_campo = null;
+            this.txt_IdTipoProducto.Pp_nombre_tabla = null;
+            this.txt_IdTipoProducto.Pp_validable = false;
+            this.txt_IdTipoProducto.Size = new System.Drawing.Size(100, 20);
+            this.txt_IdTipoProducto.TabIndex = 1;
             // 
             // ABM_TipoPlanta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(559, 408);
-            this.Controls.Add(this.btn_ModificarTipoPlanta);
+            this.Controls.Add(this.btn_ModificarTipoProducto);
             this.Controls.Add(this.btn_Cancelar);
-            this.Controls.Add(this.btn_EliminarTipoPlanta);
-            this.Controls.Add(this.btn_AgregarTipoPlanta);
+            this.Controls.Add(this.btn_EliminarTipoProducto);
+            this.Controls.Add(this.btn_AgregarTipoProducto);
             this.Controls.Add(this.Grid_TipoPlanta);
-            this.Controls.Add(this.txt_NombreTipoPlanta);
+            this.Controls.Add(this.txt_NombreTipoProducto);
             this.Controls.Add(this.chk_TipoPlantasInactivas);
             this.Controls.Add(this.chk_TipoPlantasActivas);
-            this.Controls.Add(this.txt_IdTipoPlanta);
-            this.Controls.Add(this.btn_ConsultarTipoPlanta);
+            this.Controls.Add(this.txt_IdTipoProducto);
+            this.Controls.Add(this.btn_ConsultarTipoProducto);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "ABM_TipoPlanta";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "ABM_TipoPlanta";
             ((System.ComponentModel.ISupportInitialize)(this.Grid_TipoPlanta)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_ModificarTipoPlanta)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_ModificarTipoProducto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Cancelar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_EliminarTipoPlanta)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_AgregarTipoPlanta)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_EliminarTipoProducto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_AgregarTipoProducto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -242,18 +248,18 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txt_NombreTipoPlanta;
+        private System.Windows.Forms.TextBox txt_NombreTipoProducto;
         private System.Windows.Forms.CheckBox chk_TipoPlantasInactivas;
         private System.Windows.Forms.CheckBox chk_TipoPlantasActivas;
-        private Clases.TextBox01 txt_IdTipoPlanta;
-        private System.Windows.Forms.Button btn_ConsultarTipoPlanta;
+        private Clases.TextBox01 txt_IdTipoProducto;
+        private System.Windows.Forms.Button btn_ConsultarTipoProducto;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView Grid_TipoPlanta;
-        private System.Windows.Forms.PictureBox btn_ModificarTipoPlanta;
+        private System.Windows.Forms.PictureBox btn_ModificarTipoProducto;
         private System.Windows.Forms.PictureBox btn_Cancelar;
-        private System.Windows.Forms.PictureBox btn_EliminarTipoPlanta;
-        private System.Windows.Forms.PictureBox btn_AgregarTipoPlanta;
+        private System.Windows.Forms.PictureBox btn_EliminarTipoProducto;
+        private System.Windows.Forms.PictureBox btn_AgregarTipoProducto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Apellido;

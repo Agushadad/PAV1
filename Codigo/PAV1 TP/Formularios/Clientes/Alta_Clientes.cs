@@ -36,26 +36,30 @@ namespace PAV1_TP.Formularios.Clientes
 			TratamientosEspeciales tratamiento = new TratamientosEspeciales();
 			Es_Cliente _ee = new Es_Cliente();
 
-            DataTable TIpoDoc = new DataTable();
-            TIpoDoc = cliente.RecuperarTipoDoc(cmb_TipoDocCliente.Text);
-            _ee.TipoDoc = TIpoDoc.Rows[0]["ID"].ToString();
+			if (tratamiento.validar(this.Controls) == TratamientosEspeciales.Validacion.correcta)
+            {
+				DataTable TIpoDoc = new DataTable();
+				TIpoDoc = cliente.RecuperarTipoDoc(cmb_TipoDocCliente.Text);
+				_ee.TipoDoc = TIpoDoc.Rows[0]["ID"].ToString();
 
-            _ee.NroDoc = txt_NDocCliente.Text; 
-			_ee.Nombre = txt_NombreCliente.Text;
-			_ee.Apellido = txt_ApellidoCliente.Text;
-			_ee.Telefono = txt_TelefonoCliente.Text;
-			_ee.Calle = txt_CalleCliente.Text;
-			_ee.NroCalle = txt_NCalleCliente.Text;
-			_ee.Localidad = cmb_LocalidadCliente.SelectedValue.ToString();
-			_ee.Barrio = cmb_BarrioCliente.SelectedValue.ToString();
-            _ee.Email = txt_MailCliente.Text;
-			_ee.Estado = cmb_EstadoCliente.SelectedValue.ToString();
+				_ee.NroDoc = txt_NDocCliente.Text;
+				_ee.Nombre = txt_NombreCliente.Text;
+				_ee.Apellido = txt_ApellidoCliente.Text;
+				_ee.Telefono = txt_TelefonoCliente.Text;
+				_ee.Calle = txt_CalleCliente.Text;
+				_ee.NroCalle = txt_NCalleCliente.Text;
+				_ee.Localidad = cmb_LocalidadCliente.SelectedValue.ToString();
+				_ee.Barrio = cmb_BarrioCliente.SelectedValue.ToString();
+				_ee.Email = txt_MailCliente.Text;
+				_ee.Estado = cmb_EstadoCliente.SelectedValue.ToString();
 
-            
-            cliente.Insertar(_ee);
 
-            MessageBox.Show("Cliente registrado correctamente");
-			this.Close();
+				cliente.Insertar(_ee);
+
+				MessageBox.Show("Cliente registrado correctamente");
+				this.Close();
+			}
+
 		}
 
 		private void comboBox013_SelectedIndexChanged(object sender, EventArgs e)

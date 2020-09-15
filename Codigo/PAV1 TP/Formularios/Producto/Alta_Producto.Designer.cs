@@ -62,6 +62,7 @@
             this.btn_Cancelar.TabIndex = 22;
             this.btn_Cancelar.Text = "Cancelar";
             this.btn_Cancelar.UseVisualStyleBackColor = true;
+            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
             // 
             // btn_RegistrarPlanta
             // 
@@ -184,10 +185,10 @@
             // 
             this.txt_NombreProducto.Location = new System.Drawing.Point(95, 98);
             this.txt_NombreProducto.Name = "txt_NombreProducto";
-            this.txt_NombreProducto.Pp_mensajeError = null;
+            this.txt_NombreProducto.Pp_mensajeError = "No se ingreso el nombre";
             this.txt_NombreProducto.Pp_nombre_campo = null;
             this.txt_NombreProducto.Pp_nombre_tabla = null;
-            this.txt_NombreProducto.Pp_validable = false;
+            this.txt_NombreProducto.Pp_validable = true;
             this.txt_NombreProducto.Size = new System.Drawing.Size(118, 20);
             this.txt_NombreProducto.TabIndex = 27;
             // 
@@ -211,10 +212,10 @@
             // 
             this.txt_PrecioProducto.Location = new System.Drawing.Point(411, 94);
             this.txt_PrecioProducto.Name = "txt_PrecioProducto";
-            this.txt_PrecioProducto.Pp_mensajeError = null;
+            this.txt_PrecioProducto.Pp_mensajeError = "No se ingreso el precio";
             this.txt_PrecioProducto.Pp_nombre_campo = null;
             this.txt_PrecioProducto.Pp_nombre_tabla = null;
-            this.txt_PrecioProducto.Pp_validable = false;
+            this.txt_PrecioProducto.Pp_validable = true;
             this.txt_PrecioProducto.Size = new System.Drawing.Size(121, 20);
             this.txt_PrecioProducto.TabIndex = 29;
             // 
@@ -222,10 +223,10 @@
             // 
             this.txt_CostoProd.Location = new System.Drawing.Point(411, 138);
             this.txt_CostoProd.Name = "txt_CostoProd";
-            this.txt_CostoProd.Pp_mensajeError = null;
+            this.txt_CostoProd.Pp_mensajeError = "No se ingreso el costo";
             this.txt_CostoProd.Pp_nombre_campo = null;
             this.txt_CostoProd.Pp_nombre_tabla = null;
-            this.txt_CostoProd.Pp_validable = false;
+            this.txt_CostoProd.Pp_validable = true;
             this.txt_CostoProd.Size = new System.Drawing.Size(121, 20);
             this.txt_CostoProd.TabIndex = 30;
             // 
@@ -233,10 +234,10 @@
             // 
             this.txt_StockProducto.Location = new System.Drawing.Point(411, 174);
             this.txt_StockProducto.Name = "txt_StockProducto";
-            this.txt_StockProducto.Pp_mensajeError = null;
+            this.txt_StockProducto.Pp_mensajeError = "No se ingreso el stock";
             this.txt_StockProducto.Pp_nombre_campo = null;
             this.txt_StockProducto.Pp_nombre_tabla = null;
-            this.txt_StockProducto.Pp_validable = false;
+            this.txt_StockProducto.Pp_validable = true;
             this.txt_StockProducto.Size = new System.Drawing.Size(121, 20);
             this.txt_StockProducto.TabIndex = 31;
             // 
@@ -308,12 +309,13 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(357, 212);
+            this.label7.Location = new System.Drawing.Point(347, 213);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(48, 16);
+            this.label7.Size = new System.Drawing.Size(57, 16);
             this.label7.TabIndex = 38;
-            this.label7.Text = "Costo";
+            this.label7.Text = "Estado";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // cmb_EstadoProd
             // 
@@ -321,7 +323,7 @@
             this.cmb_EstadoProd.Location = new System.Drawing.Point(409, 212);
             this.cmb_EstadoProd.Name = "cmb_EstadoProd";
             this.cmb_EstadoProd.Pp_Display = "Descripcion";
-            this.cmb_EstadoProd.Pp_mensajeError = "No se selecciono un tipo de producto";
+            this.cmb_EstadoProd.Pp_mensajeError = "No se selecciono un estado";
             this.cmb_EstadoProd.Pp_nombre_campo = "ID";
             this.cmb_EstadoProd.Pp_nombre_tabla = "ID";
             this.cmb_EstadoProd.Pp_seleccionado = false;
@@ -361,6 +363,7 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Alta_Producto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

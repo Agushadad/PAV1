@@ -172,6 +172,7 @@
             this.Altura});
             this.Grid_Emp.Location = new System.Drawing.Point(12, 116);
             this.Grid_Emp.Name = "Grid_Emp";
+            this.Grid_Emp.ReadOnly = true;
             this.Grid_Emp.Size = new System.Drawing.Size(701, 237);
             this.Grid_Emp.StandardTab = true;
             this.Grid_Emp.TabIndex = 0;
@@ -298,7 +299,9 @@
             this.Controls.Add(this.chk_Activos);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ABM_Empleados";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "ABM_Empleados";
             this.Load += new System.EventHandler(this.ABM_Empleados_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btn_AgregarEmp)).EndInit();

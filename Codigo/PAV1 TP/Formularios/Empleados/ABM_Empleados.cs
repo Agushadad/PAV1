@@ -113,7 +113,7 @@ namespace PAV1_TP.Formularios.Empleados
                 if (dialogResult == DialogResult.Yes)
                 {
                     Empleados.Eliminar(ID);
-                    Cargar_Grilla(Empleados.Todos_Los_Empleados());
+                    Cargar_Grilla(Empleados.Empleados_Activos());
                 }
             }
             

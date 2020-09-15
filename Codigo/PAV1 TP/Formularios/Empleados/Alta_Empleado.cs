@@ -67,5 +67,19 @@ namespace PAV1_TP.Formularios.Empleados
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (txt_Contraseña.PasswordChar == '*')
+            {
+                this.txt_Contraseña.PasswordChar = '\0';
+                this.txt_Contraseña2.PasswordChar = '\0';
+            }
+            else
+            {
+                this.txt_Contraseña.PasswordChar = '*';
+                this.txt_Contraseña2.PasswordChar = '*';
+            }
+        }
     }
 }

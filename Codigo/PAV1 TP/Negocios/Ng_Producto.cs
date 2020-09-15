@@ -123,18 +123,17 @@ namespace PAV1_TP.Negocios
         public DataTable RecuperarComposicion (string ID)
         {
             DataTable tabla = new DataTable();
-            return tabla = _BD.Consulta("SELECT * FROM Composicion WHERE ID = " + ID);
+            return tabla = _BD.Consulta("SELECT * FROM Composicion WHERE ID = " + ID );
         }
 
         public void ModificarProducto(Es_Producto dato)
         {
             string sqlUpdate = "UPDATE Producto SET ";
-            sqlUpdate += "Codigo = " + _BD.FormatearDato(dato.Codigo, "String");
-            sqlUpdate += ", Nombre = " + _BD.FormatearDato(dato.Nombre.ToString(), "String");
+            sqlUpdate += "Nombre = " + _BD.FormatearDato(dato.Nombre.ToString(), "String");
             sqlUpdate += ", Tipo = " + _BD.FormatearDato(dato.Tipo, "String");
             sqlUpdate += ", Stock = " + _BD.FormatearDato(dato.Stock, "String");
             sqlUpdate += ", Costo = " + _BD.FormatearDato(dato.Costo, "String");
-            sqlUpdate += ", Composicion = " + _BD.FormatearDato(dato.Stock, "String");
+            sqlUpdate += ", Composicion = " + _BD.FormatearDato(dato.Composicion, "String");
             sqlUpdate += ", Precio = " + _BD.FormatearDato(dato.Stock, "String");
             sqlUpdate += ", Estado = " + _BD.FormatearDato(dato.Estado, "String");
             sqlUpdate += " WHERE Codigo = " + dato.Codigo;

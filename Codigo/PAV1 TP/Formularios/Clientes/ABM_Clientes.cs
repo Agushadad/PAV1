@@ -109,7 +109,7 @@ namespace PAV1_TP.Formularios.Clientes
 				if (dialogResult == DialogResult.Yes)
 				{
 					Cliente.Eliminar(DNI);
-					Cargar_Grilla(Cliente.TodosLosClientes());
+					Cargar_Grilla(Cliente.ClientesActivos());
 				}
 			}
 		}

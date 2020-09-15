@@ -1,4 +1,5 @@
-﻿using PAV1_TP.Negocios;
+﻿using PAV1_TP.Formularios.Producto.TipoProducto;
+using PAV1_TP.Negocios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -108,6 +109,12 @@ namespace PAV1_TP.Formularios.Producto
                     producto.Eliminar(ID);
                 }
             }
+        }
+
+        private void btn_TipoPlanta_Click(object sender, EventArgs e)
+        {
+            Form ABM_TipoProducto = new ABM_TipoProducto();
+            ABM_TipoProducto.Show();
         }
     }
 }

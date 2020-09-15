@@ -64,7 +64,7 @@
             this.chk_ClientesInactivos.Location = new System.Drawing.Point(138, 93);
             this.chk_ClientesInactivos.Name = "chk_ClientesInactivos";
             this.chk_ClientesInactivos.Size = new System.Drawing.Size(69, 17);
-            this.chk_ClientesInactivos.TabIndex = 39;
+            this.chk_ClientesInactivos.TabIndex = 5;
             this.chk_ClientesInactivos.Text = "Inactivos";
             this.chk_ClientesInactivos.UseVisualStyleBackColor = false;
             // 
@@ -128,6 +128,9 @@
             // 
             // Grid_Cliente
             // 
+            this.Grid_Cliente.AllowUserToDeleteRows = false;
+            this.Grid_Cliente.AllowUserToResizeColumns = false;
+            this.Grid_Cliente.AllowUserToResizeRows = false;
             this.Grid_Cliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Grid_Cliente.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
@@ -139,48 +142,57 @@
             this.Email});
             this.Grid_Cliente.Location = new System.Drawing.Point(6, 121);
             this.Grid_Cliente.Name = "Grid_Cliente";
+            this.Grid_Cliente.ReadOnly = true;
             this.Grid_Cliente.Size = new System.Drawing.Size(701, 237);
-            this.Grid_Cliente.TabIndex = 27;
+            this.Grid_Cliente.StandardTab = true;
+            this.Grid_Cliente.TabIndex = 0;
             // 
             // Id
             // 
             this.Id.HeaderText = "Nro Doc";
             this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
             this.Id.Width = 150;
             // 
             // Nombre
             // 
             this.Nombre.HeaderText = "Nombre";
             this.Nombre.Name = "Nombre";
+            this.Nombre.ReadOnly = true;
             this.Nombre.Width = 150;
             // 
             // Apellido
             // 
             this.Apellido.HeaderText = "Apellido";
             this.Apellido.Name = "Apellido";
+            this.Apellido.ReadOnly = true;
             this.Apellido.Width = 150;
             // 
             // Tipo
             // 
             this.Tipo.HeaderText = "Telefono";
             this.Tipo.Name = "Tipo";
+            this.Tipo.ReadOnly = true;
             this.Tipo.Width = 120;
             // 
             // Domicilio
             // 
             this.Domicilio.HeaderText = "Calle";
             this.Domicilio.Name = "Domicilio";
+            this.Domicilio.ReadOnly = true;
             this.Domicilio.Width = 130;
             // 
             // Altura
             // 
             this.Altura.HeaderText = "Altura";
             this.Altura.Name = "Altura";
+            this.Altura.ReadOnly = true;
             // 
             // Email
             // 
             this.Email.HeaderText = "Email";
             this.Email.Name = "Email";
+            this.Email.ReadOnly = true;
             this.Email.Width = 150;
             // 
             // btn_ConsultarCli
@@ -188,7 +200,7 @@
             this.btn_ConsultarCli.Location = new System.Drawing.Point(236, 65);
             this.btn_ConsultarCli.Name = "btn_ConsultarCli";
             this.btn_ConsultarCli.Size = new System.Drawing.Size(75, 23);
-            this.btn_ConsultarCli.TabIndex = 30;
+            this.btn_ConsultarCli.TabIndex = 6;
             this.btn_ConsultarCli.Text = "Consultar";
             this.btn_ConsultarCli.UseVisualStyleBackColor = true;
             this.btn_ConsultarCli.Click += new System.EventHandler(this.btn_ConsultarCli_Click);
@@ -200,7 +212,7 @@
             this.chk_ClientesActivos.Location = new System.Drawing.Point(76, 94);
             this.chk_ClientesActivos.Name = "chk_ClientesActivos";
             this.chk_ClientesActivos.Size = new System.Drawing.Size(61, 17);
-            this.chk_ClientesActivos.TabIndex = 31;
+            this.chk_ClientesActivos.TabIndex = 4;
             this.chk_ClientesActivos.Text = "Activos";
             this.chk_ClientesActivos.UseVisualStyleBackColor = false;
             // 
@@ -233,7 +245,7 @@
             this.txt_ApellidoCliente.Pp_nombre_tabla = null;
             this.txt_ApellidoCliente.Pp_validable = false;
             this.txt_ApellidoCliente.Size = new System.Drawing.Size(157, 20);
-            this.txt_ApellidoCliente.TabIndex = 40;
+            this.txt_ApellidoCliente.TabIndex = 3;
             // 
             // txt_NDocCliente
             // 
@@ -244,7 +256,7 @@
             this.txt_NDocCliente.Pp_nombre_tabla = null;
             this.txt_NDocCliente.Pp_validable = false;
             this.txt_NDocCliente.Size = new System.Drawing.Size(157, 20);
-            this.txt_NDocCliente.TabIndex = 41;
+            this.txt_NDocCliente.TabIndex = 1;
             // 
             // txt_NombreCliente
             // 
@@ -255,7 +267,7 @@
             this.txt_NombreCliente.Pp_nombre_tabla = null;
             this.txt_NombreCliente.Pp_validable = false;
             this.txt_NombreCliente.Size = new System.Drawing.Size(157, 20);
-            this.txt_NombreCliente.TabIndex = 42;
+            this.txt_NombreCliente.TabIndex = 2;
             // 
             // ABM_Clientes
             // 
@@ -278,8 +290,10 @@
             this.Controls.Add(this.chk_ClientesActivos);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "ABM_Clientes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "ABM_Clientes";
             ((System.ComponentModel.ISupportInitialize)(this.btn_AgregarCli)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_EditarCli)).EndInit();
