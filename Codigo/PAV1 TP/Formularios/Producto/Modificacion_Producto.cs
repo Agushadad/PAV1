@@ -95,12 +95,12 @@ namespace PAV1_TP.Formularios.Producto
 
                     var items = chk_CompuestoProducto.CheckedItems.Count;
                     DataTable tabla = new DataTable();
-                    _epc.ID = txt_IdProducto.Text;
-                    _ep.Codigo = tablaComposicion.Rows[0]["ID"].ToString();
+                    _epc.ID = tablaComposicion.Rows[0]["ID"].ToString();
+                    _ep.Codigo = txt_IdProducto.Text;
 
                     for (int i = 0; i <= items; i++)
                     {
-                        _ep.Composicion = producto.NuevoIdComposicion();
+                        _ep.Composicion = tablaComposicion.Rows[0]["ID"].ToString();
                         _ep.Nombre = txt_NombreProducto.Text;
                         _ep.Tipo = cmb_TipoProducto.SelectedValue.ToString();
                         _ep.Stock = txt_StockProducto.Text;

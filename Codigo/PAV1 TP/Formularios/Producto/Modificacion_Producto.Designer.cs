@@ -289,6 +289,7 @@
             // 
             // chk_CompuestoProducto
             // 
+            this.chk_CompuestoProducto.CheckOnClick = true;
             this.chk_CompuestoProducto.FormattingEnabled = true;
             this.chk_CompuestoProducto.Location = new System.Drawing.Point(111, 155);
             this.chk_CompuestoProducto.Name = "chk_CompuestoProducto";

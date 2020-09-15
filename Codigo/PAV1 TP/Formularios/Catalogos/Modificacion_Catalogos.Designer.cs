@@ -143,6 +143,7 @@
             // 
             // chk_Id_Plantas_Catalogos
             // 
+            this.chk_Id_Plantas_Catalogos.CheckOnClick = true;
             this.chk_Id_Plantas_Catalogos.FormattingEnabled = true;
             this.chk_Id_Plantas_Catalogos.Location = new System.Drawing.Point(110, 108);
             this.chk_Id_Plantas_Catalogos.Name = "chk_Id_Plantas_Catalogos";

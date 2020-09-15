@@ -56,6 +56,22 @@ namespace PAV1_TP.Negocios
                 return int.Parse(tabla.Rows[0]["Codigo"].ToString());
             }
         }
+        public int Recuperar_idCompuesto(string Composicion)
+        {
+
+            string sql = "SELECT * FROM Producto WHERE Composicion = '" + Composicion + "'";
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+
+            if (tabla.Rows.Count == 0)
+            {
+                return 0;
+            }
+            else
+            {
+                return int.Parse(tabla.Rows[0]["ID"].ToString());
+            }
+        }
 
         public string NuevoId()
         {

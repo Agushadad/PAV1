@@ -289,6 +289,7 @@
             // 
             // chk_TipoProductos
             // 
+            this.chk_TipoProductos.CheckOnClick = true;
             this.chk_TipoProductos.FormattingEnabled = true;
             this.chk_TipoProductos.Location = new System.Drawing.Point(93, 137);
             this.chk_TipoProductos.Name = "chk_TipoProductos";
