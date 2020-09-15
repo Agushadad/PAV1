@@ -97,8 +97,8 @@ namespace PAV1_TP.Negocios
             
             string sqlInsert = @"INSERT INTO Empleado(ID,Nombre, Apellido, Telefono, Calle, Nro_Calle
                                  , Barrio, Localidad, Contraseña, Estado) VALUES (";
-            sqlInsert += "'" + datos.ID + "'";
-            sqlInsert += ",'" + datos.Nombre + "'";
+            sqlInsert += " '" + datos.ID + "'"; 
+            sqlInsert += ", '" + datos.Nombre + "'";
             sqlInsert += ", '" + datos.Apellido + "'";
             sqlInsert += ", '" + datos.Telefono + "'";
             sqlInsert += ", '" + datos.Calle + "'";

@@ -36,7 +36,11 @@ namespace PAV1_TP.Formularios.Clientes
 			TratamientosEspeciales tratamiento = new TratamientosEspeciales();
 			Es_Cliente _ee = new Es_Cliente();
 
-			_ee.NroDoc = int.Parse(txt_NDocCliente.ToString());
+            DataTable TIpoDoc = new DataTable();
+            TIpoDoc = cliente.RecuperarTipoDoc(cmb_TipoDocCliente.Text);
+            _ee.TipoDoc = TIpoDoc.Rows[0]["ID"].ToString();
+
+            _ee.NroDoc = txt_NDocCliente.Text; 
 			_ee.Nombre = txt_NombreCliente.Text;
 			_ee.Apellido = txt_ApellidoCliente.Text;
 			_ee.Telefono = txt_TelefonoCliente.Text;
@@ -44,12 +48,13 @@ namespace PAV1_TP.Formularios.Clientes
 			_ee.NroCalle = txt_NCalleCliente.Text;
 			_ee.Localidad = cmb_LocalidadCliente.SelectedValue.ToString();
 			_ee.Barrio = cmb_BarrioCliente.SelectedValue.ToString();
-			_ee.TipoDoc = cmb_TipoDocCliente.Text;
-			_ee.Email = txt_MailCliente.Text;
+            _ee.Email = txt_MailCliente.Text;
 			_ee.Estado = cmb_EstadoCliente.SelectedValue.ToString();
 
-			cliente.Insertar(_ee);
-			MessageBox.Show("Cliente registrado correctamente");
+            
+            cliente.Insertar(_ee);
+
+            MessageBox.Show("Cliente registrado correctamente");
 			this.Close();
 		}
 

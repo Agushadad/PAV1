@@ -75,10 +75,11 @@ namespace PAV1_TP.Negocios
 		public string Insertar(Es_Cliente datos)
 		{
 
-			string sqlInsert = @"INSERT INTO Cliente(TipoDoc, NroDoc, Nombre, Apellido, Calle, NroCalle, Barrio, Localidad, Telefono, Email, Estado) VALUES (";
-			sqlInsert += "'" + datos.TipoDoc + "'";
-			sqlInsert += ",'" + datos.NroDoc + "'";
-			sqlInsert += ", '" + datos.Nombre + "'";
+			string sqlInsert = @"INSERT INTO Cliente(TipoDoc, NroDoc, Nombre, Apellido, Calle, NroCalle, Barrio
+                                , Localidad, Telefono, Email, Estado) VALUES (";
+			sqlInsert += " '" + datos.TipoDoc + "'";
+            sqlInsert += ", '" + datos.NroDoc + "'";
+			sqlInsert += ", '" + datos.Nombre + "'"; 
 			sqlInsert += ", '" + datos.Apellido + "'";
 			sqlInsert += ", '" + datos.Calle + "'";
 			sqlInsert += ", '" + datos.NroCalle + "'";
@@ -105,11 +106,18 @@ namespace PAV1_TP.Negocios
 			sqlUpdate += ", Telefono = " + _BD.FormatearDato(datos.Telefono, "String");
 			sqlUpdate += ", Email = " + _BD.FormatearDato(datos.Email, "String");
 			sqlUpdate += ", Estado = " + _BD.FormatearDato(datos.Estado, "String");
-			sqlUpdate += " WHERE TipoDoc = '" + datos.TipoDoc + "' AND NroDoc = '" + datos.NroDoc + "'";
+			sqlUpdate += " WHERE NroDoc = " + datos.NroDoc;
 
 			_BD.Modificar(sqlUpdate);
 		}
 
+        public DataTable RecuperarTipoDoc(string nombre)
+        {
+            DataTable tabla = new DataTable();
+            return tabla = _BD.Consulta("SELECT * FROM TipoDoc WHERE Descripcion = '" + nombre + "'");
+        }
+
+       
 		public void Eliminar(string DNI)
 		{
 			string sqlEliminar = "UPDATE Cliente SET Estado = 2 WHERE NroDoc = " + DNI;
