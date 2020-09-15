@@ -91,7 +91,6 @@ CREATE TABLE Cliente	(TipoDoc INT,
 						Estado INT
 						CONSTRAINT Estado NOT NULL,
 						CONSTRAINT id_cliente_pk PRIMARY KEY (TipoDoc, NroDoc),
-						CONSTRAINT tipoDoc_fk FOREIGN KEY (TipoDoc) REFERENCES TipoDoc(ID),
 						CONSTRAINT id_barrio_fk FOREIGN KEY (Barrio) REFERENCES Barrio(ID),
 						CONSTRAINT id_localidad_fk FOREIGN KEY (Localidad) REFERENCES Localidad(ID),
 						CONSTRAINT estado_cliente_fk FOREIGN KEY (Estado) REFERENCES Estado(ID))

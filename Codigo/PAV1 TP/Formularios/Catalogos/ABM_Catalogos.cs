@@ -110,5 +110,10 @@ namespace PAV1_TP.Formularios.Catalogos
                 }
             }
         }
-    }
+
+		private void txt_IdCatalogo_TextChanged(object sender, EventArgs e)
+		{
+
+		}
+	}
 }

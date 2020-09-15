@@ -150,3 +150,35 @@ C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.P
 C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Plantas.TipoPlanta.ABM_TipoPlanta.resources
 C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Plantas.TipoPlanta.Alta_TipoPlanta.resources
 C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Plantas.TipoPlanta.Modificacion_TipoPlanta.resources
+C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1 TP.csprojAssemblyReference.cache
+C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Catalogos.ABM_Catalogos.resources
+C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Catalogos.Alta_Catalogos.resources
+C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Catalogos.Modificacion_Catalogos.resources
+C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Clientes.ABM_Clientes.resources
+C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Clientes.Alta_Clientes.resources
+C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Clientes.Modificacion_Cliente.resources
+C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Empleados.ABM_Empleados.resources
+C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Empleados.Alta_Empleado.resources
+C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Empleados.Modificacion_Empleado.resources
+C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Frm_Login.resources
+C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Frm_Escritorio.resources
+C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Plantas.ABM_Plantas.resources
+C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Plantas.Alta_Plantas.resources
+C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Plantas.Modificacion_Plantas.resources
+C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Plantas.TipoPlanta.ABM_TipoPlanta.resources
+C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Plantas.TipoPlanta.Alta_TipoPlanta.resources
+C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Plantas.TipoPlanta.Modificacion_TipoPlanta.resources
+C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Producto.ABM_Productos.resources
+C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Producto.Alta_Producto.resources
+C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Producto.Modificacion_Producto.resources
+C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Proveedor.ABM_Proveedor.resources
+C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Proveedor.Alta_Proveedor.resources
+C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Proveedor.Modificacion_Proveedor.resources
+C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Properties.Resources.resources
+C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1 TP.csproj.GenerateResource.cache
+C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1 TP.csproj.CoreCompileInputs.cache
+C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1 TP.exe
+C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1 TP.pdb
+C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\bin\Debug\PAV1 TP.exe.config
+C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\bin\Debug\PAV1 TP.exe
+C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\bin\Debug\PAV1 TP.pdb
