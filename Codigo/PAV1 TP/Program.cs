@@ -25,7 +25,7 @@ namespace PAV1_TP
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Frm_Escritorio());
-            Application.Run(new ABM_Clientes());
+            Application.Run(new ABM_Productos());
 
 
 

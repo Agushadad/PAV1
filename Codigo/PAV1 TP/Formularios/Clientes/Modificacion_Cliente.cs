@@ -16,6 +16,7 @@ namespace PAV1_TP.Formularios.Clientes
     public partial class Modificacion_Cliente : Form
     {
         Ng_Cliente Cliente = new Ng_Cliente();
+        public string NroDoc { get; set; }
 
         public string DNI { get; set; }
         public Modificacion_Cliente()
@@ -48,12 +49,11 @@ namespace PAV1_TP.Formularios.Clientes
 
         private void btn_ModificarCliente_Click(object sender, EventArgs e)
         {
-            Ng_Cliente Cliente = new Ng_Cliente();
             TratamientosEspeciales tratamiento = new TratamientosEspeciales();
             Es_Cliente _ee = new Es_Cliente();
             
 
-
+            
             _ee.TipoDoc = cmb_TipoDoc.SelectedValue.ToString();
             _ee.NroDoc = txt_NDocCliente.Text;
             _ee.Nombre = txt_NombreCliente.Text;
@@ -67,10 +67,10 @@ namespace PAV1_TP.Formularios.Clientes
             _ee.Email = txt_MailCliente.Text;
             _ee.Estado = cmb_Estado.SelectedValue.ToString();
 
-            Cliente.Modificar(_ee);
+            Cliente.Modificar(_ee, NroDoc);
 
             
-            MessageBox.Show("Empleado modificado correctamente");
+            MessageBox.Show("Cliente modificado correctamente");
             this.Close();
 
         }

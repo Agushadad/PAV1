@@ -137,7 +137,7 @@ namespace PAV1_TP.Negocios
             sqlUpdate += ", Composicion = " + _BD.FormatearDato(dato.Stock, "String");
             sqlUpdate += ", Precio = " + _BD.FormatearDato(dato.Stock, "String");
             sqlUpdate += ", Estado = " + _BD.FormatearDato(dato.Estado, "String");
-            sqlUpdate += " WHERE ID = " + dato.Codigo;
+            sqlUpdate += " WHERE Codigo = " + dato.Codigo;
            
             _BD.Modificar(sqlUpdate);
         }
@@ -145,11 +145,10 @@ namespace PAV1_TP.Negocios
         public void ModificarComposicion(Es_ProductoCompuesto dato)
         {
             string sqlUpdate = "UPDATE Composicion SET ";
-            sqlUpdate += "ID = " + _BD.FormatearDato(dato.ID, "String");
             sqlUpdate += "Cod_Prod_Compuesto = " + _BD.FormatearDato(dato.Cod_Prod_Compuesto, "String");
-            sqlUpdate += "Cod_Prod_Componente = " + _BD.FormatearDato(dato.Cod_Prod_Componente, "String");
-            sqlUpdate += "Cant_Compuesto = " + _BD.FormatearDato(dato.Cant_Compuesto, "String");
-            sqlUpdate += "Cant_Componente = " + _BD.FormatearDato(dato.Cant_Componente, "String");
+            sqlUpdate += ", Cod_Prod_Componente = " + _BD.FormatearDato(dato.Cod_Prod_Componente, "String");
+            sqlUpdate += ", Cant_Compuesto = " + _BD.FormatearDato(dato.Cant_Compuesto, "String");
+            sqlUpdate += ", Cant_Componente = " + _BD.FormatearDato(dato.Cant_Componente, "String");
             sqlUpdate += " WHERE ID = " + dato.ID;
             _BD.Modificar(sqlUpdate);
         }

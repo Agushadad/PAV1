@@ -28,17 +28,17 @@ namespace PAV1_TP.Formularios.Clientes
 
 		private void btn_ConsultarCli_Click(object sender, EventArgs e)
 		{
-			if (chk_Todos.Checked == true && chk_Inactivo.Checked == true)
+			if (chk_ClientesActivos.Checked == true && chk_ClientesInactivos.Checked == true)
 			{
 				Cargar_Grilla(Cliente.TodosLosClientes());
 				return;
 			}
-			if (chk_Todos.Checked == true)
+			if (chk_ClientesActivos.Checked == true)
 			{
-				Cargar_Grilla(Cliente.TodosLosClientes());
+				Cargar_Grilla(Cliente.ClientesActivos());
 				return;
 			}
-			if (chk_Inactivo.Checked == true)
+			if (chk_ClientesInactivos.Checked == true)
 			{
 				Cargar_Grilla(Cliente.ClientesInactivos());
 				return;
@@ -57,18 +57,18 @@ namespace PAV1_TP.Formularios.Clientes
 
 		private void Cargar_Grilla(DataTable tabla)
 		{
-			Grid_Emp.Rows.Clear();
+			Grid_Cliente.Rows.Clear();
 
 			for (int i = 0; i < tabla.Rows.Count; i++)
 			{
-				Grid_Emp.Rows.Add();
-				Grid_Emp.Rows[i].Cells[0].Value = tabla.Rows[i]["NroDoc"].ToString();
-				Grid_Emp.Rows[i].Cells[1].Value = tabla.Rows[i]["Nombre"].ToString();
-				Grid_Emp.Rows[i].Cells[2].Value = tabla.Rows[i]["Apellido"].ToString();
-				Grid_Emp.Rows[i].Cells[3].Value = tabla.Rows[i]["Telefono"].ToString();
-				Grid_Emp.Rows[i].Cells[4].Value = tabla.Rows[i]["Calle"].ToString();
-				Grid_Emp.Rows[i].Cells[5].Value = tabla.Rows[i]["NroCalle"].ToString();
-				Grid_Emp.Rows[i].Cells[6].Value = tabla.Rows[i]["Email"].ToString();
+				Grid_Cliente.Rows.Add();
+				Grid_Cliente.Rows[i].Cells[0].Value = tabla.Rows[i]["NroDoc"].ToString();
+				Grid_Cliente.Rows[i].Cells[1].Value = tabla.Rows[i]["Nombre"].ToString();
+				Grid_Cliente.Rows[i].Cells[2].Value = tabla.Rows[i]["Apellido"].ToString();
+				Grid_Cliente.Rows[i].Cells[3].Value = tabla.Rows[i]["Telefono"].ToString();
+				Grid_Cliente.Rows[i].Cells[4].Value = tabla.Rows[i]["Calle"].ToString();
+				Grid_Cliente.Rows[i].Cells[5].Value = tabla.Rows[i]["NroCalle"].ToString();
+				Grid_Cliente.Rows[i].Cells[6].Value = tabla.Rows[i]["Email"].ToString();
 
 			}
 		}
@@ -82,13 +82,14 @@ namespace PAV1_TP.Formularios.Clientes
 		private void btn_EditarCli_Click(object sender, EventArgs e)
 		{
 			Modificacion_Cliente Modif = new Modificacion_Cliente();
-			if (Grid_Emp.CurrentCell.Value == null)
+			if (Grid_Cliente.CurrentCell.Value == null)
 			{
 				MessageBox.Show("No se selecciono ningun cliente para modificar");
 			}
 			else
 			{
-				Modif.DNI = Grid_Emp.CurrentRow.Cells[0].Value.ToString();
+				Modif.DNI = Grid_Cliente.CurrentRow.Cells[0].Value.ToString();
+				Modif.NroDoc = Grid_Cliente.CurrentRow.Cells[0].Value.ToString();
 				Modif.ShowDialog();
 				Modif.Dispose();
 			}
@@ -97,13 +98,13 @@ namespace PAV1_TP.Formularios.Clientes
 
 		private void btn_EliminarCli_Click(object sender, EventArgs e)
 		{
-			if (Grid_Emp.CurrentCell.Value == null)
+			if (Grid_Cliente.CurrentCell.Value == null)
 			{
 				MessageBox.Show("No se selecciono ningun cliente para eliminar");
 			}
 			else
 			{
-				string DNI = Grid_Emp.CurrentRow.Cells[0].Value.ToString();
+				string DNI = Grid_Cliente.CurrentRow.Cells[0].Value.ToString();
 				DialogResult dialogResult = MessageBox.Show("¿Esta seguro que desea eliminar el cliente seleccionado?", "IMPORTANTE", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
 				if (dialogResult == DialogResult.Yes)
 				{

@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Modificacion_Producto));
             this.txt_CostoProducto = new System.Windows.Forms.Label();
-            this.chk_CompuestoProducto = new System.Windows.Forms.CheckedListBox();
             this.btn_CancelarProducto = new System.Windows.Forms.Button();
             this.btn_RegistrarProducto = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,6 +49,7 @@
             this.txt_CantProdComp1 = new PAV1_TP.Clases.TextBox01();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.chk_CompuestoProducto = new PAV1_TP.Clases.CheckBoxList01();
             this.SuspendLayout();
             // 
             // txt_CostoProducto
@@ -64,21 +64,6 @@
             this.txt_CostoProducto.TabIndex = 41;
             this.txt_CostoProducto.Text = "Costo";
             // 
-            // chk_CompuestoProducto
-            // 
-            this.chk_CompuestoProducto.FormattingEnabled = true;
-            this.chk_CompuestoProducto.Items.AddRange(new object[] {
-            "No",
-            "Producto1",
-            "Pructo2",
-            "Producto3",
-            "Producto4",
-            "Producto"});
-            this.chk_CompuestoProducto.Location = new System.Drawing.Point(110, 154);
-            this.chk_CompuestoProducto.Name = "chk_CompuestoProducto";
-            this.chk_CompuestoProducto.Size = new System.Drawing.Size(120, 79);
-            this.chk_CompuestoProducto.TabIndex = 40;
-            // 
             // btn_CancelarProducto
             // 
             this.btn_CancelarProducto.Location = new System.Drawing.Point(495, 283);
@@ -87,6 +72,7 @@
             this.btn_CancelarProducto.TabIndex = 39;
             this.btn_CancelarProducto.Text = "Cancelar";
             this.btn_CancelarProducto.UseVisualStyleBackColor = true;
+            this.btn_CancelarProducto.Click += new System.EventHandler(this.btn_CancelarProducto_Click);
             // 
             // btn_RegistrarProducto
             // 
@@ -183,6 +169,7 @@
             // 
             // txt_IdProducto
             // 
+            this.txt_IdProducto.Enabled = false;
             this.txt_IdProducto.Location = new System.Drawing.Point(112, 67);
             this.txt_IdProducto.Name = "txt_IdProducto";
             this.txt_IdProducto.Pp_mensajeError = null;
@@ -208,14 +195,14 @@
             this.cmb_TipoProducto.FormattingEnabled = true;
             this.cmb_TipoProducto.Location = new System.Drawing.Point(362, 72);
             this.cmb_TipoProducto.Name = "cmb_TipoProducto";
-            this.cmb_TipoProducto.Pp_Display = null;
+            this.cmb_TipoProducto.Pp_Display = "Nombre";
             this.cmb_TipoProducto.Pp_mensajeError = null;
             this.cmb_TipoProducto.Pp_nombre_campo = null;
             this.cmb_TipoProducto.Pp_nombre_tabla = null;
             this.cmb_TipoProducto.Pp_seleccionado = false;
-            this.cmb_TipoProducto.Pp_Tabla = null;
+            this.cmb_TipoProducto.Pp_Tabla = "TipoProducto";
             this.cmb_TipoProducto.Pp_validable = false;
-            this.cmb_TipoProducto.Pp_Value = null;
+            this.cmb_TipoProducto.Pp_Value = "ID";
             this.cmb_TipoProducto.Size = new System.Drawing.Size(100, 21);
             this.cmb_TipoProducto.TabIndex = 45;
             // 
@@ -298,6 +285,22 @@
             this.label6.TabIndex = 47;
             this.label6.Text = "Cantidad 2";
             // 
+            // chk_CompuestoProducto
+            // 
+            this.chk_CompuestoProducto.FormattingEnabled = true;
+            this.chk_CompuestoProducto.Location = new System.Drawing.Point(111, 155);
+            this.chk_CompuestoProducto.Name = "chk_CompuestoProducto";
+            this.chk_CompuestoProducto.Pp_Display = null;
+            this.chk_CompuestoProducto.Pp_mensajeError = null;
+            this.chk_CompuestoProducto.Pp_nombre_campo = null;
+            this.chk_CompuestoProducto.Pp_nombre_tabla = null;
+            this.chk_CompuestoProducto.Pp_seleccionado = false;
+            this.chk_CompuestoProducto.Pp_Tabla = "Producto";
+            this.chk_CompuestoProducto.Pp_validable = false;
+            this.chk_CompuestoProducto.Pp_Value = null;
+            this.chk_CompuestoProducto.Size = new System.Drawing.Size(120, 79);
+            this.chk_CompuestoProducto.TabIndex = 51;
+            // 
             // Modificacion_Producto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -305,6 +308,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(584, 315);
+            this.Controls.Add(this.chk_CompuestoProducto);
             this.Controls.Add(this.txt_CantProdComp2);
             this.Controls.Add(this.txt_CantProdComp1);
             this.Controls.Add(this.label5);
@@ -316,7 +320,6 @@
             this.Controls.Add(this.txt_NombreProducto);
             this.Controls.Add(this.txt_IdProducto);
             this.Controls.Add(this.txt_CostoProducto);
-            this.Controls.Add(this.chk_CompuestoProducto);
             this.Controls.Add(this.btn_CancelarProducto);
             this.Controls.Add(this.btn_RegistrarProducto);
             this.Controls.Add(this.label3);
@@ -338,7 +341,6 @@
 
         #endregion
         private System.Windows.Forms.Label txt_CostoProducto;
-        private System.Windows.Forms.CheckedListBox chk_CompuestoProducto;
         private System.Windows.Forms.Button btn_CancelarProducto;
         private System.Windows.Forms.Button btn_RegistrarProducto;
         private System.Windows.Forms.Label label3;
@@ -358,5 +360,6 @@
         private Clases.TextBox01 txt_CantProdComp1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private Clases.CheckBoxList01 chk_CompuestoProducto;
     }
 }

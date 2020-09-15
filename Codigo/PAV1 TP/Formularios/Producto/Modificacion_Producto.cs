@@ -24,6 +24,8 @@ namespace PAV1_TP.Formularios.Producto
 
         private void Modificacion_Producto_Load(object sender, EventArgs e)
         {
+            cmb_TipoProducto.Cargar();
+            chk_CompuestoProducto.Cargar2();
             //Recuperar la tabla producto
             DataTable tablaProducto = new DataTable();
             tablaProducto = producto.RecuperarProducto(ID);
@@ -51,11 +53,6 @@ namespace PAV1_TP.Formularios.Producto
                 //Llenar atributos de composición
                 txt_CantProdComp1.Text = (tablaComposicion.Rows[0]["Cod_Prod_Compuesto"].ToString());
                 txt_CantProdComp2.Text = (tablaComposicion.Rows[0]["Cod_Prod_Componente"].ToString());
-
-                //Llenar checkedlist
-                chk_CompuestoProducto.SetItemChecked(int.Parse(txt_CantProdComp1.Text) - 1, true);
-                chk_CompuestoProducto.SetItemChecked(int.Parse(txt_CantProdComp2.Text) - 1, true);
-
 
             }
         }
@@ -141,6 +138,11 @@ namespace PAV1_TP.Formularios.Producto
                     this.Close();
                 }
             }
+        }
+
+        private void btn_CancelarProducto_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -14,16 +14,17 @@ namespace PAV1_TP.Negocios
 	{
 
 		Be_BaseDeDatos _BD = new Be_BaseDeDatos();
+		
 
-		//public DataTable ClientesActivos()
-		//{
-		//	string sql = "SELECT * FROM Cliente WHERE Estado = 1";
-		//	DataTable tabla = new DataTable();
-		//	tabla = _BD.Consulta(sql);
-		//	return tabla;
-		//}
+		public DataTable ClientesActivos()
+        {
+            string sql = "SELECT * FROM Cliente WHERE Estado = 1";
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+            return tabla;
+        }
 
-		public DataTable ClientesInactivos()
+        public DataTable ClientesInactivos()
 		{
 			string sql = "SELECT * FROM Cliente WHERE Estado = 2";
 			DataTable tabla = new DataTable();
@@ -33,7 +34,7 @@ namespace PAV1_TP.Negocios
 
 		public DataTable TodosLosClientes()
 		{
-			string sql = "SELECT * FROM Cliente WHERE Estado = 1 or Estado = 2";
+			string sql = "SELECT * FROM Cliente";
 			DataTable tabla = new DataTable();
 			tabla = _BD.Consulta(sql);
 			return tabla;
@@ -92,7 +93,7 @@ namespace PAV1_TP.Negocios
 			return _BD.Insertar(sqlInsert);
 		}
 
-		public void Modificar(Es_Cliente datos)
+		public void Modificar(Es_Cliente datos, string NroDoc)
 		{
 			string sqlUpdate = "UPDATE Cliente SET ";
 			sqlUpdate += "TipoDoc = " + _BD.FormatearDato(datos.TipoDoc, "String");
@@ -106,7 +107,7 @@ namespace PAV1_TP.Negocios
 			sqlUpdate += ", Telefono = " + _BD.FormatearDato(datos.Telefono, "String");
 			sqlUpdate += ", Email = " + _BD.FormatearDato(datos.Email, "String");
 			sqlUpdate += ", Estado = " + _BD.FormatearDato(datos.Estado, "String");
-			sqlUpdate += " WHERE NroDoc = " + datos.NroDoc;
+			sqlUpdate += " WHERE NroDoc = " + NroDoc;
 
 			_BD.Modificar(sqlUpdate);
 		}
@@ -116,8 +117,13 @@ namespace PAV1_TP.Negocios
             DataTable tabla = new DataTable();
             return tabla = _BD.Consulta("SELECT * FROM TipoDoc WHERE Descripcion = '" + nombre + "'");
         }
+		public DataTable RecuperarNroDoc(string NroDoc)
+		{
+			DataTable tabla = new DataTable();
+			return tabla = _BD.Consulta("SELECT * FROM TipoDoc WHERE NroDoc = '" + NroDoc + "'");
+		}
 
-       
+
 		public void Eliminar(string DNI)
 		{
 			string sqlEliminar = "UPDATE Cliente SET Estado = 2 WHERE NroDoc = " + DNI;
