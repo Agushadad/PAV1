@@ -150,7 +150,7 @@ namespace PAV1_TP.Negocios
             sqlUpdate += ", Stock = " + _BD.FormatearDato(dato.Stock, "String");
             sqlUpdate += ", Costo = " + _BD.FormatearDato(dato.Costo, "String");
             sqlUpdate += ", Composicion = " + _BD.FormatearDato(dato.Composicion, "String");
-            sqlUpdate += ", Precio = " + _BD.FormatearDato(dato.Stock, "String");
+            sqlUpdate += ", Precio = " + _BD.FormatearDato(dato.Precio, "String");
             sqlUpdate += ", Estado = " + _BD.FormatearDato(dato.Estado, "String");
             sqlUpdate += " WHERE Codigo = " + dato.Codigo;
            
