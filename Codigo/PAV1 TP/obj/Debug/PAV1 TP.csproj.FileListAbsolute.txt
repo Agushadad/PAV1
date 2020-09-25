@@ -185,5 +185,5 @@ C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_T
 C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Producto.TipoProducto.Alta_TipoProducto.resources
 C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Producto.TipoProducto.Modificacion_TipoProducto.resources
 C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Clases.LabelText01.resources
-C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1 TP.csprojAssemblyReference.cache
 C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Cargas.Frm_GenerarFactura.resources
+C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1 TP.csprojAssemblyReference.cache

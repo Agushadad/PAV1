@@ -162,7 +162,13 @@ namespace PAV1_TP.Clases
         {
             EjecutarNoSelect(sql);
         }
-
+        public string Fecha()
+        {
+            string sql = "select convert (char(10), getdate(),103)";
+            DataTable tabla = new DataTable();
+            tabla = Consulta(sql);
+            return tabla.Rows[0][0].ToString();
+        }
 
     }
 }

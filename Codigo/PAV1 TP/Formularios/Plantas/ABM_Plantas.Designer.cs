@@ -281,6 +281,7 @@
             this.Name = "ABM_Plantas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "ABM_Plantas";
+            this.Load += new System.EventHandler(this.ABM_Plantas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btn_ModificarPlanta)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Cancelar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_EliminarPlanta)).EndInit();

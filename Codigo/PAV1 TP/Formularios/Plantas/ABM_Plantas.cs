@@ -113,5 +113,10 @@ namespace PAV1_TP.Formularios.Plantas
             Form ABM_TipoPlanta = new ABM_TipoPlanta();
             ABM_TipoPlanta.Show();
         }
+
+        private void ABM_Plantas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

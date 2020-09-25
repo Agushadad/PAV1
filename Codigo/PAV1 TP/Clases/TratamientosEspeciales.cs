@@ -30,5 +30,18 @@ namespace PAV1_TP.Clases
             }
             return Validacion.correcta;
         }
+        public Validacion ValidarFecha(string fecha)
+        {
+            try
+            {
+                DateTime.Parse(fecha);
+                return Validacion.correcta;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Formanto de fecha incorrecto");
+                return Validacion.incorrecta;
+            }
+        }
     }
 }
