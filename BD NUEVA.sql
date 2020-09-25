@@ -111,7 +111,11 @@ CREATE TABLE Empleado (ID INT,
 					   CONSTRAINT localidad_empleado_fk FOREIGN KEY (Localidad) REFERENCES Localidad(ID),
 					   CONSTRAINT estado_empleado_fk FOREIGN KEY (Estado) REFERENCES Estado(ID))
 
-CREATE TABLE Factura (Tipo_Factura VARCHAR(15),
+CREATE TABLE TipoFactura (ID INT,
+						  Nombre VARCHAR(30)
+						  CONSTRAINT tipofactura_pk PRIMARY KEY (ID))
+
+CREATE TABLE Factura (Tipo_Factura INT,
 					  Nro_Factura INT,
 					  TipoDoc INT
 					  CONSTRAINT TipoDoc NOT NULL,
@@ -121,12 +125,13 @@ CREATE TABLE Factura (Tipo_Factura VARCHAR(15),
 					  Id_Empleado INT,
 					  Monto INT,
 					  CONSTRAINT id_factura_pk PRIMARY KEY (Tipo_Factura, Nro_Factura),
-					  CONSTRAINT doc_factura_fk FOREIGN KEY (TipoDoc, NroDoc) REFERENCES Cliente(TipoDoc, NroDoc))
+					  CONSTRAINT doc_factura_fk FOREIGN KEY (TipoDoc, NroDoc) REFERENCES Cliente(TipoDoc, NroDoc),
+					  CONSTRAINT TipoFactura_fk FOREIGN KEY (Tipo_Factura) REFERENCES TipoFactura (ID))
 
 CREATE TABLE Puntos (TipoDoc INT,
 					NroDoc VARCHAR(30),
+					Tipo_Factura INT,
 					Nro_Factura INT,
-					Tipo_Factura VARCHAR(15),
 					Cantidad INT
 					CONSTRAINT CANTIDAD NOT NULL,
 					Fecha DATE,
@@ -152,12 +157,16 @@ CREATE TABLE Catalogo (ID INT,
 						CONSTRAINT id_planta_catalogo_fk FOREIGN KEY (Id_Planta) REFERENCES Plantas(Codigo),
 						CONSTRAINT estado_catalogo_fk FOREIGN KEY (Estado) REFERENCES Estado(ID))
 
-CREATE TABLE DetalleFactura (Tipo_Factura VARCHAR(15),
+CREATE TABLE DetalleFactura (Tipo_Factura INT,
 							 Nro_Factura INT,
+							 Id_Planta INT,
+							 Id_Producto INT,
 							 Cantidad INT,
 							 Precio DECIMAL,
 							 CONSTRAINT detalle_Factura_pk PRIMARY KEY (Tipo_Factura, Nro_Factura),
-							 CONSTRAINT detalle_Factira_fk FOREIGN KEY (Tipo_Factura, Nro_Factura) REFERENCES Factura(Tipo_Factura, Nro_Factura))
+							 CONSTRAINT detalle_Factira_fk FOREIGN KEY (Tipo_Factura, Nro_Factura) REFERENCES Factura(Tipo_Factura, Nro_Factura),
+							 CONSTRAINT Id_Planta_fk FOREIGN KEY (ID_Planta) REFERENCES Plantas (Codigo),
+							 CONSTRAINT Id_Producto_fk FOREIGN KEY (Id_Producto) REFERENCES Producto (Codigo))
 
 CREATE TABLE Canje (ID INT,
 					TipoDoc INT,
@@ -169,6 +178,8 @@ CREATE TABLE Canje (ID INT,
 					CONSTRAINT canje_pk PRIMARY KEY (ID, TipoDoc, NroDoc, Id_Catalogo, Id_Planta,Fecha),
 					CONSTRAINT canje_cliente_fk FOREIGN KEY (TipoDoc, NroDoc) REFERENCES Cliente(TipoDoc, NroDoc),
 					CONSTRAINT canje_productos_fk FOREIGN KEY (Id_Catalogo, Id_Planta) REFERENCES Catalogo(ID, Id_Planta)) 
+
+
 
 ALTER TABLE Producto ADD CONSTRAINT id_composicion_producto_fk FOREIGN KEY (Composicion) REFERENCES Composicion(ID)
 
@@ -220,3 +231,4 @@ INSERT INTO Catalogo VALUES (1,1,200,1),
 
 INSERT INTO TipoProducto VALUES (4,'Compuesto','Producto formado por 2 productos',1)
 
+INSERT INTO TipoFactura VALUES (1, 'Electronica'), (2, 'Simplificada')

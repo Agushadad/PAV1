@@ -11,23 +11,65 @@ namespace PAV1_TP.Clases
 {
     class Be_BaseDeDatos
     {
+        public enum TipoConexion { simple, transaccional };
+        public enum EstadoTransaccion { correcta, error };
+
         SqlConnection Conexion = new SqlConnection();
         SqlCommand Cmd = new SqlCommand();
+        SqlTransaction Transaccion;
+
+        public TipoConexion ControlConexion { get; set; } = TipoConexion.simple;
+        public EstadoTransaccion ControlTransaccion { get; set; } = EstadoTransaccion.correcta;
+        //Acuerdense de cambiar el link de conexion y poner el de c/uno
         string Cadena_conexion = "Data Source=DESKTOP-7MV1FIL;Initial Catalog=Vivero;Integrated Security=True";
+
+        public void IniciarTransaccion()
+        {
+            ControlConexion = TipoConexion.transaccional;
+            ControlTransaccion = EstadoTransaccion.correcta;
+        }
+        public EstadoTransaccion CerrarTransaccion()
+        {
+            if (ControlConexion == TipoConexion.transaccional)
+            {
+                if (ControlTransaccion == EstadoTransaccion.correcta)
+                {
+                    // terminar por commit
+                    Transaccion.Commit();
+                }
+                else
+                {
+                    // terminar por rollback
+                    Transaccion.Rollback();
+                }
+                ControlConexion = TipoConexion.simple;
+                Desconectar();
+            }
+            return ControlTransaccion;
+        }
 
         private void Conectar()
         {
-            //Acuerdense de cambiar el link de conexion y poner el de c/uno
-            Conexion.ConnectionString = Cadena_conexion;
-            Conexion.Open();
-
-            Cmd.Connection = Conexion;
-            Cmd.CommandType = System.Data.CommandType.Text;
+            if (Conexion.State == ConnectionState.Closed)
+            {
+                Conexion.ConnectionString = Cadena_conexion;
+                Conexion.Open();
+                Cmd.Connection = Conexion;
+                Cmd.CommandType = System.Data.CommandType.Text;
+                if (ControlConexion == TipoConexion.transaccional)
+                {
+                    Transaccion = Conexion.BeginTransaction(IsolationLevel.ReadCommitted);
+                    Cmd.Transaction = Transaccion;
+                }
+            }
         }
 
         private void Desconectar()
         {
-            Conexion.Close();
+            if (ControlConexion == TipoConexion.simple)
+            {
+                Conexion.Close();
+            }
         }
 
         public DataTable Consulta(string sql)
@@ -35,20 +77,66 @@ namespace PAV1_TP.Clases
             Conectar();
             Cmd.CommandText = sql;
             DataTable tabla = new DataTable();
-            tabla.Load(Cmd.ExecuteReader());
+            try
+            {
+                tabla.Load(Cmd.ExecuteReader());
+            }
+            catch (Exception e)
+            {
+                ControlTransaccion = EstadoTransaccion.error;
+                MessageBox.Show("Error con la Base de Datos" + "\n"
+                                + "En el comando:" + "\n"
+                                + sql + "\n"
+                                + "El mensaje es:" + "\n"
+                                + e.Message);
+            }
             Desconectar();
             return tabla;
         }
-        public string Insertar(string sql)
+        private string EjecutarNoSelect(string sql)
         {
             Conectar();
             Cmd.CommandText = sql;
-            Cmd.ExecuteNonQuery();
-            DataTable tabla = new DataTable();
-            Cmd.CommandText = "SELECT @@Identity";
-            tabla.Load(Cmd.ExecuteReader());
-            Desconectar();
-            return tabla.Rows[0][0].ToString();
+            try
+            {
+                Cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                ControlTransaccion = EstadoTransaccion.error;
+                MessageBox.Show("Error con la Base de Datos" + "\n"
+                                + "En el comando:" + "\n"
+                                + sql + "\n"
+                                + "El mensaje es:" + "\n"
+                                + e.Message);
+            }
+
+            if (sql.ToUpper().IndexOf("INSERT") >= 0)
+            {
+                DataTable tabla = new DataTable();
+                Cmd.CommandText = "SELECT @@Identity";
+                try
+                {
+                    tabla.Load(Cmd.ExecuteReader());
+                }
+                catch (Exception e)
+                {
+                    ControlTransaccion = EstadoTransaccion.error;
+                    MessageBox.Show("Error con la Base de Datos" + "\n"
+                                    + "En el comando:" + "\n"
+                                    + sql + "\n"
+                                    + "El mensaje es:" + "\n"
+                                    + e.Message);
+
+                }
+                Desconectar();
+                return tabla.Rows[0][0].ToString();
+            }
+            else
+            {
+                Desconectar();
+                return "";
+            }
         }
 
         public string FormatearDato(string dato, string formato)
@@ -66,20 +154,13 @@ namespace PAV1_TP.Clases
             }
         }
 
-        public string Modificar(string sql)
+        public string Insertar(string sql)
         {
-            Conectar();
-            Cmd.CommandText = sql;
-            Cmd.ExecuteNonQuery();
-            DataTable tabla = new DataTable();
-            Cmd.CommandText = "SELECT @@Identity";
-            tabla.Load(Cmd.ExecuteReader());
-            Desconectar();
-            if (sql.ToUpper().IndexOf("INSERT") >= 0)
-                return tabla.Rows[0][0].ToString();
-            else
-                return "";
-            
+            return EjecutarNoSelect(sql);
+        }
+        public void Modificar(string sql)
+        {
+            EjecutarNoSelect(sql);
         }
 
 
