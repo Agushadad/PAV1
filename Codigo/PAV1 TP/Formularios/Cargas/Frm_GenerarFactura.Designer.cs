@@ -104,6 +104,7 @@
             this.btn_Fehca.Text = "...";
             this.btn_Fehca.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btn_Fehca.UseVisualStyleBackColor = true;
+            this.btn_Fehca.Click += new System.EventHandler(this.btn_Fehca_Click);
             // 
             // label5
             // 

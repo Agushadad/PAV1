@@ -15,6 +15,7 @@ namespace PAV1_TP.Formularios.Cargas
 {
     public partial class Frm_GenerarFactura : Form
     {
+        Be_BaseDeDatos _BD = new Be_BaseDeDatos();
         Ng_Factura factura = new Ng_Factura();
         TratamientosEspeciales te = new TratamientosEspeciales();
         Ng_Producto producto = new Ng_Producto();
@@ -91,9 +92,15 @@ namespace PAV1_TP.Formularios.Cargas
             }
             else
             {
-                factura.insertar(cmb_TipoFactura.SelectedValue.ToString(), factura.NuevoId(),1.ToString(), ltxt_DocCliente.ToString(),
+                factura.insertar(cmb_TipoFactura.SelectedValue.ToString(), factura.NuevoId(), 1.ToString(), ltxt_DocCliente.ToString(),
                              ltxt_Fecha.ToString(), ltxt_IdEmpleado.ToString(), 3.ToString(), grid_Plantas, grid_Productos);
             }
-        
+
+        }
+
+        private void btn_Fehca_Click(object sender, EventArgs e)
+        {
+            ltxt_Fecha.Pp_Text = _BD.Fecha();
+        }
     }
 }
