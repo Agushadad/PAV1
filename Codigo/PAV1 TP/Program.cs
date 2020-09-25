@@ -12,6 +12,7 @@ using PAV1_TP.Formularios.Plantas;
 using PAV1_TP.Formularios.Plantas.TipoPlanta;
 using PAV1_TP.Formularios.Clientes;
 using PAV1_TP.Formularios.Producto.TipoProducto;
+using PAV1_TP.Formularios.Cargas;
 
 namespace PAV1_TP
 {
@@ -26,7 +27,7 @@ namespace PAV1_TP
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Frm_Escritorio());
-            Application.Run(new Frm_Escritorio());
+            Application.Run(new Frm_GenerarFactura());
 
 
 

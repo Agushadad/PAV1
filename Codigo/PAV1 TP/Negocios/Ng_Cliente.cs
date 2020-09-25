@@ -117,6 +117,11 @@ namespace PAV1_TP.Negocios
             DataTable tabla = new DataTable();
             return tabla = _BD.Consulta("SELECT * FROM TipoDoc WHERE Descripcion = '" + nombre + "'");
         }
+		public DataTable RecuperarTipoDoc2(string ID)
+		{
+			DataTable tabla = new DataTable();
+			return tabla = _BD.Consulta("SELECT * FROM TipoDoc WHERE ID = '" + ID + "'");
+		}
 		public DataTable RecuperarNroDoc(string NroDoc)
 		{
 			DataTable tabla = new DataTable();

@@ -53,10 +53,22 @@
     <Compile Include="Clases\ComboBox01.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Clases\LabelText01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Clases\LabelText01.Designer.cs">
+      <DependentUpon>LabelText01.cs</DependentUpon>
+    </Compile>
     <Compile Include="Clases\TextBox01.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Clases\TratamientosEspeciales.cs" />
+    <Compile Include="Formularios\Cargas\Frm_GenerarFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cargas\Frm_GenerarFactura.Designer.cs">
+      <DependentUpon>Frm_GenerarFactura.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Catalogos\ABM_Catalogos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -233,6 +245,12 @@
     <Compile Include="Negocios\Ng_TipoProducto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Clases\LabelText01.resx">
+      <DependentUpon>LabelText01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cargas\Frm_GenerarFactura.resx">
+      <DependentUpon>Frm_GenerarFactura.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Catalogos\ABM_Catalogos.resx">
       <DependentUpon>ABM_Catalogos.cs</DependentUpon>
     </EmbeddedResource>
