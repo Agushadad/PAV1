@@ -239,6 +239,12 @@
     <Compile Include="Formularios\Proveedor\Modificacion_Proveedor.Designer.cs">
       <DependentUpon>Modificacion_Proveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Puntos\Puntos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Puntos\Puntos.Designer.cs">
+      <DependentUpon>Puntos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Negocios\EstructurasNegocios\Es_Cliente.cs" />
     <Compile Include="Negocios\EstructurasNegocios\Es_Planta.cs" />
     <Compile Include="Negocios\EstructurasNegocios\Es_Catalogo.cs" />
@@ -246,6 +252,7 @@
     <Compile Include="Negocios\EstructurasNegocios\Es_ProductoCompuesto.cs" />
     <Compile Include="Negocios\EstructurasNegocios\Es_Producto.cs" />
     <Compile Include="Negocios\EstructurasNegocios\Es_Proveedor.cs" />
+    <Compile Include="Negocios\EstructurasNegocios\Es_Puntos.cs" />
     <Compile Include="Negocios\EstructurasNegocios\Es_TipoPlanta.cs" />
     <Compile Include="Negocios\EstructurasNegocios\Es_TipoProducto.cs" />
     <Compile Include="Negocios\Ng_Cliente.cs" />
@@ -255,6 +262,7 @@
     <Compile Include="Negocios\Ng_Empleados.cs" />
     <Compile Include="Negocios\Ng_Producto.cs" />
     <Compile Include="Negocios\Ng_Proveedor.cs" />
+    <Compile Include="Negocios\Ng_Puntos.cs" />
     <Compile Include="Negocios\Ng_TipoPlanta.cs" />
     <Compile Include="Negocios\Ng_TipoProducto.cs" />
     <Compile Include="Program.cs" />
@@ -348,6 +356,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Proveedor\Modificacion_Proveedor.resx">
       <DependentUpon>Modificacion_Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Puntos\Puntos.resx">
+      <DependentUpon>Puntos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

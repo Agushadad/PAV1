@@ -124,9 +124,7 @@ C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_T
 C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Empleados.Alta_Empleado.resources
 C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Empleados.Modificacion_Empleado.resources
 C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Frm_Login.resources
-C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Alta_Plantas.resources
 C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Frm_Escritorio.resources
-C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\WindowsFormsApp2.ABM_Plantas.resources
 C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Plantas.Modificacion_Plantas.resources
 C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Producto.ABM_Productos.resources
 C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Producto.Alta_Producto.resources
@@ -194,3 +192,16 @@ C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.P
 C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Producto.TipoProducto.Modificacion_TipoProducto.resources
 C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Cargas.Consulta_Factura.resources
 C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Cargas.Frm_DetalleFactura.resources
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Clases.LabelText01.resources
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Cargas.Consulta_Factura.resources
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Cargas.Frm_DetalleFactura.resources
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Cargas.Frm_GenerarFactura.resources
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Plantas.ABM_Plantas.resources
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Plantas.Alta_Plantas.resources
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Plantas.TipoPlanta.ABM_TipoPlanta.resources
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Plantas.TipoPlanta.Alta_TipoPlanta.resources
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Plantas.TipoPlanta.Modificacion_TipoPlanta.resources
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Producto.TipoProducto.ABM_TipoProducto.resources
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Producto.TipoProducto.Alta_TipoProducto.resources
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Producto.TipoProducto.Modificacion_TipoProducto.resources
+C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Puntos.Puntos.resources
