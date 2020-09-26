@@ -16,7 +16,7 @@ namespace PAV1_TP.Negocios
         public string NuevoId()
         {
             DataTable tabla = new DataTable();
-            string sql = "SELECT * FROM Empleado";
+            string sql = "SELECT * FROM Factura";
             tabla = _BD.Consulta(sql);
             int id = tabla.Rows.Count;
             int NuevaId = id + 1;
@@ -28,33 +28,32 @@ namespace PAV1_TP.Negocios
         {
             _BD.IniciarTransaccion();
 
-            string insert_factura = "INSERT INTO Factura (Tipo_Factura, Nro_Factura, TipoDoc, NroDoc, " +
-                "                   fecha, Id_Empleado,monto) VALUES (";
+            string insert_factura = "INSERT INTO Factura (Tipo_Factura, Nro_Factura, TipoDoc, NroDoc, fecha, Id_Empleado,monto) VALUES (";
             insert_factura += Tipo_Factura + ", " + Nro_Factura + ", " + TipoDoc + ", " + NroDoc + ", "
-                            + _BD.FormatearDato(fecha, "Date") + ", " + Id_Empleado + ", " + monto;
+                            + _BD.FormatearDato(fecha, "DateTime") + ", " + Id_Empleado + ", " + monto + ")";
             _BD.Insertar(insert_factura);
 
-            string insert_Detalle_factura = "INSERT INTO DetalleFactura (Tipo_Factura, Nro_Factura, TipoDoc, NroDoc, IdPlanta," +
-                " IdProducto, Cantidad, Precio ) VALUES (";
+            string insert_Detalle_factura = "INSERT INTO DetalleFactura (Tipo_Factura, Nro_Factura, Id_Planta," +
+                " Id_Producto, Cantidad, Precio ) VALUES (";
 
             for (int i = 0; i < plantas.Rows.Count; i++)
             {
-                string datos_plantas = Tipo_Factura + ", " + Nro_Factura + ", " + TipoDoc + ", " + NroDoc;
+                string datos_plantas = Tipo_Factura + ", " + Nro_Factura;
                 datos_plantas += ", " + plantas.Rows[i].Cells[0].Value.ToString();
                 datos_plantas += ", " + 0;
                 datos_plantas += ", " + plantas.Rows[i].Cells[2].Value.ToString();
-                datos_plantas += ", " + plantas.Rows[i].Cells[3].Value.ToString();
+                datos_plantas += ", " + plantas.Rows[i].Cells[3].Value.ToString() + ")";
 
                 string insert_final = insert_Detalle_factura + datos_plantas;
                 _BD.Insertar(insert_final);
             }
             for (int i = 0; i < productos.Rows.Count; i++)
             {
-                string datos_productos = Tipo_Factura + ", " + Nro_Factura + ", " + TipoDoc + ", " + NroDoc;
+                string datos_productos = Tipo_Factura + ", " + Nro_Factura;
                 datos_productos += ", " + 0;
-                datos_productos += ", " + plantas.Rows[i].Cells[0].Value.ToString();
-                datos_productos += ", " + plantas.Rows[i].Cells[2].Value.ToString();
-                datos_productos += ", " + plantas.Rows[i].Cells[3].Value.ToString();
+                datos_productos += ", " + productos.Rows[i].Cells[0].Value.ToString();
+                datos_productos += ", " + productos.Rows[i].Cells[2].Value.ToString();
+                datos_productos += ", " + productos.Rows[i].Cells[3].Value.ToString() + ")";
 
                 string insert_final = insert_Detalle_factura + datos_productos;
                 _BD.Insertar(insert_final);

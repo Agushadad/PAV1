@@ -163,7 +163,7 @@ CREATE TABLE DetalleFactura (Tipo_Factura INT,
 							 Id_Producto INT,
 							 Cantidad INT,
 							 Precio DECIMAL,
-							 CONSTRAINT detalle_Factura_pk PRIMARY KEY (Tipo_Factura, Nro_Factura),
+							 CONSTRAINT detalle_Factura_pk PRIMARY KEY (Tipo_Factura, Nro_Factura,Id_Planta, Id_Producto),
 							 CONSTRAINT detalle_Factira_fk FOREIGN KEY (Tipo_Factura, Nro_Factura) REFERENCES Factura(Tipo_Factura, Nro_Factura),
 							 CONSTRAINT Id_Planta_fk FOREIGN KEY (ID_Planta) REFERENCES Plantas (Codigo),
 							 CONSTRAINT Id_Producto_fk FOREIGN KEY (Id_Producto) REFERENCES Producto (Codigo))
@@ -232,3 +232,9 @@ INSERT INTO Catalogo VALUES (1,1,200,1),
 INSERT INTO TipoProducto VALUES (4,'Compuesto','Producto formado por 2 productos',1)
 
 INSERT INTO TipoFactura VALUES (1, 'Electronica'), (2, 'Simplificada')
+
+INSERT INTO Estado (ID) VALUES (0)
+
+INSERT INTO Producto (Codigo,Costo,Precio,Estado) VALUES (0,0,0,0)
+
+INSERT INTO Plantas (Codigo,Precio,Estado) VALUES (0,0,0)

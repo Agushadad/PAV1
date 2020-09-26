@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_GenerarFactura));
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.btn_BuscarCliente = new System.Windows.Forms.Button();
             this.btn_Fehca = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
@@ -41,25 +40,27 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.btn_AgregarProd = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txt_NroDoc = new PAV1_TP.Clases.TextBox01();
+            this.txt_ValorPlanta = new PAV1_TP.Clases.TextBox01();
+            this.txt_ValorProd = new PAV1_TP.Clases.TextBox01();
+            this.grid_Productos = new PAV1_TP.Clases.Grid01();
+            this.grid_Plantas = new PAV1_TP.Clases.Grid01();
             this.txt_CantidadProd = new PAV1_TP.Clases.TextBox01();
             this.txt_CantidadPlant = new PAV1_TP.Clases.TextBox01();
             this.cmb_Productos = new PAV1_TP.Clases.ComboBox01();
             this.cmb_Plantas = new PAV1_TP.Clases.ComboBox01();
             this.txt_Monto = new PAV1_TP.Clases.TextBox01();
-            this.ltxt_IdEmpleado = new PAV1_TP.Clases.LabelText01();
             this.ltxt_Fecha = new PAV1_TP.Clases.LabelText01();
             this.cmb_TipoFactura = new PAV1_TP.Clases.ComboBox01();
-            this.ltxt_DocCliente = new PAV1_TP.Clases.LabelText01();
-            this.grid_Plantas = new PAV1_TP.Clases.Grid01();
-            this.grid_Productos = new PAV1_TP.Clases.Grid01();
-            this.txt_ValorProd = new PAV1_TP.Clases.TextBox01();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txt_ValorPlanta = new PAV1_TP.Clases.TextBox01();
-            this.label11 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.grid_Plantas)).BeginInit();
+            this.txt_IdEmpleado = new PAV1_TP.Clases.TextBox01();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grid_Productos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_Plantas)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -82,16 +83,6 @@
             this.label4.Size = new System.Drawing.Size(184, 25);
             this.label4.TabIndex = 7;
             this.label4.Text = "Generar Factura";
-            // 
-            // btn_BuscarCliente
-            // 
-            this.btn_BuscarCliente.Location = new System.Drawing.Point(221, 48);
-            this.btn_BuscarCliente.Name = "btn_BuscarCliente";
-            this.btn_BuscarCliente.Size = new System.Drawing.Size(61, 23);
-            this.btn_BuscarCliente.TabIndex = 8;
-            this.btn_BuscarCliente.Text = "Buscar";
-            this.btn_BuscarCliente.UseVisualStyleBackColor = true;
-            this.btn_BuscarCliente.Click += new System.EventHandler(this.btn_BuscarCliente_Click);
             // 
             // btn_Fehca
             // 
@@ -174,6 +165,116 @@
             this.btn_AgregarProd.UseVisualStyleBackColor = true;
             this.btn_AgregarProd.Click += new System.EventHandler(this.btn_AgregarProd_Click);
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(341, 278);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(31, 13);
+            this.label10.TabIndex = 28;
+            this.label10.Tag = "Cantidad";
+            this.label10.Text = "Valor";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(341, 82);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(31, 13);
+            this.label11.TabIndex = 30;
+            this.label11.Tag = "Cantidad";
+            this.label11.Text = "Valor";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(69, 221);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 32;
+            this.button1.Text = "Generar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(150, 221);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 33;
+            this.button2.Text = "Cancelar";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(54, 59);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(47, 13);
+            this.label1.TabIndex = 35;
+            this.label1.Text = "Nro Doc";
+            // 
+            // txt_NroDoc
+            // 
+            this.txt_NroDoc.Location = new System.Drawing.Point(107, 56);
+            this.txt_NroDoc.Name = "txt_NroDoc";
+            this.txt_NroDoc.Pp_mensajeError = null;
+            this.txt_NroDoc.Pp_nombre_campo = null;
+            this.txt_NroDoc.Pp_nombre_tabla = null;
+            this.txt_NroDoc.Pp_validable = false;
+            this.txt_NroDoc.Size = new System.Drawing.Size(89, 20);
+            this.txt_NroDoc.TabIndex = 34;
+            // 
+            // txt_ValorPlanta
+            // 
+            this.txt_ValorPlanta.Location = new System.Drawing.Point(378, 77);
+            this.txt_ValorPlanta.Name = "txt_ValorPlanta";
+            this.txt_ValorPlanta.Pp_mensajeError = null;
+            this.txt_ValorPlanta.Pp_nombre_campo = null;
+            this.txt_ValorPlanta.Pp_nombre_tabla = null;
+            this.txt_ValorPlanta.Pp_validable = false;
+            this.txt_ValorPlanta.Size = new System.Drawing.Size(69, 20);
+            this.txt_ValorPlanta.TabIndex = 31;
+            // 
+            // txt_ValorProd
+            // 
+            this.txt_ValorProd.Location = new System.Drawing.Point(378, 273);
+            this.txt_ValorProd.Name = "txt_ValorProd";
+            this.txt_ValorProd.Pp_mensajeError = null;
+            this.txt_ValorProd.Pp_nombre_campo = null;
+            this.txt_ValorProd.Pp_nombre_tabla = null;
+            this.txt_ValorProd.Pp_validable = false;
+            this.txt_ValorProd.Size = new System.Drawing.Size(69, 20);
+            this.txt_ValorProd.TabIndex = 29;
+            // 
+            // grid_Productos
+            // 
+            this.grid_Productos.AllowUserToAddRows = false;
+            this.grid_Productos.AllowUserToDeleteRows = false;
+            this.grid_Productos.AllowUserToResizeColumns = false;
+            this.grid_Productos.AllowUserToResizeRows = false;
+            this.grid_Productos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grid_Productos.Location = new System.Drawing.Point(343, 304);
+            this.grid_Productos.Name = "grid_Productos";
+            this.grid_Productos.Size = new System.Drawing.Size(315, 131);
+            this.grid_Productos.TabIndex = 27;
+            this.grid_Productos.tabla = null;
+            // 
+            // grid_Plantas
+            // 
+            this.grid_Plantas.AllowUserToAddRows = false;
+            this.grid_Plantas.AllowUserToDeleteRows = false;
+            this.grid_Plantas.AllowUserToResizeColumns = false;
+            this.grid_Plantas.AllowUserToResizeRows = false;
+            this.grid_Plantas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grid_Plantas.Location = new System.Drawing.Point(337, 109);
+            this.grid_Plantas.Name = "grid_Plantas";
+            this.grid_Plantas.Size = new System.Drawing.Size(315, 131);
+            this.grid_Plantas.TabIndex = 26;
+            this.grid_Plantas.tabla = null;
+            // 
             // txt_CantidadProd
             // 
             this.txt_CantidadProd.Location = new System.Drawing.Point(508, 275);
@@ -216,6 +317,7 @@
             // 
             // cmb_Plantas
             // 
+            this.cmb_Plantas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_Plantas.FormattingEnabled = true;
             this.cmb_Plantas.Location = new System.Drawing.Point(388, 45);
             this.cmb_Plantas.Name = "cmb_Plantas";
@@ -235,27 +337,12 @@
             // 
             this.txt_Monto.Location = new System.Drawing.Point(107, 174);
             this.txt_Monto.Name = "txt_Monto";
-            this.txt_Monto.Pp_mensajeError = null;
+            this.txt_Monto.Pp_mensajeError = "No se cargo el monto total";
             this.txt_Monto.Pp_nombre_campo = null;
             this.txt_Monto.Pp_nombre_tabla = null;
             this.txt_Monto.Pp_validable = false;
             this.txt_Monto.Size = new System.Drawing.Size(90, 20);
             this.txt_Monto.TabIndex = 12;
-            // 
-            // ltxt_IdEmpleado
-            // 
-            this.ltxt_IdEmpleado.BackColor = System.Drawing.Color.Transparent;
-            this.ltxt_IdEmpleado.Location = new System.Drawing.Point(25, 109);
-            this.ltxt_IdEmpleado.Name = "ltxt_IdEmpleado";
-            this.ltxt_IdEmpleado.Pp_Etiqueta = "IdEmpleado";
-            this.ltxt_IdEmpleado.Pp_Mascara = "";
-            this.ltxt_IdEmpleado.Pp_mensajeError = null;
-            this.ltxt_IdEmpleado.Pp_nombre_campo = null;
-            this.ltxt_IdEmpleado.Pp_nombre_tabla = null;
-            this.ltxt_IdEmpleado.Pp_Text = "";
-            this.ltxt_IdEmpleado.Pp_validable = false;
-            this.ltxt_IdEmpleado.Size = new System.Drawing.Size(158, 30);
-            this.ltxt_IdEmpleado.TabIndex = 11;
             // 
             // ltxt_Fecha
             // 
@@ -288,110 +375,26 @@
             this.cmb_TipoFactura.Size = new System.Drawing.Size(121, 21);
             this.cmb_TipoFactura.TabIndex = 1;
             // 
-            // ltxt_DocCliente
+            // txt_IdEmpleado
             // 
-            this.ltxt_DocCliente.BackColor = System.Drawing.Color.Transparent;
-            this.ltxt_DocCliente.Location = new System.Drawing.Point(25, 48);
-            this.ltxt_DocCliente.Name = "ltxt_DocCliente";
-            this.ltxt_DocCliente.Pp_Etiqueta = "NroDoc";
-            this.ltxt_DocCliente.Pp_Mascara = "99.999.999";
-            this.ltxt_DocCliente.Pp_mensajeError = null;
-            this.ltxt_DocCliente.Pp_nombre_campo = null;
-            this.ltxt_DocCliente.Pp_nombre_tabla = null;
-            this.ltxt_DocCliente.Pp_Text = "  ,   ,";
-            this.ltxt_DocCliente.Pp_validable = false;
-            this.ltxt_DocCliente.Size = new System.Drawing.Size(190, 30);
-            this.ltxt_DocCliente.TabIndex = 0;
+            this.txt_IdEmpleado.Location = new System.Drawing.Point(107, 112);
+            this.txt_IdEmpleado.Name = "txt_IdEmpleado";
+            this.txt_IdEmpleado.Pp_mensajeError = null;
+            this.txt_IdEmpleado.Pp_nombre_campo = null;
+            this.txt_IdEmpleado.Pp_nombre_tabla = null;
+            this.txt_IdEmpleado.Pp_validable = false;
+            this.txt_IdEmpleado.Size = new System.Drawing.Size(89, 20);
+            this.txt_IdEmpleado.TabIndex = 36;
             // 
-            // grid_Plantas
+            // label3
             // 
-            this.grid_Plantas.AllowUserToAddRows = false;
-            this.grid_Plantas.AllowUserToDeleteRows = false;
-            this.grid_Plantas.AllowUserToResizeColumns = false;
-            this.grid_Plantas.AllowUserToResizeRows = false;
-            this.grid_Plantas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grid_Plantas.Location = new System.Drawing.Point(337, 109);
-            this.grid_Plantas.Name = "grid_Plantas";
-            this.grid_Plantas.Size = new System.Drawing.Size(315, 131);
-            this.grid_Plantas.TabIndex = 26;
-            this.grid_Plantas.tabla = null;
-            // 
-            // grid_Productos
-            // 
-            this.grid_Productos.AllowUserToAddRows = false;
-            this.grid_Productos.AllowUserToDeleteRows = false;
-            this.grid_Productos.AllowUserToResizeColumns = false;
-            this.grid_Productos.AllowUserToResizeRows = false;
-            this.grid_Productos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grid_Productos.Location = new System.Drawing.Point(343, 304);
-            this.grid_Productos.Name = "grid_Productos";
-            this.grid_Productos.Size = new System.Drawing.Size(315, 131);
-            this.grid_Productos.TabIndex = 27;
-            this.grid_Productos.tabla = null;
-            // 
-            // txt_ValorProd
-            // 
-            this.txt_ValorProd.Location = new System.Drawing.Point(378, 273);
-            this.txt_ValorProd.Name = "txt_ValorProd";
-            this.txt_ValorProd.Pp_mensajeError = null;
-            this.txt_ValorProd.Pp_nombre_campo = null;
-            this.txt_ValorProd.Pp_nombre_tabla = null;
-            this.txt_ValorProd.Pp_validable = false;
-            this.txt_ValorProd.Size = new System.Drawing.Size(69, 20);
-            this.txt_ValorProd.TabIndex = 29;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(341, 278);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(31, 13);
-            this.label10.TabIndex = 28;
-            this.label10.Tag = "Cantidad";
-            this.label10.Text = "Valor";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // txt_ValorPlanta
-            // 
-            this.txt_ValorPlanta.Enabled = false;
-            this.txt_ValorPlanta.Location = new System.Drawing.Point(378, 77);
-            this.txt_ValorPlanta.Name = "txt_ValorPlanta";
-            this.txt_ValorPlanta.Pp_mensajeError = null;
-            this.txt_ValorPlanta.Pp_nombre_campo = null;
-            this.txt_ValorPlanta.Pp_nombre_tabla = null;
-            this.txt_ValorPlanta.Pp_validable = false;
-            this.txt_ValorPlanta.Size = new System.Drawing.Size(69, 20);
-            this.txt_ValorPlanta.TabIndex = 31;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(341, 82);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(31, 13);
-            this.label11.TabIndex = 30;
-            this.label11.Tag = "Cantidad";
-            this.label11.Text = "Valor";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(69, 221);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 32;
-            this.button1.Text = "Generar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(150, 221);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 33;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Location = new System.Drawing.Point(35, 119);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(66, 13);
+            this.label3.TabIndex = 37;
+            this.label3.Text = "Id Empleado";
             // 
             // Frm_GenerarFactura
             // 
@@ -400,6 +403,10 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(664, 443);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txt_IdEmpleado);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txt_NroDoc);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txt_ValorPlanta);
@@ -420,34 +427,27 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txt_Monto);
-            this.Controls.Add(this.ltxt_IdEmpleado);
             this.Controls.Add(this.btn_Fehca);
             this.Controls.Add(this.ltxt_Fecha);
-            this.Controls.Add(this.btn_BuscarCliente);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cmb_TipoFactura);
-            this.Controls.Add(this.ltxt_DocCliente);
             this.Name = "Frm_GenerarFactura";
             this.Text = "Frm_GenerarFactura";
             this.Load += new System.EventHandler(this.Frm_GenerarFactura_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.grid_Plantas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid_Productos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid_Plantas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private Clases.LabelText01 ltxt_DocCliente;
         private Clases.ComboBox01 cmb_TipoFactura;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btn_BuscarCliente;
         private Clases.LabelText01 ltxt_Fecha;
         private System.Windows.Forms.Button btn_Fehca;
-        private Clases.LabelText01 ltxt_IdEmpleado;
         private System.Windows.Forms.Label label5;
         private Clases.TextBox01 txt_Monto;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
@@ -469,5 +469,9 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private Clases.TextBox01 txt_NroDoc;
+        private System.Windows.Forms.Label label1;
+        private Clases.TextBox01 txt_IdEmpleado;
+        private System.Windows.Forms.Label label3;
     }
 }

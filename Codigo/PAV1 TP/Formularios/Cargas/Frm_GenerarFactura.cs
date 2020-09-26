@@ -92,9 +92,10 @@ namespace PAV1_TP.Formularios.Cargas
             }
             else
             {
-                factura.insertar(cmb_TipoFactura.SelectedValue.ToString(), factura.NuevoId(), 1.ToString(), ltxt_DocCliente.ToString(),
-                             ltxt_Fecha.ToString(), ltxt_IdEmpleado.ToString(), 3.ToString(), grid_Plantas, grid_Productos);
-            }
+                factura.insertar(cmb_TipoFactura.SelectedValue.ToString(), factura.NuevoId(), 1.ToString(), txt_NroDoc.Text,
+                             ltxt_Fecha.Text, txt_IdEmpleado.Text, 3.ToString(), grid_Plantas, grid_Productos);
+                this.Close();
+            }   
 
         }
 
