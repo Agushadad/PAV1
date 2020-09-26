@@ -13,6 +13,18 @@ namespace PAV1_TP.Negocios
     {
 
         Be_BaseDeDatos _BD = new Be_BaseDeDatos();
+        public DataTable RecuperarCliente(string dni)
+        {
+            DataTable tabla = new DataTable();
+            return tabla = _BD.Consulta("SELECT * FROM Cliente WHERE NroDoc = '" + dni + "'");
+        }
+        
+        public DataTable RecuperarEmp(string ID)
+        {
+            DataTable tabla = new DataTable();
+            return tabla = _BD.Consulta("SELECT * FROM Empleado WHERE ID = " + ID);
+        }
+
         public string NuevoId()
         {
             DataTable tabla = new DataTable();
@@ -60,7 +72,7 @@ namespace PAV1_TP.Negocios
             }
             if (_BD.CerrarTransaccion() == Be_BaseDeDatos.EstadoTransaccion.correcta)
             {
-                MessageBox.Show("Se finalizó correctamente la grabación");
+                MessageBox.Show("La factura se generó correctamente");
             }
             else
             {

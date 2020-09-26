@@ -45,6 +45,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txt_IdEmpleado = new PAV1_TP.Clases.TextBox01();
             this.txt_NroDoc = new PAV1_TP.Clases.TextBox01();
             this.txt_ValorPlanta = new PAV1_TP.Clases.TextBox01();
             this.txt_ValorProd = new PAV1_TP.Clases.TextBox01();
@@ -57,8 +59,6 @@
             this.txt_Monto = new PAV1_TP.Clases.TextBox01();
             this.ltxt_Fecha = new PAV1_TP.Clases.LabelText01();
             this.cmb_TipoFactura = new PAV1_TP.Clases.ComboBox01();
-            this.txt_IdEmpleado = new PAV1_TP.Clases.TextBox01();
-            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grid_Productos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid_Plantas)).BeginInit();
             this.SuspendLayout();
@@ -216,6 +216,27 @@
             this.label1.TabIndex = 35;
             this.label1.Text = "Nro Doc";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Location = new System.Drawing.Point(35, 119);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(66, 13);
+            this.label3.TabIndex = 37;
+            this.label3.Text = "Id Empleado";
+            // 
+            // txt_IdEmpleado
+            // 
+            this.txt_IdEmpleado.Location = new System.Drawing.Point(107, 112);
+            this.txt_IdEmpleado.Name = "txt_IdEmpleado";
+            this.txt_IdEmpleado.Pp_mensajeError = null;
+            this.txt_IdEmpleado.Pp_nombre_campo = null;
+            this.txt_IdEmpleado.Pp_nombre_tabla = null;
+            this.txt_IdEmpleado.Pp_validable = false;
+            this.txt_IdEmpleado.Size = new System.Drawing.Size(89, 20);
+            this.txt_IdEmpleado.TabIndex = 36;
+            // 
             // txt_NroDoc
             // 
             this.txt_NroDoc.Location = new System.Drawing.Point(107, 56);
@@ -234,7 +255,7 @@
             this.txt_ValorPlanta.Pp_mensajeError = null;
             this.txt_ValorPlanta.Pp_nombre_campo = null;
             this.txt_ValorPlanta.Pp_nombre_tabla = null;
-            this.txt_ValorPlanta.Pp_validable = false;
+            this.txt_ValorPlanta.Pp_validable = true;
             this.txt_ValorPlanta.Size = new System.Drawing.Size(69, 20);
             this.txt_ValorPlanta.TabIndex = 31;
             // 
@@ -289,8 +310,9 @@
             // txt_CantidadPlant
             // 
             this.txt_CantidadPlant.Location = new System.Drawing.Point(502, 77);
+            this.txt_CantidadPlant.Multiline = true;
             this.txt_CantidadPlant.Name = "txt_CantidadPlant";
-            this.txt_CantidadPlant.Pp_mensajeError = null;
+            this.txt_CantidadPlant.Pp_mensajeError = "Falta cargar cantidad de plantas";
             this.txt_CantidadPlant.Pp_nombre_campo = null;
             this.txt_CantidadPlant.Pp_nombre_tabla = null;
             this.txt_CantidadPlant.Pp_validable = false;
@@ -374,27 +396,6 @@
             this.cmb_TipoFactura.Pp_Value = "ID";
             this.cmb_TipoFactura.Size = new System.Drawing.Size(121, 21);
             this.cmb_TipoFactura.TabIndex = 1;
-            // 
-            // txt_IdEmpleado
-            // 
-            this.txt_IdEmpleado.Location = new System.Drawing.Point(107, 112);
-            this.txt_IdEmpleado.Name = "txt_IdEmpleado";
-            this.txt_IdEmpleado.Pp_mensajeError = null;
-            this.txt_IdEmpleado.Pp_nombre_campo = null;
-            this.txt_IdEmpleado.Pp_nombre_tabla = null;
-            this.txt_IdEmpleado.Pp_validable = false;
-            this.txt_IdEmpleado.Size = new System.Drawing.Size(89, 20);
-            this.txt_IdEmpleado.TabIndex = 36;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(35, 119);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 13);
-            this.label3.TabIndex = 37;
-            this.label3.Text = "Id Empleado";
             // 
             // Frm_GenerarFactura
             // 

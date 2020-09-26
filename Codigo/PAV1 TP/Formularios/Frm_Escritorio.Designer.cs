@@ -216,6 +216,7 @@
             this.btn_GenerarFactura.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btn_GenerarFactura.TabIndex = 24;
             this.btn_GenerarFactura.TabStop = false;
+            this.btn_GenerarFactura.Click += new System.EventHandler(this.btn_GenerarFactura_Click);
             // 
             // label10
             // 

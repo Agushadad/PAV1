@@ -47,12 +47,29 @@ namespace PAV1_TP.Formularios.Cargas
 
         private void btn_AgregarPlanta_Click(object sender, EventArgs e)
         {
-            grid_Plantas.Rows.Add();
-            int ind = grid_Plantas.Rows.Count - 1;
-            grid_Plantas.Rows[ind].Cells[0].Value = cmb_Plantas.SelectedValue.ToString();
-            grid_Plantas.Rows[ind].Cells[1].Value = cmb_Plantas.Text;
-            grid_Plantas.Rows[ind].Cells[2].Value = txt_CantidadPlant.Text;
-            grid_Plantas.Rows[ind].Cells[3].Value = txt_ValorPlanta.Text;
+            if (string.IsNullOrEmpty(cmb_Plantas.Text))
+            {
+                MessageBox.Show("No se seleccionó ninguna planta");
+
+            }
+            else
+            {
+                if (txt_CantidadPlant.Text.ToString() == "")
+                {
+                    MessageBox.Show("Falta cargar la cantidad ");
+                    txt_CantidadPlant.Focus();
+
+                }
+                else
+                {
+                    grid_Plantas.Rows.Add();
+                    int ind = grid_Plantas.Rows.Count - 1;
+                    grid_Plantas.Rows[ind].Cells[0].Value = cmb_Plantas.SelectedValue.ToString();
+                    grid_Plantas.Rows[ind].Cells[1].Value = cmb_Plantas.Text;
+                    grid_Plantas.Rows[ind].Cells[2].Value = txt_CantidadPlant.Text;
+                    grid_Plantas.Rows[ind].Cells[3].Value = txt_ValorPlanta.Text;
+                }
+            }
         }
 
         private void cmb_Plantas_SelectionChangeCommitted(object sender, EventArgs e)
@@ -71,14 +88,29 @@ namespace PAV1_TP.Formularios.Cargas
 
         private void btn_AgregarProd_Click(object sender, EventArgs e)
         {
-            grid_Productos.Rows.Add();
-            int ind = grid_Productos.Rows.Count - 1;
-            grid_Productos.Rows[ind].Cells[0].Value = cmb_Productos.SelectedValue.ToString();
-            grid_Productos.Rows[ind].Cells[1].Value = cmb_Productos.Text;
-            grid_Productos.Rows[ind].Cells[2].Value = txt_CantidadProd.Text;
-            grid_Productos.Rows[ind].Cells[3].Value = txt_ValorProd.Text;
-        }
+            if (string.IsNullOrEmpty(cmb_Productos.Text))
+            {
+                MessageBox.Show("No se seleccionó ningún producto");
 
+            }
+            else
+            {
+                if (txt_CantidadProd.Text.ToString() == "")
+                {
+                    MessageBox.Show("Falta cargar la cantidad");
+                    txt_CantidadProd.Focus();
+                }
+                else
+                {
+                    grid_Productos.Rows.Add();
+                    int ind = grid_Productos.Rows.Count - 1;
+                    grid_Productos.Rows[ind].Cells[0].Value = cmb_Productos.SelectedValue.ToString();
+                    grid_Productos.Rows[ind].Cells[1].Value = cmb_Productos.Text;
+                    grid_Productos.Rows[ind].Cells[2].Value = txt_CantidadProd.Text;
+                    grid_Productos.Rows[ind].Cells[3].Value = txt_ValorProd.Text;
+                }
+            }
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             if (te.ValidarFecha(ltxt_Fecha.Pp_Text) == TratamientosEspeciales.Validacion.incorrecta)
@@ -92,9 +124,36 @@ namespace PAV1_TP.Formularios.Cargas
             }
             else
             {
-                factura.insertar(cmb_TipoFactura.SelectedValue.ToString(), factura.NuevoId(), 1.ToString(), txt_NroDoc.Text,
-                             ltxt_Fecha.Text, txt_IdEmpleado.Text, 3.ToString(), grid_Plantas, grid_Productos);
-                this.Close();
+                DataTable tabla = new DataTable();
+                tabla = factura.RecuperarCliente(txt_NroDoc.Text.ToString());
+                DataTable tabla2 = new DataTable();
+                tabla2 = factura.RecuperarEmp(txt_IdEmpleado.Text.ToString());
+                if (tabla.Rows.Count > 0)
+                {
+                    if (tabla2.Rows.Count > 0)
+                    {
+                        if (txt_Monto.Text.ToString() != "")
+                        {
+                            factura.insertar(cmb_TipoFactura.SelectedValue.ToString(), factura.NuevoId(), 1.ToString(), txt_NroDoc.Text,
+                            ltxt_Fecha.Text, txt_IdEmpleado.Text, 3.ToString(), grid_Plantas, grid_Productos);
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Falta ingresar el monto");
+                            
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se encontró el Empleado");
+                    }
+                    
+                }
+                else
+                {
+                    MessageBox.Show("El cliente no está registrado");
+                }
             }   
 
         }

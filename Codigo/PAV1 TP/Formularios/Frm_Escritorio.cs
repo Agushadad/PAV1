@@ -15,6 +15,7 @@ using PAV1_TP.Negocios;
 using PAV1_TP.Formularios.Empleados;
 using PAV1_TP.Formularios.Producto;
 using PAV1_TP.Formularios.Clientes;
+using PAV1_TP.Formularios.Cargas;
 
 namespace PAV1_TP
 {
@@ -114,6 +115,12 @@ namespace PAV1_TP
         {
             Form Producto = new ABM_Productos();
             Producto.Show();
+        }
+
+        private void btn_GenerarFactura_Click(object sender, EventArgs e)
+        {
+            Form Factura = new Frm_GenerarFactura();
+            Factura.Show();
         }
     }
 }

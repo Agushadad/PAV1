@@ -38,8 +38,8 @@ namespace PAV1_TP.Formularios.Catalogos
             TratamientosEspeciales tratamiento = new TratamientosEspeciales();
             Es_Catalogo _ec = new Es_Catalogo();
 
-            if (tratamiento.validar(this.Controls) == TratamientosEspeciales.Validacion.correcta)
-            {
+            
+            
                 var items = chk_Id_Plantas_Catalogos.CheckedItems.Count;
                 DataTable tabla = new DataTable();
                 _ec.ID = catalogo.NuevoId();
@@ -57,7 +57,7 @@ namespace PAV1_TP.Formularios.Catalogos
                 this.Close();
 
 
-            }
+            
         }
 
         private void btn_Cancelar_Click(object sender, EventArgs e)
