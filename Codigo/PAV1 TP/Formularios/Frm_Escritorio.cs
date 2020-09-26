@@ -119,7 +119,7 @@ namespace PAV1_TP
 
         private void btn_GenerarFactura_Click(object sender, EventArgs e)
         {
-            Form Factura = new Frm_GenerarFactura();
+            Form Factura = new Consulta_Factura();
             Factura.Show();
         }
     }

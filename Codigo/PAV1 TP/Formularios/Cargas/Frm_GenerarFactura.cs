@@ -135,7 +135,7 @@ namespace PAV1_TP.Formularios.Cargas
                         if (txt_Monto.Text.ToString() != "")
                         {
                             factura.insertar(cmb_TipoFactura.SelectedValue.ToString(), factura.NuevoId(), 1.ToString(), txt_NroDoc.Text,
-                            ltxt_Fecha.Text, txt_IdEmpleado.Text, 3.ToString(), grid_Plantas, grid_Productos);
+                            ltxt_Fecha.Pp_Text, txt_IdEmpleado.Text, txt_Monto.Text, grid_Plantas, grid_Productos);
                             this.Close();
                         }
                         else
@@ -161,6 +161,11 @@ namespace PAV1_TP.Formularios.Cargas
         private void btn_Fehca_Click(object sender, EventArgs e)
         {
             ltxt_Fecha.Pp_Text = _BD.Fecha();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

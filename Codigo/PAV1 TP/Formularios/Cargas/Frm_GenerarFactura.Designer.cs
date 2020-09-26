@@ -91,7 +91,7 @@
             this.btn_Fehca.Location = new System.Drawing.Point(180, 138);
             this.btn_Fehca.Name = "btn_Fehca";
             this.btn_Fehca.Size = new System.Drawing.Size(36, 23);
-            this.btn_Fehca.TabIndex = 10;
+            this.btn_Fehca.TabIndex = 4;
             this.btn_Fehca.Text = "...";
             this.btn_Fehca.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btn_Fehca.UseVisualStyleBackColor = true;
@@ -131,7 +131,7 @@
             this.btn_AgregarPlanta.Location = new System.Drawing.Point(577, 75);
             this.btn_AgregarPlanta.Name = "btn_AgregarPlanta";
             this.btn_AgregarPlanta.Size = new System.Drawing.Size(75, 23);
-            this.btn_AgregarPlanta.TabIndex = 22;
+            this.btn_AgregarPlanta.TabIndex = 9;
             this.btn_AgregarPlanta.Text = "Agregar";
             this.btn_AgregarPlanta.UseVisualStyleBackColor = true;
             this.btn_AgregarPlanta.Click += new System.EventHandler(this.btn_AgregarPlanta_Click);
@@ -160,7 +160,7 @@
             this.btn_AgregarProd.Location = new System.Drawing.Point(583, 273);
             this.btn_AgregarProd.Name = "btn_AgregarProd";
             this.btn_AgregarProd.Size = new System.Drawing.Size(75, 23);
-            this.btn_AgregarProd.TabIndex = 22;
+            this.btn_AgregarProd.TabIndex = 13;
             this.btn_AgregarProd.Text = "Agregar";
             this.btn_AgregarProd.UseVisualStyleBackColor = true;
             this.btn_AgregarProd.Click += new System.EventHandler(this.btn_AgregarProd_Click);
@@ -192,7 +192,7 @@
             this.button1.Location = new System.Drawing.Point(69, 221);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 32;
+            this.button1.TabIndex = 14;
             this.button1.Text = "Generar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -202,9 +202,10 @@
             this.button2.Location = new System.Drawing.Point(150, 221);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 33;
+            this.button2.TabIndex = 15;
             this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
             // 
@@ -235,7 +236,7 @@
             this.txt_IdEmpleado.Pp_nombre_tabla = null;
             this.txt_IdEmpleado.Pp_validable = false;
             this.txt_IdEmpleado.Size = new System.Drawing.Size(89, 20);
-            this.txt_IdEmpleado.TabIndex = 36;
+            this.txt_IdEmpleado.TabIndex = 2;
             // 
             // txt_NroDoc
             // 
@@ -246,7 +247,7 @@
             this.txt_NroDoc.Pp_nombre_tabla = null;
             this.txt_NroDoc.Pp_validable = false;
             this.txt_NroDoc.Size = new System.Drawing.Size(89, 20);
-            this.txt_NroDoc.TabIndex = 34;
+            this.txt_NroDoc.TabIndex = 0;
             // 
             // txt_ValorPlanta
             // 
@@ -257,7 +258,7 @@
             this.txt_ValorPlanta.Pp_nombre_tabla = null;
             this.txt_ValorPlanta.Pp_validable = true;
             this.txt_ValorPlanta.Size = new System.Drawing.Size(69, 20);
-            this.txt_ValorPlanta.TabIndex = 31;
+            this.txt_ValorPlanta.TabIndex = 7;
             // 
             // txt_ValorProd
             // 
@@ -268,7 +269,7 @@
             this.txt_ValorProd.Pp_nombre_tabla = null;
             this.txt_ValorProd.Pp_validable = false;
             this.txt_ValorProd.Size = new System.Drawing.Size(69, 20);
-            this.txt_ValorProd.TabIndex = 29;
+            this.txt_ValorProd.TabIndex = 11;
             // 
             // grid_Productos
             // 
@@ -305,7 +306,7 @@
             this.txt_CantidadProd.Pp_nombre_tabla = null;
             this.txt_CantidadProd.Pp_validable = false;
             this.txt_CantidadProd.Size = new System.Drawing.Size(69, 20);
-            this.txt_CantidadProd.TabIndex = 21;
+            this.txt_CantidadProd.TabIndex = 12;
             // 
             // txt_CantidadPlant
             // 
@@ -317,7 +318,7 @@
             this.txt_CantidadPlant.Pp_nombre_tabla = null;
             this.txt_CantidadPlant.Pp_validable = false;
             this.txt_CantidadPlant.Size = new System.Drawing.Size(69, 20);
-            this.txt_CantidadPlant.TabIndex = 21;
+            this.txt_CantidadPlant.TabIndex = 8;
             // 
             // cmb_Productos
             // 
@@ -334,7 +335,7 @@
             this.cmb_Productos.Pp_validable = false;
             this.cmb_Productos.Pp_Value = "Codigo";
             this.cmb_Productos.Size = new System.Drawing.Size(188, 21);
-            this.cmb_Productos.TabIndex = 18;
+            this.cmb_Productos.TabIndex = 10;
             this.cmb_Productos.SelectionChangeCommitted += new System.EventHandler(this.cmb_Productos_SelectionChangeCommitted);
             // 
             // cmb_Plantas
@@ -352,7 +353,7 @@
             this.cmb_Plantas.Pp_validable = false;
             this.cmb_Plantas.Pp_Value = "Codigo";
             this.cmb_Plantas.Size = new System.Drawing.Size(188, 21);
-            this.cmb_Plantas.TabIndex = 18;
+            this.cmb_Plantas.TabIndex = 6;
             this.cmb_Plantas.SelectionChangeCommitted += new System.EventHandler(this.cmb_Plantas_SelectionChangeCommitted);
             // 
             // txt_Monto
@@ -364,7 +365,7 @@
             this.txt_Monto.Pp_nombre_tabla = null;
             this.txt_Monto.Pp_validable = false;
             this.txt_Monto.Size = new System.Drawing.Size(90, 20);
-            this.txt_Monto.TabIndex = 12;
+            this.txt_Monto.TabIndex = 5;
             // 
             // ltxt_Fecha
             // 
@@ -379,7 +380,7 @@
             this.ltxt_Fecha.Pp_Text = "  /  /";
             this.ltxt_Fecha.Pp_validable = false;
             this.ltxt_Fecha.Size = new System.Drawing.Size(157, 30);
-            this.ltxt_Fecha.TabIndex = 9;
+            this.ltxt_Fecha.TabIndex = 3;
             // 
             // cmb_TipoFactura
             // 

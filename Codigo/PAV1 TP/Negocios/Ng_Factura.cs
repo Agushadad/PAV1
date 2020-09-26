@@ -34,6 +34,28 @@ namespace PAV1_TP.Negocios
             int NuevaId = id + 1;
             return NuevaId.ToString();
         }
+        public DataTable Buscar_Factura(string NroDoc)
+        {
+            string sql = "SELECT * FROM Factura WHERE NroDoc LIKE '%" + NroDoc + "%'";
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+            return tabla;
+        }
+        public DataTable Buscar_Detalle_Factura(string NroFac)
+        {
+            string sql = "SELECT * FROM DetalleFactura WHERE Nro_Factura = " + NroFac;
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+            return tabla;
+        }
+        public DataTable Buscar_Todas_Facturas()
+        {
+            string sql = "SELECT * FROM Factura";
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+            return tabla;
+        }
+
         // metodo para cargar la transaccion
         public void insertar(string Tipo_Factura, string Nro_Factura, string TipoDoc, string NroDoc,
                              string fecha, string Id_Empleado, string monto, Grid01 plantas, Grid01 productos)

@@ -64,6 +64,18 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Clases\TratamientosEspeciales.cs" />
+    <Compile Include="Formularios\Cargas\Consulta_Factura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cargas\Consulta_Factura.Designer.cs">
+      <DependentUpon>Consulta_Factura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cargas\Frm_DetalleFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cargas\Frm_DetalleFactura.Designer.cs">
+      <DependentUpon>Frm_DetalleFactura.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Cargas\Frm_GenerarFactura.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -249,6 +261,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Clases\LabelText01.resx">
       <DependentUpon>LabelText01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cargas\Consulta_Factura.resx">
+      <DependentUpon>Consulta_Factura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cargas\Frm_DetalleFactura.resx">
+      <DependentUpon>Frm_DetalleFactura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Cargas\Frm_GenerarFactura.resx">
       <DependentUpon>Frm_GenerarFactura.cs</DependentUpon>
