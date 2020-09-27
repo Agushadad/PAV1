@@ -183,6 +183,19 @@ CREATE TABLE Canje (ID INT,
 
 ALTER TABLE Producto ADD CONSTRAINT id_composicion_producto_fk FOREIGN KEY (Composicion) REFERENCES Composicion(ID)
 
+
+INSERT INTO Estado VALUES (1, 'Activo'), (2, 'Inactivo')
+
+INSERT INTO TipoProducto VALUES (4,'Compuesto','Producto formado por 2 productos',1)
+
+INSERT INTO TipoFactura VALUES (1, 'Electronica'), (2, 'Simplificada')
+
+INSERT INTO Estado (ID) VALUES (0)
+
+INSERT INTO Producto (Codigo,Costo,Precio,Estado) VALUES (0,0,0,0)
+
+INSERT INTO Plantas (Codigo,Precio,Estado) VALUES (0,0,0)
+
 INSERT INTO Composicion (ID, Cod_Prod_Componente, Cod_Prod_Compuesto) VALUES (0,0,0)
 
 INSERT INTO TipoFactura (ID) VALUES (0)
@@ -191,9 +204,7 @@ INSERT INTO TipoDoc (ID) VALUES (0)
 
 INSERT INTO Cliente (NroDoc, Estado, TipoDoc,Nombre,Apellido) VALUES (0,0,0,'','')
 
-INSERT INTO Factura (Nro_Factura,Tipo_Factura,TipoDoc,NroDoc) VALUES (0,0,0,0)
-
-INSERT INTO Estado VALUES (1, 'Activo'), (2, 'Inactivo')					    
+INSERT INTO Factura (Nro_Factura,Tipo_Factura,TipoDoc,NroDoc) VALUES (0,0,0,0)				    
 
 INSERT INTO Barrio VALUES (1, 'General Paz'),(2,'Nueva Cordoba'), (3, 'Crisol'), (4, 'Centro'), (5,'Cerro')
 
@@ -239,12 +250,3 @@ INSERT INTO Catalogo VALUES (1,1,200,1),
 							(2,4,250,1),
 							(2,5,250,1)
 
-INSERT INTO TipoProducto VALUES (4,'Compuesto','Producto formado por 2 productos',1)
-
-INSERT INTO TipoFactura VALUES (1, 'Electronica'), (2, 'Simplificada')
-
-INSERT INTO Estado (ID) VALUES (0)
-
-INSERT INTO Producto (Codigo,Costo,Precio,Estado) VALUES (0,0,0,0)
-
-INSERT INTO Plantas (Codigo,Precio,Estado) VALUES (0,0,0)
