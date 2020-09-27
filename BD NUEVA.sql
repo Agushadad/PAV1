@@ -183,6 +183,16 @@ CREATE TABLE Canje (ID INT,
 
 ALTER TABLE Producto ADD CONSTRAINT id_composicion_producto_fk FOREIGN KEY (Composicion) REFERENCES Composicion(ID)
 
+INSERT INTO Composicion (ID, Cod_Prod_Componente, Cod_Prod_Compuesto) VALUES (0,0,0)
+
+INSERT INTO TipoFactura (ID) VALUES (0)
+
+INSERT INTO TipoDoc (ID) VALUES (0)
+
+INSERT INTO Cliente (NroDoc, Estado, TipoDoc,Nombre,Apellido) VALUES (0,0,0,'','')
+
+INSERT INTO Factura (Nro_Factura,Tipo_Factura,TipoDoc,NroDoc) VALUES (0,0,0,0)
+
 INSERT INTO Estado VALUES (1, 'Activo'), (2, 'Inactivo')					    
 
 INSERT INTO Barrio VALUES (1, 'General Paz'),(2,'Nueva Cordoba'), (3, 'Crisol'), (4, 'Centro'), (5,'Cerro')

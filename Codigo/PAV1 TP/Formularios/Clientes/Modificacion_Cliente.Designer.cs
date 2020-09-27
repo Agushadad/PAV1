@@ -312,6 +312,7 @@
             // 
             // cmb_LocalidadCliente
             // 
+            this.cmb_LocalidadCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_LocalidadCliente.FormattingEnabled = true;
             this.cmb_LocalidadCliente.Location = new System.Drawing.Point(121, 210);
             this.cmb_LocalidadCliente.Name = "cmb_LocalidadCliente";
@@ -328,6 +329,7 @@
             // 
             // cmb_BarrioCliente
             // 
+            this.cmb_BarrioCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_BarrioCliente.FormattingEnabled = true;
             this.cmb_BarrioCliente.Location = new System.Drawing.Point(121, 247);
             this.cmb_BarrioCliente.Name = "cmb_BarrioCliente";
@@ -345,6 +347,7 @@
             // 
             // cmb_TipoDoc
             // 
+            this.cmb_TipoDoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_TipoDoc.Enabled = false;
             this.cmb_TipoDoc.FormattingEnabled = true;
             this.cmb_TipoDoc.Location = new System.Drawing.Point(411, 111);
@@ -362,6 +365,7 @@
             // 
             // cmb_Estado
             // 
+            this.cmb_Estado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_Estado.FormattingEnabled = true;
             this.cmb_Estado.Location = new System.Drawing.Point(411, 146);
             this.cmb_Estado.Name = "cmb_Estado";

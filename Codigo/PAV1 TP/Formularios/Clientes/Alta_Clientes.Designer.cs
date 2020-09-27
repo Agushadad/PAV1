@@ -313,6 +313,7 @@ namespace PAV1_TP.Formularios.Clientes
             // 
             // cmb_TipoDocCliente
             // 
+            this.cmb_TipoDocCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_TipoDocCliente.FormattingEnabled = true;
             this.cmb_TipoDocCliente.Location = new System.Drawing.Point(411, 114);
             this.cmb_TipoDocCliente.Name = "cmb_TipoDocCliente";
@@ -329,6 +330,7 @@ namespace PAV1_TP.Formularios.Clientes
             // 
             // cmb_LocalidadCliente
             // 
+            this.cmb_LocalidadCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_LocalidadCliente.FormattingEnabled = true;
             this.cmb_LocalidadCliente.Location = new System.Drawing.Point(121, 215);
             this.cmb_LocalidadCliente.Name = "cmb_LocalidadCliente";
@@ -345,6 +347,7 @@ namespace PAV1_TP.Formularios.Clientes
             // 
             // cmb_BarrioCliente
             // 
+            this.cmb_BarrioCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_BarrioCliente.FormattingEnabled = true;
             this.cmb_BarrioCliente.Location = new System.Drawing.Point(121, 247);
             this.cmb_BarrioCliente.Name = "cmb_BarrioCliente";
@@ -362,16 +365,17 @@ namespace PAV1_TP.Formularios.Clientes
             // 
             // cmb_EstadoCliente
             // 
+            this.cmb_EstadoCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_EstadoCliente.FormattingEnabled = true;
             this.cmb_EstadoCliente.Location = new System.Drawing.Point(412, 147);
             this.cmb_EstadoCliente.Name = "cmb_EstadoCliente";
             this.cmb_EstadoCliente.Pp_Display = "Descripcion";
-            this.cmb_EstadoCliente.Pp_mensajeError = null;
+            this.cmb_EstadoCliente.Pp_mensajeError = "No selecciono un estado";
             this.cmb_EstadoCliente.Pp_nombre_campo = null;
             this.cmb_EstadoCliente.Pp_nombre_tabla = null;
             this.cmb_EstadoCliente.Pp_seleccionado = false;
             this.cmb_EstadoCliente.Pp_Tabla = "Estado";
-            this.cmb_EstadoCliente.Pp_validable = false;
+            this.cmb_EstadoCliente.Pp_validable = true;
             this.cmb_EstadoCliente.Pp_Value = "ID";
             this.cmb_EstadoCliente.Size = new System.Drawing.Size(167, 21);
             this.cmb_EstadoCliente.TabIndex = 5;

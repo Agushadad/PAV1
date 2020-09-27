@@ -34,7 +34,7 @@ namespace PAV1_TP.Negocios
 
 		public DataTable TodosLosClientes()
 		{
-			string sql = "SELECT * FROM Cliente";
+			string sql = "SELECT * FROM Cliente WHERE Estado > 0";
 			DataTable tabla = new DataTable();
 			tabla = _BD.Consulta(sql);
 			return tabla;

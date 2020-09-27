@@ -95,6 +95,21 @@ namespace PAV1_TP.Formularios.Empleados
                 this.txt_Contraseña2.PasswordChar = '*';
             }
         }
+
+        private void cmb_EstadoEmp_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmb_LocalidadEmpleado_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmb_BarrioEmpleado_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

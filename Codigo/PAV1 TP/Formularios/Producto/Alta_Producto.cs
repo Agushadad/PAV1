@@ -75,8 +75,8 @@ namespace PAV1_TP.Formularios.Producto
                         _epc.Cant_Compuesto = txt_CantProdComp1.Text;
                         _epc.Cant_Componente = txt_CantProdComp2.Text;
 
-                        producto.Insertar(_ep);
                         producto.InsertarCompuesto(_epc);
+                        producto.Insertar(_ep);
                         break;
                        
 
@@ -92,7 +92,7 @@ namespace PAV1_TP.Formularios.Producto
                     _ep.Tipo = cmb_TipoProducto.SelectedValue.ToString();
                     _ep.Stock = txt_StockProducto.Text;
                     _ep.Costo = txt_CostoProd.Text;
-                    _ep.Composicion = null;
+                    _ep.Composicion = 0.ToString();
                     _ep.Precio = txt_PrecioProducto.Text;
                     _ep.Estado = cmb_EstadoProd.SelectedValue.ToString();
 

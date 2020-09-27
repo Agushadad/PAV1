@@ -304,6 +304,7 @@
             // 
             // cmb_EstadoEmp
             // 
+            this.cmb_EstadoEmp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_EstadoEmp.FormattingEnabled = true;
             this.cmb_EstadoEmp.Location = new System.Drawing.Point(407, 157);
             this.cmb_EstadoEmp.Name = "cmb_EstadoEmp";
@@ -320,6 +321,7 @@
             // 
             // cmb_LocalidadEmpleado
             // 
+            this.cmb_LocalidadEmpleado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_LocalidadEmpleado.FormattingEnabled = true;
             this.cmb_LocalidadEmpleado.Location = new System.Drawing.Point(110, 208);
             this.cmb_LocalidadEmpleado.Name = "cmb_LocalidadEmpleado";
@@ -337,6 +339,7 @@
             // 
             // cmb_BarrioEmpleado
             // 
+            this.cmb_BarrioEmpleado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_BarrioEmpleado.FormattingEnabled = true;
             this.cmb_BarrioEmpleado.Location = new System.Drawing.Point(110, 242);
             this.cmb_BarrioEmpleado.Name = "cmb_BarrioEmpleado";

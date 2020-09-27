@@ -195,6 +195,7 @@
             // 
             // cmb_EstadoEmp
             // 
+            this.cmb_EstadoEmp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_EstadoEmp.FormattingEnabled = true;
             this.cmb_EstadoEmp.Location = new System.Drawing.Point(399, 164);
             this.cmb_EstadoEmp.Name = "cmb_EstadoEmp";
@@ -208,6 +209,7 @@
             this.cmb_EstadoEmp.Pp_Value = "ID";
             this.cmb_EstadoEmp.Size = new System.Drawing.Size(191, 21);
             this.cmb_EstadoEmp.TabIndex = 73;
+            this.cmb_EstadoEmp.SelectedIndexChanged += new System.EventHandler(this.cmb_EstadoEmp_SelectedIndexChanged);
             // 
             // label13
             // 
@@ -233,6 +235,7 @@
             // 
             // cmb_LocalidadEmpleado
             // 
+            this.cmb_LocalidadEmpleado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_LocalidadEmpleado.FormattingEnabled = true;
             this.cmb_LocalidadEmpleado.Location = new System.Drawing.Point(102, 215);
             this.cmb_LocalidadEmpleado.Name = "cmb_LocalidadEmpleado";
@@ -246,9 +249,11 @@
             this.cmb_LocalidadEmpleado.Pp_Value = "ID";
             this.cmb_LocalidadEmpleado.Size = new System.Drawing.Size(191, 21);
             this.cmb_LocalidadEmpleado.TabIndex = 74;
+            this.cmb_LocalidadEmpleado.SelectedIndexChanged += new System.EventHandler(this.cmb_LocalidadEmpleado_SelectedIndexChanged);
             // 
             // cmb_BarrioEmpleado
             // 
+            this.cmb_BarrioEmpleado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_BarrioEmpleado.FormattingEnabled = true;
             this.cmb_BarrioEmpleado.Location = new System.Drawing.Point(102, 249);
             this.cmb_BarrioEmpleado.Name = "cmb_BarrioEmpleado";
@@ -262,6 +267,7 @@
             this.cmb_BarrioEmpleado.Pp_Value = "ID";
             this.cmb_BarrioEmpleado.Size = new System.Drawing.Size(191, 21);
             this.cmb_BarrioEmpleado.TabIndex = 75;
+            this.cmb_BarrioEmpleado.SelectedIndexChanged += new System.EventHandler(this.cmb_BarrioEmpleado_SelectedIndexChanged);
             // 
             // label5
             // 

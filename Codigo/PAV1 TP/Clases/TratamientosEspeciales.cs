@@ -27,6 +27,18 @@ namespace PAV1_TP.Clases
                         }
                     }
                 }
+                if (item.GetType().Name == "ComboBox01")
+                {
+                    if (((ComboBox01)item).Pp_validable == true)
+                    {
+                        if (((ComboBox01)item).Text == "")
+                        {
+                            MessageBox.Show(((ComboBox01)item).Pp_mensajeError);
+                            ((TextBox01)item).Focus();
+                            return Validacion.incorrecta;
+                        }
+                    }
+                }
             }
             return Validacion.correcta;
         }

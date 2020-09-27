@@ -194,6 +194,7 @@
             // 
             // cmb_TipoProducto
             // 
+            this.cmb_TipoProducto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_TipoProducto.FormattingEnabled = true;
             this.cmb_TipoProducto.Location = new System.Drawing.Point(411, 53);
             this.cmb_TipoProducto.Name = "cmb_TipoProducto";
@@ -320,6 +321,7 @@
             // 
             // cmb_EstadoProd
             // 
+            this.cmb_EstadoProd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_EstadoProd.FormattingEnabled = true;
             this.cmb_EstadoProd.Location = new System.Drawing.Point(409, 212);
             this.cmb_EstadoProd.Name = "cmb_EstadoProd";

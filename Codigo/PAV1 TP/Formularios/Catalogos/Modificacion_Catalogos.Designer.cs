@@ -127,6 +127,7 @@
             // 
             // cmb_EstadoCatalogo
             // 
+            this.cmb_EstadoCatalogo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_EstadoCatalogo.FormattingEnabled = true;
             this.cmb_EstadoCatalogo.Location = new System.Drawing.Point(80, 240);
             this.cmb_EstadoCatalogo.Name = "cmb_EstadoCatalogo";

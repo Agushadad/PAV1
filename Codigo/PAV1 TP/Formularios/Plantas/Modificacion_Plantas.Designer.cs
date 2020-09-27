@@ -187,6 +187,7 @@
             // 
             // cmb_EstadoPlanta
             // 
+            this.cmb_EstadoPlanta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_EstadoPlanta.FormattingEnabled = true;
             this.cmb_EstadoPlanta.Location = new System.Drawing.Point(160, 195);
             this.cmb_EstadoPlanta.Name = "cmb_EstadoPlanta";
@@ -203,6 +204,7 @@
             // 
             // cmb_TipoPlanta
             // 
+            this.cmb_TipoPlanta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmb_TipoPlanta.FormattingEnabled = true;
             this.cmb_TipoPlanta.Location = new System.Drawing.Point(392, 69);
             this.cmb_TipoPlanta.Name = "cmb_TipoPlanta";
