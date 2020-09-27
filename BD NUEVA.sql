@@ -214,10 +214,10 @@ INSERT INTO TipoProducto VALUES (1,'Accesorio','Piezas parar adornar las plantas
 								(3, 'Fertilizante','Distintos tipos de fertilizantes',1)
 
 
-INSERT INTO Producto VALUES (1,'Maceta',1,200,40,80,NULL,1),
-							(2,'Tierra negra',2,100,20,30,NULL,1),
-							(3,'Tierra profesional',2,100,40,60,NULL,1),
-							(4, 'Abono universal',3,70,65,100,NULL,1)
+INSERT INTO Producto VALUES (1,'Maceta',1,200,40,80,0,1),
+							(2,'Tierra negra',2,100,20,30,0,1),
+							(3,'Tierra profesional',2,100,40,60,0,1),
+							(4, 'Abono universal',3,70,65,100,0,1)
 
 INSERT INTO Composicion VALUES (1,1,2,1,1)
 
