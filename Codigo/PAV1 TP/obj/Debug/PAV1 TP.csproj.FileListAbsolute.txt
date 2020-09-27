@@ -207,3 +207,7 @@ C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_T
 C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Puntos.Puntos.resources
 C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Puntos.Frm_CargaPuntos.resources
 C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Puntos.ConsultaPuntos.resources
+C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Cargas.Consulta_Factura.resources
+C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Cargas.Frm_DetalleFactura.resources
+C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Puntos.ConsultaPuntos.resources
+C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Puntos.Frm_CargaPuntos.resources

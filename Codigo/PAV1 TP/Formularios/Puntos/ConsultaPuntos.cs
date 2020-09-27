@@ -30,9 +30,27 @@ namespace PAV1_TP.Formularios.Puntos
         {
             if (tratamiento.validar(this.Controls) == TratamientosEspeciales.Validacion.correcta)
             {
-                DataTable tabla = new DataTable();
-                tabla = puntos.PuntosTotales(txt_NroDoc.Text);
-                txt_Puntos.Text = tabla.Rows[0]["Puntos"].ToString();
+                DataTable tablaCl = new DataTable();
+                tablaCl = puntos.RecuperarCliente(txt_NroDoc.Text.ToString());
+                if (tablaCl.Rows.Count > 0)
+                {
+                    DataTable tablafac = new DataTable();
+                    tablafac = puntos.RecuperarFactura(txt_NroDoc.Text.ToString());
+                    if (tablafac.Rows.Count > 0)
+                    {
+                        DataTable tabla = new DataTable();
+                        tabla = puntos.PuntosTotales(txt_NroDoc.Text);
+                        txt_Puntos.Text = tabla.Rows[0]["Puntos"].ToString();
+                    }
+                    else
+                    {
+                        txt_Puntos.Text = "0";
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("No se encontró el cliente");
+                }
             }
         }
 

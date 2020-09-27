@@ -23,23 +23,34 @@ namespace PAV1_TP.Formularios.Puntos
 
         private void button3_Click(object sender, EventArgs e)
         {
+            DataTable tablaFac = new DataTable();
+            tablaFac = puntos.RecuperarDNI(txt_NroFactura.Text.ToString());
             if (txt_NroFactura.Text != "")
             {
-                DataTable tabla = new DataTable();
-                tabla = puntos.PuntosASumar(txt_NroFactura.Text);
-                txt_Puntos.Text = tabla.Rows[0]["Puntos"].ToString();
-                DataTable tabla2 = new DataTable();
-                tabla2 = puntos.RecuperarDNI(txt_NroFactura.Text);
-                txt_NroDoc.Text = tabla2.Rows[0]["NroDoc"].ToString();
-                txt_TipoDoc.Text = tabla2.Rows[0]["TipoDoc"].ToString();
-                txt_Fecha.Text = tabla2.Rows[0]["Fecha"].ToString();
-                DataTable tabla3 = new DataTable();
-                tabla3 = puntos.RecuperarTipoFactura(txt_NroFactura.Text);
-                txt_TipoFactura.Text = tabla3.Rows[0]["Tipo_Factura"].ToString();
+                if (tablaFac.Rows.Count > 0)
+                {
+                    DataTable tabla = new DataTable();
+                    tabla = puntos.PuntosASumar(txt_NroFactura.Text);
+                    txt_Puntos.Text = tabla.Rows[0]["Puntos"].ToString();
+                    DataTable tabla2 = new DataTable();
+                    tabla2 = puntos.RecuperarDNI(txt_NroFactura.Text);
+                    txt_NroDoc.Text = tabla2.Rows[0]["NroDoc"].ToString();
+                    txt_TipoDoc.Text = tabla2.Rows[0]["TipoDoc"].ToString();
+                    txt_Fecha.Text = tabla2.Rows[0]["Fecha"].ToString();
+                    DataTable tabla3 = new DataTable();
+                    tabla3 = puntos.RecuperarTipoFactura(txt_NroFactura.Text);
+                    txt_TipoFactura.Text = tabla3.Rows[0]["Tipo_Factura"].ToString();
+                }
+                else
+                {
+                    MessageBox.Show("La factura ingresada no existe");
+                    txt_NroFactura.Focus();
+                }
             }
             else
             {
                 MessageBox.Show("No ingreso Nro Factura");
+                txt_NroFactura.Focus();
             }
         }
 

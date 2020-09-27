@@ -16,6 +16,7 @@ using PAV1_TP.Formularios.Empleados;
 using PAV1_TP.Formularios.Producto;
 using PAV1_TP.Formularios.Clientes;
 using PAV1_TP.Formularios.Cargas;
+using PAV1_TP.Formularios.Puntos;
 
 namespace PAV1_TP
 {
@@ -121,6 +122,12 @@ namespace PAV1_TP
         {
             Form Factura = new Consulta_Factura();
             Factura.Show();
+        }
+
+        private void btn_Puntos_Click(object sender, EventArgs e)
+        {
+            Form Puntos = new ConsultaPuntos();
+            Puntos.Show();
         }
     }
 }

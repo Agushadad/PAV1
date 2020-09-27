@@ -12,6 +12,11 @@ namespace PAV1_TP.Negocios
     class Ng_Puntos
     {
         Be_BaseDeDatos _BD = new Be_BaseDeDatos();
+        public DataTable RecuperarCliente(string DNI)
+        {
+            DataTable tabla = new DataTable();
+            return tabla = _BD.Consulta("SELECT * FROM Cliente WHERE NroDoc = " + DNI);
+        }
 
         public DataTable RecuperarDNI(string NroFactura)
         {
@@ -43,6 +48,11 @@ namespace PAV1_TP.Negocios
         {
             DataTable tabla = new DataTable();
             return tabla = _BD.Consulta("SELECT sum(Cantidad) as Puntos FROM Puntos WHERE NroDoc = '" + DNI + "'");
+        }
+        public DataTable RecuperarFactura(string DNI)
+        {
+            DataTable tabla = new DataTable();
+            return tabla = _BD.Consulta("SELECT * FROM Puntos WHERE NroDoc = '" + DNI + "'");
         }
 
     }
