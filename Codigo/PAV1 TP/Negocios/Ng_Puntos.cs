@@ -28,6 +28,11 @@ namespace PAV1_TP.Negocios
             DataTable tabla = new DataTable();
             return tabla = _BD.Consulta("SELECT * FROM Factura WHERE Nro_Factura = '" + NroFactura + "'");
         }
+        public DataTable RecuperarIdFactura()
+        {
+            DataTable tabla = new DataTable();
+            return tabla = _BD.Consulta("SELECT MAX(Nro_Factura) as ID FROM Factura");
+        }
         public DataTable PuntosASumar(string NroFactura)
         {
             DataTable tabla = new DataTable();

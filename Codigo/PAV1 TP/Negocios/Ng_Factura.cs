@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PAV1_TP.Formularios.Puntos;
 using System.Data;
 
 namespace PAV1_TP.Negocios

@@ -129,5 +129,10 @@ namespace PAV1_TP
             Form Puntos = new ConsultaPuntos();
             Puntos.Show();
         }
+
+        private void btn_Canjes_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

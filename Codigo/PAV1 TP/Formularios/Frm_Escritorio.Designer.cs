@@ -238,6 +238,7 @@
             this.btn_Canjes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btn_Canjes.TabIndex = 20;
             this.btn_Canjes.TabStop = false;
+            this.btn_Canjes.Click += new System.EventHandler(this.btn_Canjes_Click);
             // 
             // menuStrip1
             // 

@@ -32,7 +32,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btn_Cargar = new System.Windows.Forms.Button();
             this.btn_Cancelar = new System.Windows.Forms.Button();
             this.btn_Consultar = new System.Windows.Forms.Button();
             this.txt_Puntos = new PAV1_TP.Clases.TextBox01();
@@ -70,23 +69,13 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Puntos";
             // 
-            // btn_Cargar
-            // 
-            this.btn_Cargar.Location = new System.Drawing.Point(32, 163);
-            this.btn_Cargar.Name = "btn_Cargar";
-            this.btn_Cargar.Size = new System.Drawing.Size(93, 23);
-            this.btn_Cargar.TabIndex = 5;
-            this.btn_Cargar.Text = "Cargar Puntos";
-            this.btn_Cargar.UseVisualStyleBackColor = true;
-            this.btn_Cargar.Click += new System.EventHandler(this.btn_Cargar_Click);
-            // 
             // btn_Cancelar
             // 
-            this.btn_Cancelar.Location = new System.Drawing.Point(131, 163);
+            this.btn_Cancelar.Location = new System.Drawing.Point(171, 108);
             this.btn_Cancelar.Name = "btn_Cancelar";
             this.btn_Cancelar.Size = new System.Drawing.Size(75, 23);
             this.btn_Cancelar.TabIndex = 6;
-            this.btn_Cancelar.Text = "Cancelar";
+            this.btn_Cancelar.Text = "Salir";
             this.btn_Cancelar.UseVisualStyleBackColor = true;
             this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
             // 
@@ -129,15 +118,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(258, 213);
+            this.ClientSize = new System.Drawing.Size(257, 143);
             this.Controls.Add(this.btn_Consultar);
             this.Controls.Add(this.btn_Cancelar);
-            this.Controls.Add(this.btn_Cargar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txt_Puntos);
             this.Controls.Add(this.txt_NroDoc);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "ConsultaPuntos";
             this.Text = "ConsultaPuntos";
             this.ResumeLayout(false);
@@ -152,7 +141,6 @@
         private Clases.TextBox01 txt_Puntos;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btn_Cargar;
         private System.Windows.Forms.Button btn_Cancelar;
         private System.Windows.Forms.Button btn_Consultar;
     }

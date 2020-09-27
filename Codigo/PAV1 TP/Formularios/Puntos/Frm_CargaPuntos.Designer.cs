@@ -30,12 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_CargaPuntos));
             this.btn_Cargar = new System.Windows.Forms.Button();
-            this.btn_Cancelar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.btn_Buscar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txt_TipoFactura = new PAV1_TP.Clases.TextBox01();
@@ -49,23 +47,13 @@
             // 
             // btn_Cargar
             // 
-            this.btn_Cargar.Location = new System.Drawing.Point(112, 167);
+            this.btn_Cargar.Location = new System.Drawing.Point(154, 167);
             this.btn_Cargar.Name = "btn_Cargar";
             this.btn_Cargar.Size = new System.Drawing.Size(75, 23);
             this.btn_Cargar.TabIndex = 4;
             this.btn_Cargar.Text = "Cargar";
             this.btn_Cargar.UseVisualStyleBackColor = true;
             this.btn_Cargar.Click += new System.EventHandler(this.btn_Cargar_Click);
-            // 
-            // btn_Cancelar
-            // 
-            this.btn_Cancelar.Location = new System.Drawing.Point(202, 167);
-            this.btn_Cancelar.Name = "btn_Cancelar";
-            this.btn_Cancelar.Size = new System.Drawing.Size(75, 23);
-            this.btn_Cancelar.TabIndex = 5;
-            this.btn_Cancelar.Text = "Cancelar";
-            this.btn_Cancelar.UseVisualStyleBackColor = true;
-            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
             // 
             // label1
             // 
@@ -107,16 +95,6 @@
             this.label4.Size = new System.Drawing.Size(40, 13);
             this.label4.TabIndex = 9;
             this.label4.Text = "Puntos";
-            // 
-            // btn_Buscar
-            // 
-            this.btn_Buscar.Location = new System.Drawing.Point(375, 60);
-            this.btn_Buscar.Name = "btn_Buscar";
-            this.btn_Buscar.Size = new System.Drawing.Size(75, 23);
-            this.btn_Buscar.TabIndex = 10;
-            this.btn_Buscar.Text = "Buscar";
-            this.btn_Buscar.UseVisualStyleBackColor = true;
-            this.btn_Buscar.Click += new System.EventHandler(this.button3_Click);
             // 
             // label5
             // 
@@ -176,6 +154,8 @@
             // 
             // txt_NroFactura
             // 
+            this.txt_NroFactura.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_NroFactura.Enabled = false;
             this.txt_NroFactura.Location = new System.Drawing.Point(269, 62);
             this.txt_NroFactura.Name = "txt_NroFactura";
             this.txt_NroFactura.Pp_mensajeError = "No ingreso Nro Factura";
@@ -225,25 +205,25 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(489, 202);
+            this.ClientSize = new System.Drawing.Size(403, 202);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txt_TipoDoc);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txt_TipoFactura);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txt_Fecha);
-            this.Controls.Add(this.btn_Buscar);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btn_Cancelar);
             this.Controls.Add(this.btn_Cargar);
             this.Controls.Add(this.txt_Puntos);
             this.Controls.Add(this.txt_NroFactura);
             this.Controls.Add(this.txt_NroDoc);
+            this.MaximizeBox = false;
             this.Name = "Frm_CargaPuntos";
             this.Text = "Frm_CargaPuntos";
+            this.Load += new System.EventHandler(this.Frm_CargaPuntos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -255,12 +235,10 @@
         private Clases.TextBox01 txt_NroFactura;
         private Clases.TextBox01 txt_Puntos;
         private System.Windows.Forms.Button btn_Cargar;
-        private System.Windows.Forms.Button btn_Cancelar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btn_Buscar;
         private System.Windows.Forms.Label label5;
         private Clases.TextBox01 txt_Fecha;
         private System.Windows.Forms.Label label6;

@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PAV1_TP.Formularios.Puntos;
 
 namespace PAV1_TP.Formularios.Cargas
 {
@@ -136,7 +137,9 @@ namespace PAV1_TP.Formularios.Cargas
                         {
                             factura.insertar(cmb_TipoFactura.SelectedValue.ToString(), factura.NuevoId(), 1.ToString(), txt_NroDoc.Text,
                             ltxt_Fecha.Pp_Text, txt_IdEmpleado.Text, txt_Monto.Text, grid_Plantas, grid_Productos);
-                            this.Close();
+                            Form CargaPuntos = new Frm_CargaPuntos();
+                            CargaPuntos.Show();
+                            
                         }
                         else
                         {
