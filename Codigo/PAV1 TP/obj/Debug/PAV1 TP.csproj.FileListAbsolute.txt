@@ -205,3 +205,5 @@ C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_T
 C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Producto.TipoProducto.Alta_TipoProducto.resources
 C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Producto.TipoProducto.Modificacion_TipoProducto.resources
 C:\Users\Maria Candelaria\Desktop\programaF\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Puntos.Puntos.resources
+C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Puntos.Frm_CargaPuntos.resources
+C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Puntos.ConsultaPuntos.resources

@@ -11,30 +11,39 @@ namespace PAV1_TP.Negocios
 {
     class Ng_Puntos
     {
-
         Be_BaseDeDatos _BD = new Be_BaseDeDatos();
 
-        public string Insertar(Es_Puntos datos)
+        public DataTable RecuperarDNI(string NroFactura)
+        {
+            DataTable tabla = new DataTable();
+            return tabla = _BD.Consulta("SELECT * FROM Factura WHERE Nro_Factura = '" + NroFactura + "'");
+        }
+        public DataTable RecuperarTipoFactura(string NroFactura)
+        {
+            DataTable tabla = new DataTable();
+            return tabla = _BD.Consulta("SELECT * FROM Factura WHERE Nro_Factura = '" + NroFactura + "'");
+        }
+        public DataTable PuntosASumar(string NroFactura)
+        {
+            DataTable tabla = new DataTable();
+            return tabla = _BD.Consulta("SELECT sum(Monto/20) as Puntos FROM Factura WHERE Nro_Factura = '" + NroFactura + "'");
+        }
+        public void insertar(string TipoDoc, string NroDoc, string Tipo_Factura, string Nro_Factura, string Cantidad,
+                           string fecha)
         {
 
-            string sqlInsert = @"INSERT INTO Puntos(TipoDoc, NroDoc, Tipo_Factura, Nro_Factura, Cantidad, Fecha) VALUES (";
-            sqlInsert += "'" + datos.Tpo_DNI + "'";
-            sqlInsert += ",'" + datos.Nro_DNI + "'";
-            sqlInsert += ", '" + datos.Tpo_Fact + "'";
-            sqlInsert += ", '" + datos.Nro_Fact + "'";
-            sqlInsert += ", '" + datos.Cant_Ptos + "'";
-            sqlInsert += ", '" + datos.Fecha + "')";
+            string sqlInsert = "INSERT INTO Puntos (TipoDoc, NroDoc, Tipo_Factura, Nro_Factura, Cantidad, fecha) VALUES (";
+            sqlInsert += TipoDoc + ", " + NroDoc + ", " + Tipo_Factura + ", " + Nro_Factura + ", " + Cantidad + ", "
+                            + _BD.FormatearDato(fecha, "DateTime") + ")";
 
-            return _BD.Insertar(sqlInsert);
+            _BD.Insertar(sqlInsert);
 
         }
-
-        public DataTable Recuperar_DNI(string Nro_DNI)
+        public DataTable PuntosTotales(string DNI)
         {
-            return _BD.Consulta("SELECT * FROM Cliente WHERE NroDoc = " + Nro_DNI);
+            DataTable tabla = new DataTable();
+            return tabla = _BD.Consulta("SELECT sum(Cantidad) as Puntos FROM Puntos WHERE NroDoc = '" + DNI + "'");
         }
-        public DataTable Recuperar_Factura(string Nro_Fact)
-        {
-            return _BD.Consulta("SELECT * FROM Factura WHERE Nro_Factura = " + Nro_Fact);
-        }
+
     }
+}
