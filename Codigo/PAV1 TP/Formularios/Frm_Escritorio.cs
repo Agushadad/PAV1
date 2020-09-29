@@ -133,8 +133,14 @@ namespace PAV1_TP
 
         private void btn_Canjes_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
 			Form Canjes = new Frm_Generar_Canje();
 			Canjes.Show();
 		}
+=======
+            Form canje = new Frm_Canje();
+            canje.Show();
+        }
+>>>>>>> c769fd675e6fb27a68afb2282aaba15606d0c15c
     }
 }

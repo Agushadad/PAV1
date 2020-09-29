@@ -66,11 +66,19 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Clases\TratamientosEspeciales.cs" />
+<<<<<<< HEAD
     <Compile Include="Formularios\Canje\Frm_Generar_Canje.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\Canje\Frm_Generar_Canje.Designer.cs">
       <DependentUpon>Frm_Generar_Canje.cs</DependentUpon>
+=======
+    <Compile Include="Formularios\Canje\Frm_Canje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Canje\Frm_Canje.Designer.cs">
+      <DependentUpon>Frm_Canje.cs</DependentUpon>
+>>>>>>> c769fd675e6fb27a68afb2282aaba15606d0c15c
     </Compile>
     <Compile Include="Formularios\Cargas\Consulta_Factura.cs">
       <SubType>Form</SubType>
@@ -285,8 +293,13 @@
     <EmbeddedResource Include="Clases\LabelText01.resx">
       <DependentUpon>LabelText01.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="Formularios\Canje\Frm_Generar_Canje.resx">
       <DependentUpon>Frm_Generar_Canje.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="Formularios\Canje\Frm_Canje.resx">
+      <DependentUpon>Frm_Canje.cs</DependentUpon>
+>>>>>>> c769fd675e6fb27a68afb2282aaba15606d0c15c
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Cargas\Consulta_Factura.resx">
       <DependentUpon>Consulta_Factura.cs</DependentUpon>

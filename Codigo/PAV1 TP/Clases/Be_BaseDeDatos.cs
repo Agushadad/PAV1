@@ -170,6 +170,13 @@ namespace PAV1_TP.Clases
             tabla = Consulta(sql);
             return tabla.Rows[0][0].ToString();
         }
+        public string FechaHora()
+        {
+            string sql = "select GETDATE()";
+            DataTable tabla = new DataTable();
+            tabla = Consulta(sql);
+            return tabla.Rows[0][0].ToString();
+        }
 
     }
 }

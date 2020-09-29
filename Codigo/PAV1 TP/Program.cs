@@ -14,6 +14,7 @@ using PAV1_TP.Formularios.Clientes;
 using PAV1_TP.Formularios.Producto.TipoProducto;
 using PAV1_TP.Formularios.Cargas;
 using PAV1_TP.Formularios.Puntos;
+using PAV1_TP.Formularios.Canje;
 
 namespace PAV1_TP
 {
