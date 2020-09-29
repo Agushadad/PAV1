@@ -27,7 +27,7 @@ namespace PAV1_TP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_GenerarFactura());
+            Application.Run(new Frm_Escritorio());
             
 
 
