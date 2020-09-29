@@ -19,7 +19,12 @@ namespace PAV1_TP.Negocios
             DataTable tabla = new DataTable();
             return tabla = _BD.Consulta("SELECT * FROM Cliente WHERE NroDoc = '" + dni + "'");
         }
-        
+        public DataTable RecuperarTipoDoc(string dni)
+        {
+            DataTable tabla = new DataTable();
+            return tabla = _BD.Consulta("SELECT * FROM Cliente WHERE NroDoc = '" + dni + "'");
+        }
+
         public DataTable RecuperarEmp(string ID)
         {
             DataTable tabla = new DataTable();
@@ -51,7 +56,7 @@ namespace PAV1_TP.Negocios
         }
         public DataTable Buscar_Todas_Facturas()
         {
-            string sql = "SELECT * FROM Factura";
+            string sql = "SELECT * FROM Factura WHERE Tipo_Factura > 0";
             DataTable tabla = new DataTable();
             tabla = _BD.Consulta(sql);
             return tabla;

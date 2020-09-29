@@ -64,6 +64,12 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Clases\TratamientosEspeciales.cs" />
+    <Compile Include="Formularios\Canje\Frm_Canje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Canje\Frm_Canje.Designer.cs">
+      <DependentUpon>Frm_Canje.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Cargas\Consulta_Factura.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -261,6 +267,7 @@
     <Compile Include="Negocios\EstructurasNegocios\Es_Puntos.cs" />
     <Compile Include="Negocios\EstructurasNegocios\Es_TipoPlanta.cs" />
     <Compile Include="Negocios\EstructurasNegocios\Es_TipoProducto.cs" />
+    <Compile Include="Negocios\Ng_Canje.cs" />
     <Compile Include="Negocios\Ng_Cliente.cs" />
     <Compile Include="Negocios\Ng_Factura.cs" />
     <Compile Include="Negocios\Ng_Planta.cs" />
@@ -275,6 +282,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Clases\LabelText01.resx">
       <DependentUpon>LabelText01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Canje\Frm_Canje.resx">
+      <DependentUpon>Frm_Canje.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Cargas\Consulta_Factura.resx">
       <DependentUpon>Consulta_Factura.cs</DependentUpon>

@@ -135,7 +135,7 @@ CREATE TABLE Puntos (TipoDoc INT,
 					Cantidad INT
 					CONSTRAINT CANTIDAD NOT NULL,
 					Fecha DATE,
-					CONSTRAINT id_puntos_pk PRIMARY KEY (TipoDoc, NroDoc, Nro_Factura,Tipo_Factura),
+					CONSTRAINT id_puntos_pk PRIMARY KEY (TipoDoc, NroDoc, Nro_Factura,Tipo_Factura, Fecha),
 					CONSTRAINT doc_puntos_fk FOREIGN KEY (TipoDoc, NroDoc) REFERENCES Cliente(TipoDoc, NroDoc),
 					CONSTRAINT puntos_factura_fk FOREIGN KEY (Tipo_Factura, Nro_Factura) REFERENCES Factura(Tipo_Factura, Nro_Factura))
 

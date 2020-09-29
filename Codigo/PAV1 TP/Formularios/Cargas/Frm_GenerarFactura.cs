@@ -23,6 +23,7 @@ namespace PAV1_TP.Formularios.Cargas
         Ng_Planta planta = new Ng_Planta();
         Ng_Cliente cliente = new Ng_Cliente();
         Es_Cliente clientes = new Es_Cliente();
+        string tipoDoc { get; set; }
         public Frm_GenerarFactura()
         {
             InitializeComponent();
@@ -129,13 +130,17 @@ namespace PAV1_TP.Formularios.Cargas
                 tabla = factura.RecuperarCliente(txt_NroDoc.Text.ToString());
                 DataTable tabla2 = new DataTable();
                 tabla2 = factura.RecuperarEmp(txt_IdEmpleado.Text.ToString());
+                DataTable tabla3 = new DataTable();
+                tabla3 = factura.RecuperarTipoDoc(txt_NroDoc.Text.ToString());
+                tipoDoc = tabla3.Rows[0]["TipoDoc"].ToString();
+
                 if (tabla.Rows.Count > 0)
                 {
                     if (tabla2.Rows.Count > 0)
                     {
                         if (txt_Monto.Text.ToString() != "")
                         {
-                            factura.insertar(cmb_TipoFactura.SelectedValue.ToString(), factura.NuevoId(), 1.ToString(), txt_NroDoc.Text,
+                            factura.insertar(cmb_TipoFactura.SelectedValue.ToString(), factura.NuevoId(), tipoDoc, txt_NroDoc.Text,
                             ltxt_Fecha.Pp_Text, txt_IdEmpleado.Text, txt_Monto.Text, grid_Plantas, grid_Productos);
                             Form CargaPuntos = new Frm_CargaPuntos();
                             CargaPuntos.Show();

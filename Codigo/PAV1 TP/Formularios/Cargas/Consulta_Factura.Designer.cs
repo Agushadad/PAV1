@@ -168,12 +168,13 @@
             // chk_Todos
             // 
             this.chk_Todos.AutoSize = true;
+            this.chk_Todos.BackColor = System.Drawing.Color.Transparent;
             this.chk_Todos.Location = new System.Drawing.Point(102, 41);
             this.chk_Todos.Name = "chk_Todos";
             this.chk_Todos.Size = new System.Drawing.Size(56, 17);
             this.chk_Todos.TabIndex = 2;
             this.chk_Todos.Text = "Todas";
-            this.chk_Todos.UseVisualStyleBackColor = true;
+            this.chk_Todos.UseVisualStyleBackColor = false;
             // 
             // Consulta_Factura
             // 

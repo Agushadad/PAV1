@@ -34,9 +34,9 @@
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(0, 6);
+            this.label1.Location = new System.Drawing.Point(3, 6);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 17);
+            this.label1.Size = new System.Drawing.Size(40, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "label1";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -45,9 +45,9 @@
             // 
             this.txt_Dato.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_Dato.Location = new System.Drawing.Point(81, 3);
+            this.txt_Dato.Location = new System.Drawing.Point(49, 3);
             this.txt_Dato.Name = "txt_Dato";
-            this.txt_Dato.Size = new System.Drawing.Size(147, 20);
+            this.txt_Dato.Size = new System.Drawing.Size(131, 20);
             this.txt_Dato.TabIndex = 3;
             // 
             // LabelText01
@@ -58,7 +58,7 @@
             this.Controls.Add(this.txt_Dato);
             this.Controls.Add(this.label1);
             this.Name = "LabelText01";
-            this.Size = new System.Drawing.Size(237, 30);
+            this.Size = new System.Drawing.Size(221, 30);
             this.ResumeLayout(false);
             this.PerformLayout();
 

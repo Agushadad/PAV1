@@ -17,6 +17,7 @@ using PAV1_TP.Formularios.Producto;
 using PAV1_TP.Formularios.Clientes;
 using PAV1_TP.Formularios.Cargas;
 using PAV1_TP.Formularios.Puntos;
+using PAV1_TP.Formularios.Canje;
 
 namespace PAV1_TP
 {
@@ -132,7 +133,8 @@ namespace PAV1_TP
 
         private void btn_Canjes_Click(object sender, EventArgs e)
         {
-
+            Form canje = new Frm_Canje();
+            canje.Show();
         }
     }
 }
