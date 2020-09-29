@@ -206,6 +206,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(403, 202);
+            this.ControlBox = false;
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txt_TipoDoc);
             this.Controls.Add(this.label6);
@@ -221,6 +222,7 @@
             this.Controls.Add(this.txt_NroFactura);
             this.Controls.Add(this.txt_NroDoc);
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Frm_CargaPuntos";
             this.Text = "Frm_CargaPuntos";
             this.Load += new System.EventHandler(this.Frm_CargaPuntos_Load);

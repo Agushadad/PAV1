@@ -183,7 +183,7 @@ namespace PAV1_TP.Formularios.Cargas
         private void button3_Click(object sender, EventArgs e)
         {
             int total = 0;
-            if (grid_Plantas.Rows.Count == 0 || grid_Productos.Rows.Count == 0)
+            if (grid_Plantas.Rows.Count == 0 && grid_Productos.Rows.Count == 0)
             {
                 MessageBox.Show("No se selecciono ninguna planta o producto");
             }

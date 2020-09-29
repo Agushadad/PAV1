@@ -32,8 +32,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.Grid_Canje = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_Consultar = new System.Windows.Forms.Button();
             this.btn_Cancelar = new System.Windows.Forms.Button();
@@ -43,6 +41,9 @@
             this.txt_NroDoc = new PAV1_TP.Clases.TextBox01();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_Fecha = new PAV1_TP.Clases.TextBox01();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.Grid_Canje)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,21 +74,12 @@
             this.Grid_Canje.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Grid_Canje.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
+            this.Nombre,
             this.Column2});
             this.Grid_Canje.Location = new System.Drawing.Point(227, 72);
             this.Grid_Canje.Name = "Grid_Canje";
-            this.Grid_Canje.Size = new System.Drawing.Size(246, 144);
+            this.Grid_Canje.Size = new System.Drawing.Size(303, 144);
             this.Grid_Canje.TabIndex = 12;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Id Planta";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Puntos necesarios";
-            this.Column2.Name = "Column2";
             // 
             // label4
             // 
@@ -101,7 +93,7 @@
             // 
             // btn_Consultar
             // 
-            this.btn_Consultar.Location = new System.Drawing.Point(383, 47);
+            this.btn_Consultar.Location = new System.Drawing.Point(455, 45);
             this.btn_Consultar.Name = "btn_Consultar";
             this.btn_Consultar.Size = new System.Drawing.Size(75, 23);
             this.btn_Consultar.TabIndex = 14;
@@ -150,7 +142,7 @@
             this.txt_IdCatalogo.Pp_nombre_campo = null;
             this.txt_IdCatalogo.Pp_nombre_tabla = null;
             this.txt_IdCatalogo.Pp_validable = true;
-            this.txt_IdCatalogo.Size = new System.Drawing.Size(71, 20);
+            this.txt_IdCatalogo.Size = new System.Drawing.Size(102, 20);
             this.txt_IdCatalogo.TabIndex = 19;
             // 
             // txt_NroDoc
@@ -186,13 +178,28 @@
             this.txt_Fecha.Size = new System.Drawing.Size(113, 20);
             this.txt_Fecha.TabIndex = 22;
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Id Planta";
+            this.Column1.Name = "Column1";
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Puntos necesarios";
+            this.Column2.Name = "Column2";
+            // 
             // Frm_Canje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(483, 228);
+            this.ClientSize = new System.Drawing.Size(542, 228);
             this.Controls.Add(this.txt_Fecha);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btn_Fehca);
@@ -227,10 +234,11 @@
         private System.Windows.Forms.Button btn_Cancelar;
         private System.Windows.Forms.Button btn_Registrar;
         private Clases.TextBox01 txt_IdCatalogo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.Button btn_Fehca;
         private System.Windows.Forms.Label label2;
         private Clases.TextBox01 txt_Fecha;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
     }
 }

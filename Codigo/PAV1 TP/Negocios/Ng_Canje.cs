@@ -18,6 +18,15 @@ namespace PAV1_TP.Negocios
             tabla = _BD.Consulta(sql);
             return tabla;
         }
+
+        public DataTable RecuperarPlanta(string id)
+        {
+            string sql = "SELECT * FROM Plantas WHERE Codigo = " + id;
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+            return tabla;
+
+        }
         public string NuevoId()
         {
             DataTable tabla = new DataTable();

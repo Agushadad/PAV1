@@ -50,12 +50,16 @@ namespace PAV1_TP.Formularios.Canje
         private void Cargar_Grilla(DataTable tabla)
         {
             Grid_Canje.Rows.Clear();
+            DataTable tablaplanta = new DataTable();
+            
 
             for (int i = 0; i < tabla.Rows.Count; i++)
             {
+                tablaplanta = canje.RecuperarPlanta(tabla.Rows[i]["Id_Planta"].ToString());
                 Grid_Canje.Rows.Add();
                 Grid_Canje.Rows[i].Cells[0].Value = tabla.Rows[i]["Id_Planta"].ToString();
-                Grid_Canje.Rows[i].Cells[1].Value = tabla.Rows[i]["Puntos_Necesarios"].ToString();
+                Grid_Canje.Rows[i].Cells[1].Value = tablaplanta.Rows[0]["NombreComun"].ToString();
+                Grid_Canje.Rows[i].Cells[2].Value = tabla.Rows[i]["Puntos_Necesarios"].ToString();
 
             }
         }
@@ -77,7 +81,7 @@ namespace PAV1_TP.Formularios.Canje
                     tabla2 = canje.PuntosTotales(txt_NroDoc.Text);
                     PuntosTotales = tabla2.Rows[0]["Puntos"].ToString();
                     IdPlanta = Grid_Canje.CurrentRow.Cells[0].Value.ToString();
-                    Puntos = Grid_Canje.CurrentRow.Cells[1].Value.ToString();
+                    Puntos = Grid_Canje.CurrentRow.Cells[2].Value.ToString();
                     TipoDoc = tabla.Rows[0]["TipoDoc"].ToString();
                     if (PuntosTotales == "")
                     {

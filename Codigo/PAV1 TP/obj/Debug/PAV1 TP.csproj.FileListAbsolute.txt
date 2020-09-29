@@ -380,3 +380,4 @@ C:\Users\agush\Desktop\Pav1_Copia\Codigo\PAV1 TP\obj\Debug\PAV1 TP.csproj.CoreCo
 C:\Users\agush\Desktop\Pav1_Copia\Codigo\PAV1 TP\obj\Debug\PAV1 TP.exe
 C:\Users\agush\Desktop\Pav1_Copia\Codigo\PAV1 TP\obj\Debug\PAV1 TP.pdb
 C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Canje.Frm_Canje.resources
+C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Canje.Frm_Canje.resources
