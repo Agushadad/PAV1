@@ -128,11 +128,14 @@ namespace PAV1_TP.Formularios.Cargas
             {
                 DataTable tabla = new DataTable();
                 tabla = factura.RecuperarCliente(txt_NroDoc.Text.ToString());
+
                 DataTable tabla2 = new DataTable();
                 tabla2 = factura.RecuperarEmp(txt_IdEmpleado.Text.ToString());
+
                 DataTable tabla3 = new DataTable();
                 tabla3 = factura.RecuperarTipoDoc(txt_NroDoc.Text.ToString());
-                tipoDoc = tabla3.Rows[0]["TipoDoc"].ToString();
+
+                
 
                 if (tabla.Rows.Count > 0)
                 {
@@ -140,6 +143,7 @@ namespace PAV1_TP.Formularios.Cargas
                     {
                         if (txt_Monto.Text.ToString() != "")
                         {
+                            tipoDoc = tabla3.Rows[0]["TipoDoc"].ToString();
                             factura.insertar(cmb_TipoFactura.SelectedValue.ToString(), factura.NuevoId(), tipoDoc, txt_NroDoc.Text,
                             ltxt_Fecha.Pp_Text, txt_IdEmpleado.Text, txt_Monto.Text, grid_Plantas, grid_Productos);
                             Form CargaPuntos = new Frm_CargaPuntos();
@@ -148,7 +152,7 @@ namespace PAV1_TP.Formularios.Cargas
                         }
                         else
                         {
-                            MessageBox.Show("Falta ingresar el monto");
+                            MessageBox.Show("Falta calcular el monto");
                             
                         }
                     }
@@ -174,6 +178,20 @@ namespace PAV1_TP.Formularios.Cargas
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int total = 0;
+            foreach (DataGridViewRow row in grid_Plantas.Rows)
+            {
+                total += (Convert.ToInt32(row.Cells[3].Value) * Convert.ToInt32(row.Cells[2].Value)); 
+            }
+            foreach (DataGridViewRow row in grid_Productos.Rows)
+            {
+                total += (Convert.ToInt32(row.Cells[3].Value) * Convert.ToInt32(row.Cells[2].Value));
+            }
+            txt_Monto.Text = total.ToString();
         }
     }
 }

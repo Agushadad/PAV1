@@ -123,6 +123,7 @@ namespace PAV1_TP.Negocios
             sqlUpdate += ", Nro_Calle = " + _BD.FormatearDato(datos.Nro_Calle, "String");
             sqlUpdate += ", Localidad = " + _BD.FormatearDato(datos.Localidad, "String");
             sqlUpdate += ", Barrio = " + _BD.FormatearDato(datos.Barrio, "String");
+            sqlUpdate += ", Estado = " + _BD.FormatearDato(datos.Estado, "String");
             sqlUpdate += " WHERE ID = " + datos.ID;
             
            

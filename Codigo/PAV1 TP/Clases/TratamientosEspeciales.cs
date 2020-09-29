@@ -51,7 +51,7 @@ namespace PAV1_TP.Clases
             }
             catch (Exception)
             {
-                MessageBox.Show("Formanto de fecha incorrecto");
+                MessageBox.Show("Formato de fecha incorrecto");
                 return Validacion.incorrecta;
             }
         }

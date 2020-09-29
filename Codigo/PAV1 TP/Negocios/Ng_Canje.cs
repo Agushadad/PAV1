@@ -1,67 +1,54 @@
-﻿using PAV1_TP.Clases;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
-using System.Windows.Forms;
+using PAV1_TP.Clases;
 
 namespace PAV1_TP.Negocios
 {
-	class Ng_Canje
-	{
-
-		Be_BaseDeDatos _BD = new Be_BaseDeDatos(); 
-		public DataTable RecuperarCliente(string dni)
-		{
-			DataTable tabla = new DataTable();
-			return tabla = _BD.Consulta("SELECT * FROM Cliente WHERE NroDoc = '" + dni + "'");
-
-		}
-
-		public DataTable RecuperarPuntosCliente(string dni)
-		{
-			DataTable tabla = new DataTable();
-			return tabla = _BD.Consulta("SELECT * FROM Puntos WHERE NroDoc = '" + dni + "'");
-
-		}
-
-		public DataTable RecuperarPuntosPlanta(string Id_Planta)
-		{
-			DataTable tabla = new DataTable();
-			return tabla = _BD.Consulta("SELECT C.Puntos_Necesarios FROM Catalogo C WHERE Id_Planta = '" + Id_Planta + "'");
-		}
-
-		public string NuevoId()
-		{
-			DataTable tabla = new DataTable();
-			string sql = "SELECT * FROM Canje";
-			tabla = _BD.Consulta(sql);
-			int id = tabla.Rows.Count;
-			int NuevaId = id + 1;
-			return NuevaId.ToString();
-		}
-
-		public void insertar(string ID, string TipoDoc, string NroDoc, string Id_Catalogo,
-							string Id_Planta, string Fecha, string Puntos_a_Restar)
-		{
-			_BD.IniciarTransaccion();
-
-			string canjear_puntos = "INSERT INTO Canje (ID, TipoDoc, NroDoc, Id_Catalogo, Id_Planta, Fecha, Puntos_a_Restar) VALUES (";
-			canjear_puntos += ID + ", " + TipoDoc + ", " + NroDoc + ", " + Id_Catalogo + ", " + Id_Planta + " , "
-							+ _BD.FormatearDato(Fecha, "DateTime") + ", " + Puntos_a_Restar + ")";
-			_BD.Insertar(canjear_puntos);
-
-			if (_BD.CerrarTransaccion() == Be_BaseDeDatos.EstadoTransaccion.correcta)
-			{
-				MessageBox.Show("Se canjearon los puntos correctamente");
-			}
-			else
-			{
-				MessageBox.Show("No fue posible realizar el canje");
-			}
-
-		}
-	}
+    class Ng_Canje
+    {
+        Be_BaseDeDatos _BD = new Be_BaseDeDatos();
+        public DataTable BuscarCatalogo(string ID)
+        {
+            string sql = "SELECT * FROM Catalogo WHERE ID = " + ID;
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+            return tabla;
+        }
+        public string NuevoId()
+        {
+            DataTable tabla = new DataTable();
+            string sql = "SELECT * FROM Canje";
+            tabla = _BD.Consulta(sql);
+            int id = tabla.Rows.Count;
+            int NuevaId = id + 1;
+            return NuevaId.ToString();
+        }
+        public DataTable RecuperarTipoDoc(string DNI)
+        {
+            string sql = "SELECT * FROM Cliente WHERE NroDoc = " + DNI;
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+            return tabla;
+        }
+        public void insertarCanje(string ID, string TipoDoc, string NroDoc, string Id_Catalogo,
+                             string Id_Planta, string Fecha, string Puntos_Necesarios)
+        {
+            string insert_Canje = "INSERT INTO Canje (ID, TipoDoc, NroDoc, Id_Catalogo, Id_Planta, Fecha, Puntos_a_Restar) VALUES (";
+            insert_Canje += ID + ", " + TipoDoc + ", " + NroDoc + ", " + Id_Catalogo + ", "
+                             + Id_Planta + ",  CONVERT(VARCHAR(30), GETDATE(), 113) , " + Puntos_Necesarios + ")";
+            _BD.Insertar(insert_Canje);
+        }
+        public void insertarPuntos(string TipoDoc, string NroDoc, string Tipo_Factura, string Nro_Factura,
+                                       string puntos, string Fecha)
+        {
+            string insert_Puntos = "INSERT INTO Puntos (TipoDoc, NroDoc, Tipo_Factura, Nro_Factura, Cantidad, Fecha) VALUES (";
+            insert_Puntos += TipoDoc + ", " + NroDoc + ", " + Tipo_Factura + ", "
+                             + Nro_Factura + ", " + "-" + puntos + ",  CONVERT(VARCHAR(30), GETDATE(), 113))";
+            _BD.Insertar(insert_Puntos);
+        }
+    }
 }

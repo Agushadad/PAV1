@@ -28,6 +28,7 @@ namespace PAV1_TP.Formularios.Empleados
         private void Modificacion_Empleado_Load(object sender, EventArgs e)
         {
             cmb_BarrioEmpleado.Cargar();
+            cmb_EstadoEmp.Cargar();
             cmb_LocalidadEmpleado.Cargar();
             DataTable tabla = new DataTable();
             tabla = Empleado.Recuperar_Usuario(ID);
@@ -41,6 +42,7 @@ namespace PAV1_TP.Formularios.Empleados
             txt_NCalleEmpleado.Text = tabla.Rows[0]["Nro_Calle"].ToString();
             cmb_BarrioEmpleado.SelectedValue = int.Parse(tabla.Rows[0]["Barrio"].ToString());
             cmb_LocalidadEmpleado.SelectedValue = int.Parse(tabla.Rows[0]["Localidad"].ToString());
+            cmb_EstadoEmp.SelectedValue = int.Parse(tabla.Rows[0]["Estado"].ToString());
 
         }
 
@@ -64,7 +66,7 @@ namespace PAV1_TP.Formularios.Empleados
                     _ee.Localidad = cmb_LocalidadEmpleado.SelectedValue.ToString();
                     _ee.Barrio = cmb_BarrioEmpleado.SelectedValue.ToString();
                     _ee.Contraseña = txt_Contraseña.Text;
-                    _ee.Estado = "Activo";
+                    _ee.Estado = cmb_EstadoEmp.SelectedValue.ToString();
 
                     Empleado.Modificar(_ee);
                     MessageBox.Show("Empleado modificado correctamente");

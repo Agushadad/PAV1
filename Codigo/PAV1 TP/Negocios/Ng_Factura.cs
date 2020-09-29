@@ -37,7 +37,7 @@ namespace PAV1_TP.Negocios
             string sql = "SELECT * FROM Factura";
             tabla = _BD.Consulta(sql);
             int id = tabla.Rows.Count;
-            int NuevaId = id + 1;
+            int NuevaId = id;
             return NuevaId.ToString();
         }
         public DataTable Buscar_Factura(string NroDoc)

@@ -170,7 +170,7 @@ namespace PAV1_TP.Negocios
 
         public void Eliminar(string ID)
         {
-            _BD.Modificar("UPDATE Producto SET Estado = 2 WHERE  ID = " + ID);
+            _BD.Modificar("UPDATE Producto SET Estado = 2 WHERE  Codigo = " + ID);
         }
 
     } 

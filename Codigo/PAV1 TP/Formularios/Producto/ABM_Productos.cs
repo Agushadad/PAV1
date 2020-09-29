@@ -102,7 +102,7 @@ namespace PAV1_TP.Formularios.Producto
             }
             else
             {
-                string ID = Grid_Producto.CurrentRow.Cells[0].ToString();
+                string ID = Grid_Producto.CurrentRow.Cells[0].Value.ToString();
                 DialogResult dialogResult = MessageBox.Show("¿Esta seguro que desea eliminar el usuario seleccionado?", "IMPORTANTE", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
                 if (dialogResult == DialogResult.Yes)
                 {
