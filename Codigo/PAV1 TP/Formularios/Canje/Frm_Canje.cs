@@ -73,6 +73,8 @@ namespace PAV1_TP.Formularios.Canje
             canje.insertarCanje(canje.NuevoId(), TipoDoc, txt_NroDoc.Text, txt_IdCatalogo.Text,
                                 IdPlanta, txt_Fecha.Text, Puntos);
             canje.insertarPuntos(TipoDoc, txt_NroDoc.Text, 0.ToString(), 0.ToString(), Puntos, txt_Fecha.Text);
+            MessageBox.Show("Canje efectuado correctamente y puntos actualizados");
+            this.Close();
         }
     }
 }
