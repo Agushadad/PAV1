@@ -183,15 +183,22 @@ namespace PAV1_TP.Formularios.Cargas
         private void button3_Click(object sender, EventArgs e)
         {
             int total = 0;
-            foreach (DataGridViewRow row in grid_Plantas.Rows)
+            if (grid_Plantas.Rows.Count == 0 || grid_Productos.Rows.Count == 0)
             {
-                total += (Convert.ToInt32(row.Cells[3].Value) * Convert.ToInt32(row.Cells[2].Value)); 
+                MessageBox.Show("No se selecciono ninguna planta o producto");
             }
-            foreach (DataGridViewRow row in grid_Productos.Rows)
+            else
             {
-                total += (Convert.ToInt32(row.Cells[3].Value) * Convert.ToInt32(row.Cells[2].Value));
+                foreach (DataGridViewRow row in grid_Plantas.Rows)
+                {
+                    total += (Convert.ToInt32(row.Cells[3].Value) * Convert.ToInt32(row.Cells[2].Value));
+                }
+                foreach (DataGridViewRow row in grid_Productos.Rows)
+                {
+                    total += (Convert.ToInt32(row.Cells[3].Value) * Convert.ToInt32(row.Cells[2].Value));
+                }
+                txt_Monto.Text = total.ToString();
             }
-            txt_Monto.Text = total.ToString();
         }
     }
 }

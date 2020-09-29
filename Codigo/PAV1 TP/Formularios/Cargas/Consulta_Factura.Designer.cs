@@ -49,7 +49,11 @@
             // 
             // grid_Factura
             // 
+            this.grid_Factura.AllowUserToAddRows = false;
             this.grid_Factura.AllowUserToDeleteRows = false;
+            this.grid_Factura.AllowUserToOrderColumns = true;
+            this.grid_Factura.AllowUserToResizeColumns = false;
+            this.grid_Factura.AllowUserToResizeRows = false;
             this.grid_Factura.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grid_Factura.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Tipo_Factura,

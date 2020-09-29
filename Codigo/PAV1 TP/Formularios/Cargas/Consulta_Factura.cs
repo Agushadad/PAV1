@@ -68,9 +68,9 @@ namespace PAV1_TP.Formularios.Cargas
         private void btn_DetalleFactura_Click(object sender, EventArgs e)
         {
             Frm_DetalleFactura Modif = new Frm_DetalleFactura();
-            if (grid_Factura.CurrentCell.Value == null)
+            if (grid_Factura.Rows.Count == 0)
             {
-                MessageBox.Show("No se selecciono ningun empleado para modificar");
+                MessageBox.Show("No se selecciono ninguna factura para consultar");
             }
             else
             {

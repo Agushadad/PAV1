@@ -32,12 +32,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.Grid_Canje = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_Consultar = new System.Windows.Forms.Button();
             this.btn_Cancelar = new System.Windows.Forms.Button();
             this.btn_Registrar = new System.Windows.Forms.Button();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_Fehca = new System.Windows.Forms.Button();
             this.txt_IdCatalogo = new PAV1_TP.Clases.TextBox01();
             this.txt_NroDoc = new PAV1_TP.Clases.TextBox01();
@@ -79,6 +79,16 @@
             this.Grid_Canje.Size = new System.Drawing.Size(246, 144);
             this.Grid_Canje.TabIndex = 12;
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Id Planta";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Puntos necesarios";
+            this.Column2.Name = "Column2";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -119,16 +129,6 @@
             this.btn_Registrar.UseVisualStyleBackColor = true;
             this.btn_Registrar.Click += new System.EventHandler(this.btn_Registrar_Click);
             // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Id Planta";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Puntos necesarios";
-            this.Column2.Name = "Column2";
-            // 
             // btn_Fehca
             // 
             this.btn_Fehca.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -146,10 +146,10 @@
             // 
             this.txt_IdCatalogo.Location = new System.Drawing.Point(291, 47);
             this.txt_IdCatalogo.Name = "txt_IdCatalogo";
-            this.txt_IdCatalogo.Pp_mensajeError = null;
+            this.txt_IdCatalogo.Pp_mensajeError = "No se ingreso Id Catalogo";
             this.txt_IdCatalogo.Pp_nombre_campo = null;
             this.txt_IdCatalogo.Pp_nombre_tabla = null;
-            this.txt_IdCatalogo.Pp_validable = false;
+            this.txt_IdCatalogo.Pp_validable = true;
             this.txt_IdCatalogo.Size = new System.Drawing.Size(71, 20);
             this.txt_IdCatalogo.TabIndex = 19;
             // 
@@ -158,9 +158,9 @@
             this.txt_NroDoc.Location = new System.Drawing.Point(60, 42);
             this.txt_NroDoc.Name = "txt_NroDoc";
             this.txt_NroDoc.Pp_mensajeError = null;
-            this.txt_NroDoc.Pp_nombre_campo = null;
+            this.txt_NroDoc.Pp_nombre_campo = "No se ingreso Nro Doc";
             this.txt_NroDoc.Pp_nombre_tabla = null;
-            this.txt_NroDoc.Pp_validable = false;
+            this.txt_NroDoc.Pp_validable = true;
             this.txt_NroDoc.Size = new System.Drawing.Size(100, 20);
             this.txt_NroDoc.TabIndex = 6;
             // 
@@ -176,12 +176,13 @@
             // 
             // txt_Fecha
             // 
+            this.txt_Fecha.Enabled = false;
             this.txt_Fecha.Location = new System.Drawing.Point(60, 72);
             this.txt_Fecha.Name = "txt_Fecha";
-            this.txt_Fecha.Pp_mensajeError = null;
+            this.txt_Fecha.Pp_mensajeError = "No se ingreso la fecha";
             this.txt_Fecha.Pp_nombre_campo = null;
             this.txt_Fecha.Pp_nombre_tabla = null;
-            this.txt_Fecha.Pp_validable = false;
+            this.txt_Fecha.Pp_validable = true;
             this.txt_Fecha.Size = new System.Drawing.Size(113, 20);
             this.txt_Fecha.TabIndex = 22;
             // 
@@ -204,7 +205,9 @@
             this.Controls.Add(this.txt_NroDoc);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "Frm_Canje";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Frm_Canje";
             this.Load += new System.EventHandler(this.Frm_Canje_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Grid_Canje)).EndInit();

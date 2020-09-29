@@ -34,6 +34,11 @@ namespace PAV1_TP.Negocios
             tabla = _BD.Consulta(sql);
             return tabla;
         }
+        public DataTable PuntosTotales(string DNI)
+        {
+            DataTable tabla = new DataTable();
+            return tabla = _BD.Consulta("SELECT sum(Cantidad) as Puntos FROM Puntos WHERE NroDoc = '" + DNI + "'");
+        }
         public void insertarCanje(string ID, string TipoDoc, string NroDoc, string Id_Catalogo,
                              string Id_Planta, string Fecha, string Puntos_Necesarios)
         {
