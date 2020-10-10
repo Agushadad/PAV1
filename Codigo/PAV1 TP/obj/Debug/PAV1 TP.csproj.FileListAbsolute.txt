@@ -551,3 +551,7 @@ C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_T
 C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Reportes.ReportesEmpleados.Frm_ReporteEmpleados.resources
 C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Reportes.ReportesPlantas.Frm_ReportesPlantas.resources
 C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Reportes.ReportesProdcutos.Frm_ReportesProductos.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Reportes.ReportesEmpleados.Frm_ReporteEmpleados.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Reportes.ReportesPlantas.Frm_ReportesPlantas.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Reportes.ReportesProdcutos.Frm_ReportesProductos.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Reportes.ReportesVentas.Frm_ReporteVentas.resources

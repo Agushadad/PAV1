@@ -49,14 +49,17 @@
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listadosReportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listadosReportesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.estadisticasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.btn_Puntos = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.empleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.plantasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ventasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Clientes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Catalogos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Plantas)).BeginInit();
@@ -265,8 +268,7 @@
             // listadosReportesToolStripMenuItem
             // 
             this.listadosReportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.listadosReportesToolStripMenuItem1,
-            this.estadisticasToolStripMenuItem});
+            this.listadosReportesToolStripMenuItem1});
             this.listadosReportesToolStripMenuItem.Name = "listadosReportesToolStripMenuItem";
             this.listadosReportesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.listadosReportesToolStripMenuItem.Text = "Generar";
@@ -274,17 +276,22 @@
             // listadosReportesToolStripMenuItem1
             // 
             this.listadosReportesToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.clientesToolStripMenuItem});
+            this.clientesToolStripMenuItem,
+            this.empleadosToolStripMenuItem,
+            this.plantasToolStripMenuItem,
+            this.productosToolStripMenuItem,
+            this.ventasToolStripMenuItem});
             this.listadosReportesToolStripMenuItem1.Name = "listadosReportesToolStripMenuItem1";
             this.listadosReportesToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.listadosReportesToolStripMenuItem1.Text = "Listados/Reportes";
             this.listadosReportesToolStripMenuItem1.Click += new System.EventHandler(this.listadosReportesToolStripMenuItem1_Click);
             // 
-            // estadisticasToolStripMenuItem
+            // clientesToolStripMenuItem
             // 
-            this.estadisticasToolStripMenuItem.Name = "estadisticasToolStripMenuItem";
-            this.estadisticasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.estadisticasToolStripMenuItem.Text = "Estadísticas";
+            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clientesToolStripMenuItem.Text = "Clientes";
+            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
@@ -350,12 +357,29 @@
             this.label12.Text = "Puntos";
             this.label12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // clientesToolStripMenuItem
+            // empleadosToolStripMenuItem
             // 
-            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.clientesToolStripMenuItem.Text = "Clientes";
-            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
+            this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
+            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.empleadosToolStripMenuItem.Text = "Empleados";
+            // 
+            // plantasToolStripMenuItem
+            // 
+            this.plantasToolStripMenuItem.Name = "plantasToolStripMenuItem";
+            this.plantasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.plantasToolStripMenuItem.Text = "Plantas";
+            // 
+            // productosToolStripMenuItem
+            // 
+            this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
+            this.productosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.productosToolStripMenuItem.Text = "Productos";
+            // 
+            // ventasToolStripMenuItem
+            // 
+            this.ventasToolStripMenuItem.Name = "ventasToolStripMenuItem";
+            this.ventasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ventasToolStripMenuItem.Text = "Ventas";
             // 
             // Frm_Escritorio
             // 
@@ -428,7 +452,6 @@
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listadosReportesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listadosReportesToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem estadisticasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
@@ -436,6 +459,10 @@
         private System.Windows.Forms.PictureBox btn_Puntos;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem empleadosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem plantasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem productosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ventasToolStripMenuItem;
     }
 }
 

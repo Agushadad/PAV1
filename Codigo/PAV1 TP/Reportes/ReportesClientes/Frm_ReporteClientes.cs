@@ -81,20 +81,35 @@ namespace PAV1_TP.Formularios.Reportes
         }
         private void ArmarReporteCliente()
         {
+            
+            
             ReportDataSource Datos = new ReportDataSource("DataSet1", TablaCliente);
             Rv_Clientes.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesClientes.InformeCliente.rdlc";
             ReportParameter[] parametros = new ReportParameter[1];
-            parametros[0] = new ReportParameter("RP01", "Restringido por " + restriccion);
+            if (chk_TodosClientes.Checked == true)
+            {
+                parametros[0] = new ReportParameter("RP01", "Sin restriccion");
+            }
+            else
+            {
+                parametros[0] = new ReportParameter("RP01", "Restringido por " + restriccion);
+            }
+            
             Rv_Clientes.LocalReport.SetParameters(parametros);
             Rv_Clientes.LocalReport.DataSources.Clear();
             Rv_Clientes.LocalReport.DataSources.Add(Datos);
             Rv_Clientes.RefreshReport();
+            
 
         }
         private void btn_Buscar_Click(object sender, EventArgs e)
         {
+            
             BuscarClientes();
             ArmarReporteCliente();
+            restriccion = "";
+
+            
         }
     }
 }

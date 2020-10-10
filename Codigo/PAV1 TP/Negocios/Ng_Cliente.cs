@@ -7,6 +7,7 @@ using System.Data;
 using PAV1_TP.Negocios;
 using PAV1_TP.Clases;
 using PAV1_TP.Negocios.EstructurasNegocios;
+using System.Windows.Forms;
 
 namespace PAV1_TP.Negocios
 {
@@ -46,6 +47,8 @@ namespace PAV1_TP.Negocios
 					sql += " AND Apellido = '" + apellido + "'";
 					sql += " AND NroDoc = " + dni;
 				}
+
+				MessageBox.Show(sql);
 				return tabla = _BD.Consulta(sql);
 			}
 			
