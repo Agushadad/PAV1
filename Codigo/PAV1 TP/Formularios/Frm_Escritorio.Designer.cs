@@ -56,6 +56,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.btn_Puntos = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Clientes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Catalogos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Plantas)).BeginInit();
@@ -267,25 +268,28 @@
             this.listadosReportesToolStripMenuItem1,
             this.estadisticasToolStripMenuItem});
             this.listadosReportesToolStripMenuItem.Name = "listadosReportesToolStripMenuItem";
-            this.listadosReportesToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+            this.listadosReportesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.listadosReportesToolStripMenuItem.Text = "Generar";
             // 
             // listadosReportesToolStripMenuItem1
             // 
+            this.listadosReportesToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clientesToolStripMenuItem});
             this.listadosReportesToolStripMenuItem1.Name = "listadosReportesToolStripMenuItem1";
-            this.listadosReportesToolStripMenuItem1.Size = new System.Drawing.Size(168, 22);
+            this.listadosReportesToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.listadosReportesToolStripMenuItem1.Text = "Listados/Reportes";
+            this.listadosReportesToolStripMenuItem1.Click += new System.EventHandler(this.listadosReportesToolStripMenuItem1_Click);
             // 
             // estadisticasToolStripMenuItem
             // 
             this.estadisticasToolStripMenuItem.Name = "estadisticasToolStripMenuItem";
-            this.estadisticasToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.estadisticasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.estadisticasToolStripMenuItem.Text = "Estadísticas";
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
@@ -316,10 +320,10 @@
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Cooper Black", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(469, 36);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(434, 55);
+            this.label11.Size = new System.Drawing.Size(390, 55);
             this.label11.TabIndex = 29;
             this.label11.Text = "Vivero \"La Cone\"";
             // 
@@ -345,6 +349,13 @@
             this.label12.TabIndex = 31;
             this.label12.Text = "Puntos";
             this.label12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // clientesToolStripMenuItem
+            // 
+            this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clientesToolStripMenuItem.Text = "Clientes";
+            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
             // Frm_Escritorio
             // 
@@ -424,6 +435,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox btn_Puntos;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
     }
 }
 

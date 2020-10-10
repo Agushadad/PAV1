@@ -15,7 +15,41 @@ namespace PAV1_TP.Negocios
 
 		Be_BaseDeDatos _BD = new Be_BaseDeDatos();
 		
+		public DataTable BuscarCliente(bool chk, string nombre, string apellido, string dni)
+        {
+			DataTable tabla = new DataTable();
+			string sql = "SELECT * FROM Cliente WHERE Estado = 1";
+			if (chk == true)
+            {
+				return tabla = _BD.Consulta(sql);
+            }
+			else
+            {
+				if (nombre != "" & apellido == "" & dni== "")
+				{
+					sql += " AND Nombre = '" + nombre + "'";
+				}
 
+				if (nombre == "" & apellido != "" & dni  == "")
+				{
+					sql += " AND Apellido = '" + apellido + "'";
+				}
+
+				if (nombre == "" & apellido == "" & dni != "")
+				{
+					sql += " AND NroDoc = " + dni;
+				}
+
+				if (nombre != "" & apellido != "" & dni != "")
+				{
+					sql += " AND Nombre = '" + nombre + "'";
+					sql += " AND Apellido = '" + apellido + "'";
+					sql += " AND NroDoc = " + dni;
+				}
+				return tabla = _BD.Consulta(sql);
+			}
+			
+		}
 		public DataTable ClientesActivos()
         {
             string sql = "SELECT * FROM Cliente WHERE Estado = 1";

@@ -18,6 +18,7 @@ using PAV1_TP.Formularios.Clientes;
 using PAV1_TP.Formularios.Cargas;
 using PAV1_TP.Formularios.Puntos;
 using PAV1_TP.Formularios.Canje;
+using PAV1_TP.Formularios.Reportes;
 
 namespace PAV1_TP
 {
@@ -135,6 +136,17 @@ namespace PAV1_TP
         {
             Form canje = new Frm_Canje();
             canje.Show();
+        }
+
+        private void listadosReportesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form ReporteClientes = new Frm_ReporteClientes();
+            ReporteClientes.Show();
         }
     }
 }

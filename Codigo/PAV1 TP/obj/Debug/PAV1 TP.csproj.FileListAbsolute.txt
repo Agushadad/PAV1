@@ -381,3 +381,107 @@ C:\Users\agush\Desktop\Pav1_Copia\Codigo\PAV1 TP\obj\Debug\PAV1 TP.exe
 C:\Users\agush\Desktop\Pav1_Copia\Codigo\PAV1 TP\obj\Debug\PAV1 TP.pdb
 C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Canje.Frm_Canje.resources
 C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Canje.Frm_Canje.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\PAV1 TP.exe.config
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\PAV1 TP.exe
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\PAV1 TP.pdb
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1 TP.csprojAssemblyReference.cache
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Clases.LabelText01.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Canje.Frm_Canje.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Cargas.Consulta_Factura.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Cargas.Frm_DetalleFactura.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Cargas.Frm_GenerarFactura.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Catalogos.ABM_Catalogos.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Catalogos.Alta_Catalogos.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Catalogos.Modificacion_Catalogos.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Clientes.ABM_Clientes.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Clientes.Alta_Clientes.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Clientes.Modificacion_Cliente.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Empleados.ABM_Empleados.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Empleados.Alta_Empleado.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Empleados.Modificacion_Empleado.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Frm_Login.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Frm_Escritorio.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Plantas.ABM_Plantas.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Plantas.Alta_Plantas.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Plantas.Modificacion_Plantas.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Plantas.TipoPlanta.ABM_TipoPlanta.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Plantas.TipoPlanta.Alta_TipoPlanta.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Plantas.TipoPlanta.Modificacion_TipoPlanta.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Producto.ABM_Productos.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Producto.Alta_Producto.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Producto.Modificacion_Producto.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Producto.TipoProducto.ABM_TipoProducto.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Producto.TipoProducto.Alta_TipoProducto.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Producto.TipoProducto.Modificacion_TipoProducto.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Proveedor.ABM_Proveedor.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Proveedor.Alta_Proveedor.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Proveedor.Modificacion_Proveedor.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Puntos.ConsultaPuntos.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Puntos.Frm_CargaPuntos.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Reportes.Frm_ReporteClientes.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Properties.Resources.resources
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1 TP.csproj.GenerateResource.cache
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1 TP.csproj.CoreCompileInputs.cache
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1 TP.exe
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1 TP.pdb
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\EnvDTE.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\stdole.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\Microsoft.MSXML.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1 TP.csproj.CopyComplete
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\RdlCompile.cache
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\RdlCompile.compiled
