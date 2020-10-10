@@ -15,6 +15,12 @@ using PAV1_TP.Formularios.Producto.TipoProducto;
 using PAV1_TP.Formularios.Cargas;
 using PAV1_TP.Formularios.Puntos;
 using PAV1_TP.Formularios.Canje;
+using PAV1_TP.Reportes;
+using PAV1_TP.Formularios.Reportes;
+using PAV1_TP.Reportes.ReportesVentas;
+using PAV1_TP.Reportes.ReportesEmpleados;
+using PAV1_TP.Reportes.ReportesPlantas;
+using PAV1_TP.Reportes.ReportesProdcutos;
 
 namespace PAV1_TP
 {
@@ -28,7 +34,7 @@ namespace PAV1_TP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_Escritorio());
+            Application.Run(new Frm_ReporteVentas());
             
 
 

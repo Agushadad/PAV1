@@ -61,6 +61,13 @@ namespace PAV1_TP.Negocios
             tabla = _BD.Consulta(sql);
             return tabla;
         }
+        public DataTable BuscarFacturaXMonto(string Monto)
+        {
+            string sql = "SELECT * FROM Factura WHERE Monto > '" + Monto + "'";
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+            return tabla;
+        }
 
         // metodo para cargar la transaccion
         public void insertar(string Tipo_Factura, string Nro_Factura, string TipoDoc, string NroDoc,

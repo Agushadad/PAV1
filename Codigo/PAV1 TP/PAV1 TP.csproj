@@ -309,6 +309,56 @@
     <Compile Include="Negocios\Ng_TipoProducto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes\ReportesEmpleados\Ds_Empleados.cs">
+      <DependentUpon>Ds_Empleados.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReportesEmpleados\Ds_Empleados.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Empleados.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReportesEmpleados\Frm_ReporteEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReportesEmpleados\Frm_ReporteEmpleados.Designer.cs">
+      <DependentUpon>Frm_ReporteEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReportesPlantas\Ds_Plantas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Plantas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReportesPlantas\Frm_ReportesPlantas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReportesPlantas\Frm_ReportesPlantas.Designer.cs">
+      <DependentUpon>Frm_ReportesPlantas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReportesProductos\Ds_Producots.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Producots.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReportesProductos\Frm_ReportesProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReportesProductos\Frm_ReportesProductos.Designer.cs">
+      <DependentUpon>Frm_ReportesProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReportesVentas\Ds_Ventas.cs">
+      <DependentUpon>Ds_Ventas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReportesVentas\Ds_Ventas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Ventas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReportesVentas\Frm_ReporteVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReportesVentas\Frm_ReporteVentas.Designer.cs">
+      <DependentUpon>Frm_ReporteVentas.cs</DependentUpon>
+    </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="Clases\LabelText01.resx">
       <DependentUpon>LabelText01.cs</DependentUpon>
@@ -422,6 +472,22 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Reportes\ReportesClientes\InformeCliente.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesEmpleados\Frm_ReporteEmpleados.resx">
+      <DependentUpon>Frm_ReporteEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReportesEmpleados\InformeEmpleados.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesPlantas\Frm_ReportesPlantas.resx">
+      <DependentUpon>Frm_ReportesPlantas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReportesPlantas\InformePlantas.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesProductos\Frm_ReportesProductos.resx">
+      <DependentUpon>Frm_ReportesProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReportesProductos\InformeProductos.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesVentas\Frm_ReporteVentas.resx">
+      <DependentUpon>Frm_ReporteVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReportesVentas\InformeVentas.rdlc" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -442,6 +508,50 @@
     </None>
     <None Include="Reportes\ReportesClientes\DatosClientes.xss">
       <DependentUpon>DatosClientes.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\ReportesEmpleados\Ds_Empleados.xsc">
+      <DependentUpon>Ds_Empleados.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\ReportesEmpleados\Ds_Empleados.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Empleados.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\ReportesEmpleados\Ds_Empleados.xss">
+      <DependentUpon>Ds_Empleados.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\ReportesPlantas\Ds_Plantas.xsc">
+      <DependentUpon>Ds_Plantas.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\ReportesPlantas\Ds_Plantas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Plantas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\ReportesPlantas\Ds_Plantas.xss">
+      <DependentUpon>Ds_Plantas.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\ReportesProductos\Ds_Producots.xsc">
+      <DependentUpon>Ds_Producots.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\ReportesProductos\Ds_Producots.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Producots.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\ReportesProductos\Ds_Producots.xss">
+      <DependentUpon>Ds_Producots.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\ReportesVentas\Ds_Ventas.xsc">
+      <DependentUpon>Ds_Ventas.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\ReportesVentas\Ds_Ventas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Ventas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\ReportesVentas\Ds_Ventas.xss">
+      <DependentUpon>Ds_Ventas.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
