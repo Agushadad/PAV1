@@ -26,13 +26,14 @@ namespace PAV1_TP.Reportes.ReportesVentas
         {
 
             //this.reportViewer1.RefreshReport();
-            this.Rv_VentasXMonto.RefreshReport();
+            //this.Rv_VentasXMonto.RefreshReport();
+			//this.Rv_VentasXMes.RefreshReport();
         }
         private void BuscarVentas()
         {
             if (txt_NroDoc.Text == "" && chk_TodasLasVentas.Checked == false)
             {
-                MessageBox.Show("No se realizo seleccion para la busqueda");
+                MessageBox.Show("No se realizó selección para la búsqueda");
                 return;
             }
             if (chk_TodasLasVentas.Checked == true)
@@ -47,11 +48,7 @@ namespace PAV1_TP.Reportes.ReportesVentas
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            BuscarVentas();
-            ArmarReporte();
-        }
+
         private void ArmarReporte()
         {
             ReportDataSource Datos = new ReportDataSource("DataSet1", TablaVentas);
@@ -61,8 +58,16 @@ namespace PAV1_TP.Reportes.ReportesVentas
             Rv_Ventas.LocalReport.DataSources.Clear();
             Rv_Ventas.LocalReport.DataSources.Add(Datos);
             Rv_Ventas.RefreshReport();
-        }
-        private void BuscarPlantaXMonto()
+		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+			BuscarVentas();
+			ArmarReporte();
+		}
+
+
+		private void BuscarPlantaXMonto()
         {
             TablaVentas = factura.BuscarFacturaXMonto(txt_Monto.Text);
             return;
@@ -90,5 +95,57 @@ namespace PAV1_TP.Reportes.ReportesVentas
                 ArmarReporteXMonto();
             }
         }
-    }
+
+
+		private void BuscarVentasPorMes()
+		{
+			if (txt_Mes.Text == "" && check_MayorV.Checked == false && check_MenorV.Checked == false)
+			{
+				MessageBox.Show("No se realizó selección para la búsqueda");
+				return;
+			}
+			if (txt_Mes.Text == "" && (check_MayorV.Checked == true || check_MenorV.Checked == true))
+			{
+				MessageBox.Show("Ingrese un mes");
+				return;
+			}
+			if (txt_Mes.Text != "" && (check_MayorV.Checked == false && check_MenorV.Checked == false))
+			{
+				MessageBox.Show("Seleccione si desea conocer el día con menor y/o mayor venta");
+				return;
+			}
+			if (txt_Mes.Text != "" && check_MayorV.Checked == true && check_MenorV.Checked == true)
+			{
+				TablaVentas = factura.Buscar_MyM_Ventas_Mes(txt_Mes.Text);
+				return;
+			}
+			if (txt_Mes.Text != "" && check_MayorV.Checked == true && check_MenorV.Checked == false)
+			{
+				TablaVentas = factura.Buscar_Mayor_Venta_Mes(txt_Mes.Text);
+				return;
+			}
+			if (txt_Mes.Text != "" && check_MayorV.Checked == false && check_MenorV.Checked == true)
+			{
+				TablaVentas = factura.Buscar_Menor_Venta_Mes(txt_Mes.Text);
+				return;
+			}
+		}
+
+		private void ArmarReportesPorMes()
+		{
+			ReportDataSource Datos = new ReportDataSource("DataSet1", TablaVentas);
+			Rv_VentasXMes.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesVentas.InformeVentas.rdlc";
+			ReportParameter[] parametros = new ReportParameter[1];
+			parametros[0] = new ReportParameter("RP01", "Restringido por " + restriccion);
+			Rv_VentasXMes.LocalReport.DataSources.Clear();
+			Rv_VentasXMes.LocalReport.DataSources.Add(Datos);
+			Rv_VentasXMes.RefreshReport();
+		}
+
+		private void btnBuscar_Click(object sender, EventArgs e)
+		{
+			BuscarVentasPorMes();
+			ArmarReportesPorMes();
+		}
+	}
 }

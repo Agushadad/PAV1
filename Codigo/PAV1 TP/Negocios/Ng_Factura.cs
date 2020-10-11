@@ -31,7 +31,34 @@ namespace PAV1_TP.Negocios
             return tabla = _BD.Consulta("SELECT * FROM Empleado WHERE ID = " + ID);
         }
 
-        public string NuevoId()
+		public DataTable Buscar_Mayor_Venta_Mes(string fecha)
+		{
+			string sql = "";
+			DataTable tabla = new DataTable();
+			tabla = _BD.Consulta(sql);
+			return tabla;
+
+		}
+
+		public DataTable Buscar_Menor_Venta_Mes(string fecha)
+		{
+			string sql = "";
+			DataTable tabla = new DataTable();
+			tabla = _BD.Consulta(sql);
+			return tabla;
+
+		}
+
+		public DataTable Buscar_MyM_Ventas_Mes(string fecha)
+		{
+			string sql = "";
+			DataTable tabla = new DataTable();
+			tabla = _BD.Consulta(sql);
+			return tabla;
+		}
+
+
+		public string NuevoId()
         {
             DataTable tabla = new DataTable();
             string sql = "SELECT * FROM Factura";
