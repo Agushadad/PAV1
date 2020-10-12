@@ -172,5 +172,17 @@ namespace PAV1_TP.Negocios
 			_BD.Modificar(sqlEliminar);
 
 		}
+
+		public DataTable ReporteCMV(string mes)
+		{
+			DataTable tabla = new DataTable();
+			string sql = "SELECT Nombre , Apellido , c.NroDoc , MAX(Monto) as Total FROM Cliente c";
+			sql += "JOIN DetalleFactura d on p.Codigo = d.Id_Planta ";
+			sql += "JOIN Factura f on c.NroDoc = f.NroDoc";
+			sql += "WHERE c.NroDoc != 0";
+			sql += "GROUP BY Nombre, Apellido, c.NroDoc";
+
+			return tabla = _BD.Consulta(sql);
+		}
 	}
 }

@@ -27,7 +27,7 @@ namespace PAV1_TP.Reportes.ReportesVentas
 
             //this.reportViewer1.RefreshReport();
             //this.Rv_VentasXMonto.RefreshReport();
-			//this.Rv_VentasXMes.RefreshReport();
+            //this.Rv_VentasXMes.RefreshReport();
         }
         private void BuscarVentas()
         {
@@ -58,16 +58,16 @@ namespace PAV1_TP.Reportes.ReportesVentas
             Rv_Ventas.LocalReport.DataSources.Clear();
             Rv_Ventas.LocalReport.DataSources.Add(Datos);
             Rv_Ventas.RefreshReport();
-		}
+        }
 
-		private void button1_Click(object sender, EventArgs e)
-		{
-			BuscarVentas();
-			ArmarReporte();
-		}
+        private void button1_Click(object sender, EventArgs e)
+        {
+            BuscarVentas();
+            ArmarReporte();
+        }
 
 
-		private void BuscarPlantaXMonto()
+        private void BuscarPlantaXMonto()
         {
             TablaVentas = factura.BuscarFacturaXMonto(txt_Monto.Text);
             return;
@@ -97,56 +97,56 @@ namespace PAV1_TP.Reportes.ReportesVentas
         }
 
 
-		private void BuscarVentasPorMes()
-		{
-			if (txt_Mes.Text == "" && check_MayorV.Checked == false && check_MenorV.Checked == false)
-			{
-				MessageBox.Show("No se realizó selección para la búsqueda");
-				return;
-			}
-			if (txt_Mes.Text == "" && (check_MayorV.Checked == true || check_MenorV.Checked == true))
-			{
-				MessageBox.Show("Ingrese un mes");
-				return;
-			}
-			if (txt_Mes.Text != "" && (check_MayorV.Checked == false && check_MenorV.Checked == false))
-			{
-				MessageBox.Show("Seleccione si desea conocer el día con menor y/o mayor venta");
-				return;
-			}
-			if (txt_Mes.Text != "" && check_MayorV.Checked == true && check_MenorV.Checked == true)
-			{
-				TablaVentas = factura.Buscar_MyM_Ventas_Mes(txt_Mes.Text);
-				return;
-			}
-			if (txt_Mes.Text != "" && check_MayorV.Checked == true && check_MenorV.Checked == false)
-			{
-				TablaVentas = factura.Buscar_Mayor_Venta_Mes(txt_Mes.Text);
-				return;
-			}
-			if (txt_Mes.Text != "" && check_MayorV.Checked == false && check_MenorV.Checked == true)
-			{
-				TablaVentas = factura.Buscar_Menor_Venta_Mes(txt_Mes.Text);
-				return;
-			}
-		}
+        private void BuscarVentasPorMes()
+        {
+            if (txt_Mes.Text == "" && check_MayorV.Checked == false && check_MenorV.Checked == false)
+            {
+                MessageBox.Show("No se realizó selección para la búsqueda");
+                return;
+            }
+            if (txt_Mes.Text == "" && (check_MayorV.Checked == true || check_MenorV.Checked == true))
+            {
+                MessageBox.Show("Ingrese un mes");
+                return;
+            }
+            if (txt_Mes.Text != "" && (check_MayorV.Checked == false && check_MenorV.Checked == false))
+            {
+                MessageBox.Show("Seleccione si desea conocer el día con menor y/o mayor venta");
+                return;
+            }
+            if (txt_Mes.Text != "" && check_MayorV.Checked == true && check_MenorV.Checked == true)
+            {
+                TablaVentas = factura.Buscar_MyM_Ventas_Mes(txt_Mes.Text);
+                return;
+            }
+            if (txt_Mes.Text != "" && check_MayorV.Checked == true && check_MenorV.Checked == false)
+            {
+                TablaVentas = factura.Buscar_Mayor_Venta_Mes(txt_Mes.Text);
+                return;
+            }
+            if (txt_Mes.Text != "" && check_MayorV.Checked == false && check_MenorV.Checked == true)
+            {
+                TablaVentas = factura.Buscar_Menor_Venta_Mes(txt_Mes.Text);
+                return;
+            }
+        }
 
-		private void ArmarReportesPorMes()
-		{
-			ReportDataSource Datos = new ReportDataSource("DataSet1", TablaVentas);
-			Rv_VentasXMes.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesVentas.InformeVentas.rdlc";
-			ReportParameter[] parametros = new ReportParameter[1];
-			parametros[0] = new ReportParameter("RP01", "Restringido por " + restriccion);
-			Rv_VentasXMes.LocalReport.DataSources.Clear();
-			Rv_VentasXMes.LocalReport.DataSources.Add(Datos);
-			Rv_VentasXMes.RefreshReport();
-		}
+        private void ArmarReportesPorMes()
+        {
+            ReportDataSource Datos = new ReportDataSource("DataSet1", TablaVentas);
+            Rv_VentasXMes.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesVentas.InformeVentas.rdlc";
+            ReportParameter[] parametros = new ReportParameter[1];
+            parametros[0] = new ReportParameter("RP01", "Restringido por " + restriccion);
+            Rv_VentasXMes.LocalReport.DataSources.Clear();
+            Rv_VentasXMes.LocalReport.DataSources.Add(Datos);
+            Rv_VentasXMes.RefreshReport();
+        }
 
-		private void btnBuscar_Click(object sender, EventArgs e)
-		{
-			BuscarVentasPorMes();
-			ArmarReportesPorMes();
-		}
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            BuscarVentasPorMes();
+            ArmarReportesPorMes();
+        }
 
         //***********************************************************Reportes Facu**************************************************************
 
@@ -169,14 +169,14 @@ namespace PAV1_TP.Reportes.ReportesVentas
                     tablaPPM = factura.ReportePPM(txt_MesPPM.Text);
                     if (tablaPPM.Rows.Count == 0)
                     {
-                        MessageBox.Show("No hubo ventas en el mes ingresado","ATENCIÓN");
+                        MessageBox.Show("No hubo ventas en el mes ingresado", "ATENCIÓN");
                     }
                 }
 
             }
             else
             {
-                MessageBox.Show("Ingresar Mes","ATENCIÓN");
+                MessageBox.Show("Ingresar Mes", "ATENCIÓN");
                 txt_MesPPM.Focus();
             }
         }
@@ -236,7 +236,7 @@ namespace PAV1_TP.Reportes.ReportesVentas
                     tablaTPPM = factura.ReporteTPPM(txt_MesTPPM.Text);
                     if (tablaTPPM.Rows.Count == 0)
                     {
-                        MessageBox.Show("No hubo ventas en el mes ingresado","ATENCIÓN");
+                        MessageBox.Show("No hubo ventas en el mes ingresado", "ATENCIÓN");
                     }
                 }
 
@@ -244,7 +244,7 @@ namespace PAV1_TP.Reportes.ReportesVentas
             }
             else
             {
-                MessageBox.Show("Ingresar Mes","ATENCIÓN");
+                MessageBox.Show("Ingresar Mes", "ATENCIÓN");
                 txt_MesTPPM.Focus();
             }
         }
@@ -268,6 +268,21 @@ namespace PAV1_TP.Reportes.ReportesVentas
             {
                 ArmarReporteTPPM();
             }
+        }
+        private void ArmarReporteMVM()
+        {
+            ReportDataSource Datos = new ReportDataSource("DataSet1", TablaVentas);
+            Rv_MVM.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesProductos.InformeProductos.rdlc";
+            ReportParameter[] parametros = new ReportParameter[1];
+            parametros[0] = new ReportParameter("RP01", "Restringido por " + restriccion);
+            Rv_MVM.LocalReport.DataSources.Clear();
+            Rv_MVM.LocalReport.DataSources.Add(Datos);
+            Rv_MVM.RefreshReport();
+        }
+
+        private void btn_Buscar_Click(object sender, EventArgs e)
+        {
+            ArmarReporteMVM();
         }
     }
 }

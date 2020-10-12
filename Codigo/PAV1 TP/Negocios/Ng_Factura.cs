@@ -161,5 +161,17 @@ namespace PAV1_TP.Negocios
                 MessageBox.Show("No se grabó nada hubo error");
             }
         }
+        public DataTable ReporteMVM(string mes)
+        {
+            DataTable tabla = new DataTable();
+            string sql = "SELECT Top 1 MONTH(Fecha) as Mes, count(Nro_Factura) as VentasTotales FROM Factura";
+            sql += "WHERE Nro_Factura != 0 ";
+            sql += "GROUP BY MONTH(Fecha)";
+            sql += "ORDER BY VentasTotales desc";
+
+            return tabla = _BD.Consulta(sql);
+
+        }
+
     }
 }

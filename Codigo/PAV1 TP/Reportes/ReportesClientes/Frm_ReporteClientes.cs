@@ -111,5 +111,27 @@ namespace PAV1_TP.Formularios.Reportes
 
             
         }
+        private void BuscarCliente()
+        {
+            TablaCliente = cliente.ClientesActivos();
+            return;
+        }
+        private void ArmarReporteCMV()
+        {
+            ReportDataSource Datos = new ReportDataSource("DataSet1", TablaCliente);
+            Rv_ClienMC.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesProductos.InformeProductos.rdlc";
+            ReportParameter[] parametros = new ReportParameter[1];
+            parametros[0] = new ReportParameter("RP01", "Restringido por " + restriccion);
+            Rv_ClienMC.LocalReport.DataSources.Clear();
+            Rv_ClienMC.LocalReport.DataSources.Add(Datos);
+            Rv_ClienMC.RefreshReport();
+        }
+
+        private void btn_BuscarCliente_Click(object sender, EventArgs e)
+        {
+            BuscarCliente();
+            ArmarReporteCMV();
+        }
+
     }
 }

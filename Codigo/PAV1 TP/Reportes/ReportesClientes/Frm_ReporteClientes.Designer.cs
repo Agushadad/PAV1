@@ -40,18 +40,22 @@
             this.txt_DniCliente = new PAV1_TP.Clases.TextBox01();
             this.txt_NombreCliente = new PAV1_TP.Clases.TextBox01();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btn_BuscarCliente = new System.Windows.Forms.Button();
+            this.Rv_ClienMC = new Microsoft.Reporting.WinForms.ReportViewer();
             this.tbControl1.SuspendLayout();
             this.SinRestricción.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbControl1
             // 
             this.tbControl1.Controls.Add(this.SinRestricción);
             this.tbControl1.Controls.Add(this.tabPage2);
-            this.tbControl1.Location = new System.Drawing.Point(2, 6);
+            this.tbControl1.Location = new System.Drawing.Point(3, 7);
+            this.tbControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbControl1.Name = "tbControl1";
             this.tbControl1.SelectedIndex = 0;
-            this.tbControl1.Size = new System.Drawing.Size(682, 399);
+            this.tbControl1.Size = new System.Drawing.Size(909, 491);
             this.tbControl1.TabIndex = 0;
             // 
             // SinRestricción
@@ -65,10 +69,11 @@
             this.SinRestricción.Controls.Add(this.txt_ApellidoCliente);
             this.SinRestricción.Controls.Add(this.txt_DniCliente);
             this.SinRestricción.Controls.Add(this.txt_NombreCliente);
-            this.SinRestricción.Location = new System.Drawing.Point(4, 22);
+            this.SinRestricción.Location = new System.Drawing.Point(4, 25);
+            this.SinRestricción.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SinRestricción.Name = "SinRestricción";
-            this.SinRestricción.Padding = new System.Windows.Forms.Padding(3);
-            this.SinRestricción.Size = new System.Drawing.Size(674, 373);
+            this.SinRestricción.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SinRestricción.Size = new System.Drawing.Size(901, 462);
             this.SinRestricción.TabIndex = 0;
             this.SinRestricción.Text = "Sin Restricción";
             this.SinRestricción.UseVisualStyleBackColor = true;
@@ -76,17 +81,19 @@
             // Rv_Clientes
             // 
             this.Rv_Clientes.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesClientes.InformeCliente.rdlc";
-            this.Rv_Clientes.Location = new System.Drawing.Point(6, 86);
+            this.Rv_Clientes.Location = new System.Drawing.Point(8, 106);
+            this.Rv_Clientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Rv_Clientes.Name = "Rv_Clientes";
             this.Rv_Clientes.ServerReport.BearerToken = null;
-            this.Rv_Clientes.Size = new System.Drawing.Size(668, 284);
+            this.Rv_Clientes.Size = new System.Drawing.Size(890, 349);
             this.Rv_Clientes.TabIndex = 13;
             // 
             // btn_Buscar
             // 
-            this.btn_Buscar.Location = new System.Drawing.Point(360, 57);
+            this.btn_Buscar.Location = new System.Drawing.Point(480, 70);
+            this.btn_Buscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Buscar.Name = "btn_Buscar";
-            this.btn_Buscar.Size = new System.Drawing.Size(58, 23);
+            this.btn_Buscar.Size = new System.Drawing.Size(77, 28);
             this.btn_Buscar.TabIndex = 12;
             this.btn_Buscar.Text = "Buscar";
             this.btn_Buscar.UseVisualStyleBackColor = true;
@@ -95,9 +102,10 @@
             // chk_TodosClientes
             // 
             this.chk_TodosClientes.AutoSize = true;
-            this.chk_TodosClientes.Location = new System.Drawing.Point(242, 61);
+            this.chk_TodosClientes.Location = new System.Drawing.Point(323, 75);
+            this.chk_TodosClientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chk_TodosClientes.Name = "chk_TodosClientes";
-            this.chk_TodosClientes.Size = new System.Drawing.Size(112, 17);
+            this.chk_TodosClientes.Size = new System.Drawing.Size(146, 21);
             this.chk_TodosClientes.TabIndex = 11;
             this.chk_TodosClientes.Text = "Todos los Clientes";
             this.chk_TodosClientes.UseVisualStyleBackColor = true;
@@ -105,85 +113,115 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(25, 61);
+            this.label3.Location = new System.Drawing.Point(33, 75);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 13);
+            this.label3.Size = new System.Drawing.Size(58, 17);
             this.label3.TabIndex = 8;
             this.label3.Text = "Apellido";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 35);
+            this.label2.Location = new System.Drawing.Point(33, 43);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.Size = new System.Drawing.Size(58, 17);
             this.label2.TabIndex = 9;
             this.label2.Text = "Nombre";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(46, 9);
+            this.label1.Location = new System.Drawing.Point(61, 11);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(23, 13);
+            this.label1.Size = new System.Drawing.Size(29, 17);
             this.label1.TabIndex = 10;
             this.label1.Text = "Dni";
             // 
             // txt_ApellidoCliente
             // 
-            this.txt_ApellidoCliente.Location = new System.Drawing.Point(75, 58);
+            this.txt_ApellidoCliente.Location = new System.Drawing.Point(100, 71);
+            this.txt_ApellidoCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_ApellidoCliente.Name = "txt_ApellidoCliente";
             this.txt_ApellidoCliente.Pp_mensajeError = null;
             this.txt_ApellidoCliente.Pp_nombre_campo = null;
             this.txt_ApellidoCliente.Pp_nombre_tabla = null;
             this.txt_ApellidoCliente.Pp_validable = false;
-            this.txt_ApellidoCliente.Size = new System.Drawing.Size(161, 20);
+            this.txt_ApellidoCliente.Size = new System.Drawing.Size(213, 22);
             this.txt_ApellidoCliente.TabIndex = 5;
             // 
             // txt_DniCliente
             // 
-            this.txt_DniCliente.Location = new System.Drawing.Point(75, 6);
+            this.txt_DniCliente.Location = new System.Drawing.Point(100, 7);
+            this.txt_DniCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_DniCliente.Name = "txt_DniCliente";
             this.txt_DniCliente.Pp_mensajeError = null;
             this.txt_DniCliente.Pp_nombre_campo = null;
             this.txt_DniCliente.Pp_nombre_tabla = null;
             this.txt_DniCliente.Pp_validable = false;
-            this.txt_DniCliente.Size = new System.Drawing.Size(161, 20);
+            this.txt_DniCliente.Size = new System.Drawing.Size(213, 22);
             this.txt_DniCliente.TabIndex = 6;
             // 
             // txt_NombreCliente
             // 
-            this.txt_NombreCliente.Location = new System.Drawing.Point(75, 32);
+            this.txt_NombreCliente.Location = new System.Drawing.Point(100, 39);
+            this.txt_NombreCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_NombreCliente.Name = "txt_NombreCliente";
             this.txt_NombreCliente.Pp_mensajeError = null;
             this.txt_NombreCliente.Pp_nombre_campo = null;
             this.txt_NombreCliente.Pp_nombre_tabla = null;
             this.txt_NombreCliente.Pp_validable = false;
-            this.txt_NombreCliente.Size = new System.Drawing.Size(161, 20);
+            this.txt_NombreCliente.Size = new System.Drawing.Size(213, 22);
             this.txt_NombreCliente.TabIndex = 7;
             // 
             // tabPage2
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Controls.Add(this.Rv_ClienMC);
+            this.tabPage2.Controls.Add(this.btn_BuscarCliente);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(674, 373);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Size = new System.Drawing.Size(901, 462);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Con Restricción";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // btn_BuscarCliente
+            // 
+            this.btn_BuscarCliente.Location = new System.Drawing.Point(24, 18);
+            this.btn_BuscarCliente.Name = "btn_BuscarCliente";
+            this.btn_BuscarCliente.Size = new System.Drawing.Size(93, 29);
+            this.btn_BuscarCliente.TabIndex = 0;
+            this.btn_BuscarCliente.Text = "Buscar";
+            this.btn_BuscarCliente.UseVisualStyleBackColor = true;
+            // 
+            // Rv_ClienMC
+            // 
+            this.Rv_ClienMC.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesClientes.InformeCliente.rdlc";
+            this.Rv_ClienMC.Location = new System.Drawing.Point(3, 66);
+            this.Rv_ClienMC.Margin = new System.Windows.Forms.Padding(4);
+            this.Rv_ClienMC.Name = "Rv_ClienMC";
+            this.Rv_ClienMC.ServerReport.BearerToken = null;
+            this.Rv_ClienMC.Size = new System.Drawing.Size(890, 392);
+            this.Rv_ClienMC.TabIndex = 14;
+            // 
             // Frm_ReporteClientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(683, 406);
+            this.ClientSize = new System.Drawing.Size(911, 500);
             this.Controls.Add(this.tbControl1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Frm_ReporteClientes";
             this.Text = "Reporte de Clientes";
             this.Load += new System.EventHandler(this.Frm_ReporteClientes_Load);
             this.tbControl1.ResumeLayout(false);
             this.SinRestricción.ResumeLayout(false);
             this.SinRestricción.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -202,5 +240,7 @@
         private Clases.TextBox01 txt_DniCliente;
         private Clases.TextBox01 txt_NombreCliente;
         private System.Windows.Forms.TabPage tabPage2;
+        private Microsoft.Reporting.WinForms.ReportViewer Rv_ClienMC;
+        private System.Windows.Forms.Button btn_BuscarCliente;
     }
 }
