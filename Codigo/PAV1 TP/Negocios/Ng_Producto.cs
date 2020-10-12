@@ -176,27 +176,24 @@ namespace PAV1_TP.Negocios
         public DataTable ReporteTPMV(string mes)
         {
             DataTable tabla = new DataTable();
-            string sql = "SELECT Top 1 p.Nombre , sum(Cantidad) as Cantidad FROM Producto p ";
-            sql += "JOIN DetalleFactura d on p.Codigo = d.Id_Planta ";
-            sql += "JOIN TipoProducto Tp on Tp.ID = P.Tipo";
-            sql += "JOIN Factura f on d.Nro_Factura = f.Nro_Factura";
-            sql += "WHERE MONTH(f.Fecha) = " + mes + "AND p.Nombre is not null";
-            sql += "GROUP BY Tp.Nombre";
-            sql += "ORDER BY Cantidad desc";
+            string sql = "SELECT Top 1 Tp.Nombre , sum(Cantidad) as Cantidad FROM Producto p " +
+                "JOIN DetalleFactura d on p.Codigo = d.Id_Planta " +
+                "JOIN TipoProducto Tp on Tp.ID = P.Tipo " +
+                "JOIN Factura f on d.Nro_Factura = f.Nro_Factura " +
+                "WHERE MONTH(f.Fecha) = " + mes + " AND p.Nombre is not null " +
+                "GROUP BY Tp.Nombre " +
+                "ORDER BY Cantidad desc";
 
             return tabla = _BD.Consulta(sql);
         }
         public DataTable ReportePMV(string mes)
         {
             DataTable tabla = new DataTable();
-            string sql = "SELECT Top 1 p.Nombre , sum(Cantidad) as Cantidad FROM Producto p ";
-            sql += "JOIN DetalleFactura d on p.Codigo = d.Id_Planta ";
-            sql += "JOIN TipoProducto Tp on Tp.ID = P.Tipo";
-            sql += "JOIN Factura f on d.Nro_Factura = f.Nro_Factura";
-            sql += "WHERE MONTH(f.Fecha) = " + mes + "AND p.Nombre is not null";
-            sql += "GROUP BY Tp.Nombre";
-            sql += "ORDER BY Cantidad desc";
-
+            string sql = "SELECT Top 1 p.Nombre , sum(Cantidad) as Cantidad " +
+                "FROM Producto p JOIN DetalleFactura d on p.Codigo = d.Id_Planta " +
+                "JOIN TipoProducto Tp on Tp.ID = P.Tipo JOIN Factura f on d.Nro_Factura = f.Nro_Factura " +
+                "WHERE MONTH(f.Fecha) = '" + mes + "' AND p.Nombre is not null " +
+                "GROUP BY p.Nombre ORDER BY Cantidad desc";
             return tabla = _BD.Consulta(sql);
         }
     }

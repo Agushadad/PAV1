@@ -19,6 +19,10 @@ using PAV1_TP.Formularios.Cargas;
 using PAV1_TP.Formularios.Puntos;
 using PAV1_TP.Formularios.Canje;
 using PAV1_TP.Formularios.Reportes;
+using PAV1_TP.Reportes.ReportesVentas;
+using PAV1_TP.Reportes.ReportesEmpleados;
+using PAV1_TP.Reportes.ReportesPlantas;
+using PAV1_TP.Reportes.ReportesProdcutos;
 
 namespace PAV1_TP
 {
@@ -137,16 +141,34 @@ namespace PAV1_TP
             Form canje = new Frm_Canje();
             canje.Show();
         }
-
-        private void listadosReportesToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void ventasToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            Form ReporteVentas = new Frm_ReporteVentas();
+            ReporteVentas.Show();
         }
 
-        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        private void clientesToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             Form ReporteClientes = new Frm_ReporteClientes();
             ReporteClientes.Show();
+        }
+
+        private void empleadosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form ReporteEmpleados = new Frm_ReporteEmpleados();
+            ReporteEmpleados.Show();
+        }
+
+        private void plantasToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form ReportesPlantas = new Frm_ReportesPlantas();
+            ReportesPlantas.Show();
+        }
+
+        private void productosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form ReportesProductos = new Frm_ReportesProductos();
+            ReportesProductos.Show();
         }
     }
 }

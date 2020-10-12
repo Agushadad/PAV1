@@ -116,10 +116,15 @@ namespace PAV1_TP.Formularios.Reportes
             TablaCliente = cliente.ClientesActivos();
             return;
         }
+        private void BuscarMayorCompraClientes()
+        {
+            TablaCliente = cliente.ReporteCMV();
+            return;
+        }
         private void ArmarReporteCMV()
         {
             ReportDataSource Datos = new ReportDataSource("DataSet1", TablaCliente);
-            Rv_ClienMC.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesProductos.InformeProductos.rdlc";
+            Rv_ClienMC.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesClientes.InformeMayorCompraCliente.rdlc";
             ReportParameter[] parametros = new ReportParameter[1];
             parametros[0] = new ReportParameter("RP01", "Restringido por " + restriccion);
             Rv_ClienMC.LocalReport.DataSources.Clear();
@@ -127,11 +132,40 @@ namespace PAV1_TP.Formularios.Reportes
             Rv_ClienMC.RefreshReport();
         }
 
-        private void btn_BuscarCliente_Click(object sender, EventArgs e)
+
+        private void btn_BuscarCliente_Click_1(object sender, EventArgs e)
         {
-            BuscarCliente();
+            BuscarMayorCompraClientes();
             ArmarReporteCMV();
         }
+        private void ArmarReportesCanjeCliente()
+        {
+            ReportDataSource Datos = new ReportDataSource("DataSet1", TablaCliente);
+            rv_CanjeCliente.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesClientes.Informe_CanjeCliente.rdlc";
+            ReportParameter[] parametros = new ReportParameter[1];
+            parametros[0] = new ReportParameter("RP01", "Restringido por " + restriccion);
+            rv_CanjeCliente.LocalReport.DataSources.Clear();
+            rv_CanjeCliente.LocalReport.DataSources.Add(Datos);
+            rv_CanjeCliente.RefreshReport();
+        }
+        private void BuscarMayorCanje()
+        {
+            TablaCliente = cliente.BuscarMayorCanje(txt_Mes.Text);
+            return;
+        }
 
+        private void btn_BuscarCanje_Click_1(object sender, EventArgs e)
+        {
+            if (txt_Mes.Text == "")
+            {
+                MessageBox.Show("No se especifico el mes");
+            }
+            else
+            {
+                BuscarMayorCanje();
+                ArmarReportesCanjeCliente();
+
+            }
+        }
     }
 }

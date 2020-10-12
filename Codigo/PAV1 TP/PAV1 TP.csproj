@@ -280,6 +280,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DatosClientes.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Reportes\ReportesClientes\Ds_CanjesClientes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_CanjesClientes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReportesClientes\Ds_MayorCompraClientes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_MayorCompraClientes.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Reportes\ReportesClientes\Frm_ReporteClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -334,6 +344,11 @@
     <Compile Include="Reportes\ReportesPlantas\Frm_ReportesPlantas.Designer.cs">
       <DependentUpon>Frm_ReportesPlantas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reportes\ReportesProductos\Ds_PMV.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_PMV.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Reportes\ReportesProductos\Ds_Producots.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -344,6 +359,11 @@
     </Compile>
     <Compile Include="Reportes\ReportesProductos\Frm_ReportesProductos.Designer.cs">
       <DependentUpon>Frm_ReportesProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReportesVentas\Ds_MVM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_MVM.xsd</DependentUpon>
     </Compile>
     <Compile Include="Reportes\ReportesVentas\Ds_PPM.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -482,6 +502,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Reportes\ReportesClientes\InformeCliente.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesClientes\InformeMayorCompraCliente.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesClientes\Informe_CanjeCliente.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmpleados\Frm_ReporteEmpleados.resx">
       <DependentUpon>Frm_ReporteEmpleados.cs</DependentUpon>
     </EmbeddedResource>
@@ -494,9 +516,12 @@
       <DependentUpon>Frm_ReportesProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReportesProductos\InformeProductos.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesProductos\Informe_PMV.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesProductos\Informe_TPMV.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesVentas\Frm_ReporteVentas.resx">
       <DependentUpon>Frm_ReporteVentas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReportesVentas\Informe MVM.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesVentas\InformePPM.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesVentas\InformeTPPM.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesVentas\InformeVentas.rdlc" />
@@ -521,6 +546,28 @@
     <None Include="Reportes\ReportesClientes\DatosClientes.xss">
       <DependentUpon>DatosClientes.xsd</DependentUpon>
     </None>
+    <None Include="Reportes\ReportesClientes\Ds_CanjesClientes.xsc">
+      <DependentUpon>Ds_CanjesClientes.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\ReportesClientes\Ds_CanjesClientes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_CanjesClientes.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\ReportesClientes\Ds_CanjesClientes.xss">
+      <DependentUpon>Ds_CanjesClientes.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\ReportesClientes\Ds_MayorCompraClientes.xsc">
+      <DependentUpon>Ds_MayorCompraClientes.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\ReportesClientes\Ds_MayorCompraClientes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_MayorCompraClientes.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\ReportesClientes\Ds_MayorCompraClientes.xss">
+      <DependentUpon>Ds_MayorCompraClientes.xsd</DependentUpon>
+    </None>
     <None Include="Reportes\ReportesEmpleados\Ds_Empleados.xsc">
       <DependentUpon>Ds_Empleados.xsd</DependentUpon>
     </None>
@@ -543,6 +590,17 @@
     <None Include="Reportes\ReportesPlantas\Ds_Plantas.xss">
       <DependentUpon>Ds_Plantas.xsd</DependentUpon>
     </None>
+    <None Include="Reportes\ReportesProductos\Ds_PMV.xsc">
+      <DependentUpon>Ds_PMV.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\ReportesProductos\Ds_PMV.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_PMV.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\ReportesProductos\Ds_PMV.xss">
+      <DependentUpon>Ds_PMV.xsd</DependentUpon>
+    </None>
     <None Include="Reportes\ReportesProductos\Ds_Producots.xsc">
       <DependentUpon>Ds_Producots.xsd</DependentUpon>
     </None>
@@ -553,6 +611,17 @@
     </None>
     <None Include="Reportes\ReportesProductos\Ds_Producots.xss">
       <DependentUpon>Ds_Producots.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\ReportesVentas\Ds_MVM.xsc">
+      <DependentUpon>Ds_MVM.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\ReportesVentas\Ds_MVM.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_MVM.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\ReportesVentas\Ds_MVM.xss">
+      <DependentUpon>Ds_MVM.xsd</DependentUpon>
     </None>
     <None Include="Reportes\ReportesVentas\Ds_PPM.xsc">
       <DependentUpon>Ds_PPM.xsd</DependentUpon>

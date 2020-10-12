@@ -272,16 +272,23 @@ namespace PAV1_TP.Reportes.ReportesVentas
         private void ArmarReporteMVM()
         {
             ReportDataSource Datos = new ReportDataSource("DataSet1", TablaVentas);
-            Rv_MVM.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesProductos.InformeProductos.rdlc";
+            Rv_MVM.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesVentas.Informe MVM.rdlc";
             ReportParameter[] parametros = new ReportParameter[1];
             parametros[0] = new ReportParameter("RP01", "Restringido por " + restriccion);
             Rv_MVM.LocalReport.DataSources.Clear();
             Rv_MVM.LocalReport.DataSources.Add(Datos);
             Rv_MVM.RefreshReport();
         }
-
-        private void btn_Buscar_Click(object sender, EventArgs e)
+        private void BuscarMVM()
         {
+            TablaVentas = factura.ReporteMVM();
+            return;
+        }
+
+
+        private void btn_BuscMVM_Click(object sender, EventArgs e)
+        {
+            BuscarMVM();
             ArmarReporteMVM();
         }
     }

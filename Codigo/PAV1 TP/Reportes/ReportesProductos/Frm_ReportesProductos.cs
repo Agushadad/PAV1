@@ -63,8 +63,8 @@ namespace PAV1_TP.Reportes.ReportesProdcutos
                 }
                 else
                 {
-                    tablaTPMV = producto.ReporteTPMV(txt_MesTPMV.Text);
-                    if (tablaTPMV.Rows.Count == 0)
+                    TablaProductos = producto.ReporteTPMV(txt_MesTPMV.Text);
+                    if (TablaProductos.Rows.Count == 0)
                     {
                         MessageBox.Show("No hubo ventas en el mes ingresado", "ATENCIÓN");
                     }
@@ -82,7 +82,7 @@ namespace PAV1_TP.Reportes.ReportesProdcutos
         private void ArmarReporteTPMV()
         {
             ReportDataSource Datos = new ReportDataSource("DataSet1", TablaProductos);
-            Rv_TipoProdMasVendido.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesProductos.InformeProductos.rdlc";
+            Rv_TipoProdMasVendido.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesProductos.Informe_TPMV.rdlc";
             ReportParameter[] parametros = new ReportParameter[1];
             parametros[0] = new ReportParameter("RP01", "Restringido por " + restriccion);
             Rv_TipoProdMasVendido.LocalReport.DataSources.Clear();
@@ -90,17 +90,11 @@ namespace PAV1_TP.Reportes.ReportesProdcutos
             Rv_TipoProdMasVendido.RefreshReport();
         }
 
-        private void btn_BuscTP_Click(object sender, EventArgs e)
-        {
-            BuscarTPMV();
-            ArmarReporteTPMV();
-        }
-
         private void BuscarPMV()
         {
-            if (txt_MesTPMV.Text != "")
+            if (txt_PMV.Text != "")
             {
-                if (int.Parse(txt_MesTPMV.Text) > 12 | int.Parse(txt_MesTPMV.Text) == 0)
+                if (int.Parse(txt_PMV.Text) > 12 | int.Parse(txt_PMV.Text) == 0)
                 {
                     MessageBox.Show("Ingrese un mes correcto");
                     txt_MesTPMV.Focus();
@@ -108,26 +102,25 @@ namespace PAV1_TP.Reportes.ReportesProdcutos
                 }
                 else
                 {
-                    tablaTPMV = producto.ReportePMV(txt_MesTPMV.Text);
-                    if (tablaTPMV.Rows.Count == 0)
+                    TablaProductos = producto.ReportePMV(txt_PMV.Text);
+                    if (TablaProductos.Rows.Count == 0)
                     {
                         MessageBox.Show("No hubo ventas en el mes ingresado", "ATENCIÓN");
                     }
                 }
 
-
             }
             else
             {
                 MessageBox.Show("Ingresar Mes", "ATENCIÓN");
-                txt_MesTPMV.Focus();
+                txt_PMV.Focus();
             }
         }
 
         private void ArmarReportePMV()
         {
             ReportDataSource Datos = new ReportDataSource("DataSet1", TablaProductos);
-            RV_ProdMV.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesProductos.InformeProductos.rdlc";
+            RV_ProdMV.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesProductos.Informe_PMV.rdlc";
             ReportParameter[] parametros = new ReportParameter[1];
             parametros[0] = new ReportParameter("RP01", "Restringido por " + restriccion);
             RV_ProdMV.LocalReport.DataSources.Clear();
@@ -135,15 +128,21 @@ namespace PAV1_TP.Reportes.ReportesProdcutos
             RV_ProdMV.RefreshReport();
         }
 
-        private void btn_BuscPMV_Click(object sender, EventArgs e)
-        {
-            BuscarPMV();
-            ArmarReportePMV();
-        }
-
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_BuscTP_Click_1(object sender, EventArgs e)
+        {
+            BuscarTPMV();
+            ArmarReporteTPMV();
+        }
+
+        private void btn_BuscPMV_Click_1(object sender, EventArgs e)
+        {
+            BuscarPMV();
+            ArmarReportePMV();
         }
     }
 }

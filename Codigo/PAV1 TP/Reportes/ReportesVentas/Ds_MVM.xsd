@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Ds_MVM" targetNamespace="http://tempuri.org/Ds_MVM.xsd" xmlns:mstns="http://tempuri.org/Ds_MVM.xsd" xmlns="http://tempuri.org/Ds_MVM.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Ds_MVM" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Ds_MVM" msprop:Generator_UserDSName="Ds_MVM">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Reporte_x0020_MVM" msprop:Generator_TableClassName="Reporte_MVMDataTable" msprop:Generator_TableVarName="tableReporte_MVM" msprop:Generator_TablePropName="Reporte_MVM" msprop:Generator_RowDeletingName="Reporte_MVMRowDeleting" msprop:Generator_RowChangingName="Reporte_MVMRowChanging" msprop:Generator_RowEvHandlerName="Reporte_MVMRowChangeEventHandler" msprop:Generator_RowDeletedName="Reporte_MVMRowDeleted" msprop:Generator_UserTableName="Reporte MVM" msprop:Generator_RowChangedName="Reporte_MVMRowChanged" msprop:Generator_RowEvArgName="Reporte_MVMRowChangeEvent" msprop:Generator_RowClassName="Reporte_MVMRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Mes" msprop:Generator_ColumnVarNameInTable="columnMes" msprop:Generator_ColumnPropNameInRow="Mes" msprop:Generator_ColumnPropNameInTable="MesColumn" msprop:Generator_UserColumnName="Mes" type="xs:string" minOccurs="0" />
+              <xs:element name="VentasTotales" msprop:Generator_ColumnVarNameInTable="columnVentasTotales" msprop:Generator_ColumnPropNameInRow="VentasTotales" msprop:Generator_ColumnPropNameInTable="VentasTotalesColumn" msprop:Generator_UserColumnName="VentasTotales" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

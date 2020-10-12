@@ -173,16 +173,26 @@ namespace PAV1_TP.Negocios
 
 		}
 
-		public DataTable ReporteCMV(string mes)
+		public DataTable ReporteCMV()
 		{
 			DataTable tabla = new DataTable();
-			string sql = "SELECT Nombre , Apellido , c.NroDoc , MAX(Monto) as Total FROM Cliente c";
-			sql += "JOIN DetalleFactura d on p.Codigo = d.Id_Planta ";
-			sql += "JOIN Factura f on c.NroDoc = f.NroDoc";
-			sql += "WHERE c.NroDoc != 0";
-			sql += "GROUP BY Nombre, Apellido, c.NroDoc";
+			string sql = "SELECT Nombre , Apellido , c.NroDoc , MAX(Monto) as Total " +
+				"FROM Cliente c JOIN Factura f on c.NroDoc = f.NroDoc " +
+				"WHERE c.NroDoc != 0 " +
+				"GROUP BY Nombre, Apellido, c.NroDoc";
 
 			return tabla = _BD.Consulta(sql);
+		}
+		public DataTable BuscarMayorCanje(string Mes)
+		{
+			string sql = "SELECT Top 1 Nombre, Apellido, c.NroDoc, COUNT(Ca.ID) AS Total " +
+				"FROM Cliente c JOIN Canje Ca on c.NroDoc = Ca.NroDoc " +
+				"WHERE MONTH(Ca.Fecha) = '" + Mes + "'" +
+				"GROUP BY c.NroDoc, c.Nombre, c.Apellido " +
+				"ORDER BY count(*) desc";
+			DataTable tabla = new DataTable();
+			tabla = _BD.Consulta(sql);
+			return tabla;
 		}
 	}
 }
