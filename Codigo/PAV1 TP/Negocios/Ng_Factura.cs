@@ -14,7 +14,27 @@ namespace PAV1_TP.Negocios
     {
 
         Be_BaseDeDatos _BD = new Be_BaseDeDatos();
-        public DataTable RecuperarCliente(string dni)
+
+        public DataTable ReporteTPPM(string mes)
+        {
+            DataTable tabla = new DataTable();
+            string sql = "select Nombre, sum(cantidad) as Cantidad From Plantas p ";
+            sql += "join DetalleFactura d on p.Codigo = d.Id_Planta ";
+            sql += "join TipoPlanta Tp on Tp.ID = P.Tipo ";
+            sql += "join Factura f on d.Nro_Factura = f.Nro_Factura ";
+            sql += "where MONTH(f.fecha) = " + mes + " and Tp.Nombre is not null GROUP BY Tp.Nombre";
+
+            return tabla = _BD.Consulta(sql);
+
+        }
+        public DataTable ReportePPM(string mes)
+        {
+            DataTable tabla = new DataTable();
+            string sql = "select NombreComun, sum(Cantidad) as Total from Plantas p join DetalleFactura d on p.Codigo = d.Id_Planta join Factura f on d.Nro_Factura = f.Nro_Factura where MONTH(f.fecha) =  " + mes + "and p.NombreComun is not null GROUP BY p.NombreComun";
+            return tabla = _BD.Consulta(sql);
+        }
+
+            public DataTable RecuperarCliente(string dni)
         {
             DataTable tabla = new DataTable();
             return tabla = _BD.Consulta("SELECT * FROM Cliente WHERE NroDoc = '" + dni + "'");

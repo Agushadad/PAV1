@@ -345,6 +345,16 @@
     <Compile Include="Reportes\ReportesProductos\Frm_ReportesProductos.Designer.cs">
       <DependentUpon>Frm_ReportesProductos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reportes\ReportesVentas\Ds_PPM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_PPM.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReportesVentas\Ds_TPPM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_TPPM.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Reportes\ReportesVentas\Ds_Ventas.cs">
       <DependentUpon>Ds_Ventas.xsd</DependentUpon>
     </Compile>
@@ -487,6 +497,8 @@
     <EmbeddedResource Include="Reportes\ReportesVentas\Frm_ReporteVentas.resx">
       <DependentUpon>Frm_ReporteVentas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReportesVentas\InformePPM.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesVentas\InformeTPPM.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesVentas\InformeVentas.rdlc" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -541,6 +553,28 @@
     </None>
     <None Include="Reportes\ReportesProductos\Ds_Producots.xss">
       <DependentUpon>Ds_Producots.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\ReportesVentas\Ds_PPM.xsc">
+      <DependentUpon>Ds_PPM.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\ReportesVentas\Ds_PPM.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_PPM.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\ReportesVentas\Ds_PPM.xss">
+      <DependentUpon>Ds_PPM.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\ReportesVentas\Ds_TPPM.xsc">
+      <DependentUpon>Ds_TPPM.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\ReportesVentas\Ds_TPPM.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_TPPM.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reportes\ReportesVentas\Ds_TPPM.xss">
+      <DependentUpon>Ds_TPPM.xsd</DependentUpon>
     </None>
     <None Include="Reportes\ReportesVentas\Ds_Ventas.xsc">
       <DependentUpon>Ds_Ventas.xsd</DependentUpon>
