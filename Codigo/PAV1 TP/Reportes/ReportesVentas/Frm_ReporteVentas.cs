@@ -98,41 +98,34 @@ namespace PAV1_TP.Reportes.ReportesVentas
 	
 		//***************************************************ReportesGyM*************************************************************
 
-        private void BuscarVentasPorMes()
+        private void BuscarMAYORVentasPorMes()
         {
-            if (txt_Mes.Text == "" && check_MayorV.Checked == false && check_MenorV.Checked == false)
+            if (txt_Mes.Text == "")
             {
-                MessageBox.Show("No se realizó selección para la búsqueda");
+                MessageBox.Show("Ingresar mes");
                 return;
             }
-            if (txt_Mes.Text == "" && (check_MayorV.Checked == true || check_MenorV.Checked == true))
-            {
-                MessageBox.Show("Ingrese un mes");
-                return;
-            }
-            if (txt_Mes.Text != "" && (check_MayorV.Checked == false && check_MenorV.Checked == false))
-            {
-                MessageBox.Show("Seleccione si desea conocer el día con menor y/o mayor venta");
-                return;
-            }
-            //if (txt_Mes.Text != "" && check_MayorV.Checked == true && check_MenorV.Checked == true)
-            //{
-            //    //TablaVentas = factura.Buscar_MyM_Ventas_Mes(txt_Mes.Text);
-            //    //return;
-            //}
-            if (txt_Mes.Text != "" && check_MayorV.Checked == true && check_MenorV.Checked == false)
-            {
-                TablaVentas = factura.Buscar_Mayor_Venta_Mes(txt_Mes.Text);
-                return;
-            }
-            if (txt_Mes.Text != "" && check_MayorV.Checked == false && check_MenorV.Checked == true)
-            {
-                TablaVentas = factura.Buscar_Menor_Venta_Mes(txt_Mes.Text);
-                return;
-            }
+
+			if (txt_Mes.Text != "")
+			{
+				if (int.Parse(txt_Mes.Text) < 1 || int.Parse(txt_Mes.Text) > 12)
+				{
+					MessageBox.Show("No se ingresó un mes válido");
+					return;
+
+				}
+				else
+				{
+					TablaVentas = factura.Buscar_Mayor_Venta_Mes(txt_Mes.Text);
+					return;
+				}
+			}
+
+		
+
         }
 
-        private void ArmarReportesPorMes()
+        private void ArmarReportesMAYORVENTAPorMes()
         {
             ReportDataSource Datos = new ReportDataSource("DataSet1", TablaVentas);
             Rv_VentasXMes.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesVentas.InformeDMayorVM.rdlc";
@@ -145,8 +138,8 @@ namespace PAV1_TP.Reportes.ReportesVentas
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            BuscarVentasPorMes();
-            ArmarReportesPorMes();
+            BuscarMAYORVentasPorMes();
+            ArmarReportesMAYORVENTAPorMes();
         }
 
         
@@ -193,6 +186,51 @@ namespace PAV1_TP.Reportes.ReportesVentas
 		private void Rv_VentasXMes_Load(object sender, EventArgs e)
 		{
 
+		}
+
+		//**************************************************************GYM VENTAS MENOR************************
+
+		private void BuscarMENORVentasPorMes()
+		{
+			if (txtMes.Text == "")
+			{
+				MessageBox.Show("Ingresar mes");
+				return;
+			}
+
+			if (txtMes.Text != "")
+			{
+				if (int.Parse(txtMes.Text) < 1 || int.Parse(txtMes.Text) > 12)
+				{
+					MessageBox.Show("No se ingresó un mes válido");
+					return;
+				}
+				else
+				{
+					TablaVentas = factura.Buscar_Menor_Venta_Mes(txtMes.Text);
+					return;
+				}
+			}
+			
+
+
+		}
+
+		private void ArmarReportesMENORVENTAPorMes()
+		{
+			ReportDataSource Datos = new ReportDataSource("DataSet1", TablaVentas);
+			Rv_MenorVentasMes.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesVentas.InformeDMenorVM.rdlc";
+			ReportParameter[] parametros = new ReportParameter[1];
+			parametros[0] = new ReportParameter("RP05", "Restringido por " + restriccion);
+			Rv_MenorVentasMes.LocalReport.DataSources.Clear();
+			Rv_MenorVentasMes.LocalReport.DataSources.Add(Datos);
+			Rv_MenorVentasMes.RefreshReport();
+		}
+
+		private void button1_Click_1(object sender, EventArgs e)
+		{
+			BuscarMENORVentasPorMes();
+			ArmarReportesMENORVENTAPorMes();
 		}
 	}
 }

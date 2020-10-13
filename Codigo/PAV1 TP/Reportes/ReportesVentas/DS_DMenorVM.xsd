@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_DMenorVM" targetNamespace="http://tempuri.org/DS_DMenorVM.xsd" xmlns:mstns="http://tempuri.org/DS_DMenorVM.xsd" xmlns="http://tempuri.org/DS_DMenorVM.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_DMenorVM" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_DMenorVM" msprop:Generator_UserDSName="DS_DMenorVM">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Rep_MenorVentaXMes" msprop:Generator_TableClassName="Rep_MenorVentaXMesDataTable" msprop:Generator_TableVarName="tableRep_MenorVentaXMes" msprop:Generator_TablePropName="Rep_MenorVentaXMes" msprop:Generator_RowDeletingName="Rep_MenorVentaXMesRowDeleting" msprop:Generator_RowChangingName="Rep_MenorVentaXMesRowChanging" msprop:Generator_RowEvHandlerName="Rep_MenorVentaXMesRowChangeEventHandler" msprop:Generator_RowDeletedName="Rep_MenorVentaXMesRowDeleted" msprop:Generator_UserTableName="Rep_MenorVentaXMes" msprop:Generator_RowChangedName="Rep_MenorVentaXMesRowChanged" msprop:Generator_RowEvArgName="Rep_MenorVentaXMesRowChangeEvent" msprop:Generator_RowClassName="Rep_MenorVentaXMesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Día" msprop:Generator_ColumnVarNameInTable="columnDía" msprop:Generator_ColumnPropNameInRow="Día" msprop:Generator_ColumnPropNameInTable="DíaColumn" msprop:Generator_UserColumnName="Día" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="VentasTotales" msprop:Generator_ColumnVarNameInTable="columnVentasTotales" msprop:Generator_ColumnPropNameInRow="VentasTotales" msprop:Generator_ColumnPropNameInTable="VentasTotalesColumn" msprop:Generator_UserColumnName="VentasTotales" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -369,7 +369,7 @@ namespace PAV1_TP.Reportes.ReportesVentas {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public Rep_VentasXdíaXmesRow AddRep_VentasXdíaXmesRow(System.DateTime Día, string VentasTotales) {
+            public Rep_VentasXdíaXmesRow AddRep_VentasXdíaXmesRow(System.DateTime Día, short VentasTotales) {
                 Rep_VentasXdíaXmesRow rowRep_VentasXdíaXmesRow = ((Rep_VentasXdíaXmesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Día,
@@ -405,7 +405,7 @@ namespace PAV1_TP.Reportes.ReportesVentas {
             private void InitClass() {
                 this.columnDía = new global::System.Data.DataColumn("Día", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDía);
-                this.columnVentasTotales = new global::System.Data.DataColumn("VentasTotales", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnVentasTotales = new global::System.Data.DataColumn("VentasTotales", typeof(short), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnVentasTotales);
             }
             
@@ -565,10 +565,10 @@ namespace PAV1_TP.Reportes.ReportesVentas {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string VentasTotales {
+            public short VentasTotales {
                 get {
                     try {
-                        return ((string)(this[this.tableRep_VentasXdíaXmes.VentasTotalesColumn]));
+                        return ((short)(this[this.tableRep_VentasXdíaXmes.VentasTotalesColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("El valor de la columna \'VentasTotales\' de la tabla \'Rep_VentasXdíaXmes\' es DBNull" +

@@ -329,6 +329,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Ds_Empleados.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Reportes\ReportesEmpleados\DS_EmpMENORVenta.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_EmpMENORVenta.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Reportes\ReportesEmpleados\DS_EmpMVenta.cs">
       <DependentUpon>DS_EmpMVenta.xsd</DependentUpon>
     </Compile>
@@ -374,6 +379,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_DMayorVM.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReportesVentas\DS_DMenorVM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_DMenorVM.xsd</DependentUpon>
     </Compile>
     <Compile Include="Reportes\ReportesVentas\Ds_MVM.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -523,6 +533,7 @@
       <DependentUpon>Frm_ReporteEmpleados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReportesEmpleados\InformeEmpleadoMasVentas.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesEmpleados\InformeEmpleadoMenorVentas.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmpleados\InformeEmpleados.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesPlantas\Frm_ReportesPlantas.resx">
       <DependentUpon>Frm_ReportesPlantas.cs</DependentUpon>
@@ -541,6 +552,7 @@
     <EmbeddedResource Include="Reportes\ReportesVentas\InformeDMayorVM.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesPlantas\InformePPM.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesPlantas\InformeTPPM.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesVentas\InformeDMenorVM.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesVentas\InformeVentas.rdlc" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -596,6 +608,17 @@
     <None Include="Reportes\ReportesEmpleados\Ds_Empleados.xss">
       <DependentUpon>Ds_Empleados.xsd</DependentUpon>
     </None>
+    <None Include="Reportes\ReportesEmpleados\DS_EmpMENORVenta.xsc">
+      <DependentUpon>DS_EmpMENORVenta.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\ReportesEmpleados\DS_EmpMENORVenta.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_EmpMENORVenta.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\ReportesEmpleados\DS_EmpMENORVenta.xss">
+      <DependentUpon>DS_EmpMENORVenta.xsd</DependentUpon>
+    </None>
     <None Include="Reportes\ReportesEmpleados\DS_EmpMVenta.xsc">
       <DependentUpon>DS_EmpMVenta.xsd</DependentUpon>
     </None>
@@ -650,6 +673,17 @@
     </None>
     <None Include="Reportes\ReportesVentas\DS_DMayorVM.xss">
       <DependentUpon>DS_DMayorVM.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\ReportesVentas\DS_DMenorVM.xsc">
+      <DependentUpon>DS_DMenorVM.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\ReportesVentas\DS_DMenorVM.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_DMenorVM.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\ReportesVentas\DS_DMenorVM.xss">
+      <DependentUpon>DS_DMenorVM.xsd</DependentUpon>
     </None>
     <None Include="Reportes\ReportesVentas\Ds_MVM.xsc">
       <DependentUpon>Ds_MVM.xsd</DependentUpon>

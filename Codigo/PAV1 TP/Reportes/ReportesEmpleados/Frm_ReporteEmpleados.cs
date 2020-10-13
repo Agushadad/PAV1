@@ -53,61 +53,91 @@ namespace PAV1_TP.Reportes.ReportesEmpleados
 
 		//********************************************************************************************************************************************************************
 
-		private void BuscarVentasPorEmpleado()
+		private void BuscarMAYORVentasPorMes()
 		{
-			
-			if (txt_Mes.Text == "" && check_MayorV.Checked == false && check_MenorV.Checked == false)
+			if (txt_Mes.Text == "")
 			{
-				MessageBox.Show("No se realizó selección para la búsqueda");
-				return;
-			}
-			if (txt_Mes.Text == "" && (check_MayorV.Checked == true || check_MenorV.Checked == true))
-			{
-				MessageBox.Show("Ingrese un mes");
-				return;
-			}
-			if (txt_Mes.Text != "" && (check_MayorV.Checked == false && check_MenorV.Checked == false))
-			{
-				MessageBox.Show("Seleccione si desea conocer el empleado con menor y/o mayor venta");
+				MessageBox.Show("Ingresar mes");
 				return;
 			}
 
-			if (txt_Mes.Text != "" && check_MayorV.Checked == true && check_MenorV.Checked == false)
+			if (txt_Mes.Text != "")
 			{
-				tablaEMP = empleado.Buscar_Empleado_Mayor_Ventas(txt_Mes.Text);
-				return;
+				if (int.Parse(txt_Mes.Text) < 1 || int.Parse(txt_Mes.Text) > 12)
+				{
+					MessageBox.Show("No se ingresó un mes válido");
+					return;
+
+				}
+				else
+				{
+					tablaEMP = empleado.Buscar_Empleado_Mayor_Ventas(txt_Mes.Text);
+					return;
+				}
 			}
-			if (txt_Mes.Text != "" && check_MayorV.Checked == false && check_MenorV.Checked == true)
-			{
-				tablaEMP = empleado.Buscar_Empleado_Menor_Ventas(txt_Mes.Text);
-				return;
-			}
-			//if (txt_Mes.Text != "" && check_MayorV.Checked == true && check_MenorV.Checked == true)
-			//{
-			//	//	TablaEmpleados = empleado.Buscar_Empleado_Mayor_Ventas(txt_Mes.Text);
-			//	//	return;
-			//	//}
-			//}
 		}
 
-		private void ArmarReporteVentaPorEmp()
+		private void ArmarReporteMAYORVentaPorEmp()
 		{
 			ReportDataSource Datos = new ReportDataSource("DataSet1", tablaEMP);
-			Rv_VentasPorEmp.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesEmpleados.InformeEmpleadoMasVentas.rdlc";
+			Rv_EMPMayorVentas.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesEmpleados.InformeEmpleadoMasVentas.rdlc";
 			ReportParameter[] parametros = new ReportParameter[1];
 			parametros[0] = new ReportParameter("RP08", "Restringido por " + restriccion);
-			Rv_VentasPorEmp.LocalReport.DataSources.Clear();
-			Rv_VentasPorEmp.LocalReport.DataSources.Add(Datos);
-			Rv_VentasPorEmp.RefreshReport();
+			Rv_EMPMayorVentas.LocalReport.DataSources.Clear();
+			Rv_EMPMayorVentas.LocalReport.DataSources.Add(Datos);
+			Rv_EMPMayorVentas.RefreshReport();
 		}
 
 
 		private void btnBuscar_Click(object sender, EventArgs e)
 		{
-			BuscarVentasPorEmpleado();
-			ArmarReporteVentaPorEmp();
+			BuscarMAYORVentasPorMes();
+			ArmarReporteMAYORVentaPorEmp();
 		}
 
+
+		//*******************************************************************************************
+		private void BuscarMENORVentasPorMes()
+		{
+			if (txt_Mes.Text == "")
+			{
+				MessageBox.Show("Ingresar mes");
+				return;
+			}
+
+			if (txt_Mes.Text != "")
+			{
+				if (int.Parse(txt_Mes.Text) < 1 || int.Parse(txt_Mes.Text) > 12)
+				{
+					MessageBox.Show("No se ingresó un mes válido");
+					return;
+
+				}
+				else
+				{
+					tablaEMP = empleado.Buscar_Empleado_Menor_Ventas(txt_Mes.Text);
+					return;
+				}
+			}
+		}
+
+		private void ArmarReporteMENORVentaPorEmp()
+		{
+			ReportDataSource Datos = new ReportDataSource("DataSet1", tablaEMP);
+			Rv_EMPMenorVentas.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesEmpleados.InformeEmpleadoMenorVentas.rdlc";
+			ReportParameter[] parametros = new ReportParameter[1];
+			parametros[0] = new ReportParameter("RP03", "Restringido por " + restriccion);
+			Rv_EMPMenorVentas.LocalReport.DataSources.Clear();
+			Rv_EMPMenorVentas.LocalReport.DataSources.Add(Datos);
+			Rv_EMPMenorVentas.RefreshReport();
+		}
+
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+			BuscarMENORVentasPorMes();
+			ArmarReporteMENORVentaPorEmp();
+		}
 	}
 	
 }

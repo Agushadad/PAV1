@@ -12,11 +12,11 @@
   <xs:element name="DS_DMayorVM" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_DMayorVM" msprop:Generator_UserDSName="DS_DMayorVM">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Rep_VentasXdíaXmes" msprop:Generator_TableClassName="Rep_VentasXdíaXmesDataTable" msprop:Generator_TableVarName="tableRep_VentasXdíaXmes" msprop:Generator_RowChangedName="Rep_VentasXdíaXmesRowChanged" msprop:Generator_TablePropName="Rep_VentasXdíaXmes" msprop:Generator_RowDeletingName="Rep_VentasXdíaXmesRowDeleting" msprop:Generator_RowChangingName="Rep_VentasXdíaXmesRowChanging" msprop:Generator_RowEvHandlerName="Rep_VentasXdíaXmesRowChangeEventHandler" msprop:Generator_RowDeletedName="Rep_VentasXdíaXmesRowDeleted" msprop:Generator_RowClassName="Rep_VentasXdíaXmesRow" msprop:Generator_UserTableName="Rep_VentasXdíaXmes" msprop:Generator_RowEvArgName="Rep_VentasXdíaXmesRowChangeEvent">
+        <xs:element name="Rep_VentasXdíaXmes" msprop:Generator_TableClassName="Rep_VentasXdíaXmesDataTable" msprop:Generator_TableVarName="tableRep_VentasXdíaXmes" msprop:Generator_TablePropName="Rep_VentasXdíaXmes" msprop:Generator_RowDeletingName="Rep_VentasXdíaXmesRowDeleting" msprop:Generator_RowChangingName="Rep_VentasXdíaXmesRowChanging" msprop:Generator_RowEvHandlerName="Rep_VentasXdíaXmesRowChangeEventHandler" msprop:Generator_RowDeletedName="Rep_VentasXdíaXmesRowDeleted" msprop:Generator_UserTableName="Rep_VentasXdíaXmes" msprop:Generator_RowChangedName="Rep_VentasXdíaXmesRowChanged" msprop:Generator_RowEvArgName="Rep_VentasXdíaXmesRowChangeEvent" msprop:Generator_RowClassName="Rep_VentasXdíaXmesRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Día" msprop:Generator_ColumnVarNameInTable="columnDía" msprop:Generator_ColumnPropNameInRow="Día" msprop:Generator_ColumnPropNameInTable="DíaColumn" msprop:Generator_UserColumnName="Día" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="VentasTotales" msprop:Generator_ColumnVarNameInTable="columnVentasTotales" msprop:Generator_ColumnPropNameInRow="VentasTotales" msprop:Generator_ColumnPropNameInTable="VentasTotalesColumn" msprop:Generator_UserColumnName="VentasTotales" type="xs:string" minOccurs="0" />
+              <xs:element name="VentasTotales" msprop:Generator_ColumnVarNameInTable="columnVentasTotales" msprop:Generator_ColumnPropNameInRow="VentasTotales" msprop:Generator_ColumnPropNameInTable="VentasTotalesColumn" msprop:Generator_UserColumnName="VentasTotales" type="xs:short" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

@@ -23,7 +23,7 @@
         </Field>
         <Field Name="VentasTotales">
           <DataField>VentasTotales</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+          <rd:TypeName>System.Int16</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
@@ -242,7 +242,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Día con Mayor y/o Menor Ventas en un Mes</Value>
+                      <Value>Día con Mayor Ventas en un Mes</Value>
                       <Style>
                         <FontSize>12pt</FontSize>
                         <FontWeight>Bold</FontWeight>
