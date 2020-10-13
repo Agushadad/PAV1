@@ -51,9 +51,12 @@ namespace PAV1_TP.Negocios
             return tabla = _BD.Consulta("SELECT * FROM Empleado WHERE ID = " + ID);
         }
 
+		//***********************************************************ReportesGioMili************************************************************
+
 		public DataTable Buscar_Mayor_Venta_Mes(string fecha)
 		{
-			string sql = "";
+			string sql = "SELECT TOP 1 DAY(F.Fecha) as Día, count(F.Nro_Factura) as VentasTotales FROM Factura F WHERE F.Nro_Factura != 0 " +
+				"AND MONTH(F.Fecha) = " + fecha + " GROUP BY DAY(F.Fecha) ORDER BY VentasTotales desc" ;
 			DataTable tabla = new DataTable();
 			tabla = _BD.Consulta(sql);
 			return tabla;
@@ -62,20 +65,22 @@ namespace PAV1_TP.Negocios
 
 		public DataTable Buscar_Menor_Venta_Mes(string fecha)
 		{
-			string sql = "";
+			string sql = "SELECT TOP 1 DAY(F.Fecha) as Día, count(F.Nro_Factura) as VentasTotales FROM Factura F WHERE F.Nro_Factura != 0 " +
+				"AND MONTH(F.Fecha) = " + fecha + " GROUP BY DAY(F.Fecha) ORDER BY VentasTotales asc";
 			DataTable tabla = new DataTable();
 			tabla = _BD.Consulta(sql);
 			return tabla;
 
 		}
 
-		public DataTable Buscar_MyM_Ventas_Mes(string fecha)
-		{
-			string sql = "";
-			DataTable tabla = new DataTable();
-			tabla = _BD.Consulta(sql);
-			return tabla;
-		}
+		//public DataTable Buscar_MyM_Ventas_Mes(string fecha)
+		//{
+		//	string sql = "";
+		//	DataTable tabla = new DataTable();
+		//	tabla = _BD.Consulta(sql);
+		//	return tabla;
+		//}
+		//***********************************************************************************************************************
 
 
 		public string NuevoId()

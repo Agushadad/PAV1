@@ -81,7 +81,28 @@ namespace PAV1_TP.Negocios
             return tabla;
         }
 
-        public string NuevoId()
+
+		public DataTable Buscar_Empleado_Mayor_Ventas(string fecha)
+		{
+			string sql = "SELECT TOP 1 F.Id_Empleado, E.Apellido, E.Nombre, COUNT(F.Nro_Factura) as VentaTotal FROM Factura F, Empleado E WHERE F.Id_Empleado = E.ID AND F.Nro_Factura != 0 " +
+						 "AND MONTH(F.Fecha) = " + fecha + " GROUP BY F.Id_Empleado, E.Apellido, E.Nombre ORDER BY VentaTotal desc";
+			DataTable tabla = new DataTable();
+			tabla = _BD.Consulta(sql);
+			return tabla;
+
+		}
+
+		public DataTable Buscar_Empleado_Menor_Ventas(string fecha)
+		{
+			string sql = "SELECT TOP 1 F.Id_Empleado, E.Apellido, E.Nombre, COUNT(F.Nro_Factura) as VentaTotal FROM Factura F, Empleado E WHERE F.Id_Empleado = E.ID AND F.Nro_Factura != 0 " +
+						 "AND MONTH(F.Fecha) = " + fecha + " GROUP BY F.Id_Empleado, E.Apellido, E.Nombre ORDER BY VentaTotal asc";
+			DataTable tabla = new DataTable();
+			tabla = _BD.Consulta(sql);
+			return tabla;
+
+		}
+
+		public string NuevoId()
         {
             DataTable tabla = new DataTable();
             string sql = "SELECT * FROM Empleado";

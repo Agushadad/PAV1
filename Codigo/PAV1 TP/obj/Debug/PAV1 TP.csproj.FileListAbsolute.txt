@@ -629,3 +629,5 @@ C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP
 C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Reportes.ReportesProdcutos.Frm_ReportesProductos.resources
 C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Reportes.ReportesVentas.Frm_ReporteVentas.resources
 C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1 TP.csproj.CopyComplete
+C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\RdlCompile.cache
+C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\RdlCompile.compiled

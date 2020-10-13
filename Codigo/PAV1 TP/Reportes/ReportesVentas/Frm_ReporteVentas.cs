@@ -95,7 +95,8 @@ namespace PAV1_TP.Reportes.ReportesVentas
                 ArmarReporteXMonto();
             }
         }
-
+	
+		//***************************************************ReportesGyM*************************************************************
 
         private void BuscarVentasPorMes()
         {
@@ -116,8 +117,8 @@ namespace PAV1_TP.Reportes.ReportesVentas
             }
             if (txt_Mes.Text != "" && check_MayorV.Checked == true && check_MenorV.Checked == true)
             {
-                TablaVentas = factura.Buscar_MyM_Ventas_Mes(txt_Mes.Text);
-                return;
+                //TablaVentas = factura.Buscar_MyM_Ventas_Mes(txt_Mes.Text);
+                //return;
             }
             if (txt_Mes.Text != "" && check_MayorV.Checked == true && check_MenorV.Checked == false)
             {
@@ -134,9 +135,9 @@ namespace PAV1_TP.Reportes.ReportesVentas
         private void ArmarReportesPorMes()
         {
             ReportDataSource Datos = new ReportDataSource("DataSet1", TablaVentas);
-            Rv_VentasXMes.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesVentas.InformeVentas.rdlc";
+            Rv_VentasXMes.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesVentas.InformeDMayorVM.rdlc";
             ReportParameter[] parametros = new ReportParameter[1];
-            parametros[0] = new ReportParameter("RP01", "Restringido por " + restriccion);
+            parametros[0] = new ReportParameter("RP09", "Restringido por " + restriccion);
             Rv_VentasXMes.LocalReport.DataSources.Clear();
             Rv_VentasXMes.LocalReport.DataSources.Add(Datos);
             Rv_VentasXMes.RefreshReport();
@@ -291,5 +292,15 @@ namespace PAV1_TP.Reportes.ReportesVentas
             BuscarMVM();
             ArmarReporteMVM();
         }
-    }
+
+		private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void Rv_VentasXMes_Load(object sender, EventArgs e)
+		{
+
+		}
+	}
 }

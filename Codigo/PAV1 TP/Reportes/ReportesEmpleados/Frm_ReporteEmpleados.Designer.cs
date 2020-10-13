@@ -33,7 +33,12 @@
 			this.Rv_Empleado = new Microsoft.Reporting.WinForms.ReportViewer();
 			this.btn_Buscar = new System.Windows.Forms.Button();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
-			this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+			this.check_MenorV = new System.Windows.Forms.CheckBox();
+			this.check_MayorV = new System.Windows.Forms.CheckBox();
+			this.btnBuscar = new System.Windows.Forms.Button();
+			this.txt_Mes = new PAV1_TP.Clases.TextBox01();
+			this.nroMes = new System.Windows.Forms.Label();
+			this.Rv_VentasPorEmp = new Microsoft.Reporting.WinForms.ReportViewer();
 			this.tabControl1.SuspendLayout();
 			this.tabPage1.SuspendLayout();
 			this.tabPage2.SuspendLayout();
@@ -81,7 +86,12 @@
 			// 
 			// tabPage2
 			// 
-			this.tabPage2.Controls.Add(this.reportViewer1);
+			this.tabPage2.Controls.Add(this.check_MenorV);
+			this.tabPage2.Controls.Add(this.check_MayorV);
+			this.tabPage2.Controls.Add(this.btnBuscar);
+			this.tabPage2.Controls.Add(this.txt_Mes);
+			this.tabPage2.Controls.Add(this.nroMes);
+			this.tabPage2.Controls.Add(this.Rv_VentasPorEmp);
 			this.tabPage2.Location = new System.Drawing.Point(4, 22);
 			this.tabPage2.Name = "tabPage2";
 			this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -90,13 +100,65 @@
 			this.tabPage2.Text = "Ventas por Empleado";
 			this.tabPage2.UseVisualStyleBackColor = true;
 			// 
-			// reportViewer1
+			// check_MenorV
 			// 
-			this.reportViewer1.Location = new System.Drawing.Point(6, 21);
-			this.reportViewer1.Name = "reportViewer1";
-			this.reportViewer1.ServerReport.BearerToken = null;
-			this.reportViewer1.Size = new System.Drawing.Size(754, 367);
-			this.reportViewer1.TabIndex = 2;
+			this.check_MenorV.AutoSize = true;
+			this.check_MenorV.Location = new System.Drawing.Point(193, 33);
+			this.check_MenorV.Name = "check_MenorV";
+			this.check_MenorV.Size = new System.Drawing.Size(87, 17);
+			this.check_MenorV.TabIndex = 15;
+			this.check_MenorV.Text = "Menor Venta";
+			this.check_MenorV.UseVisualStyleBackColor = true;
+			// 
+			// check_MayorV
+			// 
+			this.check_MayorV.AutoSize = true;
+			this.check_MayorV.Location = new System.Drawing.Point(92, 33);
+			this.check_MayorV.Name = "check_MayorV";
+			this.check_MayorV.Size = new System.Drawing.Size(85, 17);
+			this.check_MayorV.TabIndex = 14;
+			this.check_MayorV.Text = "Mayor venta";
+			this.check_MayorV.UseVisualStyleBackColor = true;
+			// 
+			// btnBuscar
+			// 
+			this.btnBuscar.Location = new System.Drawing.Point(286, 8);
+			this.btnBuscar.Name = "btnBuscar";
+			this.btnBuscar.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+			this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+			this.btnBuscar.TabIndex = 13;
+			this.btnBuscar.Text = "Buscar";
+			this.btnBuscar.UseVisualStyleBackColor = true;
+			this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+			// 
+			// txt_Mes
+			// 
+			this.txt_Mes.Location = new System.Drawing.Point(92, 9);
+			this.txt_Mes.Name = "txt_Mes";
+			this.txt_Mes.Pp_mensajeError = null;
+			this.txt_Mes.Pp_nombre_campo = null;
+			this.txt_Mes.Pp_nombre_tabla = null;
+			this.txt_Mes.Pp_validable = false;
+			this.txt_Mes.Size = new System.Drawing.Size(188, 20);
+			this.txt_Mes.TabIndex = 12;
+			// 
+			// nroMes
+			// 
+			this.nroMes.AutoSize = true;
+			this.nroMes.Location = new System.Drawing.Point(5, 12);
+			this.nroMes.Name = "nroMes";
+			this.nroMes.Size = new System.Drawing.Size(81, 13);
+			this.nroMes.TabIndex = 11;
+			this.nroMes.Text = "Número de mes";
+			// 
+			// Rv_VentasPorEmp
+			// 
+			this.Rv_VentasPorEmp.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesEmpleados.InformeEmpleadoMasVentas.rdlc";
+			this.Rv_VentasPorEmp.Location = new System.Drawing.Point(6, 56);
+			this.Rv_VentasPorEmp.Name = "Rv_VentasPorEmp";
+			this.Rv_VentasPorEmp.ServerReport.BearerToken = null;
+			this.Rv_VentasPorEmp.Size = new System.Drawing.Size(754, 347);
+			this.Rv_VentasPorEmp.TabIndex = 2;
 			// 
 			// Frm_ReporteEmpleados
 			// 
@@ -110,6 +172,7 @@
 			this.tabControl1.ResumeLayout(false);
 			this.tabPage1.ResumeLayout(false);
 			this.tabPage2.ResumeLayout(false);
+			this.tabPage2.PerformLayout();
 			this.ResumeLayout(false);
 
         }
@@ -121,6 +184,11 @@
         private Microsoft.Reporting.WinForms.ReportViewer Rv_Empleado;
         private System.Windows.Forms.Button btn_Buscar;
         private System.Windows.Forms.TabPage tabPage2;
-		private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+		private Microsoft.Reporting.WinForms.ReportViewer Rv_VentasPorEmp;
+		private System.Windows.Forms.CheckBox check_MenorV;
+		private System.Windows.Forms.CheckBox check_MayorV;
+		private System.Windows.Forms.Button btnBuscar;
+		private Clases.TextBox01 txt_Mes;
+		private System.Windows.Forms.Label nroMes;
 	}
 }
