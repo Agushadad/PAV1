@@ -56,7 +56,6 @@ namespace PAV1_TP.Reportes.ReportesEmpleados
 		private void BuscarVentasPorEmpleado()
 		{
 			
-
 			if (txt_Mes.Text == "" && check_MayorV.Checked == false && check_MenorV.Checked == false)
 			{
 				MessageBox.Show("No se realizó selección para la búsqueda");
@@ -72,22 +71,23 @@ namespace PAV1_TP.Reportes.ReportesEmpleados
 				MessageBox.Show("Seleccione si desea conocer el empleado con menor y/o mayor venta");
 				return;
 			}
-			if (txt_Mes.Text != "" && check_MayorV.Checked == true && check_MenorV.Checked == true)
+
+			if (txt_Mes.Text != "" && check_MayorV.Checked == true && check_MenorV.Checked == false)
 			{
-				//	TablaEmpleados = empleado.Buscar_Empleado_Mayor_Ventas(txt_Mes.Text);
-				//	return;
-				//}
-				if (txt_Mes.Text != "" && check_MayorV.Checked == true && check_MenorV.Checked == false)
-				{
-					tablaEMP = empleado.Buscar_Empleado_Mayor_Ventas(txt_Mes.Text);
-					return;
-				}
-				if (txt_Mes.Text != "" && check_MayorV.Checked == false && check_MenorV.Checked == true)
-				{
-					tablaEMP = empleado.Buscar_Empleado_Menor_Ventas(txt_Mes.Text);
-					return;
-				}
+				tablaEMP = empleado.Buscar_Empleado_Mayor_Ventas(txt_Mes.Text);
+				return;
 			}
+			if (txt_Mes.Text != "" && check_MayorV.Checked == false && check_MenorV.Checked == true)
+			{
+				tablaEMP = empleado.Buscar_Empleado_Menor_Ventas(txt_Mes.Text);
+				return;
+			}
+			//if (txt_Mes.Text != "" && check_MayorV.Checked == true && check_MenorV.Checked == true)
+			//{
+			//	//	TablaEmpleados = empleado.Buscar_Empleado_Mayor_Ventas(txt_Mes.Text);
+			//	//	return;
+			//	//}
+			//}
 		}
 
 		private void ArmarReporteVentaPorEmp()

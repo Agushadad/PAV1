@@ -115,11 +115,11 @@ namespace PAV1_TP.Reportes.ReportesVentas
                 MessageBox.Show("Seleccione si desea conocer el día con menor y/o mayor venta");
                 return;
             }
-            if (txt_Mes.Text != "" && check_MayorV.Checked == true && check_MenorV.Checked == true)
-            {
-                //TablaVentas = factura.Buscar_MyM_Ventas_Mes(txt_Mes.Text);
-                //return;
-            }
+            //if (txt_Mes.Text != "" && check_MayorV.Checked == true && check_MenorV.Checked == true)
+            //{
+            //    //TablaVentas = factura.Buscar_MyM_Ventas_Mes(txt_Mes.Text);
+            //    //return;
+            //}
             if (txt_Mes.Text != "" && check_MayorV.Checked == true && check_MenorV.Checked == false)
             {
                 TablaVentas = factura.Buscar_Mayor_Venta_Mes(txt_Mes.Text);
