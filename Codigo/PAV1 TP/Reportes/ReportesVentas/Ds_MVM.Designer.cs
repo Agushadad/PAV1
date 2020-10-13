@@ -369,7 +369,7 @@ namespace PAV1_TP.Reportes.ReportesVentas {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Reporte_MVMRow AddReporte_MVMRow(string Mes, string VentasTotales) {
+            public Reporte_MVMRow AddReporte_MVMRow(string Mes, short VentasTotales) {
                 Reporte_MVMRow rowReporte_MVMRow = ((Reporte_MVMRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Mes,
@@ -405,7 +405,7 @@ namespace PAV1_TP.Reportes.ReportesVentas {
             private void InitClass() {
                 this.columnMes = new global::System.Data.DataColumn("Mes", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnMes);
-                this.columnVentasTotales = new global::System.Data.DataColumn("VentasTotales", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnVentasTotales = new global::System.Data.DataColumn("VentasTotales", typeof(short), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnVentasTotales);
             }
             
@@ -565,10 +565,10 @@ namespace PAV1_TP.Reportes.ReportesVentas {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string VentasTotales {
+            public short VentasTotales {
                 get {
                     try {
-                        return ((string)(this[this.tableReporte_MVM.VentasTotalesColumn]));
+                        return ((short)(this[this.tableReporte_MVM.VentasTotalesColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("El valor de la columna \'VentasTotales\' de la tabla \'Reporte MVM\' es DBNull.", e);

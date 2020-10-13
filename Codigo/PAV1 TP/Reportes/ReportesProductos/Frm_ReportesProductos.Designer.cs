@@ -81,7 +81,7 @@
             // 
             // btn_Buscar
             // 
-            this.btn_Buscar.Location = new System.Drawing.Point(7, 7);
+            this.btn_Buscar.Location = new System.Drawing.Point(7, 18);
             this.btn_Buscar.Name = "btn_Buscar";
             this.btn_Buscar.Size = new System.Drawing.Size(75, 23);
             this.btn_Buscar.TabIndex = 0;
@@ -117,12 +117,12 @@
             this.txt_MesTPMV.Location = new System.Drawing.Point(37, 10);
             this.txt_MesTPMV.Margin = new System.Windows.Forms.Padding(2);
             this.txt_MesTPMV.Name = "txt_MesTPMV";
-            this.txt_MesTPMV.Size = new System.Drawing.Size(78, 20);
+            this.txt_MesTPMV.Size = new System.Drawing.Size(52, 20);
             this.txt_MesTPMV.TabIndex = 2;
             // 
             // btn_BuscTP
             // 
-            this.btn_BuscTP.Location = new System.Drawing.Point(121, 12);
+            this.btn_BuscTP.Location = new System.Drawing.Point(93, 10);
             this.btn_BuscTP.Margin = new System.Windows.Forms.Padding(2);
             this.btn_BuscTP.Name = "btn_BuscTP";
             this.btn_BuscTP.Size = new System.Drawing.Size(63, 20);

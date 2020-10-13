@@ -384,7 +384,6 @@ C:\Users\Facu_\Desktop\tpPAV\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.C
 C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\PAV1 TP.exe.config
 C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\PAV1 TP.exe
 C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\bin\Debug\PAV1 TP.pdb
-C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1 TP.csprojAssemblyReference.cache
 C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Clases.LabelText01.resources
 C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Canje.Frm_Canje.resources
 C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP.Formularios.Cargas.Consulta_Factura.resources
@@ -631,3 +630,4 @@ C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1_TP
 C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1 TP.csproj.CopyComplete
 C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\RdlCompile.cache
 C:\Users\hello\Desktop\UTN_FRC\Cuarto\PAV1\PAV1\Codigo\PAV1 TP\obj\Debug\RdlCompile.compiled
+C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\obj\Debug\PAV1 TP.csprojAssemblyReference.cache

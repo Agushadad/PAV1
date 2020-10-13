@@ -16,7 +16,7 @@
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Mes" msprop:Generator_ColumnVarNameInTable="columnMes" msprop:Generator_ColumnPropNameInRow="Mes" msprop:Generator_ColumnPropNameInTable="MesColumn" msprop:Generator_UserColumnName="Mes" type="xs:string" minOccurs="0" />
-              <xs:element name="VentasTotales" msprop:Generator_ColumnVarNameInTable="columnVentasTotales" msprop:Generator_ColumnPropNameInRow="VentasTotales" msprop:Generator_ColumnPropNameInTable="VentasTotalesColumn" msprop:Generator_UserColumnName="VentasTotales" type="xs:string" minOccurs="0" />
+              <xs:element name="VentasTotales" msprop:Generator_ColumnVarNameInTable="columnVentasTotales" msprop:Generator_ColumnPropNameInRow="VentasTotales" msprop:Generator_ColumnPropNameInTable="VentasTotalesColumn" msprop:Generator_UserColumnName="VentasTotales" type="xs:short" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

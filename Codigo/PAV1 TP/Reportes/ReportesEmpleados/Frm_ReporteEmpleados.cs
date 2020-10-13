@@ -99,15 +99,15 @@ namespace PAV1_TP.Reportes.ReportesEmpleados
 		//*******************************************************************************************
 		private void BuscarMENORVentasPorMes()
 		{
-			if (txt_Mes.Text == "")
+			if (txt_MesMenor.Text == "")
 			{
 				MessageBox.Show("Ingresar mes");
 				return;
 			}
 
-			if (txt_Mes.Text != "")
+			if (txt_MesMenor.Text != "")
 			{
-				if (int.Parse(txt_Mes.Text) < 1 || int.Parse(txt_Mes.Text) > 12)
+				if (int.Parse(txt_MesMenor.Text) < 1 || int.Parse(txt_MesMenor.Text) > 12)
 				{
 					MessageBox.Show("No se ingresó un mes válido");
 					return;
@@ -115,7 +115,7 @@ namespace PAV1_TP.Reportes.ReportesEmpleados
 				}
 				else
 				{
-					tablaEMP = empleado.Buscar_Empleado_Menor_Ventas(txt_Mes.Text);
+					tablaEMP = empleado.Buscar_Empleado_Menor_Ventas(txt_MesMenor.Text);
 					return;
 				}
 			}
@@ -138,6 +138,11 @@ namespace PAV1_TP.Reportes.ReportesEmpleados
 			BuscarMENORVentasPorMes();
 			ArmarReporteMENORVentaPorEmp();
 		}
-	}
+
+        private void nroMes_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 	
 }

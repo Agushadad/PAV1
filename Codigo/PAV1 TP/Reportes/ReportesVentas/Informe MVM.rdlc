@@ -23,12 +23,12 @@
         </Field>
         <Field Name="VentasTotales">
           <DataField>VentasTotales</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+          <rd:TypeName>System.Int16</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>Ds_MVM</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\agush\Desktop\UTN\2020\PAV1\Practico\TP\Codigo\PAV1 TP\Reportes\ReportesVentas\Ds_MVM.xsd</rd:SchemaPath>
+        <rd:SchemaPath>C:\Users\Facu_\Desktop\LaCone\PAV1\Codigo\PAV1 TP\Reportes\ReportesVentas\Ds_MVM.xsd</rd:SchemaPath>
         <rd:TableName>Reporte MVM</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />
@@ -56,7 +56,7 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox6">
+                        <Textbox Name="Textbox2">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -65,16 +65,14 @@
                                 <TextRun>
                                   <Value>Mes</Value>
                                   <Style>
-                                    <FontWeight>Bold</FontWeight>
+                                    <Format>0;(0)</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox6</rd:DefaultName>
+                          <rd:DefaultName>Textbox2</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -90,7 +88,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox8">
+                        <Textbox Name="Textbox4">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -99,16 +97,14 @@
                                 <TextRun>
                                   <Value>Ventas Totales</Value>
                                   <Style>
-                                    <FontWeight>Bold</FontWeight>
+                                    <Format>0;(0)</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox8</rd:DefaultName>
+                          <rd:DefaultName>Textbox4</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -137,12 +133,12 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!Mes.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Format>0;(0)</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Mes</rd:DefaultName>
@@ -169,12 +165,12 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!VentasTotales.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Format>0;(0)</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>VentasTotales</rd:DefaultName>
@@ -189,6 +185,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
@@ -212,8 +209,8 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
-            <Top>0.31433cm</Top>
-            <Left>0.05292cm</Left>
+            <Top>0.97578cm</Top>
+            <Left>2.69558cm</Left>
             <Height>1.2cm</Height>
             <Width>5cm</Width>
             <Style>
@@ -223,7 +220,7 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>0.75in</Height>
+        <Height>0.85661in</Height>
         <Style />
       </Body>
       <Width>4.86893in</Width>
