@@ -37,7 +37,7 @@ namespace PAV1_TP.Formularios.Reportes
         private void BuscarClientes()
         {
             
-            if (chk_TodosClientes.Checked == false & txt_ApellidoCliente.Text == "" & txt_DniCliente.Text == "" & txt_NombreCliente.Text == "")
+            if (chk_TodosClientes.Checked == false  & txt_NombreCliente.Text == "")
             {
                 MessageBox.Show("No se seleccionó ningún criterio de búsqueda");
                 return;
@@ -50,33 +50,14 @@ namespace PAV1_TP.Formularios.Reportes
             }
             else
             {
-                if (txt_NombreCliente.Text != "" & txt_ApellidoCliente.Text == "" & txt_DniCliente.Text == "")
+                if (txt_NombreCliente.Text != "")
                 {
                     TablaCliente = cliente.BuscarCliente(false,txt_NombreCliente.Text,"","");
                     restriccion += "Nombre";
                     return;
                 }
 
-                if (txt_NombreCliente.Text == "" & txt_ApellidoCliente.Text != "" & txt_DniCliente.Text == "")
-                {
-                    TablaCliente = cliente.BuscarCliente(false,"",txt_ApellidoCliente.Text,"");
-                    restriccion += "Apellido";
-                    return;
-                }
-
-                if (txt_NombreCliente.Text == "" & txt_ApellidoCliente.Text == "" & txt_DniCliente.Text != "")
-                {
-                    TablaCliente = cliente.BuscarCliente(false,"","",txt_DniCliente.Text);
-                    restriccion += "Dni";
-                    return;
-                }
-
-                if (txt_NombreCliente.Text != "" & txt_NombreCliente.Text != "" & txt_DniCliente.Text != "")
-                {
-                    TablaCliente = cliente.BuscarCliente(false,txt_NombreCliente.Text, txt_ApellidoCliente.Text,txt_DniCliente.Text);
-                    restriccion += "Nombre, Apellido y Dni";
-                    return;
-                }
+                
             }
         }
         private void ArmarReporteCliente()

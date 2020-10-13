@@ -48,7 +48,7 @@ namespace PAV1_TP.Negocios
 					sql += " AND NroDoc = " + dni;
 				}
 
-				MessageBox.Show(sql);
+			
 				return tabla = _BD.Consulta(sql);
 			}
 			

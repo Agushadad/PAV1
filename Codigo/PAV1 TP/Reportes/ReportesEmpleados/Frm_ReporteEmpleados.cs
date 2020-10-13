@@ -40,7 +40,7 @@ namespace PAV1_TP.Reportes.ReportesEmpleados
 
         private void Frm_ReporteEmpleados_Load_1(object sender, EventArgs e)
         {
-
+			   
             //this.Rv_Empleado.RefreshReport();
 
         }

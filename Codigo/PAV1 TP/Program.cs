@@ -34,7 +34,7 @@ namespace PAV1_TP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_ReporteEmpleados());
+            Application.Run(new Frm_ReporteClientes());
             
 
 

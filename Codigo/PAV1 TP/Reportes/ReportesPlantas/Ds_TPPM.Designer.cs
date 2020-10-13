@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace PAV1_TP.Reportes.ReportesVentas {
+namespace PAV1_TP.Reportes.ReportesPlantas {
     
     
     /// <summary>
@@ -20,17 +20,17 @@ namespace PAV1_TP.Reportes.ReportesVentas {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("Ds_PPM")]
+    [global::System.Xml.Serialization.XmlRootAttribute("Ds_TPPM")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class Ds_PPM : global::System.Data.DataSet {
+    public partial class Ds_TPPM : global::System.Data.DataSet {
         
-        private Res_PPMDataTable tableRes_PPM;
+        private Res_TPPMDataTable tableRes_TPPM;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public Ds_PPM() {
+        public Ds_TPPM() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace PAV1_TP.Reportes.ReportesVentas {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected Ds_PPM(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected Ds_TPPM(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace PAV1_TP.Reportes.ReportesVentas {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["Res_PPM"] != null)) {
-                    base.Tables.Add(new Res_PPMDataTable(ds.Tables["Res_PPM"]));
+                if ((ds.Tables["Res_TPPM"] != null)) {
+                    base.Tables.Add(new Res_TPPMDataTable(ds.Tables["Res_TPPM"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace PAV1_TP.Reportes.ReportesVentas {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public Res_PPMDataTable Res_PPM {
+        public Res_TPPMDataTable Res_TPPM {
             get {
-                return this.tableRes_PPM;
+                return this.tableRes_TPPM;
             }
         }
         
@@ -127,7 +127,7 @@ namespace PAV1_TP.Reportes.ReportesVentas {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            Ds_PPM cln = ((Ds_PPM)(base.Clone()));
+            Ds_TPPM cln = ((Ds_TPPM)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace PAV1_TP.Reportes.ReportesVentas {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["Res_PPM"] != null)) {
-                    base.Tables.Add(new Res_PPMDataTable(ds.Tables["Res_PPM"]));
+                if ((ds.Tables["Res_TPPM"] != null)) {
+                    base.Tables.Add(new Res_TPPMDataTable(ds.Tables["Res_TPPM"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace PAV1_TP.Reportes.ReportesVentas {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableRes_PPM = ((Res_PPMDataTable)(base.Tables["Res_PPM"]));
+            this.tableRes_TPPM = ((Res_TPPMDataTable)(base.Tables["Res_TPPM"]));
             if ((initTable == true)) {
-                if ((this.tableRes_PPM != null)) {
-                    this.tableRes_PPM.InitVars();
+                if ((this.tableRes_TPPM != null)) {
+                    this.tableRes_TPPM.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace PAV1_TP.Reportes.ReportesVentas {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "Ds_PPM";
+            this.DataSetName = "Ds_TPPM";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/Ds_PPM.xsd";
+            this.Namespace = "http://tempuri.org/Ds_TPPM.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableRes_PPM = new Res_PPMDataTable();
-            base.Tables.Add(this.tableRes_PPM);
+            this.tableRes_TPPM = new Res_TPPMDataTable();
+            base.Tables.Add(this.tableRes_TPPM);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerializeRes_PPM() {
+        private bool ShouldSerializeRes_TPPM() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace PAV1_TP.Reportes.ReportesVentas {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            Ds_PPM ds = new Ds_PPM();
+            Ds_TPPM ds = new Ds_TPPM();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,23 +270,23 @@ namespace PAV1_TP.Reportes.ReportesVentas {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void Res_PPMRowChangeEventHandler(object sender, Res_PPMRowChangeEvent e);
+        public delegate void Res_TPPMRowChangeEventHandler(object sender, Res_TPPMRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class Res_PPMDataTable : global::System.Data.TypedTableBase<Res_PPMRow> {
+        public partial class Res_TPPMDataTable : global::System.Data.TypedTableBase<Res_TPPMRow> {
             
-            private global::System.Data.DataColumn columnNombreComun;
+            private global::System.Data.DataColumn columnNombre;
             
-            private global::System.Data.DataColumn columnTotal;
+            private global::System.Data.DataColumn columnCantidad;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Res_PPMDataTable() {
-                this.TableName = "Res_PPM";
+            public Res_TPPMDataTable() {
+                this.TableName = "Res_TPPM";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -294,7 +294,7 @@ namespace PAV1_TP.Reportes.ReportesVentas {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal Res_PPMDataTable(global::System.Data.DataTable table) {
+            internal Res_TPPMDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -311,24 +311,24 @@ namespace PAV1_TP.Reportes.ReportesVentas {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected Res_PPMDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected Res_TPPMDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn NombreComunColumn {
+            public global::System.Data.DataColumn NombreColumn {
                 get {
-                    return this.columnNombreComun;
+                    return this.columnNombre;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn TotalColumn {
+            public global::System.Data.DataColumn CantidadColumn {
                 get {
-                    return this.columnTotal;
+                    return this.columnCantidad;
                 }
             }
             
@@ -343,46 +343,46 @@ namespace PAV1_TP.Reportes.ReportesVentas {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Res_PPMRow this[int index] {
+            public Res_TPPMRow this[int index] {
                 get {
-                    return ((Res_PPMRow)(this.Rows[index]));
+                    return ((Res_TPPMRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event Res_PPMRowChangeEventHandler Res_PPMRowChanging;
+            public event Res_TPPMRowChangeEventHandler Res_TPPMRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event Res_PPMRowChangeEventHandler Res_PPMRowChanged;
+            public event Res_TPPMRowChangeEventHandler Res_TPPMRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event Res_PPMRowChangeEventHandler Res_PPMRowDeleting;
+            public event Res_TPPMRowChangeEventHandler Res_TPPMRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event Res_PPMRowChangeEventHandler Res_PPMRowDeleted;
+            public event Res_TPPMRowChangeEventHandler Res_TPPMRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void AddRes_PPMRow(Res_PPMRow row) {
+            public void AddRes_TPPMRow(Res_TPPMRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Res_PPMRow AddRes_PPMRow(string NombreComun, string Total) {
-                Res_PPMRow rowRes_PPMRow = ((Res_PPMRow)(this.NewRow()));
+            public Res_TPPMRow AddRes_TPPMRow(string Nombre, string Cantidad) {
+                Res_TPPMRow rowRes_TPPMRow = ((Res_TPPMRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        NombreComun,
-                        Total};
-                rowRes_PPMRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowRes_PPMRow);
-                return rowRes_PPMRow;
+                        Nombre,
+                        Cantidad};
+                rowRes_TPPMRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowRes_TPPMRow);
+                return rowRes_TPPMRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                Res_PPMDataTable cln = ((Res_PPMDataTable)(base.Clone()));
+                Res_TPPMDataTable cln = ((Res_TPPMDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -390,49 +390,49 @@ namespace PAV1_TP.Reportes.ReportesVentas {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new Res_PPMDataTable();
+                return new Res_TPPMDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnNombreComun = base.Columns["NombreComun"];
-                this.columnTotal = base.Columns["Total"];
+                this.columnNombre = base.Columns["Nombre"];
+                this.columnCantidad = base.Columns["Cantidad"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnNombreComun = new global::System.Data.DataColumn("NombreComun", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNombreComun);
-                this.columnTotal = new global::System.Data.DataColumn("Total", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTotal);
+                this.columnNombre = new global::System.Data.DataColumn("Nombre", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNombre);
+                this.columnCantidad = new global::System.Data.DataColumn("Cantidad", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCantidad);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Res_PPMRow NewRes_PPMRow() {
-                return ((Res_PPMRow)(this.NewRow()));
+            public Res_TPPMRow NewRes_TPPMRow() {
+                return ((Res_TPPMRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new Res_PPMRow(builder);
+                return new Res_TPPMRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(Res_PPMRow);
+                return typeof(Res_TPPMRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.Res_PPMRowChanged != null)) {
-                    this.Res_PPMRowChanged(this, new Res_PPMRowChangeEvent(((Res_PPMRow)(e.Row)), e.Action));
+                if ((this.Res_TPPMRowChanged != null)) {
+                    this.Res_TPPMRowChanged(this, new Res_TPPMRowChangeEvent(((Res_TPPMRow)(e.Row)), e.Action));
                 }
             }
             
@@ -440,8 +440,8 @@ namespace PAV1_TP.Reportes.ReportesVentas {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.Res_PPMRowChanging != null)) {
-                    this.Res_PPMRowChanging(this, new Res_PPMRowChangeEvent(((Res_PPMRow)(e.Row)), e.Action));
+                if ((this.Res_TPPMRowChanging != null)) {
+                    this.Res_TPPMRowChanging(this, new Res_TPPMRowChangeEvent(((Res_TPPMRow)(e.Row)), e.Action));
                 }
             }
             
@@ -449,8 +449,8 @@ namespace PAV1_TP.Reportes.ReportesVentas {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.Res_PPMRowDeleted != null)) {
-                    this.Res_PPMRowDeleted(this, new Res_PPMRowChangeEvent(((Res_PPMRow)(e.Row)), e.Action));
+                if ((this.Res_TPPMRowDeleted != null)) {
+                    this.Res_TPPMRowDeleted(this, new Res_TPPMRowChangeEvent(((Res_TPPMRow)(e.Row)), e.Action));
                 }
             }
             
@@ -458,14 +458,14 @@ namespace PAV1_TP.Reportes.ReportesVentas {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.Res_PPMRowDeleting != null)) {
-                    this.Res_PPMRowDeleting(this, new Res_PPMRowChangeEvent(((Res_PPMRow)(e.Row)), e.Action));
+                if ((this.Res_TPPMRowDeleting != null)) {
+                    this.Res_TPPMRowDeleting(this, new Res_TPPMRowChangeEvent(((Res_TPPMRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void RemoveRes_PPMRow(Res_PPMRow row) {
+            public void RemoveRes_TPPMRow(Res_TPPMRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -474,7 +474,7 @@ namespace PAV1_TP.Reportes.ReportesVentas {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Ds_PPM ds = new Ds_PPM();
+                Ds_TPPM ds = new Ds_TPPM();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -492,7 +492,7 @@ namespace PAV1_TP.Reportes.ReportesVentas {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "Res_PPMDataTable";
+                attribute2.FixedValue = "Res_TPPMDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -536,71 +536,71 @@ namespace PAV1_TP.Reportes.ReportesVentas {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class Res_PPMRow : global::System.Data.DataRow {
+        public partial class Res_TPPMRow : global::System.Data.DataRow {
             
-            private Res_PPMDataTable tableRes_PPM;
+            private Res_TPPMDataTable tableRes_TPPM;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal Res_PPMRow(global::System.Data.DataRowBuilder rb) : 
+            internal Res_TPPMRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableRes_PPM = ((Res_PPMDataTable)(this.Table));
+                this.tableRes_TPPM = ((Res_TPPMDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string NombreComun {
+            public string Nombre {
                 get {
                     try {
-                        return ((string)(this[this.tableRes_PPM.NombreComunColumn]));
+                        return ((string)(this[this.tableRes_TPPM.NombreColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'NombreComun\' de la tabla \'Res_PPM\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Nombre\' de la tabla \'Res_TPPM\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableRes_PPM.NombreComunColumn] = value;
+                    this[this.tableRes_TPPM.NombreColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Total {
+            public string Cantidad {
                 get {
                     try {
-                        return ((string)(this[this.tableRes_PPM.TotalColumn]));
+                        return ((string)(this[this.tableRes_TPPM.CantidadColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Total\' de la tabla \'Res_PPM\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Cantidad\' de la tabla \'Res_TPPM\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableRes_PPM.TotalColumn] = value;
+                    this[this.tableRes_TPPM.CantidadColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsNombreComunNull() {
-                return this.IsNull(this.tableRes_PPM.NombreComunColumn);
+            public bool IsNombreNull() {
+                return this.IsNull(this.tableRes_TPPM.NombreColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetNombreComunNull() {
-                this[this.tableRes_PPM.NombreComunColumn] = global::System.Convert.DBNull;
+            public void SetNombreNull() {
+                this[this.tableRes_TPPM.NombreColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsTotalNull() {
-                return this.IsNull(this.tableRes_PPM.TotalColumn);
+            public bool IsCantidadNull() {
+                return this.IsNull(this.tableRes_TPPM.CantidadColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetTotalNull() {
-                this[this.tableRes_PPM.TotalColumn] = global::System.Convert.DBNull;
+            public void SetCantidadNull() {
+                this[this.tableRes_TPPM.CantidadColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -608,22 +608,22 @@ namespace PAV1_TP.Reportes.ReportesVentas {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class Res_PPMRowChangeEvent : global::System.EventArgs {
+        public class Res_TPPMRowChangeEvent : global::System.EventArgs {
             
-            private Res_PPMRow eventRow;
+            private Res_TPPMRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Res_PPMRowChangeEvent(Res_PPMRow row, global::System.Data.DataRowAction action) {
+            public Res_TPPMRowChangeEvent(Res_TPPMRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Res_PPMRow Row {
+            public Res_TPPMRow Row {
                 get {
                     return this.eventRow;
                 }

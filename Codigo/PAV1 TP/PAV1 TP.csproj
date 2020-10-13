@@ -380,12 +380,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Ds_MVM.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Reportes\ReportesVentas\Ds_PPM.Designer.cs">
+    <Compile Include="Reportes\ReportesPlantas\Ds_PPM.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Ds_PPM.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Reportes\ReportesVentas\Ds_TPPM.Designer.cs">
+    <Compile Include="Reportes\ReportesPlantas\Ds_TPPM.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Ds_TPPM.xsd</DependentUpon>
@@ -539,8 +539,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReportesVentas\Informe MVM.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesVentas\InformeDMayorVM.rdlc" />
-    <EmbeddedResource Include="Reportes\ReportesVentas\InformePPM.rdlc" />
-    <EmbeddedResource Include="Reportes\ReportesVentas\InformeTPPM.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesPlantas\InformePPM.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesPlantas\InformeTPPM.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesVentas\InformeVentas.rdlc" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -662,26 +662,26 @@
     <None Include="Reportes\ReportesVentas\Ds_MVM.xss">
       <DependentUpon>Ds_MVM.xsd</DependentUpon>
     </None>
-    <None Include="Reportes\ReportesVentas\Ds_PPM.xsc">
+    <None Include="Reportes\ReportesPlantas\Ds_PPM.xsc">
       <DependentUpon>Ds_PPM.xsd</DependentUpon>
     </None>
-    <None Include="Reportes\ReportesVentas\Ds_PPM.xsd">
+    <None Include="Reportes\ReportesPlantas\Ds_PPM.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>Ds_PPM.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="Reportes\ReportesVentas\Ds_PPM.xss">
+    <None Include="Reportes\ReportesPlantas\Ds_PPM.xss">
       <DependentUpon>Ds_PPM.xsd</DependentUpon>
     </None>
-    <None Include="Reportes\ReportesVentas\Ds_TPPM.xsc">
+    <None Include="Reportes\ReportesPlantas\Ds_TPPM.xsc">
       <DependentUpon>Ds_TPPM.xsd</DependentUpon>
     </None>
-    <None Include="Reportes\ReportesVentas\Ds_TPPM.xsd">
+    <None Include="Reportes\ReportesPlantas\Ds_TPPM.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>Ds_TPPM.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="Reportes\ReportesVentas\Ds_TPPM.xss">
+    <None Include="Reportes\ReportesPlantas\Ds_TPPM.xss">
       <DependentUpon>Ds_TPPM.xsd</DependentUpon>
     </None>
     <None Include="Reportes\ReportesVentas\Ds_Ventas.xsc">
