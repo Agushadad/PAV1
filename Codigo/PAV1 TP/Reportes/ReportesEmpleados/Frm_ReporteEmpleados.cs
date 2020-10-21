@@ -154,7 +154,7 @@ namespace PAV1_TP.Reportes.ReportesEmpleados
 			}
 			else
 			{
-				tablaEMP = empleado.Buscar_Periodo(txt_FechaHasta.Pp_Text, txt_FechaHasta.Pp_Text);
+				tablaEMP = empleado.Buscar_Periodo(txt_FechaDesde.Pp_Text, txt_FechaHasta.Pp_Text);
 				return;
 			}
         }
