@@ -342,6 +342,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_EmpMVenta.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Reportes\ReportesEmpleados\DS_Periodo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Periodo.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Reportes\ReportesEmpleados\Frm_ReporteEmpleados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -535,6 +540,7 @@
     <EmbeddedResource Include="Reportes\ReportesEmpleados\InformeEmpleadoMasVentas.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmpleados\InformeEmpleadoMenorVentas.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmpleados\InformeEmpleados.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesEmpleados\InformePeriodo.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesPlantas\Frm_ReportesPlantas.resx">
       <DependentUpon>Frm_ReportesPlantas.cs</DependentUpon>
     </EmbeddedResource>
@@ -629,6 +635,17 @@
     </None>
     <None Include="Reportes\ReportesEmpleados\DS_EmpMVenta.xss">
       <DependentUpon>DS_EmpMVenta.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\ReportesEmpleados\DS_Periodo.xsc">
+      <DependentUpon>DS_Periodo.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\ReportesEmpleados\DS_Periodo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Periodo.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\ReportesEmpleados\DS_Periodo.xss">
+      <DependentUpon>DS_Periodo.xsd</DependentUpon>
     </None>
     <None Include="Reportes\ReportesPlantas\Ds_Plantas.xsc">
       <DependentUpon>Ds_Plantas.xsd</DependentUpon>

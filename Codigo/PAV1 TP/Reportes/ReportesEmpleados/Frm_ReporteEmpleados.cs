@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PAV1_TP.Clases;
 using Microsoft.Reporting.WinForms;
 
 namespace PAV1_TP.Reportes.ReportesEmpleados
@@ -17,6 +18,7 @@ namespace PAV1_TP.Reportes.ReportesEmpleados
         Ng_Empleados empleado = new Ng_Empleados();
         DataTable TablaEmpleados = new DataTable();
 		DataTable tablaEMP = new DataTable();
+		TratamientosEspeciales te = new TratamientosEspeciales();
 		string restriccion = "";
         public Frm_ReporteEmpleados()
         {
@@ -40,9 +42,9 @@ namespace PAV1_TP.Reportes.ReportesEmpleados
 
         private void Frm_ReporteEmpleados_Load_1(object sender, EventArgs e)
         {
-			   
-            //this.Rv_Empleado.RefreshReport();
 
+            //this.Rv_Empleado.RefreshReport();
+			//this.rp_Empleado_Periodo.RefreshReport();
         }
 
         private void btn_Buscar_Click_1(object sender, EventArgs e)
@@ -138,8 +140,58 @@ namespace PAV1_TP.Reportes.ReportesEmpleados
 			BuscarMENORVentasPorMes();
 			ArmarReporteMENORVentaPorEmp();
 		}
+		private void Buscar_x_Periodo()
+        {
+			if (te.ValidarFecha(txt_FechaDesde.Pp_Text) == TratamientosEspeciales.Validacion.incorrecta)
+			{
+				txt_FechaDesde.Focus();
+				return;
+			}
+			if (te.ValidarFecha(txt_FechaHasta.Pp_Text) == TratamientosEspeciales.Validacion.incorrecta)
+			{
+				txt_FechaHasta.Focus();
+				return;
+			}
+			else
+			{
+				tablaEMP = empleado.Buscar_Periodo(txt_FechaHasta.Pp_Text, txt_FechaHasta.Pp_Text);
+				return;
+			}
+        }
+		private void ArmarReporteEmpleadoPeriodo()
+		{
+			ReportDataSource Datos = new ReportDataSource("DataSet1", tablaEMP);
+			rp_Empleado_Periodo.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesEmpleados.InformePeriodo.rdlc";
+			ReportParameter[] parametros = new ReportParameter[1];
+			parametros[0] = new ReportParameter("RP01", "Restringido por " + restriccion);
+			rp_Empleado_Periodo.LocalReport.DataSources.Clear();
+			rp_Empleado_Periodo.LocalReport.DataSources.Add(Datos);
+			rp_Empleado_Periodo.RefreshReport();
+		}
 
-        private void nroMes_Click(object sender, EventArgs e)
+
+		private void nroMes_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_BuscarPeriodo4_Click(object sender, EventArgs e)
+        {
+			Buscar_x_Periodo();
+            ArmarReporteEmpleadoPeriodo();
+		}
+
+        private void tabPage4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Rv_Empleado_Load(object sender, EventArgs e)
         {
 
         }

@@ -7,6 +7,7 @@ using PAV1_TP.Clases;
 using System.Data;
 using System.Windows.Forms;
 using PAV1_TP.Negocios.EstructurasNegocios;
+using Microsoft.ReportingServices.Interfaces;
 
 namespace PAV1_TP.Negocios
 {
@@ -159,6 +160,18 @@ namespace PAV1_TP.Negocios
             _BD.Modificar(sqlEliminar);
 
         }
-            
+        public DataTable Buscar_Periodo(string fechaDesde, string fechaHasta)
+        {
+            string sql = "SELECT e.ID ,e.Nombre, e.Apellido from Empleado e JOIN Factura f on e.ID = f.Id_Empleado " +
+                "WHERE f.Fecha between convert(datetime, '" + fechaDesde + "' , 103) and convert(datetime, '" + fechaDesde + "', 103)" +
+                " GROUP BY e.ID, e.Nombre, e.Apellido" +
+                " ORDER BY e.ID";
+            DataTable tabla = new DataTable();
+            tabla = _BD.Consulta(sql);
+            return tabla;
+
+        }
+
+
     }
 }
