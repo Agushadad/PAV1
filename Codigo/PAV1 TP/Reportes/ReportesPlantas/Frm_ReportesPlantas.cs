@@ -171,5 +171,100 @@ namespace PAV1_TP.Reportes.ReportesPlantas
                 ArmarReporteTPPM();
             }
         }
+
+        private void tabPage5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BuscarstdTipoPlanta()
+        {
+            if (txt_std_MesTipoPlanta.Text != "")
+            {
+                if (int.Parse(txt_std_MesTipoPlanta.Text) > 12 | int.Parse(txt_std_MesTipoPlanta.Text) == 0)
+                {
+                    MessageBox.Show("Ingrese un mes correcto");
+                    txt_std_MesTipoPlanta.Focus();
+
+                }
+                else
+                {
+                    tablaTPPM = factura.ReporteTPPM(txt_std_MesTipoPlanta.Text);
+                    if (tablaTPPM.Rows.Count == 0)
+                    {
+                        MessageBox.Show("No hubo ventas en el mes ingresado", "ATENCIÓN");
+                    }
+                }
+
+            }
+        }
+
+        private void ArmarEstadisticaTipoPlanta_Torta()
+        {
+            ReportDataSource DatosTPPM = new ReportDataSource("Torta", tablaTPPM);
+            rv_stdTipoPlanta.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesPlantas.EstadisticaTPlantas1.rdlc";
+            ReportParameter[] parametros = new ReportParameter[1];
+            parametros[0] = new ReportParameter("ParametroTorta", "Estadistica de Tipos de planta vendidas en el mes: " + txt_std_MesTipoPlanta.Text);
+            rv_stdTipoPlanta.LocalReport.SetParameters(parametros);
+            rv_stdTipoPlanta.LocalReport.DataSources.Clear();
+            rv_stdTipoPlanta.LocalReport.DataSources.Add(DatosTPPM);
+            rv_stdTipoPlanta.RefreshReport();
+        }
+
+        private void ArmarEstadisticaTipoPlanta_Barras()
+        {
+            ReportDataSource DatosTPPM = new ReportDataSource("DataSet1", tablaTPPM);
+            rv_stdTipoPlanta.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesPlantas.EstadisticaTPlantas2.rdlc";
+            ReportParameter[] parametros2= new ReportParameter[1];
+            parametros2[0] = new ReportParameter("ParametroBarras", "Estadistica de Tipos de planta vendidas en el mes: " + txt_std_MesTipoPlanta.Text);
+            rv_stdTipoPlanta.LocalReport.SetParameters(parametros2);
+            rv_stdTipoPlanta.LocalReport.DataSources.Clear();
+            rv_stdTipoPlanta.LocalReport.DataSources.Add(DatosTPPM);
+            rv_stdTipoPlanta.RefreshReport();
+        }
+
+        private void ArmarEstadisticaTipoPlanta_BarrasSeries()
+        {
+            ReportDataSource DatosTPPM = new ReportDataSource("DataSet1", tablaTPPM);
+            rv_stdTipoPlanta.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesPlantas.EstadisticaTPlantas3.rdlc";
+            ReportParameter[] parametros2 = new ReportParameter[1];
+            parametros2[0] = new ReportParameter("ParametroBarra2", "Estadistica de Tipos de planta vendidas en el mes: " + txt_std_MesTipoPlanta.Text);
+            rv_stdTipoPlanta.LocalReport.SetParameters(parametros2);
+            rv_stdTipoPlanta.LocalReport.DataSources.Clear();
+            rv_stdTipoPlanta.LocalReport.DataSources.Add(DatosTPPM);
+            rv_stdTipoPlanta.RefreshReport();
+        }
+        private void btn_CalcularTipoPlanta_Click(object sender, EventArgs e)
+        {
+            if (cmb_stdTipoPlanta.SelectedItem == null)
+            {
+                MessageBox.Show("Seleccione un tipo de gráfico");
+                cmb_stdTipoPlanta.Focus();
+                return;
+            }
+               
+            if (cmb_stdTipoPlanta.SelectedItem.ToString() == "Gráfico de torta")
+            {
+                BuscarstdTipoPlanta();
+                ArmarEstadisticaTipoPlanta_Torta();
+            }
+            if (cmb_stdTipoPlanta.SelectedItem.ToString() == "Gráfico de barras (vertical)")
+            {
+                BuscarstdTipoPlanta();
+                ArmarEstadisticaTipoPlanta_Barras();
+            }
+
+            if (cmb_stdTipoPlanta.SelectedItem.ToString() == "Gráfico de barras (horizontal)")
+            {
+                BuscarstdTipoPlanta();
+                ArmarEstadisticaTipoPlanta_BarrasSeries();
+            }
+           
+        }
     }
 }
+
+
+
+    
+

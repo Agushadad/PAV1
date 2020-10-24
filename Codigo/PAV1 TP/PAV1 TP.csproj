@@ -541,6 +541,9 @@
     <EmbeddedResource Include="Reportes\ReportesEmpleados\InformeEmpleadoMenorVentas.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmpleados\InformeEmpleados.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmpleados\InformePeriodo.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesPlantas\EstadisticaTPlantas1.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesPlantas\EstadisticaTPlantas2.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesPlantas\EstadisticaTPlantas3.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesPlantas\Frm_ReportesPlantas.resx">
       <DependentUpon>Frm_ReportesPlantas.cs</DependentUpon>
     </EmbeddedResource>
