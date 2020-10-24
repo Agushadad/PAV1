@@ -138,6 +138,7 @@
             this.cmb_stdTipoPlanta.Pp_Value = null;
             this.cmb_stdTipoPlanta.Size = new System.Drawing.Size(158, 21);
             this.cmb_stdTipoPlanta.TabIndex = 17;
+            this.cmb_stdTipoPlanta.SelectedIndexChanged += new System.EventHandler(this.cmb_stdTipoPlanta_SelectedIndexChanged);
             // 
             // rv_stdTipoPlanta
             // 
@@ -146,6 +147,7 @@
             this.rv_stdTipoPlanta.ServerReport.BearerToken = null;
             this.rv_stdTipoPlanta.Size = new System.Drawing.Size(767, 304);
             this.rv_stdTipoPlanta.TabIndex = 16;
+            this.rv_stdTipoPlanta.Load += new System.EventHandler(this.rv_stdTipoPlanta_Load);
             // 
             // label2
             // 

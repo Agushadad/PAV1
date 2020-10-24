@@ -285,6 +285,8 @@ namespace PAV1_TP.Reportes.ReportesEmpleados {
             
             private global::System.Data.DataColumn columnApellido;
             
+            private global::System.Data.DataColumn columnVentas;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public Empleado_PeriodoDataTable() {
@@ -344,6 +346,14 @@ namespace PAV1_TP.Reportes.ReportesEmpleados {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn VentasColumn {
+                get {
+                    return this.columnVentas;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -379,12 +389,13 @@ namespace PAV1_TP.Reportes.ReportesEmpleados {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Empleado_PeriodoRow AddEmpleado_PeriodoRow(string ID, string Nombre, string Apellido) {
+            public Empleado_PeriodoRow AddEmpleado_PeriodoRow(string ID, string Nombre, string Apellido, string Ventas) {
                 Empleado_PeriodoRow rowEmpleado_PeriodoRow = ((Empleado_PeriodoRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         ID,
                         Nombre,
-                        Apellido};
+                        Apellido,
+                        Ventas};
                 rowEmpleado_PeriodoRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowEmpleado_PeriodoRow);
                 return rowEmpleado_PeriodoRow;
@@ -410,6 +421,7 @@ namespace PAV1_TP.Reportes.ReportesEmpleados {
                 this.columnID = base.Columns["ID"];
                 this.columnNombre = base.Columns["Nombre"];
                 this.columnApellido = base.Columns["Apellido"];
+                this.columnVentas = base.Columns["Ventas"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -421,6 +433,8 @@ namespace PAV1_TP.Reportes.ReportesEmpleados {
                 base.Columns.Add(this.columnNombre);
                 this.columnApellido = new global::System.Data.DataColumn("Apellido", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnApellido);
+                this.columnVentas = new global::System.Data.DataColumn("Ventas", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVentas);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -611,6 +625,22 @@ namespace PAV1_TP.Reportes.ReportesEmpleados {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Ventas {
+                get {
+                    try {
+                        return ((string)(this[this.tableEmpleado_Periodo.VentasColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Ventas\' de la tabla \'Empleado Periodo\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableEmpleado_Periodo.VentasColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsIDNull() {
                 return this.IsNull(this.tableEmpleado_Periodo.IDColumn);
             }
@@ -643,6 +673,18 @@ namespace PAV1_TP.Reportes.ReportesEmpleados {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetApellidoNull() {
                 this[this.tableEmpleado_Periodo.ApellidoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsVentasNull() {
+                return this.IsNull(this.tableEmpleado_Periodo.VentasColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetVentasNull() {
+                this[this.tableEmpleado_Periodo.VentasColumn] = global::System.Convert.DBNull;
             }
         }
         

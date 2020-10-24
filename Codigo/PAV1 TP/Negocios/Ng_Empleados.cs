@@ -162,9 +162,9 @@ namespace PAV1_TP.Negocios
         }
         public DataTable Buscar_Periodo(string fechaDesde, string fechaHasta)
         {
-            string sql = "SELECT e.ID ,e.Nombre, e.Apellido from Empleado e JOIN Factura f on e.ID = f.Id_Empleado " +
+            string sql = "SELECT e.ID ,e.Nombre, e.Apellido, count(f.id_empleado) as Ventas from Empleado e JOIN Factura f on e.ID = f.Id_Empleado " +
                 "WHERE f.Fecha between convert(datetime, '" + fechaDesde + "' , 103) and convert(datetime, '" + fechaHasta + "', 103)" +
-                " GROUP BY e.ID, e.Nombre, e.Apellido" +
+                " GROUP BY e.ID, e.Nombre, e.Apellido, f.id_empleado" +
                 " ORDER BY e.ID";
             DataTable tabla = new DataTable();
             tabla = _BD.Consulta(sql);

@@ -261,6 +261,16 @@ namespace PAV1_TP.Reportes.ReportesPlantas
             }
            
         }
+
+        private void rv_stdTipoPlanta_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmb_stdTipoPlanta_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

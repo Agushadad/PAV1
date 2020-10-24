@@ -534,6 +534,9 @@
     <EmbeddedResource Include="Reportes\ReportesClientes\InformeCliente.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesClientes\InformeMayorCompraCliente.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesClientes\Informe_CanjeCliente.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesEmpleados\Est_VentasPeriodo.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesEmpleados\Est_VentasPeriodo2.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesEmpleados\Est_VentasPeriodo3.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmpleados\Frm_ReporteEmpleados.resx">
       <DependentUpon>Frm_ReporteEmpleados.cs</DependentUpon>
     </EmbeddedResource>

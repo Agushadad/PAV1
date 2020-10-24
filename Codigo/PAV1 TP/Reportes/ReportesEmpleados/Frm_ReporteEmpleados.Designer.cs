@@ -36,22 +36,30 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.nroMes = new System.Windows.Forms.Label();
             this.Rv_EMPMayorVentas = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.txt_Mes = new PAV1_TP.Clases.TextBox01();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.Rv_EMPMenorVentas = new Microsoft.Reporting.WinForms.ReportViewer();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.rp_Empleado_Periodo = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.btn_BuscarPeriodo4 = new System.Windows.Forms.Button();
-            this.txt_Mes = new PAV1_TP.Clases.TextBox01();
             this.txt_MesMenor = new PAV1_TP.Clases.TextBox01();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.txt_FechaHasta = new PAV1_TP.Clases.LabelText01();
             this.txt_FechaDesde = new PAV1_TP.Clases.LabelText01();
+            this.rp_Empleado_Periodo = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.btn_BuscarPeriodo4 = new System.Windows.Forms.Button();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.rv_AnalisisPeriodo = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.btn_CalcularESTPeriodo = new System.Windows.Forms.Button();
+            this.ltxt_Hasta2 = new PAV1_TP.Clases.LabelText01();
+            this.ltxt_Desde2 = new PAV1_TP.Clases.LabelText01();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cmb_EstPeriodo = new PAV1_TP.Clases.ComboBox01();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            this.tabPage5.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -60,6 +68,7 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Location = new System.Drawing.Point(13, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -142,6 +151,17 @@
             this.Rv_EMPMayorVentas.Size = new System.Drawing.Size(754, 347);
             this.Rv_EMPMayorVentas.TabIndex = 2;
             // 
+            // txt_Mes
+            // 
+            this.txt_Mes.Location = new System.Drawing.Point(49, 19);
+            this.txt_Mes.Name = "txt_Mes";
+            this.txt_Mes.Pp_mensajeError = null;
+            this.txt_Mes.Pp_nombre_campo = null;
+            this.txt_Mes.Pp_nombre_tabla = null;
+            this.txt_Mes.Pp_validable = false;
+            this.txt_Mes.Size = new System.Drawing.Size(57, 20);
+            this.txt_Mes.TabIndex = 12;
+            // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.Rv_EMPMenorVentas);
@@ -185,6 +205,17 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "Mes";
             // 
+            // txt_MesMenor
+            // 
+            this.txt_MesMenor.Location = new System.Drawing.Point(45, 20);
+            this.txt_MesMenor.Name = "txt_MesMenor";
+            this.txt_MesMenor.Pp_mensajeError = null;
+            this.txt_MesMenor.Pp_nombre_campo = null;
+            this.txt_MesMenor.Pp_nombre_tabla = null;
+            this.txt_MesMenor.Pp_validable = false;
+            this.txt_MesMenor.Size = new System.Drawing.Size(50, 20);
+            this.txt_MesMenor.TabIndex = 15;
+            // 
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.txt_FechaHasta);
@@ -199,46 +230,6 @@
             this.tabPage4.Text = "Empleados con ventas en periodo";
             this.tabPage4.UseVisualStyleBackColor = true;
             this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
-            // 
-            // rp_Empleado_Periodo
-            // 
-            this.rp_Empleado_Periodo.Location = new System.Drawing.Point(9, 54);
-            this.rp_Empleado_Periodo.Name = "rp_Empleado_Periodo";
-            this.rp_Empleado_Periodo.ServerReport.BearerToken = null;
-            this.rp_Empleado_Periodo.Size = new System.Drawing.Size(736, 337);
-            this.rp_Empleado_Periodo.TabIndex = 7;
-            // 
-            // btn_BuscarPeriodo4
-            // 
-            this.btn_BuscarPeriodo4.Location = new System.Drawing.Point(670, 25);
-            this.btn_BuscarPeriodo4.Name = "btn_BuscarPeriodo4";
-            this.btn_BuscarPeriodo4.Size = new System.Drawing.Size(75, 23);
-            this.btn_BuscarPeriodo4.TabIndex = 0;
-            this.btn_BuscarPeriodo4.Text = "Buscar";
-            this.btn_BuscarPeriodo4.UseVisualStyleBackColor = true;
-            this.btn_BuscarPeriodo4.Click += new System.EventHandler(this.btn_BuscarPeriodo4_Click);
-            // 
-            // txt_Mes
-            // 
-            this.txt_Mes.Location = new System.Drawing.Point(49, 19);
-            this.txt_Mes.Name = "txt_Mes";
-            this.txt_Mes.Pp_mensajeError = null;
-            this.txt_Mes.Pp_nombre_campo = null;
-            this.txt_Mes.Pp_nombre_tabla = null;
-            this.txt_Mes.Pp_validable = false;
-            this.txt_Mes.Size = new System.Drawing.Size(57, 20);
-            this.txt_Mes.TabIndex = 12;
-            // 
-            // txt_MesMenor
-            // 
-            this.txt_MesMenor.Location = new System.Drawing.Point(45, 20);
-            this.txt_MesMenor.Name = "txt_MesMenor";
-            this.txt_MesMenor.Pp_mensajeError = null;
-            this.txt_MesMenor.Pp_nombre_campo = null;
-            this.txt_MesMenor.Pp_nombre_tabla = null;
-            this.txt_MesMenor.Pp_validable = false;
-            this.txt_MesMenor.Size = new System.Drawing.Size(50, 20);
-            this.txt_MesMenor.TabIndex = 15;
             // 
             // txt_FechaHasta
             // 
@@ -270,6 +261,120 @@
             this.txt_FechaDesde.Size = new System.Drawing.Size(159, 30);
             this.txt_FechaDesde.TabIndex = 8;
             // 
+            // rp_Empleado_Periodo
+            // 
+            this.rp_Empleado_Periodo.Location = new System.Drawing.Point(9, 54);
+            this.rp_Empleado_Periodo.Name = "rp_Empleado_Periodo";
+            this.rp_Empleado_Periodo.ServerReport.BearerToken = null;
+            this.rp_Empleado_Periodo.Size = new System.Drawing.Size(736, 337);
+            this.rp_Empleado_Periodo.TabIndex = 7;
+            // 
+            // btn_BuscarPeriodo4
+            // 
+            this.btn_BuscarPeriodo4.Location = new System.Drawing.Point(670, 25);
+            this.btn_BuscarPeriodo4.Name = "btn_BuscarPeriodo4";
+            this.btn_BuscarPeriodo4.Size = new System.Drawing.Size(75, 23);
+            this.btn_BuscarPeriodo4.TabIndex = 0;
+            this.btn_BuscarPeriodo4.Text = "Buscar";
+            this.btn_BuscarPeriodo4.UseVisualStyleBackColor = true;
+            this.btn_BuscarPeriodo4.Click += new System.EventHandler(this.btn_BuscarPeriodo4_Click);
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.label7);
+            this.tabPage5.Controls.Add(this.cmb_EstPeriodo);
+            this.tabPage5.Controls.Add(this.rv_AnalisisPeriodo);
+            this.tabPage5.Controls.Add(this.btn_CalcularESTPeriodo);
+            this.tabPage5.Controls.Add(this.ltxt_Hasta2);
+            this.tabPage5.Controls.Add(this.ltxt_Desde2);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(767, 409);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Analisis Estadistico ventas x periodo";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // rv_AnalisisPeriodo
+            // 
+            this.rv_AnalisisPeriodo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.rv_AnalisisPeriodo.Location = new System.Drawing.Point(7, 71);
+            this.rv_AnalisisPeriodo.Name = "rv_AnalisisPeriodo";
+            this.rv_AnalisisPeriodo.ServerReport.BearerToken = null;
+            this.rv_AnalisisPeriodo.Size = new System.Drawing.Size(754, 332);
+            this.rv_AnalisisPeriodo.TabIndex = 3;
+            // 
+            // btn_CalcularESTPeriodo
+            // 
+            this.btn_CalcularESTPeriodo.Location = new System.Drawing.Point(254, 40);
+            this.btn_CalcularESTPeriodo.Name = "btn_CalcularESTPeriodo";
+            this.btn_CalcularESTPeriodo.Size = new System.Drawing.Size(75, 23);
+            this.btn_CalcularESTPeriodo.TabIndex = 2;
+            this.btn_CalcularESTPeriodo.Text = "Calcular";
+            this.btn_CalcularESTPeriodo.UseVisualStyleBackColor = true;
+            this.btn_CalcularESTPeriodo.Click += new System.EventHandler(this.btn_CalcularESTPeriodo_Click);
+            // 
+            // ltxt_Hasta2
+            // 
+            this.ltxt_Hasta2.BackColor = System.Drawing.Color.Transparent;
+            this.ltxt_Hasta2.Location = new System.Drawing.Point(152, 3);
+            this.ltxt_Hasta2.Name = "ltxt_Hasta2";
+            this.ltxt_Hasta2.Pp_Etiqueta = "Hasta";
+            this.ltxt_Hasta2.Pp_Mascara = "00/00/0000";
+            this.ltxt_Hasta2.Pp_mensajeError = null;
+            this.ltxt_Hasta2.Pp_nombre_campo = null;
+            this.ltxt_Hasta2.Pp_nombre_tabla = null;
+            this.ltxt_Hasta2.Pp_Text = "  /  /";
+            this.ltxt_Hasta2.Pp_validable = false;
+            this.ltxt_Hasta2.Size = new System.Drawing.Size(156, 30);
+            this.ltxt_Hasta2.TabIndex = 1;
+            // 
+            // ltxt_Desde2
+            // 
+            this.ltxt_Desde2.BackColor = System.Drawing.Color.Transparent;
+            this.ltxt_Desde2.Location = new System.Drawing.Point(18, 3);
+            this.ltxt_Desde2.Name = "ltxt_Desde2";
+            this.ltxt_Desde2.Pp_Etiqueta = "Desde";
+            this.ltxt_Desde2.Pp_Mascara = "00/00/0000";
+            this.ltxt_Desde2.Pp_mensajeError = null;
+            this.ltxt_Desde2.Pp_nombre_campo = null;
+            this.ltxt_Desde2.Pp_nombre_tabla = null;
+            this.ltxt_Desde2.Pp_Text = "  /  /";
+            this.ltxt_Desde2.Pp_validable = false;
+            this.ltxt_Desde2.Size = new System.Drawing.Size(157, 30);
+            this.ltxt_Desde2.TabIndex = 0;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(3, 45);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(60, 13);
+            this.label7.TabIndex = 23;
+            this.label7.Text = "Estadística";
+            // 
+            // cmb_EstPeriodo
+            // 
+            this.cmb_EstPeriodo.FormattingEnabled = true;
+            this.cmb_EstPeriodo.Items.AddRange(new object[] {
+            "Gráfico de torta",
+            "Gráfico de barras (horizontal)",
+            "Gráfico de barras (vertical)"});
+            this.cmb_EstPeriodo.Location = new System.Drawing.Point(69, 42);
+            this.cmb_EstPeriodo.Name = "cmb_EstPeriodo";
+            this.cmb_EstPeriodo.Pp_Display = null;
+            this.cmb_EstPeriodo.Pp_mensajeError = null;
+            this.cmb_EstPeriodo.Pp_nombre_campo = null;
+            this.cmb_EstPeriodo.Pp_nombre_tabla = null;
+            this.cmb_EstPeriodo.Pp_seleccionado = false;
+            this.cmb_EstPeriodo.Pp_Tabla = null;
+            this.cmb_EstPeriodo.Pp_validable = false;
+            this.cmb_EstPeriodo.Pp_Value = null;
+            this.cmb_EstPeriodo.Size = new System.Drawing.Size(158, 21);
+            this.cmb_EstPeriodo.TabIndex = 22;
+            // 
             // Frm_ReporteEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -286,6 +391,8 @@
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.tabPage4.ResumeLayout(false);
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -311,5 +418,12 @@
         private System.Windows.Forms.Button btn_BuscarPeriodo4;
         private Clases.LabelText01 txt_FechaHasta;
         private Clases.LabelText01 txt_FechaDesde;
+        private System.Windows.Forms.TabPage tabPage5;
+        private Microsoft.Reporting.WinForms.ReportViewer rv_AnalisisPeriodo;
+        private System.Windows.Forms.Button btn_CalcularESTPeriodo;
+        private Clases.LabelText01 ltxt_Hasta2;
+        private Clases.LabelText01 ltxt_Desde2;
+        private System.Windows.Forms.Label label7;
+        private Clases.ComboBox01 cmb_EstPeriodo;
     }
 }

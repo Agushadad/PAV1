@@ -21,7 +21,7 @@ namespace PAV1_TP.Clases
         public TipoConexion ControlConexion { get; set; } = TipoConexion.simple;
         public EstadoTransaccion ControlTransaccion { get; set; } = EstadoTransaccion.correcta;
         //Acuerdense de cambiar el link de conexion y poner el de c/uno
-        string Cadena_conexion = "Data Source=LAPTOP-C87F44FH;Initial Catalog = Vivero; Integrated Security = True";
+        string Cadena_conexion = "Data Source=DESKTOP-7MV1FIL;Initial Catalog=Vivero;Integrated Security=True";
         //Cadena Agus: "Data Source=DESKTOP-7MV1FIL;Initial Catalog=Vivero;Integrated Security=True";
         //Cadena Facu: "Data Source=LAPTOP-C87F44FH;Initial Catalog = Vivero; Integrated Security = True";
         public void IniciarTransaccion()

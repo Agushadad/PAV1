@@ -44,7 +44,8 @@ namespace PAV1_TP.Reportes.ReportesEmpleados
         {
 
             //this.Rv_Empleado.RefreshReport();
-			//this.rp_Empleado_Periodo.RefreshReport();
+            //this.rp_Empleado_Periodo.RefreshReport();
+            this.rv_AnalisisPeriodo.RefreshReport();
         }
 
         private void btn_Buscar_Click_1(object sender, EventArgs e)
@@ -195,6 +196,90 @@ namespace PAV1_TP.Reportes.ReportesEmpleados
         {
 
         }
+		private void GenerarGraficoTorta()
+        {
+			Be_BaseDeDatos _BD = new Be_BaseDeDatos();
+			ReportDataSource datos = new ReportDataSource("DataSet1", tablaEMP);
+			rv_AnalisisPeriodo.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesEmpleados.Est_VentasPeriodo.rdlc";
+			ReportParameter[] parametro = new ReportParameter[2];
+			parametro[0] = new ReportParameter("RP01", _BD.FechaHora());
+			parametro[1] = new ReportParameter("RP02", "Análisis Estadístico de ventas de empleados entre: "
+												+ ltxt_Desde2.Pp_Text + " y " + ltxt_Hasta2.Pp_Text);
+			rv_AnalisisPeriodo.LocalReport.SetParameters(parametro);
+			rv_AnalisisPeriodo.LocalReport.DataSources.Clear();
+			rv_AnalisisPeriodo.LocalReport.DataSources.Add(datos);
+			rv_AnalisisPeriodo.RefreshReport();
+		}
+		private void GenerarGraficoBarrasVert()
+		{
+			Be_BaseDeDatos _BD = new Be_BaseDeDatos();
+			ReportDataSource datos = new ReportDataSource("DataSet1", tablaEMP);
+			rv_AnalisisPeriodo.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesEmpleados.Est_VentasPeriodo2.rdlc";
+			ReportParameter[] parametro = new ReportParameter[2];
+			parametro[0] = new ReportParameter("RP01", _BD.FechaHora());
+			parametro[1] = new ReportParameter("RP02", "Análisis Estadístico de ventas de empleados entre: "
+												+ ltxt_Desde2.Pp_Text + " y " + ltxt_Hasta2.Pp_Text);
+			rv_AnalisisPeriodo.LocalReport.SetParameters(parametro);
+			rv_AnalisisPeriodo.LocalReport.DataSources.Clear();
+			rv_AnalisisPeriodo.LocalReport.DataSources.Add(datos);
+			rv_AnalisisPeriodo.RefreshReport();
+		}
+		private void GenerarGraficoBarrasHor()
+		{
+			Be_BaseDeDatos _BD = new Be_BaseDeDatos();
+			ReportDataSource datos = new ReportDataSource("DataSet1", tablaEMP);
+			rv_AnalisisPeriodo.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesEmpleados.Est_VentasPeriodo3.rdlc";
+			ReportParameter[] parametro = new ReportParameter[2];
+			parametro[0] = new ReportParameter("RP01", _BD.FechaHora());
+			parametro[1] = new ReportParameter("RP02", "Análisis Estadístico de ventas de empleados entre: "
+												+ ltxt_Desde2.Pp_Text + " y " + ltxt_Hasta2.Pp_Text);
+			rv_AnalisisPeriodo.LocalReport.SetParameters(parametro);
+			rv_AnalisisPeriodo.LocalReport.DataSources.Clear();
+			rv_AnalisisPeriodo.LocalReport.DataSources.Add(datos);
+			rv_AnalisisPeriodo.RefreshReport();
+		}
+
+		private void btn_CalcularESTPeriodo_Click(object sender, EventArgs e)
+        {
+			if (te.ValidarFecha(ltxt_Desde2.Pp_Text) == TratamientosEspeciales.Validacion.incorrecta)
+			{
+				MessageBox.Show("Falta cargar fecha desde");
+				txt_FechaDesde.Focus();
+				return;
+			}
+			if (te.ValidarFecha(ltxt_Hasta2.Pp_Text) == TratamientosEspeciales.Validacion.incorrecta)
+			{
+				MessageBox.Show("Falta cargar fecha Hasta");
+				txt_FechaHasta.Focus();
+				return;
+			}
+			else
+            {
+				if (cmb_EstPeriodo.SelectedItem == null)
+				{
+					MessageBox.Show("Seleccione un tipo de gráfico");
+					cmb_EstPeriodo.Focus();
+					return;
+				}
+
+				if (cmb_EstPeriodo.SelectedItem.ToString() == "Gráfico de torta")
+				{
+					tablaEMP = empleado.Buscar_Periodo(ltxt_Desde2.Pp_Text, ltxt_Hasta2.Pp_Text);
+					GenerarGraficoTorta();
+				}
+				if (cmb_EstPeriodo.SelectedItem.ToString() == "Gráfico de barras (vertical)")
+				{
+					tablaEMP = empleado.Buscar_Periodo(ltxt_Desde2.Pp_Text, ltxt_Hasta2.Pp_Text);
+					GenerarGraficoBarrasVert();
+				}
+
+				if (cmb_EstPeriodo.SelectedItem.ToString() == "Gráfico de barras (horizontal)")
+				{
+					tablaEMP = empleado.Buscar_Periodo(ltxt_Desde2.Pp_Text, ltxt_Hasta2.Pp_Text);
+					GenerarGraficoBarrasHor();
+				}
+			}
+		}
     }
 	
 }
