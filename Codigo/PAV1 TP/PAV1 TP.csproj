@@ -532,6 +532,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Reportes\ReportesClientes\InformeCliente.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesClientes\Est_MayorCompraPorCliente3.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesClientes\Est_MayorCompraPorCliente2.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesClientes\Est_MayorCompraPorCliente.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesClientes\InformeMayorCompraCliente.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesClientes\Informe_CanjeCliente.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmpleados\Est_VentasPeriodo.rdlc" />
@@ -557,6 +560,8 @@
     <EmbeddedResource Include="Reportes\ReportesProductos\InformeProductos.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesProductos\Informe_PMV.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesProductos\Informe_TPMV.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesVentas\Est_VentaxMonto3.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesVentas\Est_VentaxMonto2.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesVentas\Frm_ReporteVentas.resx">
       <DependentUpon>Frm_ReporteVentas.cs</DependentUpon>
     </EmbeddedResource>
@@ -566,6 +571,7 @@
     <EmbeddedResource Include="Reportes\ReportesPlantas\InformeTPPM.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesVentas\InformeDMenorVM.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesVentas\InformeVentas.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesVentas\Est_VentaxMonto.rdlc" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
