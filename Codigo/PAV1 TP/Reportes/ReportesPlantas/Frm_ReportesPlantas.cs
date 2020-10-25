@@ -351,7 +351,7 @@ namespace PAV1_TP.Reportes.ReportesPlantas
 			if (cmb_stdPlanta.SelectedItem == null)
 			{
 				MessageBox.Show("Seleccione un tipo de gráfico");
-				cmb_stdTipoPlanta.Focus();
+				cmb_stdPlanta.Focus();
 				return;
 			}
 
