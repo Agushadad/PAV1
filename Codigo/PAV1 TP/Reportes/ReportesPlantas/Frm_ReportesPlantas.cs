@@ -305,7 +305,7 @@ namespace PAV1_TP.Reportes.ReportesPlantas
 		{
 			Be_BaseDeDatos _BD = new Be_BaseDeDatos();
 
-			ReportDataSource DatosPPM = new ReportDataSource("Torta", tablaPPM);
+			ReportDataSource DatosPPM = new ReportDataSource("DataSet1", tablaPPM);
 			rv_stdPlanta.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesPlantas.EstadisticaPlantasTorta.rdlc";
 			ReportParameter[] parametros = new ReportParameter[2];
 			parametros[0] = new ReportParameter("ParametroTortaPlanta", "Estadistica plantas vendidas en el mes: " + txt_std_MesPlanta.Text);
@@ -345,7 +345,8 @@ namespace PAV1_TP.Reportes.ReportesPlantas
 			rv_stdPlanta.LocalReport.DataSources.Add(DatosPPM);
 			rv_stdPlanta.RefreshReport();
 		}
-		private void btn_CalcularPlanta_Click(object sender, EventArgs e)
+
+		private void btn_calcular_PlantaEstadistica_Click(object sender, EventArgs e)
 		{
 			if (cmb_stdPlanta.SelectedItem == null)
 			{
@@ -370,6 +371,10 @@ namespace PAV1_TP.Reportes.ReportesPlantas
 				BuscarstdPlanta();
 				ArmarEstadisticaPlanta_BarrasSeries();
 			}
+		}
+
+		private void btn_CalcularPlanta_Click(object sender, EventArgs e)
+		{
 
 		}
 
@@ -382,6 +387,8 @@ namespace PAV1_TP.Reportes.ReportesPlantas
 		{
 
 		}
+
+
 	}
 }
 

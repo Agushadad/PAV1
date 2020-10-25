@@ -74,7 +74,11 @@
                         <Y>=Count(Fields!Total.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
-                        <Style />
+                        <Style>
+                          <Format>0.00%</Format>
+                        </Style>
+                        <Label>#PERCENT</Label>
+                        <Visible>true</Visible>
                       </ChartDataLabel>
                       <Style />
                       <ChartMarker>
@@ -355,7 +359,7 @@
             </ChartLegends>
             <ChartTitles>
               <ChartTitle Name="Default">
-                <Caption>Título del gráfico</Caption>
+                <Caption>Gráfico de tortas</Caption>
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
                   <FontSize>9pt</FontSize>
@@ -657,7 +661,7 @@
               <Top>3.98611cm</Top>
               <Left>0.57692cm</Left>
               <Height>0.6cm</Height>
-              <Width>6.40422cm</Width>
+              <Width>9.44693cm</Width>
               <ZIndex>1</ZIndex>
               <Style>
                 <Border>
@@ -711,7 +715,7 @@
               <Top>0.35278cm</Top>
               <Left>0.44879cm</Left>
               <Height>0.6cm</Height>
-              <Width>6.27608cm</Width>
+              <Width>9.57506cm</Width>
               <ZIndex>1</ZIndex>
               <Style>
                 <Border>

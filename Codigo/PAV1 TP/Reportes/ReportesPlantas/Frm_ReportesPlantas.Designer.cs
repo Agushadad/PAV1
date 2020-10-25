@@ -38,6 +38,12 @@
 			this.label2 = new System.Windows.Forms.Label();
 			this.txt_std_MesTipoPlanta = new PAV1_TP.Clases.TextBox01();
 			this.tabPage4 = new System.Windows.Forms.TabPage();
+			this.rv_stdPlanta = new Microsoft.Reporting.WinForms.ReportViewer();
+			this.label1 = new System.Windows.Forms.Label();
+			this.label8 = new System.Windows.Forms.Label();
+			this.btn_calcular_PlantaEstadistica = new System.Windows.Forms.Button();
+			this.cmb_stdPlanta = new PAV1_TP.Clases.ComboBox01();
+			this.txt_std_MesPlanta = new PAV1_TP.Clases.TextBox01();
 			this.tabPage3 = new System.Windows.Forms.TabPage();
 			this.Rv_TPPM = new Microsoft.Reporting.WinForms.ReportViewer();
 			this.btn_TPPM = new System.Windows.Forms.Button();
@@ -52,12 +58,6 @@
 			this.Rv_Plantas = new Microsoft.Reporting.WinForms.ReportViewer();
 			this.btn_Buscar = new System.Windows.Forms.Button();
 			this.btn_CalcularPlanta = new System.Windows.Forms.TabControl();
-			this.label1 = new System.Windows.Forms.Label();
-			this.label8 = new System.Windows.Forms.Label();
-			this.button1 = new System.Windows.Forms.Button();
-			this.cmb_stdPlanta = new PAV1_TP.Clases.ComboBox01();
-			this.txt_std_MesPlanta = new PAV1_TP.Clases.TextBox01();
-			this.rv_stdPlanta = new Microsoft.Reporting.WinForms.ReportViewer();
 			this.tabPage5.SuspendLayout();
 			this.tabPage4.SuspendLayout();
 			this.tabPage3.SuspendLayout();
@@ -175,7 +175,7 @@
 			this.tabPage4.Controls.Add(this.rv_stdPlanta);
 			this.tabPage4.Controls.Add(this.label1);
 			this.tabPage4.Controls.Add(this.label8);
-			this.tabPage4.Controls.Add(this.button1);
+			this.tabPage4.Controls.Add(this.btn_calcular_PlantaEstadistica);
 			this.tabPage4.Controls.Add(this.cmb_stdPlanta);
 			this.tabPage4.Controls.Add(this.txt_std_MesPlanta);
 			this.tabPage4.Location = new System.Drawing.Point(4, 22);
@@ -185,6 +185,73 @@
 			this.tabPage4.TabIndex = 3;
 			this.tabPage4.Text = "Análisis estadistico de plantas";
 			this.tabPage4.UseVisualStyleBackColor = true;
+			// 
+			// rv_stdPlanta
+			// 
+			this.rv_stdPlanta.Location = new System.Drawing.Point(0, 82);
+			this.rv_stdPlanta.Name = "rv_stdPlanta";
+			this.rv_stdPlanta.ServerReport.BearerToken = null;
+			this.rv_stdPlanta.Size = new System.Drawing.Size(767, 304);
+			this.rv_stdPlanta.TabIndex = 27;
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Location = new System.Drawing.Point(10, 45);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(60, 13);
+			this.label1.TabIndex = 26;
+			this.label1.Text = "Estadística";
+			// 
+			// label8
+			// 
+			this.label8.AutoSize = true;
+			this.label8.Location = new System.Drawing.Point(40, 22);
+			this.label8.Name = "label8";
+			this.label8.Size = new System.Drawing.Size(27, 13);
+			this.label8.TabIndex = 25;
+			this.label8.Text = "Mes";
+			// 
+			// btn_calcular_PlantaEstadistica
+			// 
+			this.btn_calcular_PlantaEstadistica.Location = new System.Drawing.Point(237, 42);
+			this.btn_calcular_PlantaEstadistica.Name = "btn_calcular_PlantaEstadistica";
+			this.btn_calcular_PlantaEstadistica.Size = new System.Drawing.Size(75, 23);
+			this.btn_calcular_PlantaEstadistica.TabIndex = 24;
+			this.btn_calcular_PlantaEstadistica.Text = "Calcular";
+			this.btn_calcular_PlantaEstadistica.UseVisualStyleBackColor = true;
+			this.btn_calcular_PlantaEstadistica.Click += new System.EventHandler(this.btn_calcular_PlantaEstadistica_Click);
+			// 
+			// cmb_stdPlanta
+			// 
+			this.cmb_stdPlanta.FormattingEnabled = true;
+			this.cmb_stdPlanta.Items.AddRange(new object[] {
+            "Gráfico de torta",
+            "Gráfico de barras (horizontal)",
+            "Gráfico de barras (vertical)"});
+			this.cmb_stdPlanta.Location = new System.Drawing.Point(73, 42);
+			this.cmb_stdPlanta.Name = "cmb_stdPlanta";
+			this.cmb_stdPlanta.Pp_Display = null;
+			this.cmb_stdPlanta.Pp_mensajeError = null;
+			this.cmb_stdPlanta.Pp_nombre_campo = null;
+			this.cmb_stdPlanta.Pp_nombre_tabla = null;
+			this.cmb_stdPlanta.Pp_seleccionado = false;
+			this.cmb_stdPlanta.Pp_Tabla = null;
+			this.cmb_stdPlanta.Pp_validable = false;
+			this.cmb_stdPlanta.Pp_Value = null;
+			this.cmb_stdPlanta.Size = new System.Drawing.Size(158, 21);
+			this.cmb_stdPlanta.TabIndex = 23;
+			// 
+			// txt_std_MesPlanta
+			// 
+			this.txt_std_MesPlanta.Location = new System.Drawing.Point(73, 19);
+			this.txt_std_MesPlanta.Name = "txt_std_MesPlanta";
+			this.txt_std_MesPlanta.Pp_mensajeError = null;
+			this.txt_std_MesPlanta.Pp_nombre_campo = null;
+			this.txt_std_MesPlanta.Pp_nombre_tabla = null;
+			this.txt_std_MesPlanta.Pp_validable = false;
+			this.txt_std_MesPlanta.Size = new System.Drawing.Size(62, 20);
+			this.txt_std_MesPlanta.TabIndex = 22;
 			// 
 			// tabPage3
 			// 
@@ -334,72 +401,6 @@
 			this.btn_CalcularPlanta.Size = new System.Drawing.Size(775, 436);
 			this.btn_CalcularPlanta.TabIndex = 0;
 			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(10, 45);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(60, 13);
-			this.label1.TabIndex = 26;
-			this.label1.Text = "Estadística";
-			// 
-			// label8
-			// 
-			this.label8.AutoSize = true;
-			this.label8.Location = new System.Drawing.Point(40, 22);
-			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(27, 13);
-			this.label8.TabIndex = 25;
-			this.label8.Text = "Mes";
-			// 
-			// button1
-			// 
-			this.button1.Location = new System.Drawing.Point(237, 42);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(75, 23);
-			this.button1.TabIndex = 24;
-			this.button1.Text = "Calcular";
-			this.button1.UseVisualStyleBackColor = true;
-			// 
-			// cmb_stdPlanta
-			// 
-			this.cmb_stdPlanta.FormattingEnabled = true;
-			this.cmb_stdPlanta.Items.AddRange(new object[] {
-            "Gráfico de torta",
-            "Gráfico de barras (horizontal)",
-            "Gráfico de barras (vertical)"});
-			this.cmb_stdPlanta.Location = new System.Drawing.Point(73, 42);
-			this.cmb_stdPlanta.Name = "cmb_stdPlanta";
-			this.cmb_stdPlanta.Pp_Display = null;
-			this.cmb_stdPlanta.Pp_mensajeError = null;
-			this.cmb_stdPlanta.Pp_nombre_campo = null;
-			this.cmb_stdPlanta.Pp_nombre_tabla = null;
-			this.cmb_stdPlanta.Pp_seleccionado = false;
-			this.cmb_stdPlanta.Pp_Tabla = null;
-			this.cmb_stdPlanta.Pp_validable = false;
-			this.cmb_stdPlanta.Pp_Value = null;
-			this.cmb_stdPlanta.Size = new System.Drawing.Size(158, 21);
-			this.cmb_stdPlanta.TabIndex = 23;
-			// 
-			// txt_std_MesPlanta
-			// 
-			this.txt_std_MesPlanta.Location = new System.Drawing.Point(73, 19);
-			this.txt_std_MesPlanta.Name = "txt_std_MesPlanta";
-			this.txt_std_MesPlanta.Pp_mensajeError = null;
-			this.txt_std_MesPlanta.Pp_nombre_campo = null;
-			this.txt_std_MesPlanta.Pp_nombre_tabla = null;
-			this.txt_std_MesPlanta.Pp_validable = false;
-			this.txt_std_MesPlanta.Size = new System.Drawing.Size(62, 20);
-			this.txt_std_MesPlanta.TabIndex = 22;
-			// 
-			// rv_stdPlanta
-			// 
-			this.rv_stdPlanta.Location = new System.Drawing.Point(0, 82);
-			this.rv_stdPlanta.Name = "rv_stdPlanta";
-			this.rv_stdPlanta.ServerReport.BearerToken = null;
-			this.rv_stdPlanta.Size = new System.Drawing.Size(767, 304);
-			this.rv_stdPlanta.TabIndex = 27;
-			// 
 			// Frm_ReportesPlantas
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -452,7 +453,7 @@
 		private Microsoft.Reporting.WinForms.ReportViewer rv_stdPlanta;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label8;
-		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Button btn_calcular_PlantaEstadistica;
 		private Clases.ComboBox01 cmb_stdPlanta;
 		private Clases.TextBox01 txt_std_MesPlanta;
 	}
