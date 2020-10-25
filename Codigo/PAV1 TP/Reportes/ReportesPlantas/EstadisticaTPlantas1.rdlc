@@ -572,8 +572,8 @@
             <DataSetName>Torta</DataSetName>
             <Top>0.49953cm</Top>
             <Left>8.96303cm</Left>
-            <Height>1.38521cm</Height>
-            <Width>11.21771cm</Width>
+            <Height>1.3852cm</Height>
+            <Width>11.2177cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -583,7 +583,6 @@
           </Tablix>
           <Line Name="Line1">
             <Top>5.63507cm</Top>
-            <Left>0cm</Left>
             <Height>0cm</Height>
             <Width>23.10787cm</Width>
             <ZIndex>2</ZIndex>
@@ -611,7 +610,7 @@
         <Height>2.2485in</Height>
         <Style />
       </Body>
-      <Width>9.25259in</Width>
+      <Width>9.50312in</Width>
       <Page>
         <PageHeader>
           <Height>3.93967cm</Height>
@@ -692,7 +691,7 @@
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>2.54cm</Height>
+          <Height>2.74095cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>

@@ -547,6 +547,9 @@
     <EmbeddedResource Include="Reportes\ReportesEmpleados\InformeEmpleadoMenorVentas.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmpleados\InformeEmpleados.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesEmpleados\InformePeriodo.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesPlantas\EstadisticaPlantasBarras.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesPlantas\EstadisticaPlantasBarraSeries.rdlc" />
+    <EmbeddedResource Include="Reportes\ReportesPlantas\EstadisticaPlantasTorta.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesPlantas\EstadisticaTPlantas1.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesPlantas\EstadisticaTPlantas2.rdlc" />
     <EmbeddedResource Include="Reportes\ReportesPlantas\EstadisticaTPlantas3.rdlc" />
