@@ -232,5 +232,7 @@ namespace PAV1_TP.Reportes.ReportesVentas
 			BuscarMENORVentasPorMes();
 			ArmarReportesMENORVENTAPorMes();
 		}
+
+
 	}
 }
