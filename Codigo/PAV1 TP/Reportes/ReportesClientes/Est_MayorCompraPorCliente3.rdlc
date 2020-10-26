@@ -403,7 +403,7 @@
                         <Style>
                           <Format>0%</Format>
                         </Style>
-                        <Label>#PERCENT</Label>
+                        <Label>#VALY</Label>
                         <Visible>true</Visible>
                       </ChartDataLabel>
                       <Style />
