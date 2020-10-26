@@ -417,7 +417,7 @@
                   <FontSize>8pt</FontSize>
                 </Style>
                 <ChartLegendTitle>
-                  <Caption />
+                  <Caption>Empleado</Caption>
                   <Style>
                     <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>

@@ -489,21 +489,6 @@
                       <Value>=Fields!ID.Value</Value>
                     </SortExpression>
                   </SortExpressions>
-                  <ChartMembers>
-                    <ChartMember>
-                      <Group Name="Chart2_CategoryGroup1">
-                        <GroupExpressions>
-                          <GroupExpression>=Fields!Apellido.Value</GroupExpression>
-                        </GroupExpressions>
-                      </Group>
-                      <SortExpressions>
-                        <SortExpression>
-                          <Value>=Fields!Apellido.Value</Value>
-                        </SortExpression>
-                      </SortExpressions>
-                      <Label>=Fields!Apellido.Value</Label>
-                    </ChartMember>
-                  </ChartMembers>
                   <Label>=Fields!ID.Value</Label>
                 </ChartMember>
               </ChartMembers>
@@ -566,7 +551,7 @@
                       <Color>#5c5c5c</Color>
                     </Style>
                     <ChartAxisTitle>
-                      <Caption />
+                      <Caption>ID Empleado</Caption>
                       <Style>
                         <FontSize>9pt</FontSize>
                         <Color>#5c5c5c</Color>
@@ -679,7 +664,7 @@
                       <Color>#5c5c5c</Color>
                     </Style>
                     <ChartAxisTitle>
-                      <Caption />
+                      <Caption>Cantidad</Caption>
                       <Style>
                         <FontSize>9pt</FontSize>
                         <Color>#5c5c5c</Color>

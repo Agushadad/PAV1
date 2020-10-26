@@ -48,12 +48,12 @@
             this.rp_Empleado_Periodo = new Microsoft.Reporting.WinForms.ReportViewer();
             this.btn_BuscarPeriodo4 = new System.Windows.Forms.Button();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cmb_EstPeriodo = new PAV1_TP.Clases.ComboBox01();
             this.rv_AnalisisPeriodo = new Microsoft.Reporting.WinForms.ReportViewer();
             this.btn_CalcularESTPeriodo = new System.Windows.Forms.Button();
             this.ltxt_Hasta2 = new PAV1_TP.Clases.LabelText01();
             this.ltxt_Desde2 = new PAV1_TP.Clases.LabelText01();
-            this.label7 = new System.Windows.Forms.Label();
-            this.cmb_EstPeriodo = new PAV1_TP.Clases.ComboBox01();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -295,6 +295,35 @@
             this.tabPage5.Text = "Analisis Estadistico ventas x periodo";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(3, 45);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(60, 13);
+            this.label7.TabIndex = 23;
+            this.label7.Text = "Estadística";
+            // 
+            // cmb_EstPeriodo
+            // 
+            this.cmb_EstPeriodo.FormattingEnabled = true;
+            this.cmb_EstPeriodo.Items.AddRange(new object[] {
+            "Gráfico de torta",
+            "Gráfico de barras (horizontal)",
+            "Gráfico de barras (vertical)"});
+            this.cmb_EstPeriodo.Location = new System.Drawing.Point(69, 42);
+            this.cmb_EstPeriodo.Name = "cmb_EstPeriodo";
+            this.cmb_EstPeriodo.Pp_Display = null;
+            this.cmb_EstPeriodo.Pp_mensajeError = null;
+            this.cmb_EstPeriodo.Pp_nombre_campo = null;
+            this.cmb_EstPeriodo.Pp_nombre_tabla = null;
+            this.cmb_EstPeriodo.Pp_seleccionado = false;
+            this.cmb_EstPeriodo.Pp_Tabla = null;
+            this.cmb_EstPeriodo.Pp_validable = false;
+            this.cmb_EstPeriodo.Pp_Value = null;
+            this.cmb_EstPeriodo.Size = new System.Drawing.Size(158, 21);
+            this.cmb_EstPeriodo.TabIndex = 22;
+            // 
             // rv_AnalisisPeriodo
             // 
             this.rv_AnalisisPeriodo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -345,35 +374,6 @@
             this.ltxt_Desde2.Pp_validable = false;
             this.ltxt_Desde2.Size = new System.Drawing.Size(157, 30);
             this.ltxt_Desde2.TabIndex = 0;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(3, 45);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(60, 13);
-            this.label7.TabIndex = 23;
-            this.label7.Text = "Estadística";
-            // 
-            // cmb_EstPeriodo
-            // 
-            this.cmb_EstPeriodo.FormattingEnabled = true;
-            this.cmb_EstPeriodo.Items.AddRange(new object[] {
-            "Gráfico de torta",
-            "Gráfico de barras (horizontal)",
-            "Gráfico de barras (vertical)"});
-            this.cmb_EstPeriodo.Location = new System.Drawing.Point(69, 42);
-            this.cmb_EstPeriodo.Name = "cmb_EstPeriodo";
-            this.cmb_EstPeriodo.Pp_Display = null;
-            this.cmb_EstPeriodo.Pp_mensajeError = null;
-            this.cmb_EstPeriodo.Pp_nombre_campo = null;
-            this.cmb_EstPeriodo.Pp_nombre_tabla = null;
-            this.cmb_EstPeriodo.Pp_seleccionado = false;
-            this.cmb_EstPeriodo.Pp_Tabla = null;
-            this.cmb_EstPeriodo.Pp_validable = false;
-            this.cmb_EstPeriodo.Pp_Value = null;
-            this.cmb_EstPeriodo.Size = new System.Drawing.Size(158, 21);
-            this.cmb_EstPeriodo.TabIndex = 22;
             // 
             // Frm_ReporteEmpleados
             // 

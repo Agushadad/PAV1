@@ -62,7 +62,6 @@
         <ReportItems>
           <Line Name="Line1">
             <Top>0.17639cm</Top>
-            <Left>0cm</Left>
             <Height>0cm</Height>
             <Width>23.58053cm</Width>
             <Style>
@@ -74,7 +73,6 @@
           </Line>
           <Line Name="Line2">
             <Top>6.67781cm</Top>
-            <Left>0cm</Left>
             <Height>0cm</Height>
             <Width>23.58053cm</Width>
             <ZIndex>1</ZIndex>
@@ -124,10 +122,14 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Tipo Factura</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox4</rd:DefaultName>
@@ -154,10 +156,14 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Nro Factura</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox6</rd:DefaultName>
@@ -184,10 +190,14 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Tipo Doc</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox8</rd:DefaultName>
@@ -214,10 +224,14 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Nro Doc</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox10</rd:DefaultName>
@@ -244,10 +258,14 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Fecha</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox12</rd:DefaultName>
@@ -274,10 +292,14 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Id Empleado</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox14</rd:DefaultName>
@@ -304,10 +326,14 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Monto</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox16</rd:DefaultName>
@@ -342,7 +368,9 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Tipo_Factura</rd:DefaultName>
@@ -372,7 +400,9 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Nro_Factura</rd:DefaultName>
@@ -402,7 +432,9 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>TipoDoc</rd:DefaultName>
@@ -432,7 +464,9 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>NroDoc</rd:DefaultName>
@@ -462,7 +496,9 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Fecha</rd:DefaultName>
@@ -492,7 +528,9 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Id_Empleado</rd:DefaultName>
@@ -522,7 +560,9 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Monto</rd:DefaultName>
@@ -568,7 +608,7 @@
             <Top>0.635cm</Top>
             <Left>8.2677cm</Left>
             <Height>1.2cm</Height>
-            <Width>14.89184cm</Width>
+            <Width>14.89183cm</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -580,99 +620,24 @@
             <ChartCategoryHierarchy>
               <ChartMembers>
                 <ChartMember>
-                  <Group Name="Chart1_CategoryGroup">
+                  <Group Name="Chart1_CategoryGroup5">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!Tipo_Factura.Value</GroupExpression>
+                      <GroupExpression>=Fields!Id_Empleado.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!Tipo_Factura.Value</Value>
+                      <Value>=Fields!Id_Empleado.Value</Value>
                     </SortExpression>
                   </SortExpressions>
-                  <ChartMembers>
-                    <ChartMember>
-                      <Group Name="Chart1_CategoryGroup1">
-                        <GroupExpressions>
-                          <GroupExpression>=Fields!Nro_Factura.Value</GroupExpression>
-                        </GroupExpressions>
-                      </Group>
-                      <SortExpressions>
-                        <SortExpression>
-                          <Value>=Fields!Nro_Factura.Value</Value>
-                        </SortExpression>
-                      </SortExpressions>
-                      <ChartMembers>
-                        <ChartMember>
-                          <Group Name="Chart1_CategoryGroup2">
-                            <GroupExpressions>
-                              <GroupExpression>=Fields!TipoDoc.Value</GroupExpression>
-                            </GroupExpressions>
-                          </Group>
-                          <SortExpressions>
-                            <SortExpression>
-                              <Value>=Fields!TipoDoc.Value</Value>
-                            </SortExpression>
-                          </SortExpressions>
-                          <ChartMembers>
-                            <ChartMember>
-                              <Group Name="Chart1_CategoryGroup3">
-                                <GroupExpressions>
-                                  <GroupExpression>=Fields!NroDoc.Value</GroupExpression>
-                                </GroupExpressions>
-                              </Group>
-                              <SortExpressions>
-                                <SortExpression>
-                                  <Value>=Fields!NroDoc.Value</Value>
-                                </SortExpression>
-                              </SortExpressions>
-                              <ChartMembers>
-                                <ChartMember>
-                                  <Group Name="Chart1_CategoryGroup4">
-                                    <GroupExpressions>
-                                      <GroupExpression>=Fields!Fecha.Value</GroupExpression>
-                                    </GroupExpressions>
-                                  </Group>
-                                  <SortExpressions>
-                                    <SortExpression>
-                                      <Value>=Fields!Fecha.Value</Value>
-                                    </SortExpression>
-                                  </SortExpressions>
-                                  <ChartMembers>
-                                    <ChartMember>
-                                      <Group Name="Chart1_CategoryGroup5">
-                                        <GroupExpressions>
-                                          <GroupExpression>=Fields!Id_Empleado.Value</GroupExpression>
-                                        </GroupExpressions>
-                                      </Group>
-                                      <SortExpressions>
-                                        <SortExpression>
-                                          <Value>=Fields!Id_Empleado.Value</Value>
-                                        </SortExpression>
-                                      </SortExpressions>
-                                      <Label>=Fields!Id_Empleado.Value</Label>
-                                    </ChartMember>
-                                  </ChartMembers>
-                                  <Label>=Fields!Fecha.Value</Label>
-                                </ChartMember>
-                              </ChartMembers>
-                              <Label>=Fields!NroDoc.Value</Label>
-                            </ChartMember>
-                          </ChartMembers>
-                          <Label>=Fields!TipoDoc.Value</Label>
-                        </ChartMember>
-                      </ChartMembers>
-                      <Label>=Fields!Nro_Factura.Value</Label>
-                    </ChartMember>
-                  </ChartMembers>
-                  <Label>=Fields!Tipo_Factura.Value</Label>
+                  <Label>=Fields!Id_Empleado.Value</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartCategoryHierarchy>
             <ChartSeriesHierarchy>
               <ChartMembers>
                 <ChartMember>
-                  <Label>Monto</Label>
+                  <Label>Nro Factura</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartSeriesHierarchy>
@@ -682,10 +647,12 @@
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
-                        <Y>=Sum(Fields!Monto.Value)</Y>
+                        <Y>=Count(Fields!Nro_Factura.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style />
+                        <Label>#PERCENT</Label>
+                        <Visible>true</Visible>
                       </ChartDataLabel>
                       <Style />
                       <ChartMarker>
@@ -953,7 +920,7 @@
                   <FontSize>8pt</FontSize>
                 </Style>
                 <ChartLegendTitle>
-                  <Caption />
+                  <Caption>ID Empleado</Caption>
                   <Style>
                     <FontSize>8pt</FontSize>
                     <FontWeight>Bold</FontWeight>

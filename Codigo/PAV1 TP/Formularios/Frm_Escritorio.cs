@@ -141,34 +141,35 @@ namespace PAV1_TP
             Form canje = new Frm_Canje();
             canje.Show();
         }
-        private void ventasToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Form ReporteVentas = new Frm_ReporteVentas();
-            ReporteVentas.Show();
-        }
 
-        private void clientesToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Form ReporteClientes = new Frm_ReporteClientes();
-            ReporteClientes.Show();
-        }
-
-        private void empleadosToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form ReporteEmpleados = new Frm_ReporteEmpleados();
             ReporteEmpleados.Show();
         }
 
-        private void plantasToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void ventasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form ReporteVentas = new Frm_ReporteVentas();
+            ReporteVentas.Show();
+        }
+
+        private void productoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form ReportesProductos = new Frm_ReportesProductos();
+            ReportesProductos.Show();
+        }
+
+        private void plantasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form ReportesPlantas = new Frm_ReportesPlantas();
             ReportesPlantas.Show();
         }
 
-        private void productosToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form ReportesProductos = new Frm_ReportesProductos();
-            ReportesProductos.Show();
+            Form ReporteClientes = new Frm_ReporteClientes();
+            ReporteClientes.Show();
         }
     }
 }

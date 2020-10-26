@@ -357,7 +357,7 @@
             </TablixRowHierarchy>
             <DataSetName>MayorCompraCliente</DataSetName>
             <Top>0.56303cm</Top>
-            <Left>8.23953cm</Left>
+            <Left>10.8824cm</Left>
             <Height>1.2cm</Height>
             <Width>10.02606cm</Width>
             <Style>
@@ -370,47 +370,17 @@
             <ChartCategoryHierarchy>
               <ChartMembers>
                 <ChartMember>
-                  <Group Name="Chart4_CategoryGroup">
+                  <Group Name="Chart4_CategoryGroup2">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!Nombre.Value</GroupExpression>
+                      <GroupExpression>=Fields!NroDoc.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!Nombre.Value</Value>
+                      <Value>=Fields!NroDoc.Value</Value>
                     </SortExpression>
                   </SortExpressions>
-                  <ChartMembers>
-                    <ChartMember>
-                      <Group Name="Chart4_CategoryGroup1">
-                        <GroupExpressions>
-                          <GroupExpression>=Fields!Nombre.Value</GroupExpression>
-                        </GroupExpressions>
-                      </Group>
-                      <SortExpressions>
-                        <SortExpression>
-                          <Value>=Fields!Nombre.Value</Value>
-                        </SortExpression>
-                      </SortExpressions>
-                      <ChartMembers>
-                        <ChartMember>
-                          <Group Name="Chart4_CategoryGroup2">
-                            <GroupExpressions>
-                              <GroupExpression>=Fields!NroDoc.Value</GroupExpression>
-                            </GroupExpressions>
-                          </Group>
-                          <SortExpressions>
-                            <SortExpression>
-                              <Value>=Fields!NroDoc.Value</Value>
-                            </SortExpression>
-                          </SortExpressions>
-                          <Label>=Fields!NroDoc.Value</Label>
-                        </ChartMember>
-                      </ChartMembers>
-                      <Label>=Fields!Nombre.Value</Label>
-                    </ChartMember>
-                  </ChartMembers>
-                  <Label>=Fields!Nombre.Value</Label>
+                  <Label>=Fields!NroDoc.Value</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartCategoryHierarchy>
@@ -427,7 +397,7 @@
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
-                        <Y>=Count(Fields!Total.Value)</Y>
+                        <Y>=Sum(Fields!Total.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style>
@@ -589,7 +559,7 @@
                       <Color>#5c5c5c</Color>
                     </Style>
                     <ChartAxisTitle>
-                      <Caption />
+                      <Caption>Monto</Caption>
                       <Style>
                         <FontSize>9pt</FontSize>
                         <Color>#5c5c5c</Color>
@@ -713,20 +683,6 @@
                 <ColumnSeparatorColor>Black</ColumnSeparatorColor>
               </ChartLegend>
             </ChartLegends>
-            <ChartTitles>
-              <ChartTitle Name="Default">
-                <Caption>Título del gráfico</Caption>
-                <Style>
-                  <BackgroundGradientType>None</BackgroundGradientType>
-                  <FontSize>9pt</FontSize>
-                  <FontWeight>Normal</FontWeight>
-                  <TextAlign>Left</TextAlign>
-                  <VerticalAlign>Top</VerticalAlign>
-                  <Color>#a6a6a6</Color>
-                </Style>
-                <Position>TopLeft</Position>
-              </ChartTitle>
-            </ChartTitles>
             <Palette>Pacific</Palette>
             <ChartBorderSkin>
               <Style>
@@ -747,8 +703,8 @@
             <DataSetName>MayorCompraCliente</DataSetName>
             <Top>0.56303cm</Top>
             <Left>0.35983cm</Left>
-            <Height>5cm</Height>
-            <Width>7.5cm</Width>
+            <Height>6.6651cm</Height>
+            <Width>10.34618cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -760,10 +716,10 @@
             </Style>
           </Chart>
         </ReportItems>
-        <Height>2.4985in</Height>
+        <Height>2.91517in</Height>
         <Style />
       </Body>
-      <Width>7.45784in</Width>
+      <Width>8.24951in</Width>
       <Page>
         <PageHeader>
           <Height>2.5812cm</Height>
@@ -791,9 +747,8 @@
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
               <Top>0.56303cm</Top>
-              <Left>4.83808cm</Left>
               <Height>0.83283cm</Height>
-              <Width>7.5165cm</Width>
+              <Width>20.90846cm</Width>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -808,7 +763,7 @@
             <Line Name="Line1">
               <Top>2.43417cm</Top>
               <Height>0cm</Height>
-              <Width>18.94292cm</Width>
+              <Width>20.90846cm</Width>
               <ZIndex>1</ZIndex>
               <Style>
                 <Border>
@@ -855,14 +810,14 @@
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>1.03717cm</Height>
+          <Height>3.12738cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
             <Line Name="Line2">
-              <Top>0.14111cm</Top>
+              <Top>1.91382cm</Top>
               <Height>0cm</Height>
-              <Width>18.94292cm</Width>
+              <Width>20.95375cm</Width>
               <Style>
                 <Border>
                   <Style>Solid</Style>
@@ -885,7 +840,7 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>RP01</rd:DefaultName>
-              <Top>0.28222cm</Top>
+              <Top>2.05493cm</Top>
               <Left>0.35983cm</Left>
               <Height>0.6cm</Height>
               <Width>17.90575cm</Width>

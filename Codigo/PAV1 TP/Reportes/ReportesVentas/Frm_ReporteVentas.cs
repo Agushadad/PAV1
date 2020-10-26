@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PAV1_TP.Clases;
 
 namespace PAV1_TP.Reportes.ReportesVentas
 {
@@ -232,7 +233,79 @@ namespace PAV1_TP.Reportes.ReportesVentas
 			BuscarMENORVentasPorMes();
 			ArmarReportesMENORVENTAPorMes();
 		}
+        //**************************************************************Est ventas x monto************************
 
+        private void GenerarGraficoTorta()
+        {
+            Be_BaseDeDatos _BD = new Be_BaseDeDatos();
+			ReportDataSource datos = new ReportDataSource("DataSet1", TablaVentas);
+            RV_AEVentxMonto.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesVentas.Est_VentaxMonto.rdlc";
+			ReportParameter[] parametro = new ReportParameter[2];
+			parametro[0] = new ReportParameter("RP01", _BD.FechaHora());
+            parametro[1] = new ReportParameter("RP02", "Análisis Estadístico empleados con ventas que superan el monto: " + txt_Est_Monto.Text);
+            RV_AEVentxMonto.LocalReport.SetParameters(parametro);
+            RV_AEVentxMonto.LocalReport.DataSources.Clear();
+            RV_AEVentxMonto.LocalReport.DataSources.Add(datos);
+            RV_AEVentxMonto.RefreshReport();
+        }
+        private void GenerarGraficoBarrasVert()
+        {
+            Be_BaseDeDatos _BD = new Be_BaseDeDatos();
+            ReportDataSource datos = new ReportDataSource("DataSet1", TablaVentas);
+            RV_AEVentxMonto.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesVentas.Est_VentaxMonto2.rdlc";
+            ReportParameter[] parametro = new ReportParameter[2];
+            parametro[0] = new ReportParameter("RP01", _BD.FechaHora());
+            parametro[1] = new ReportParameter("RP02", "Análisis Estadístico empleados con ventas que superan el monto: " + txt_Est_Monto.Text);
+            RV_AEVentxMonto.LocalReport.SetParameters(parametro);
+            RV_AEVentxMonto.LocalReport.DataSources.Clear();
+            RV_AEVentxMonto.LocalReport.DataSources.Add(datos);
+            RV_AEVentxMonto.RefreshReport();
+        }
 
-	}
+        private void GenerarGraficoBarrasHor()
+        {
+            Be_BaseDeDatos _BD = new Be_BaseDeDatos();
+            ReportDataSource datos = new ReportDataSource("DataSet1", TablaVentas);
+            RV_AEVentxMonto.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesVentas.Est_VentaxMonto3.rdlc";
+            ReportParameter[] parametro = new ReportParameter[2];
+            parametro[0] = new ReportParameter("RP01", _BD.FechaHora());
+            parametro[1] = new ReportParameter("RP02", "Análisis Estadístico empleados con ventas que superan el monto: " + txt_Est_Monto.Text);
+            RV_AEVentxMonto.LocalReport.SetParameters(parametro);
+            RV_AEVentxMonto.LocalReport.DataSources.Clear();
+            RV_AEVentxMonto.LocalReport.DataSources.Add(datos);
+            RV_AEVentxMonto.RefreshReport();
+        }
+        private void btn_AEVentxMonto_Click(object sender, EventArgs e)
+        {
+            if (txt_Est_Monto.Text == "")
+            {
+                MessageBox.Show("Ingrese un monto");
+                txt_Est_Monto.Focus();
+                return;
+            }
+            if (cmb_EstPeriodo.SelectedItem == null)
+            {
+                MessageBox.Show("Seleccione un tipo de gráfico");
+                cmb_EstPeriodo.Focus();
+                return;
+            }
+
+            if (cmb_EstPeriodo.SelectedItem.ToString() == "Gráfico de torta")
+            {
+                TablaVentas = factura.BuscarFacturaXMonto(txt_Est_Monto.Text);
+                GenerarGraficoTorta();
+            }
+            if (cmb_EstPeriodo.SelectedItem.ToString() == "Gráfico de barras (vertical)")
+            {
+                TablaVentas = factura.BuscarFacturaXMonto(txt_Est_Monto.Text);
+                GenerarGraficoBarrasVert();
+            }
+
+            if (cmb_EstPeriodo.SelectedItem.ToString() == "Gráfico de barras (horizontal)")
+            {
+                TablaVentas = factura.BuscarFacturaXMonto(txt_Est_Monto.Text);
+                GenerarGraficoBarrasHor();
+            }
+        }
+    }
 }

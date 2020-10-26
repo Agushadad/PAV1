@@ -148,5 +148,79 @@ namespace PAV1_TP.Formularios.Reportes
 
             }
         }
+
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GenerarGraficoBarrasVert()
+        {
+            Be_BaseDeDatos _BD = new Be_BaseDeDatos();
+            ReportDataSource datos = new ReportDataSource("MayorCompraCliente", TablaCliente);
+            RV_MayCompCliente.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesClientes.Est_MayorCompraPorCliente2.rdlc";
+            ReportParameter[] parametro = new ReportParameter[2];
+            parametro[0] = new ReportParameter("RP01", _BD.FechaHora());
+            parametro[1] = new ReportParameter("RP02", "Análisis Estadístico de mayor compra por cliente");
+            RV_MayCompCliente.LocalReport.SetParameters(parametro);
+            RV_MayCompCliente.LocalReport.DataSources.Clear();
+            RV_MayCompCliente.LocalReport.DataSources.Add(datos);
+            RV_MayCompCliente.RefreshReport();
+        }
+
+        private void GenerarGraficoBarrasHor()
+        {
+            Be_BaseDeDatos _BD = new Be_BaseDeDatos();
+            ReportDataSource datos = new ReportDataSource("MayorCompraCliente", TablaCliente);
+            RV_MayCompCliente.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesClientes.Est_MayorCompraPorCliente3.rdlc";
+            ReportParameter[] parametro = new ReportParameter[2];
+            parametro[0] = new ReportParameter("RP01", _BD.FechaHora());
+            parametro[1] = new ReportParameter("RP02", "Análisis Estadístico de mayor compra por cliente");
+            RV_MayCompCliente.LocalReport.SetParameters(parametro);
+            RV_MayCompCliente.LocalReport.DataSources.Clear();
+            RV_MayCompCliente.LocalReport.DataSources.Add(datos);
+            RV_MayCompCliente.RefreshReport();
+        }
+
+        private void GenerarGraficoTorta()
+        {
+            Be_BaseDeDatos _BD = new Be_BaseDeDatos();
+            ReportDataSource datos = new ReportDataSource("MayorCompraCliente", TablaCliente);
+            RV_MayCompCliente.LocalReport.ReportEmbeddedResource = "PAV1_TP.Reportes.ReportesClientes.Est_MayorCompraPorCliente.rdlc";
+            ReportParameter[] parametro = new ReportParameter[2];
+            parametro[0] = new ReportParameter("RP01", _BD.FechaHora());
+            parametro[1] = new ReportParameter("RP02", "Análisis Estadístico de mayor compra por cliente");
+            RV_MayCompCliente.LocalReport.SetParameters(parametro);
+            RV_MayCompCliente.LocalReport.DataSources.Clear();
+            RV_MayCompCliente.LocalReport.DataSources.Add(datos);
+            RV_MayCompCliente.RefreshReport();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (cmb_EstaMcompra.SelectedItem == null)
+            {
+                MessageBox.Show("Seleccione un tipo de gráfico");
+                cmb_EstaMcompra.Focus();
+                return;
+            }
+
+            if (cmb_EstaMcompra.SelectedItem.ToString() == "Gráfico de torta")
+            {
+                TablaCliente = cliente.ReporteCMV();
+                GenerarGraficoTorta();
+            }
+            if (cmb_EstaMcompra.SelectedItem.ToString() == "Gráfico de barras (vertical)")
+            {
+                TablaCliente = cliente.ReporteCMV();
+                GenerarGraficoBarrasVert();
+            }
+
+            if (cmb_EstaMcompra.SelectedItem.ToString() == "Gráfico de barras (horizontal)")
+            {
+                TablaCliente = cliente.ReporteCMV();
+                GenerarGraficoBarrasHor();
+            }
+        }
     }
 }
