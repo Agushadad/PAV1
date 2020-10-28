@@ -204,7 +204,7 @@ INSERT INTO TipoDoc (ID) VALUES (0)
 
 INSERT INTO Cliente (NroDoc, Estado, TipoDoc,Nombre,Apellido) VALUES (0,0,0,'','')
 
-INSERT INTO Factura (Nro_Factura,Tipo_Factura,TipoDoc,NroDoc) VALUES (0,0,0,0)				    
+INSERT INTO Factura (Nro_Factura,Tipo_Factura,TipoDoc,NroDoc) VALUES (0,0,0,0)
 
 INSERT INTO Barrio VALUES (1, 'General Paz'),(2,'Nueva Cordoba'), (3, 'Crisol'), (4, 'Centro'), (5,'Cerro')
 
@@ -250,3 +250,10 @@ INSERT INTO Catalogo VALUES (1,1,200,1),
 							(2,4,250,1),
 							(2,5,250,1)
 
+INSERT INTO Factura VALUES (1,1,1,'42543887',convert(datetime,'01/02/2020',103),1,5000),(1,2,1,'42543887',convert(datetime,'11/02/2020',103),2,5320)
+							,(1,3,1,'42543887',convert(datetime,'25/02/2020',103),1,200),(1,4,1,'42543887',convert(datetime,'01/03/2020',103),1,5000),
+							(2,5,3,'42543883',convert(datetime,'01/05/2020',103),1,5000),(1,6,3,'42543883',convert(datetime,'25/12/2020',103),2,5320)
+							,(2,7,3,'42543883',convert(datetime,'07/09/2020',103),1,200),(1,8,3,'42543883',convert(datetime,'21/11/2020',103),1,5000)    
+
+INSERT INTO Puntos VALUES (1,'42543887',1,1,100,convert(datetime,'01/02/2020',103)),(1,'42543887',1,2,1000,convert(datetime,'11/02/2020',103)),
+							(3,'42543883',2,7,10050,convert(datetime,'07/09/2020',103))
